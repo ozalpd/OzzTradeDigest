@@ -18,6 +18,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="3.53.3" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\OzzTradeDiary.AppInfra\OzzTradeDiary.AppInfra.csproj" />
 		<ProjectReference Include="..\OzzTradeDiary.i18n\OzzTradeDiary.i18n.csproj" />
 		<ProjectReference Include="..\OzzTradeDiary\OzzTradeDiary.csproj" />
