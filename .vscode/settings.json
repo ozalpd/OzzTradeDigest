@@ -11,7 +11,7 @@
   },
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.chat.editorContext": "smart",
-  "dotnet.defaultSolution": "OzzTradeDiary.slnx",
+  "dotnet.defaultSolution": "OzzTradeDigest.slnx",
   "dotnet.server.useOmnisharp": false,
   "files.exclude": {
     "**/bin": true,

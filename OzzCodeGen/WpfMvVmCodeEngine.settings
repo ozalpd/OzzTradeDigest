@@ -2,7 +2,7 @@
 <WpfMvvmCodeEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Language>CSharp</Language>
   <NamespaceName>TD.WPF</NamespaceName>
-  <TargetFolder>..\OzzTradeDiary.NET\OzzTradeDiary.WPF\</TargetFolder>
+  <TargetFolder>..\OzzTradeDigest.NET\OzzTradeDigest.WPF\</TargetFolder>
   <EntitySettings>
     <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">
       <Name>IReadOnlyOnes</Name>
@@ -1997,7 +1997,7 @@
   <RenderAllEntities>false</RenderAllEntities>
   <BaseClassNamespaceName>TD.Models.Infra</BaseClassNamespaceName>
   <InfrastructureNamespaceName>TD.AppInfra</InfrastructureNamespaceName>
-  <InfrastructureFolder>..\OzzTradeDiary.NET\OzzTradeDiary.AppInfra\</InfrastructureFolder>
+  <InfrastructureFolder>..\OzzTradeDigest.NET\OzzTradeDigest.AppInfra\</InfrastructureFolder>
   <AppSettingsFolder>Models</AppSettingsFolder>
   <CommandFolder>Commands</CommandFolder>
   <DesignTimeFolder>DesignTime</DesignTimeFolder>
@@ -2009,6 +2009,6 @@
   <ViewFolder>Views</ViewFolder>
   <ViewModelFolder>ViewModels</ViewModelFolder>
   <XamlResourcesFolder>Resources</XamlResourcesFolder>
-  <LocalizationAssemblyName>OzzTradeDiary.i18n</LocalizationAssemblyName>
+  <LocalizationAssemblyName>OzzTradeDigest.i18n</LocalizationAssemblyName>
   <LocalizationNamespaceName>TD.i18n</LocalizationNamespaceName>
 </WpfMvvmCodeEngine>

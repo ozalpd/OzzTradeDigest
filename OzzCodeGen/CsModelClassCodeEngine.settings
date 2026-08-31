@@ -2,7 +2,7 @@
 <CSharpModelClassCodeEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Language>CSharp</Language>
   <NamespaceName>TD.Models</NamespaceName>
-  <TargetFolder>..\OzzTradeDiary.NET\OzzTradeDiary\Models</TargetFolder>
+  <TargetFolder>..\OzzTradeDigest.NET\OzzTradeDigest\Models</TargetFolder>
   <EntitySettings>
     <BaseEntitySetting xsi:type="ModelClassEntitySetting">
       <Name>IReadOnlyOnes</Name>
@@ -1308,14 +1308,14 @@
   <CustomAttribNamespace>TD.Validation</CustomAttribNamespace>
   <GenerateForDTO>false</GenerateForDTO>
   <UseResourceFiles>true</UseResourceFiles>
-  <ExtensionsFolder>..\OzzTradeDiary.NET\OzzTradeDiary\Extensions</ExtensionsFolder>
+  <ExtensionsFolder>..\OzzTradeDigest.NET\OzzTradeDigest\Extensions</ExtensionsFolder>
   <ExtensionsNamespaceName>TD.Extensions</ExtensionsNamespaceName>
   <GenAnnotations>true</GenAnnotations>
   <GenerateEnumExtension>true</GenerateEnumExtension>
   <GenerateValidator>true</GenerateValidator>
   <GenerateXmlDoc>true</GenerateXmlDoc>
-  <QueryParamFolder>..\OzzTradeDiary.NET\OzzTradeDiary\Helpers</QueryParamFolder>
+  <QueryParamFolder>..\OzzTradeDigest.NET\OzzTradeDigest\Helpers</QueryParamFolder>
   <QueryParamNamespaceName>TD.Helpers</QueryParamNamespaceName>
-  <ValidatorFolder>..\OzzTradeDiary.NET\OzzTradeDiary\Validation</ValidatorFolder>
+  <ValidatorFolder>..\OzzTradeDigest.NET\OzzTradeDigest\Validation</ValidatorFolder>
   <ValidatorNamespaceName>TD.Validation</ValidatorNamespaceName>
 </CSharpModelClassCodeEngine>

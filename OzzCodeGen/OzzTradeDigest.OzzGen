@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeGenProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>OzzTradeDiary</Name>
+  <Name>OzzTradeDigest</Name>
   <NamespaceName>TD</NamespaceName>
   <ModelProviderId>Model_Provider_Empty</ModelProviderId>
   <TargetFolder>..\GeneratedCodes</TargetFolder>

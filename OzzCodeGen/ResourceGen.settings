@@ -2,7 +2,7 @@
 <ResxEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Language>CSharp</Language>
   <NamespaceName>TD.i18n</NamespaceName>
-  <TargetFolder>..\OzzTradeDiary.NET\OzzTradeDiary.i18n</TargetFolder>
+  <TargetFolder>..\OzzTradeDigest.NET\OzzTradeDigest.i18n</TargetFolder>
   <EntitySettings>
     <BaseEntitySetting xsi:type="LocalizationEntitySetting">
       <Name>IReadOnlyOnes</Name>

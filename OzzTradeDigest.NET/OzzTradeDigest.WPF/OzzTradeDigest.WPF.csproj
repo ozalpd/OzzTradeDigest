@@ -25,10 +25,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\OzzTradeDiary.AppInfra\OzzTradeDiary.AppInfra.csproj" />
-		<ProjectReference Include="..\OzzTradeDiary.i18n\OzzTradeDiary.i18n.csproj" />
-		<ProjectReference Include="..\OzzTradeDiary\OzzTradeDiary.csproj" />
-		<ProjectReference Include="..\OzzTradeDiary.SQLite\OzzTradeDiary.SQLite.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest.AppInfra\OzzTradeDigest.AppInfra.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest.i18n\OzzTradeDigest.i18n.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest\OzzTradeDigest.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest.SQLite\OzzTradeDigest.SQLite.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

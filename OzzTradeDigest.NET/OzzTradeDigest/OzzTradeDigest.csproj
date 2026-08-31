@@ -4,7 +4,7 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>TD.AppInfra</RootNamespace>
+		<RootNamespace>TD</RootNamespace>
 
 		<Version>0.2.3</Version>
 		<AssemblyVersion>0.2.3.0</AssemblyVersion>
@@ -13,8 +13,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\OzzTradeDiary\OzzTradeDiary.csproj" />
-		<ProjectReference Include="..\TD.RepositoryContracts\TD.RepositoryContracts.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest.i18n\OzzTradeDigest.i18n.csproj" />
 	</ItemGroup>
 
 </Project>

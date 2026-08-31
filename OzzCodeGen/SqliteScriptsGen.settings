@@ -2,7 +2,7 @@
 <SqliteScriptsEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Language>CSharp</Language>
   <NamespaceName>TD.Models</NamespaceName>
-  <TargetFolder>..\OzzTradeDiary.NET\OzzTradeDiary.SQLite\DbScripts</TargetFolder>
+  <TargetFolder>..\OzzTradeDigest.NET\OzzTradeDigest.SQLite\DbScripts</TargetFolder>
   <EntitySettings>
     <BaseEntitySetting xsi:type="StorageEntitySetting">
       <Name>IReadOnlyOnes</Name>

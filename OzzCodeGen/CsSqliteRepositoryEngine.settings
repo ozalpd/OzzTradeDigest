@@ -2,7 +2,7 @@
 <CSharpSqliteRepositoryEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Language>CSharp</Language>
   <NamespaceName>TD.SQLite</NamespaceName>
-  <TargetFolder>..\OzzTradeDiary.NET\OzzTradeDiary.SQLite</TargetFolder>
+  <TargetFolder>..\OzzTradeDigest.NET\OzzTradeDigest.SQLite</TargetFolder>
   <EntitySettings>
     <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
       <Name>IReadOnlyOnes</Name>
@@ -1344,7 +1344,7 @@
   <RenderAllEntities>false</RenderAllEntities>
   <BaseClassNamespaceName>TD.SQLite.Infra</BaseClassNamespaceName>
   <InfrastructureNamespaceName>TD.RepositoryContracts</InfrastructureNamespaceName>
-  <InfrastructureFolder>..\OzzTradeDiary.NET\TD.RepositoryContracts</InfrastructureFolder>
+  <InfrastructureFolder>..\OzzTradeDigest.NET\TD.RepositoryContracts</InfrastructureFolder>
   <MetadataRepositoryName>MetadataRepository</MetadataRepositoryName>
   <BaseRepositoryClassName>AbstractDatabaseRepository</BaseRepositoryClassName>
 </CSharpSqliteRepositoryEngine>

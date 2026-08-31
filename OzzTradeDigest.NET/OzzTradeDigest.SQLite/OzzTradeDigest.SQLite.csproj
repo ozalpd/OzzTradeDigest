@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\OzzTradeDiary\OzzTradeDiary.csproj" />
+		<ProjectReference Include="..\OzzTradeDigest\OzzTradeDigest.csproj" />
 		<ProjectReference Include="..\TD.RepositoryContracts\TD.RepositoryContracts.csproj" />
 	</ItemGroup>
 

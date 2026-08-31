@@ -1643,7 +1643,7 @@
   </EntitySettings>
   <RenderAllEntities>false</RenderAllEntities>
   <PluralizeTableNames>true</PluralizeTableNames>
-  <DatabaseName>OzzTradeDiary</DatabaseName>
+  <DatabaseName>OzzTradeDigest</DatabaseName>
   <DatabaseServer>.\SqlExpress</DatabaseServer>
   <BeforeScripts>_Schema.sql</BeforeScripts>
   <LogSchemaName>log</LogSchemaName>
