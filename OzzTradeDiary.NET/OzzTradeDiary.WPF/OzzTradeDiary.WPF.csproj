@@ -14,8 +14,8 @@
 		<FileVersion>0.2.3.0</FileVersion>
 		<InformationalVersion>0.2.3</InformationalVersion>
 
-		<Company>Ozalp Donduren</Company>
-		<Product>Ozz Trade Diary</Product>
+		<Company>Özalp Döndüren</Company>
+		<Product>Ozz Trade Digest</Product>
 		<Description>Trade Journal Application</Description>
 		<Copyright>Copyright © 2026</Copyright>
 	</PropertyGroup>

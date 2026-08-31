@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Changed
+- Renamed the application from **OzzTradeDiary** to **OzzTradeDigest**; repository moved to https://github.com/ozalpd/OzzTradeDigest. Documentation (README, Copilot instructions, agents, prompts, instruction files) updated to the new name; project/folder renames will follow via `git mv`.
+
 ## [0.2.3] - 2026-06-07
 
 ### Added

@@ -5,7 +5,7 @@ mode: "agent"
 
 # Scaffold New Entity
 
-Create all layers for a new entity in the OzzTradeDiary project.
+Create all layers for a new entity in the OzzTradeDigest project.
 
 ## Input
 
@@ -14,7 +14,7 @@ Create all layers for a new entity in the OzzTradeDiary project.
 
 ## Steps
 
-### 1. Model class (`OzzTradeDiary.NET/OzzTradeDiary/Models/{entityName}.cs`)
+### 1. Model class (`OzzTradeDigest.NET/OzzTradeDigest/Models/{entityName}.cs`)
 
 Follow the pattern in `Currency.cs`:
 - Namespace: `TD.Models`
@@ -32,7 +32,7 @@ Add a new `<EntitySetting>` block in the existing settings file:
 - Add `IDisplayOrder` if the entity has `DisplayOrder`
 - Add `IIsActive` if the entity has `IsActive`
 
-### 3. Repository (`OzzTradeDiary.NET/OzzTradeDiary.SQLite/{entityName}Repository.cs`)
+### 3. Repository (`OzzTradeDigest.NET/OzzTradeDigest.SQLite/{entityName}Repository.cs`)
 
 Follow the pattern in `SqliteDatabaseMetadataRepository.cs`:
 - Namespace: `TD.SQLite`
@@ -41,7 +41,7 @@ Follow the pattern in `SqliteDatabaseMetadataRepository.cs`:
 - Implement CRUD: `GetAllAsync()`, `GetByIdAsync(int id)`, `InsertAsync()`, `UpdateAsync()`, `DeleteAsync(int id)`
 - Use `async/await` throughout
 
-### 4. ViewModel (`OzzTradeDiary.NET/OzzTradeDiary.WPF/ViewModels/{entityName}CollectionVM.cs`)
+### 4. ViewModel (`OzzTradeDigest.NET/OzzTradeDigest.WPF/ViewModels/{entityName}CollectionVM.cs`)
 
 Follow the pattern in `AbstractCollectionVM<T>`:
 - Namespace: `TD.WPF.ViewModels`
@@ -49,4 +49,4 @@ Follow the pattern in `AbstractCollectionVM<T>`:
 - Implement `OnSearchStringChanged()` with string filtering
 - Implement `OnSelectedItemChanging()` and `OnSelectedItemChanged()`
 
-After creating all files, build the solution with `dotnet build OzzTradeDiary.slnx` to verify no compile errors.
+After creating all files, build the solution with `dotnet build OzzTradeDigest.slnx` to verify no compile errors.

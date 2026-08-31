@@ -21,7 +21,7 @@ description: "Use when: editing XAML views, creating new WPF pages, adding contr
 
 ## Localization
 
-- Always declare the `i18n` namespace at the top of every XAML file that needs localized strings: `xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDiary.i18n"`
+- Always declare the `i18n` namespace at the top of every XAML file that needs localized strings: `xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"`
 - **Menu item `Header`** values must use `{x:Static i18n:ActionStrings.Key}` or `{x:Static i18n:LocalizedStrings.Key}` — never hardcode visible menu text unless no matching resource key exists
 - **Property label `TextBlock.Text`** must bind to `{x:Static i18n:LocalizedStrings.PropertyName}` — never use hardcoded strings for property labels
 - **Button `ToolTip`** values in maintenance toolbars must bind to a localized string from `ActionStrings` or `LocalizedStrings`

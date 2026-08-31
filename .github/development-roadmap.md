@@ -1,4 +1,4 @@
-# OzzTradeDiary.WPF — Development Roadmap
+# OzzTradeDigest.WPF — Development Roadmap
 
 This file is an AI-readable planning document. It tracks implemented features and
 prioritized upcoming work. Update status markers as features are completed.

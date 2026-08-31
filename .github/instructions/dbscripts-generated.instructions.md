@@ -5,7 +5,7 @@ description: "Use when: viewing or referencing SQLite DDL scripts in the DbScrip
 
 # Generated SQL Scripts — Do Not Edit
 
-Files in `OzzTradeDiary.SQLite/DbScripts/` are **auto-generated** by OzzCodeGen from `OzzCodeGen/SqliteScriptsGen.settings`.
+Files in `OzzTradeDigest.SQLite/DbScripts/` are **auto-generated** by OzzCodeGen from `OzzCodeGen/SqliteScriptsGen.settings`.
 
 ## Rules
 
