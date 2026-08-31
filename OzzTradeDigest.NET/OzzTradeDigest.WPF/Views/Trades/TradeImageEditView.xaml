@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TD.WPF.Views.Trades"
         xmlns:behaviors="clr-namespace:TD.WPF.Behaviors"
-        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDiary.i18n"
+        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         xmlns:base="clr-namespace:TD.WPF.Views"
         Title="{x:Static i18n:LocalizedStrings.EditTradeImage}"
         Height="832" Width="640" MinHeight="640" MinWidth="420"

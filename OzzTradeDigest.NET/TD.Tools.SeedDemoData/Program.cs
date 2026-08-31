@@ -441,7 +441,7 @@ static string GetDefaultDebugDatabasePath()
     while (current is not null)
     {
         var hasGitFolder = Directory.Exists(Path.Combine(current.FullName, ".git"));
-        var hasSolution = File.Exists(Path.Combine(current.FullName, "OzzTradeDiary.slnx"));
+        var hasSolution = File.Exists(Path.Combine(current.FullName, "OzzTradeDigest.slnx"));
 
         if (hasGitFolder || hasSolution)
         {

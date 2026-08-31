@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TD.WPF.Views.Trades"
         xmlns:ctr="clr-namespace:TD.WPF.Controls"
-        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDiary.i18n"
+        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         Title="{x:Static i18n:LocalizedStrings.CreateTrade}"
         Height="640" Width="800" MinHeight="580" MinWidth="800"
         WindowStartupLocation="CenterOwner"

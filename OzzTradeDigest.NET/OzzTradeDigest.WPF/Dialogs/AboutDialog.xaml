@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TD.WPF.Dialogs"
-        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDiary.i18n"
+        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         mc:Ignorable="d"
         Title="{x:Static i18n:ActionStrings.About}"
         Height="320" 
@@ -70,7 +70,7 @@
         <TextBlock Grid.Column="1" Grid.Row="5" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top">
-            <Hyperlink NavigateUri="https://github.com/ozalpd/OzzTradeDiary" 
+            <Hyperlink NavigateUri="https://github.com/ozalpd/OzzTradeDigest" 
                        RequestNavigate="Hyperlink_RequestNavigate">
                 <Run Text="{x:Static i18n:CommonStrings.ViewOnGitHub}"/>
             </Hyperlink>

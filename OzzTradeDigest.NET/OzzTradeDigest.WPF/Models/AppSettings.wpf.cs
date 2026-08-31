@@ -69,7 +69,7 @@ public partial class AppSettings
     private static string GetDefaultBackupFolderPath()
     {
         return Path.Combine(GetFolderPath(SpecialFolder.MyDocuments),
-                            ozzTradeDiary,
+                            ozzTradeDigest,
                             "BackUp");
     }
 
@@ -104,7 +104,7 @@ public partial class AppSettings
         }
 #endif
         return Path.Combine(GetFolderPath(SpecialFolder.MyDocuments),
-                            ozzTradeDiary,
+                            ozzTradeDigest,
                             images);
     }
 
