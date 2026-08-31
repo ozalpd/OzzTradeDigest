@@ -9,7 +9,7 @@ public partial class AppSettings
     private static AppSettings? _instance;
     private static readonly object _syncRoot = new();
 
-    private static string ozzTradeDigest = "OzzTradeDigest";
+    private static string appFolderName = "OzzTradeDigest";
     private static string settingsFileName = "tdsettings.json";
 
     /// <summary>
@@ -51,7 +51,7 @@ public partial class AppSettings
 #endif
 
         return Path.Combine(GetFolderPath(SpecialFolder.LocalApplicationData),
-                                          ozzTradeDigest);
+                                          appFolderName);
     }
 
     private static string? TryGetDebugSampleDataFolderPath()
@@ -124,7 +124,7 @@ public partial class AppSettings
         }
 #endif
         var settingsFolder = Path.Combine(GetFolderPath(SpecialFolder.ApplicationData),
-                                         ozzTradeDigest);
+                                         appFolderName);
         Directory.CreateDirectory(settingsFolder);
 
         return Path.Combine(settingsFolder, settingsFileName);
