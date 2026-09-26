@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="{x:Static i18n:ActionStrings.About}"
         Height="320" 
-        Width="420" 
+        Width="520" 
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
         ShowInTaskbar="False">
@@ -34,7 +34,7 @@
                Height="192"
                HorizontalAlignment="Center" 
                Margin="0,0,0,10"
-               Source="/Assets/OzzTradeDiary-256.ico"/>
+               Source="/Assets/OzzTradeDigest-256.ico"/>
 
         <!-- Product Name -->
         <TextBlock Grid.Column="1" Grid.Row="1"
@@ -58,7 +58,7 @@
                    HorizontalAlignment="Center"
                    TextAlignment="Center"
                    TextWrapping="Wrap"
-                   Margin="0,0,0,5"/>
+                   Margin="6,5"/>
 
         <!-- Copyright -->
         <TextBlock Grid.Column="1" Grid.Row="4" 

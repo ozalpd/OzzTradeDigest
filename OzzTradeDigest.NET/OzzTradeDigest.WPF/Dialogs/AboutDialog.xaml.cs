@@ -42,7 +42,7 @@ namespace TD.WPF.Dialogs
         {
             try
             {
-                var iconUri = new Uri("pack://application:,,,/Assets/OzzTradeDiary-256.ico");
+                var iconUri = new Uri("pack://application:,,,/Assets/OzzTradeDigest-256.ico");
                 var decoder = BitmapDecoder.Create(iconUri, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
 
                 // Find the largest frame (256x256 or 128x128)

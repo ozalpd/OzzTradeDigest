@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
-- Renamed the application from **OzzTradeDiary** to **OzzTradeDigest**; repository moved to https://github.com/ozalpd/OzzTradeDigest. Solution file, project folders/files (`OzzTradeDigest`, `OzzTradeDigest.AppInfra`, `OzzTradeDigest.i18n`, `OzzTradeDigest.SQLite`, `OzzTradeDigest.WPF`), and documentation (README, Copilot instructions, agents, prompts, instruction files) updated to the new name via `git mv`. The `Assets/OzzTradeDiary-256.ico` filename is intentionally kept until the icon is redesigned.
+- Renamed the application from **OzzTradeDiary** to **OzzTradeDigest**; repository moved to https://github.com/ozalpd/OzzTradeDigest. Solution file, project folders/files (`OzzTradeDigest`, `OzzTradeDigest.AppInfra`, `OzzTradeDigest.i18n`, `OzzTradeDigest.SQLite`, `OzzTradeDigest.WPF`), and documentation (README, Copilot instructions, agents, prompts, instruction files) updated to the new name via `git mv`. The application icon is redesigned.
 
 ## [0.2.3] - 2026-06-07
 

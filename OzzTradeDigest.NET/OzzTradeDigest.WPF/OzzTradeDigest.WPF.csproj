@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UseWPF>true</UseWPF>
-		<ApplicationIcon>Assets\OzzTradeDiary-256.ico</ApplicationIcon>
+		<ApplicationIcon>Assets\OzzTradeDigest-256.ico</ApplicationIcon>
 		<RootNamespace>TD.WPF</RootNamespace>
 
 		<Version>0.2.3</Version>
@@ -16,12 +16,12 @@
 
 		<Company>Özalp Döndüren</Company>
 		<Product>Ozz Trade Digest</Product>
-		<Description>Trade Journal Application</Description>
+		<Description>Trade Journaling and Flow Control Application by Özalp Döndüren</Description>
 		<Copyright>Copyright © 2026</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Resource Include="Assets\OzzTradeDiary-256.ico" />
+		<Resource Include="Assets\OzzTradeDigest-256.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
