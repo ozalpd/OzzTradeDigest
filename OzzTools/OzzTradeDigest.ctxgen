@@ -1,12 +1,13 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "..\\OzzTradeDigest.NET",
-  "LastPackedAt": "2026-09-25T22:51:55.6874475+03:00",
+  "LastPackedAt": "2026-09-28T18:02:44.8175372+03:00",
   "RepoUrl": "https://github.com/ozalpd/OzzTradeDigest",
   "License": "MIT",
   "IsOpenSource": true,
   "Description": "Ozz Trade Digest is a desktop trading journal application that designed to help traders record, review, and understand their trading activity across multiple markets. The application supports trade journaling essentials such as stop-loss and take-profit planning, trade images, notes, and performance statistics.",
   "SystemPrompt": "",
+  "Layout": 0,
   "SelectedSuffixes": [],
   "ExcludedFolders": [
     "bin",
@@ -15,8 +16,7 @@
     ".vs",
     "packages",
     "node_modules",
-    "GeneratedCodes",
-    "Dnm"
+    "GeneratedCodes"
   ],
   "TrackedFiles": {
     "OzzTradeDigest\\OzzTradeDigest.csproj": {
@@ -418,6 +418,13 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.i18n\\ActionStrings.Designer.cs": {
+      "RelativePath": "OzzTradeDigest.i18n\\ActionStrings.Designer.cs",
+      "LastWriteTime": "2026-08-31T19:43:24.3543571+03:00",
+      "FileSize": 22882,
+      "ContextNote": "",
+      "PackingMode": 10
+    },
     "OzzTradeDigest.i18n\\ActionStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ActionStrings.resx",
       "LastWriteTime": "2026-08-31T19:43:24.3556822+03:00",
@@ -430,6 +437,13 @@
       "LastWriteTime": "2026-08-31T19:43:24.3561313+03:00",
       "FileSize": 9785,
       "ContextNote": "This file contains localizable resources.",
+      "PackingMode": 10
+    },
+    "OzzTradeDigest.i18n\\CommonStrings.Designer.cs": {
+      "RelativePath": "OzzTradeDigest.i18n\\CommonStrings.Designer.cs",
+      "LastWriteTime": "2026-08-31T19:43:24.3561313+03:00",
+      "FileSize": 7173,
+      "ContextNote": "",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\CommonStrings.resx": {
@@ -446,6 +460,13 @@
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
+    "OzzTradeDigest.i18n\\ErrorStrings.Designer.cs": {
+      "RelativePath": "OzzTradeDigest.i18n\\ErrorStrings.Designer.cs",
+      "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
+      "FileSize": 11797,
+      "ContextNote": "",
+      "PackingMode": 10
+    },
     "OzzTradeDigest.i18n\\ErrorStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ErrorStrings.resx",
       "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
@@ -458,6 +479,13 @@
       "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
       "FileSize": 6740,
       "ContextNote": "This file contains localizable resources.",
+      "PackingMode": 10
+    },
+    "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs": {
+      "RelativePath": "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs",
+      "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
+      "FileSize": 86222,
+      "ContextNote": "",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\LocalizedStrings.resx": {
@@ -474,6 +502,13 @@
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
+    "OzzTradeDigest.i18n\\MessageStrings.Designer.cs": {
+      "RelativePath": "OzzTradeDigest.i18n\\MessageStrings.Designer.cs",
+      "LastWriteTime": "2026-08-31T19:43:24.3583471+03:00",
+      "FileSize": 11799,
+      "ContextNote": "",
+      "PackingMode": 10
+    },
     "OzzTradeDigest.i18n\\MessageStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\MessageStrings.resx",
       "LastWriteTime": "2026-08-31T19:43:24.3583471+03:00",
@@ -486,41 +521,6 @@
       "LastWriteTime": "2026-08-31T19:43:24.3594441+03:00",
       "FileSize": 6835,
       "ContextNote": "This file contains localizable resources.",
-      "PackingMode": 10
-    },
-    "OzzTradeDigest.i18n\\ActionStrings.Designer.cs": {
-      "RelativePath": "OzzTradeDigest.i18n\\ActionStrings.Designer.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3543571+03:00",
-      "FileSize": 22882,
-      "ContextNote": "",
-      "PackingMode": 10
-    },
-    "OzzTradeDigest.i18n\\CommonStrings.Designer.cs": {
-      "RelativePath": "OzzTradeDigest.i18n\\CommonStrings.Designer.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3561313+03:00",
-      "FileSize": 7173,
-      "ContextNote": "",
-      "PackingMode": 10
-    },
-    "OzzTradeDigest.i18n\\ErrorStrings.Designer.cs": {
-      "RelativePath": "OzzTradeDigest.i18n\\ErrorStrings.Designer.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
-      "FileSize": 11797,
-      "ContextNote": "",
-      "PackingMode": 10
-    },
-    "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs": {
-      "RelativePath": "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
-      "FileSize": 86222,
-      "ContextNote": "",
-      "PackingMode": 10
-    },
-    "OzzTradeDigest.i18n\\MessageStrings.Designer.cs": {
-      "RelativePath": "OzzTradeDigest.i18n\\MessageStrings.Designer.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3583471+03:00",
-      "FileSize": 11799,
-      "ContextNote": "",
       "PackingMode": 10
     },
     "OzzTradeDigest.SQLite\\OzzTradeDigest.SQLite.csproj": {
@@ -763,8 +763,8 @@
     },
     "OzzTradeDigest.WPF\\OzzTradeDigest.WPF.csproj": {
       "RelativePath": "OzzTradeDigest.WPF\\OzzTradeDigest.WPF.csproj",
-      "LastWriteTime": "2026-08-31T21:08:25.8242121+03:00",
-      "FileSize": 1386,
+      "LastWriteTime": "2026-09-26T08:44:11.3974351+03:00",
+      "FileSize": 1429,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1113,15 +1113,15 @@
     },
     "OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml": {
       "RelativePath": "OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml",
-      "LastWriteTime": "2026-08-31T21:26:54.876794+03:00",
-      "FileSize": 3492,
+      "LastWriteTime": "2026-09-26T08:46:17.9867293+03:00",
+      "FileSize": 3489,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3198234+03:00",
-      "FileSize": 2881,
+      "LastWriteTime": "2026-09-26T08:38:17.818449+03:00",
+      "FileSize": 2882,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1510,17 +1510,17 @@
       "ContextNote": "",
       "PackingMode": 20
     },
-    "OzzTradeDigest.WPF\\Views\\MainWindow.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\MainWindow.xaml",
-      "LastWriteTime": "2026-08-31T21:38:18.0637703+03:00",
-      "FileSize": 102465,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
     "OzzTradeDigest.WPF\\Views\\AbstractEditView.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\AbstractEditView.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3437763+03:00",
       "FileSize": 1250,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\MainWindow.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\MainWindow.xaml",
+      "LastWriteTime": "2026-08-31T21:38:18.0637703+03:00",
+      "FileSize": 102465,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1538,17 +1538,17 @@
       "ContextNote": "",
       "PackingMode": 20
     },
-    "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:32:08.3938341+03:00",
-      "FileSize": 5286,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
     "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3437763+03:00",
       "FileSize": 2346,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:32:08.3938341+03:00",
+      "FileSize": 5286,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1566,52 +1566,17 @@
       "ContextNote": "",
       "PackingMode": 20
     },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:33:05.4627065+03:00",
-      "FileSize": 3511,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml",
-      "LastWriteTime": "2026-08-31T21:26:12.2737083+03:00",
-      "FileSize": 40480,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:57.1100349+03:00",
-      "FileSize": 6399,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:51.43508+03:00",
-      "FileSize": 5709,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:46.1267453+03:00",
-      "FileSize": 5837,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:39.9813438+03:00",
-      "FileSize": 5580,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
     "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3460676+03:00",
       "FileSize": 1315,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:33:05.4627065+03:00",
+      "FileSize": 3511,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1622,10 +1587,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml",
+      "LastWriteTime": "2026-08-31T21:26:12.2737083+03:00",
+      "FileSize": 40480,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3474199+03:00",
       "FileSize": 4646,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:57.1100349+03:00",
+      "FileSize": 6399,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1636,6 +1615,13 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:51.43508+03:00",
+      "FileSize": 5709,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3477631+03:00",
@@ -1643,10 +1629,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:46.1267453+03:00",
+      "FileSize": 5837,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3489196+03:00",
       "FileSize": 4156,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:39.9813438+03:00",
+      "FileSize": 5580,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1664,87 +1664,17 @@
       "ContextNote": "",
       "PackingMode": 20
     },
-    "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:27.7275095+03:00",
-      "FileSize": 9527,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:21.3434745+03:00",
-      "FileSize": 5133,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:15.2917678+03:00",
-      "FileSize": 9510,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:08.9556245+03:00",
-      "FileSize": 5141,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:25:01.3540037+03:00",
-      "FileSize": 9514,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:54.0685055+03:00",
-      "FileSize": 12829,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:44.6394606+03:00",
-      "FileSize": 27920,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:30.1905836+03:00",
-      "FileSize": 13597,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:21.7341208+03:00",
-      "FileSize": 5658,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:12.1229488+03:00",
-      "FileSize": 2683,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
-    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageEditView.xaml": {
-      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageEditView.xaml",
-      "LastWriteTime": "2026-08-31T21:24:04.1519454+03:00",
-      "FileSize": 4104,
-      "ContextNote": "",
-      "PackingMode": 20
-    },
     "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3499807+03:00",
       "FileSize": 3610,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:27.7275095+03:00",
+      "FileSize": 9527,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1755,10 +1685,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:21.3434745+03:00",
+      "FileSize": 5133,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3499807+03:00",
       "FileSize": 3655,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:15.2917678+03:00",
+      "FileSize": 9510,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1769,6 +1713,13 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:08.9556245+03:00",
+      "FileSize": 5141,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3512042+03:00",
@@ -1776,10 +1727,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:25:01.3540037+03:00",
+      "FileSize": 9514,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3519448+03:00",
       "FileSize": 3940,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:54.0685055+03:00",
+      "FileSize": 12829,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1797,10 +1762,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:44.6394606+03:00",
+      "FileSize": 27920,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3529776+03:00",
       "FileSize": 1669,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:30.1905836+03:00",
+      "FileSize": 13597,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -1811,6 +1790,13 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:21.7341208+03:00",
+      "FileSize": 5658,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3529776+03:00",
@@ -1818,10 +1804,24 @@
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:12.1229488+03:00",
+      "FileSize": 2683,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml.cs",
       "LastWriteTime": "2026-08-31T19:43:24.3543571+03:00",
       "FileSize": 2018,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageEditView.xaml": {
+      "RelativePath": "OzzTradeDigest.WPF\\Views\\Trades\\TradeImageEditView.xaml",
+      "LastWriteTime": "2026-08-31T21:24:04.1519454+03:00",
+      "FileSize": 4104,
       "ContextNote": "",
       "PackingMode": 20
     },
