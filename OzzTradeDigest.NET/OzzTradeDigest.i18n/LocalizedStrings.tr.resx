@@ -73,6 +73,9 @@
     <data name="AddExchange" xml:space="preserve">
         <value>Borsa Ekle</value>
     </data>
+    <data name="AddExitOrder" xml:space="preserve">
+        <value>Çıkış Emri Ekle</value>
+    </data>
     <data name="AddHoliday" xml:space="preserve">
         <value>Tatil Ekle</value>
     </data>
@@ -85,20 +88,17 @@
     <data name="AddNewExchange" xml:space="preserve">
         <value>Yeni Borsa Ekle</value>
     </data>
+    <data name="AddNewExitOrder" xml:space="preserve">
+        <value>Yeni Çıkış Emri Ekle</value>
+    </data>
     <data name="AddNewHoliday" xml:space="preserve">
         <value>Yeni Tatil Ekle</value>
     </data>
     <data name="AddNewSession" xml:space="preserve">
         <value>Yeni Seans Ekle</value>
     </data>
-    <data name="AddNewStopLossOrder" xml:space="preserve">
-        <value>Yeni Zarar Kes Emri Ekle</value>
-    </data>
     <data name="AddNewSymbol" xml:space="preserve">
         <value>Yeni Sembol Ekle</value>
-    </data>
-    <data name="AddNewTakeProfitOrder" xml:space="preserve">
-        <value>Yeni Kar Al Emri Ekle</value>
     </data>
     <data name="AddNewTrade" xml:space="preserve">
         <value>Yeni İşlem Ekle</value>
@@ -118,20 +118,17 @@
     <data name="AddRemoveExchange" xml:space="preserve">
         <value>Borsa Ekle/Çıkart</value>
     </data>
+    <data name="AddRemoveExitOrder" xml:space="preserve">
+        <value>Çıkış Emri Ekle/Çıkar</value>
+    </data>
     <data name="AddRemoveHoliday" xml:space="preserve">
         <value>Tatil Ekle/Çıkar</value>
     </data>
     <data name="AddRemoveSession" xml:space="preserve">
         <value>Seans Ekle/Çıkar</value>
     </data>
-    <data name="AddRemoveStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emri Ekle/Çıkar</value>
-    </data>
     <data name="AddRemoveSymbol" xml:space="preserve">
         <value>Sembol Ekle/Çıkart</value>
-    </data>
-    <data name="AddRemoveTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emri Ekle/Çıkar</value>
     </data>
     <data name="AddRemoveTrade" xml:space="preserve">
         <value>İşlem Ekle/Çıkart</value>
@@ -145,14 +142,8 @@
     <data name="AddSession" xml:space="preserve">
         <value>Seans Ekle</value>
     </data>
-    <data name="AddStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emri Ekle</value>
-    </data>
     <data name="AddSymbol" xml:space="preserve">
         <value>Sembol Ekle</value>
-    </data>
-    <data name="AddTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emri Ekle</value>
     </data>
     <data name="AddTrade" xml:space="preserve">
         <value>İşlem Ekle</value>
@@ -165,6 +156,9 @@
     </data>
     <data name="AfterHours" xml:space="preserve">
         <value>Seans Sonrası</value>
+    </data>
+    <data name="Algorithm" xml:space="preserve">
+        <value>Algoritma</value>
     </data>
     <data name="All" xml:space="preserve">
         <value>Tümü</value>
@@ -217,20 +211,17 @@
     <data name="CreateExchange" xml:space="preserve">
         <value>Borsa Oluştur</value>
     </data>
+    <data name="CreateExitOrder" xml:space="preserve">
+        <value>Çıkış Emri Oluştur</value>
+    </data>
     <data name="CreateHoliday" xml:space="preserve">
         <value>Tatil Oluştur</value>
     </data>
     <data name="CreateSession" xml:space="preserve">
         <value>Seans Oluştur</value>
     </data>
-    <data name="CreateStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emri Oluştur</value>
-    </data>
     <data name="CreateSymbol" xml:space="preserve">
         <value>Sembol Oluştur</value>
-    </data>
-    <data name="CreateTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emri Oluştur</value>
     </data>
     <data name="CreateTrade" xml:space="preserve">
         <value>İşlem Oluştur</value>
@@ -301,20 +292,17 @@
     <data name="DeleteExchange" xml:space="preserve">
         <value>Borsayı Sil</value>
     </data>
+    <data name="DeleteExitOrder" xml:space="preserve">
+        <value>Çıkış Emrini Sil</value>
+    </data>
     <data name="DeleteHoliday" xml:space="preserve">
         <value>Tatili Sil</value>
     </data>
     <data name="DeleteSession" xml:space="preserve">
         <value>Seansı Sil</value>
     </data>
-    <data name="DeleteStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emrini Sil</value>
-    </data>
     <data name="DeleteSymbol" xml:space="preserve">
         <value>Sembolü Sil</value>
-    </data>
-    <data name="DeleteTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emrini Sil</value>
     </data>
     <data name="DeleteTrade" xml:space="preserve">
         <value>İşlemi Sil</value>
@@ -340,20 +328,17 @@
     <data name="EditExchange" xml:space="preserve">
         <value>Borsayı Düzenle</value>
     </data>
+    <data name="EditExitOrder" xml:space="preserve">
+        <value>Çıkış Emrini Düzenle</value>
+    </data>
     <data name="EditHoliday" xml:space="preserve">
         <value>Tatili Düzenle</value>
     </data>
     <data name="EditSession" xml:space="preserve">
         <value>Seansı Düzenle</value>
     </data>
-    <data name="EditStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emrini Düzenle</value>
-    </data>
     <data name="EditSymbol" xml:space="preserve">
         <value>Sembolü Düzenle</value>
-    </data>
-    <data name="EditTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emrini Düzenle</value>
     </data>
     <data name="EditTrade" xml:space="preserve">
         <value>İşlemi Düzenle</value>
@@ -420,6 +405,18 @@
     </data>
     <data name="Exit" xml:space="preserve">
         <value>Kapat</value>
+    </data>
+    <data name="ExitMode" xml:space="preserve">
+        <value>Çıkış Şekli</value>
+    </data>
+    <data name="ExitOrder" xml:space="preserve">
+        <value>Çıkış Emri</value>
+    </data>
+    <data name="ExitOrders" xml:space="preserve">
+        <value>Çıkış Emirleri</value>
+    </data>
+    <data name="ExitOrdersList" xml:space="preserve">
+        <value>Çıkış Emir Listesi</value>
     </data>
     <data name="ExitOrderType" xml:space="preserve">
         <value>Çıkış Emir Tipi</value>
@@ -516,6 +513,12 @@
     </data>
     <data name="MakerFeeRate" xml:space="preserve">
         <value>Maker Ücret Oranı</value>
+    </data>
+    <data name="ManualExit" xml:space="preserve">
+        <value>Manuel Çıkış</value>
+    </data>
+    <data name="MarginCall" xml:space="preserve">
+        <value>Marjin Çağrısı</value>
     </data>
     <data name="Market" xml:space="preserve">
         <value>Market</value>
@@ -664,20 +667,17 @@
     <data name="RemoveExchange" xml:space="preserve">
         <value>Borsayı Çıkart</value>
     </data>
+    <data name="RemoveExitOrder" xml:space="preserve">
+        <value>Çıkış Emrini Çıkar</value>
+    </data>
     <data name="RemoveHoliday" xml:space="preserve">
         <value>Tatil Çıkar</value>
     </data>
     <data name="RemoveSession" xml:space="preserve">
         <value>Seans Çıkar</value>
     </data>
-    <data name="RemoveStopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emrini Çıkar</value>
-    </data>
     <data name="RemoveSymbol" xml:space="preserve">
         <value>Sembolü Çıkart</value>
-    </data>
-    <data name="RemoveTakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emrini Çıkar</value>
     </data>
     <data name="RemoveTrade" xml:space="preserve">
         <value>İşlemi Çıkart</value>
@@ -730,14 +730,11 @@
     <data name="StopLimit" xml:space="preserve">
         <value>Stop Limit</value>
     </data>
-    <data name="StopLossOrder" xml:space="preserve">
-        <value>Zarar Kes Emri</value>
+    <data name="StopLoss" xml:space="preserve">
+        <value>Zarar Kes</value>
     </data>
     <data name="StopLossOrders" xml:space="preserve">
         <value>Zarar Kes Emirleri</value>
-    </data>
-    <data name="StopLossOrdersList" xml:space="preserve">
-        <value>Zarar Kes Emir Listesi</value>
     </data>
     <data name="StopMarket" xml:space="preserve">
         <value>Stop Market</value>
@@ -766,14 +763,11 @@
     <data name="Tags" xml:space="preserve">
         <value>Taglar</value>
     </data>
-    <data name="TakeProfitOrder" xml:space="preserve">
-        <value>Kar Al Emri</value>
+    <data name="TakeProfit" xml:space="preserve">
+        <value>Kar Al</value>
     </data>
     <data name="TakeProfitOrders" xml:space="preserve">
         <value>Kar Al Emirleri</value>
-    </data>
-    <data name="TakeProfitOrdersList" xml:space="preserve">
-        <value>Kar Al Emir Listesi</value>
     </data>
     <data name="TakerFeeRate" xml:space="preserve">
         <value>Taker Ücret Oranı</value>
@@ -798,6 +792,9 @@
     </data>
     <data name="TickerFull" xml:space="preserve">
         <value>Uzun İşlem Kodu</value>
+    </data>
+    <data name="TimedExit" xml:space="preserve">
+        <value>Süreli Çıkış</value>
     </data>
     <data name="Timezone" xml:space="preserve">
         <value>Saat Dilimi</value>

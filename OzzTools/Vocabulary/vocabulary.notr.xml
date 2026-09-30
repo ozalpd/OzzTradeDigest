@@ -53,6 +53,10 @@
     <Translation>Add Exchange</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddExitOrder</Name>
+    <Translation>Add Exit Order</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddHoliday</Name>
     <Translation>Add Holiday</Translation>
   </Vocab>
@@ -91,6 +95,10 @@
   <Vocab>
     <Name>AddNewExchange</Name>
     <Translation>Add New Exchange</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>AddNewExitOrder</Name>
+    <Translation>Add New Exit Order</Translation>
   </Vocab>
   <Vocab>
     <Name>AddNewHoliday</Name>
@@ -189,6 +197,10 @@
     <Translation>Add Remove Exchange</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddRemoveExitOrder</Name>
+    <Translation>Add Remove Exit Order</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddRemoveHoliday</Name>
     <Translation>Add Remove Holiday</Translation>
   </Vocab>
@@ -279,6 +291,10 @@
   <Vocab>
     <Name>AfterHours</Name>
     <Translation>After Hours</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Algorithm</Name>
+    <Translation>Algorithm</Translation>
   </Vocab>
   <Vocab>
     <Name>All</Name>
@@ -557,6 +573,10 @@
     <Translation>Create Exchange</Translation>
   </Vocab>
   <Vocab>
+    <Name>CreateExitOrder</Name>
+    <Translation>Create Exit Order</Translation>
+  </Vocab>
+  <Vocab>
     <Name>CreateHoliday</Name>
     <Translation>Create Holiday</Translation>
   </Vocab>
@@ -793,6 +813,10 @@
     <Translation>Delete Exchange</Translation>
   </Vocab>
   <Vocab>
+    <Name>DeleteExitOrder</Name>
+    <Translation>Delete Exit Order</Translation>
+  </Vocab>
+  <Vocab>
     <Name>DeleteHoliday</Name>
     <Translation>Delete Holiday</Translation>
   </Vocab>
@@ -943,6 +967,10 @@
   <Vocab>
     <Name>EditExchange</Name>
     <Translation>Edit Exchange</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>EditExitOrder</Name>
+    <Translation>Edit Exit Order</Translation>
   </Vocab>
   <Vocab>
     <Name>EditHoliday</Name>
@@ -1121,8 +1149,28 @@
     <Translation>Exit</Translation>
   </Vocab>
   <Vocab>
+    <Name>ExitMode</Name>
+    <Translation>Exit Mode</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrder</Name>
+    <Translation>Exit Order</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrders</Name>
+    <Translation>Exit Orders</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrdersList</Name>
+    <Translation>Exit Orders List</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ExitOrderType</Name>
     <Translation>Exit Order Type</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitPurpose</Name>
+    <Translation>Exit Purpose</Translation>
   </Vocab>
   <Vocab>
     <Name>ExitTime</Name>
@@ -1419,6 +1467,14 @@
   <Vocab>
     <Name>ManageData</Name>
     <Translation>Manage Data</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ManualExit</Name>
+    <Translation>Manual Exit</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>MarginCall</Name>
+    <Translation>Margin Call</Translation>
   </Vocab>
   <Vocab>
     <Name>Market</Name>
@@ -1981,6 +2037,10 @@
     <Translation>Remove Exchange</Translation>
   </Vocab>
   <Vocab>
+    <Name>RemoveExitOrder</Name>
+    <Translation>Remove Exit Order</Translation>
+  </Vocab>
+  <Vocab>
     <Name>RemoveHoliday</Name>
     <Translation>Remove Holiday</Translation>
   </Vocab>
@@ -2415,6 +2475,10 @@
   <Vocab>
     <Name>TickerFull</Name>
     <Translation>Ticker Full</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TimedExit</Name>
+    <Translation>Timed Exit</Translation>
   </Vocab>
   <Vocab>
     <Name>Timezone</Name>

@@ -3,7 +3,7 @@ using TD.i18n;
 
 namespace TD.Models
 {
-    public partial class TakeProfitOrder : IValidatableObject
+    public partial class ExitOrder : IValidatableObject
     {
         /// <summary>
         /// Gets or sets the filled value for the trade, representing the total value of the filled quantity at the

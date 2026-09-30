@@ -73,6 +73,9 @@
     <data name="AddExchange" xml:space="preserve">
         <value>Add Exchange</value>
     </data>
+    <data name="AddExitOrder" xml:space="preserve">
+        <value>Add Exit Order</value>
+    </data>
     <data name="AddHoliday" xml:space="preserve">
         <value>Add Holiday</value>
     </data>
@@ -85,20 +88,17 @@
     <data name="AddNewExchange" xml:space="preserve">
         <value>Add New Exchange</value>
     </data>
+    <data name="AddNewExitOrder" xml:space="preserve">
+        <value>Add New Exit Order</value>
+    </data>
     <data name="AddNewHoliday" xml:space="preserve">
         <value>Add New Holiday</value>
     </data>
     <data name="AddNewSession" xml:space="preserve">
         <value>Add New Session</value>
     </data>
-    <data name="AddNewStopLossOrder" xml:space="preserve">
-        <value>Add New Stop Loss Order</value>
-    </data>
     <data name="AddNewSymbol" xml:space="preserve">
         <value>Add New Symbol</value>
-    </data>
-    <data name="AddNewTakeProfitOrder" xml:space="preserve">
-        <value>Add New Take Profit Order</value>
     </data>
     <data name="AddNewTrade" xml:space="preserve">
         <value>Add New Trade</value>
@@ -118,20 +118,17 @@
     <data name="AddRemoveExchange" xml:space="preserve">
         <value>Add Remove Exchange</value>
     </data>
+    <data name="AddRemoveExitOrder" xml:space="preserve">
+        <value>Add Remove Exit Order</value>
+    </data>
     <data name="AddRemoveHoliday" xml:space="preserve">
         <value>Add Remove Holiday</value>
     </data>
     <data name="AddRemoveSession" xml:space="preserve">
         <value>Add Remove Session</value>
     </data>
-    <data name="AddRemoveStopLossOrder" xml:space="preserve">
-        <value>Add Remove Stop Loss Order</value>
-    </data>
     <data name="AddRemoveSymbol" xml:space="preserve">
         <value>Add Remove Symbol</value>
-    </data>
-    <data name="AddRemoveTakeProfitOrder" xml:space="preserve">
-        <value>Add Remove Take Profit Order</value>
     </data>
     <data name="AddRemoveTrade" xml:space="preserve">
         <value>Add Remove Trade</value>
@@ -145,14 +142,8 @@
     <data name="AddSession" xml:space="preserve">
         <value>Add Session</value>
     </data>
-    <data name="AddStopLossOrder" xml:space="preserve">
-        <value>Add Stop Loss Order</value>
-    </data>
     <data name="AddSymbol" xml:space="preserve">
         <value>Add Symbol</value>
-    </data>
-    <data name="AddTakeProfitOrder" xml:space="preserve">
-        <value>Add Take Profit Order</value>
     </data>
     <data name="AddTrade" xml:space="preserve">
         <value>Add Trade</value>
@@ -165,6 +156,9 @@
     </data>
     <data name="AfterHours" xml:space="preserve">
         <value>After Hours</value>
+    </data>
+    <data name="Algorithm" xml:space="preserve">
+        <value>Algorithm</value>
     </data>
     <data name="All" xml:space="preserve">
         <value>All</value>
@@ -217,20 +211,17 @@
     <data name="CreateExchange" xml:space="preserve">
         <value>Create Exchange</value>
     </data>
+    <data name="CreateExitOrder" xml:space="preserve">
+        <value>Create Exit Order</value>
+    </data>
     <data name="CreateHoliday" xml:space="preserve">
         <value>Create Holiday</value>
     </data>
     <data name="CreateSession" xml:space="preserve">
         <value>Create Session</value>
     </data>
-    <data name="CreateStopLossOrder" xml:space="preserve">
-        <value>Create Stop Loss Order</value>
-    </data>
     <data name="CreateSymbol" xml:space="preserve">
         <value>Create Symbol</value>
-    </data>
-    <data name="CreateTakeProfitOrder" xml:space="preserve">
-        <value>Create Take Profit Order</value>
     </data>
     <data name="CreateTrade" xml:space="preserve">
         <value>Create Trade</value>
@@ -301,20 +292,17 @@
     <data name="DeleteExchange" xml:space="preserve">
         <value>Delete Exchange</value>
     </data>
+    <data name="DeleteExitOrder" xml:space="preserve">
+        <value>Delete Exit Order</value>
+    </data>
     <data name="DeleteHoliday" xml:space="preserve">
         <value>Delete Holiday</value>
     </data>
     <data name="DeleteSession" xml:space="preserve">
         <value>Delete Session</value>
     </data>
-    <data name="DeleteStopLossOrder" xml:space="preserve">
-        <value>Delete Stop Loss Order</value>
-    </data>
     <data name="DeleteSymbol" xml:space="preserve">
         <value>Delete Symbol</value>
-    </data>
-    <data name="DeleteTakeProfitOrder" xml:space="preserve">
-        <value>Delete Take Profit Order</value>
     </data>
     <data name="DeleteTrade" xml:space="preserve">
         <value>Delete Trade</value>
@@ -340,20 +328,17 @@
     <data name="EditExchange" xml:space="preserve">
         <value>Edit Exchange</value>
     </data>
+    <data name="EditExitOrder" xml:space="preserve">
+        <value>Edit Exit Order</value>
+    </data>
     <data name="EditHoliday" xml:space="preserve">
         <value>Edit Holiday</value>
     </data>
     <data name="EditSession" xml:space="preserve">
         <value>Edit Session</value>
     </data>
-    <data name="EditStopLossOrder" xml:space="preserve">
-        <value>Edit Stop Loss Order</value>
-    </data>
     <data name="EditSymbol" xml:space="preserve">
         <value>Edit Symbol</value>
-    </data>
-    <data name="EditTakeProfitOrder" xml:space="preserve">
-        <value>Edit Take Profit Order</value>
     </data>
     <data name="EditTrade" xml:space="preserve">
         <value>Edit Trade</value>
@@ -420,6 +405,18 @@
     </data>
     <data name="Exit" xml:space="preserve">
         <value>Exit</value>
+    </data>
+    <data name="ExitMode" xml:space="preserve">
+        <value>Exit Mode</value>
+    </data>
+    <data name="ExitOrder" xml:space="preserve">
+        <value>Exit Order</value>
+    </data>
+    <data name="ExitOrders" xml:space="preserve">
+        <value>Exit Orders</value>
+    </data>
+    <data name="ExitOrdersList" xml:space="preserve">
+        <value>Exit Orders List</value>
     </data>
     <data name="ExitOrderType" xml:space="preserve">
         <value>Exit Order Type</value>
@@ -516,6 +513,12 @@
     </data>
     <data name="MakerFeeRate" xml:space="preserve">
         <value>Maker Fee Rate</value>
+    </data>
+    <data name="ManualExit" xml:space="preserve">
+        <value>Manual Exit</value>
+    </data>
+    <data name="MarginCall" xml:space="preserve">
+        <value>Margin Call</value>
     </data>
     <data name="Market" xml:space="preserve">
         <value>Market</value>
@@ -664,20 +667,17 @@
     <data name="RemoveExchange" xml:space="preserve">
         <value>Remove Exchange</value>
     </data>
+    <data name="RemoveExitOrder" xml:space="preserve">
+        <value>Remove Exit Order</value>
+    </data>
     <data name="RemoveHoliday" xml:space="preserve">
         <value>Remove Holiday</value>
     </data>
     <data name="RemoveSession" xml:space="preserve">
         <value>Remove Session</value>
     </data>
-    <data name="RemoveStopLossOrder" xml:space="preserve">
-        <value>Remove Stop Loss Order</value>
-    </data>
     <data name="RemoveSymbol" xml:space="preserve">
         <value>Remove Symbol</value>
-    </data>
-    <data name="RemoveTakeProfitOrder" xml:space="preserve">
-        <value>Remove Take Profit Order</value>
     </data>
     <data name="RemoveTrade" xml:space="preserve">
         <value>Remove Trade</value>
@@ -730,14 +730,11 @@
     <data name="StopLimit" xml:space="preserve">
         <value>Stop Limit</value>
     </data>
-    <data name="StopLossOrder" xml:space="preserve">
-        <value>Stop Loss Order</value>
+    <data name="StopLoss" xml:space="preserve">
+        <value>Stop Loss</value>
     </data>
     <data name="StopLossOrders" xml:space="preserve">
         <value>Stop Loss Orders</value>
-    </data>
-    <data name="StopLossOrdersList" xml:space="preserve">
-        <value>Stop Loss Orders List</value>
     </data>
     <data name="StopMarket" xml:space="preserve">
         <value>Stop Market</value>
@@ -766,14 +763,11 @@
     <data name="Tags" xml:space="preserve">
         <value>Tags</value>
     </data>
-    <data name="TakeProfitOrder" xml:space="preserve">
-        <value>Take Profit Order</value>
+    <data name="TakeProfit" xml:space="preserve">
+        <value>Take Profit</value>
     </data>
     <data name="TakeProfitOrders" xml:space="preserve">
         <value>Take Profit Orders</value>
-    </data>
-    <data name="TakeProfitOrdersList" xml:space="preserve">
-        <value>Take Profit Orders List</value>
     </data>
     <data name="TakerFeeRate" xml:space="preserve">
         <value>Taker Fee Rate</value>
@@ -798,6 +792,9 @@
     </data>
     <data name="TickerFull" xml:space="preserve">
         <value>Ticker Full</value>
+    </data>
+    <data name="TimedExit" xml:space="preserve">
+        <value>Timed Exit</value>
     </data>
     <data name="Timezone" xml:space="preserve">
         <value>Timezone</value>

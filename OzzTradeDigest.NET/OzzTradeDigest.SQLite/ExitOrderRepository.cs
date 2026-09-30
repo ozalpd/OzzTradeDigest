@@ -13,11 +13,11 @@ using TD.SQLite.Extensions;
 namespace TD.SQLite
 {
     /// <summary>
-    /// SQLite-based repository for TakeProfitOrder CRUD operations.
+    /// SQLite-based repository for ExitOrder CRUD operations.
     /// </summary>
-    public partial class TakeProfitOrderRepository : AbstractDatabaseRepository<TakeProfitOrder>, ITakeProfitOrderRepository
+    public partial class ExitOrderRepository : AbstractDatabaseRepository<ExitOrder>, IExitOrderRepository
     {
-        public TakeProfitOrderRepository(string databasePath) : base(databasePath, "TakeProfitOrders")
+        public ExitOrderRepository(string databasePath) : base(databasePath, "ExitOrders")
         {
             _selectStatement = $"SELECT {string.Join(", ", ColumnNames)} FROM {_tableName}";
             _databasePath = databasePath;
@@ -32,14 +32,14 @@ namespace TD.SQLite
         private void InitializeDatabase()
         {
             using var connection = GetOpenConnection();
-            ExecuteScript(connection, "TakeProfitOrder.sql");
+            ExecuteScript(connection, "ExitOrder.sql");
         }
 
         partial void OnInitialized();
 
-        public async Task<IReadOnlyList<TakeProfitOrder>> GetAllAsync()
+        public async Task<IReadOnlyList<ExitOrder>> GetAllAsync()
         {
-            var result = new List<TakeProfitOrder>();
+            var result = new List<ExitOrder>();
 
             await using var connection = await GetOpenConnectionAsync();
             await using var command = connection.CreateCommand();
@@ -49,8 +49,8 @@ namespace TD.SQLite
             await using var reader = await command.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
-                var takeProfitOrder = MapTakeProfitOrder(reader);
-                result.Add(takeProfitOrder);
+                var exitOrder = MapExitOrder(reader);
+                result.Add(exitOrder);
             }
 
             return result;
@@ -70,9 +70,9 @@ namespace TD.SQLite
         }
 
 
-        public async Task<IReadOnlyList<TakeProfitOrder>> GetByTradeIdAsync(int tradeId)
+        public async Task<IReadOnlyList<ExitOrder>> GetByTradeIdAsync(int tradeId)
         {
-            var result = new List<TakeProfitOrder>();
+            var result = new List<ExitOrder>();
 
             await using var connection = await GetOpenConnectionAsync();
             await using var command = connection.CreateCommand();
@@ -84,15 +84,15 @@ namespace TD.SQLite
             await using var reader = await command.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
-                var takeProfitOrder = MapTakeProfitOrder(reader);
-                result.Add(takeProfitOrder);
+                var exitOrder = MapExitOrder(reader);
+                result.Add(exitOrder);
             }
 
             return result;
         }
 
 
-        public async Task<TakeProfitOrder?> GetByIdAsync(int? id)
+        public async Task<ExitOrder?> GetByIdAsync(int? id)
         {
             if (!id.HasValue || id.Value < 1)
                 return null;
@@ -107,17 +107,17 @@ namespace TD.SQLite
             if (!await reader.ReadAsync())
                 return null;
 
-            var takeProfitOrder = MapTakeProfitOrder(reader);
+            var exitOrder = MapExitOrder(reader);
 
-            OnLoaded(takeProfitOrder);
-            return takeProfitOrder;
+            OnLoaded(exitOrder);
+            return exitOrder;
         }
-        partial void OnLoaded(TakeProfitOrder takeProfitOrder);
+        partial void OnLoaded(ExitOrder exitOrder);
 
-        public async Task<int> CreateAsync(TakeProfitOrder takeProfitOrder)
+        public async Task<int> CreateAsync(ExitOrder exitOrder)
         {
-            ArgumentNullException.ThrowIfNull(takeProfitOrder);
-            ValidateOrThrow(takeProfitOrder);
+            ArgumentNullException.ThrowIfNull(exitOrder);
+            ValidateOrThrow(exitOrder);
 
             await using var connection = await GetOpenConnectionAsync();
 
@@ -127,41 +127,41 @@ namespace TD.SQLite
                     @orderValue, @filledValue, @notes, @cancellationTime, @filledTime, @updatedAt);
             SELECT last_insert_rowid();";
 
-            command.AddParameter("@tradeId", takeProfitOrder.TradeId);
-            command.AddParameter("@orderType", (int)takeProfitOrder.OrderType);
-            command.AddDecimalToTextParameter("@orderPrice", takeProfitOrder.OrderPrice);
-            command.AddDecimalToTextParameter("@filledPrice", takeProfitOrder.FilledPrice);
-            command.AddDecimalToTextParameter("@orderQuantity", takeProfitOrder.OrderQuantity);
-            command.AddDecimalToTextParameter("@filledQuantity", takeProfitOrder.FilledQuantity);
+            command.AddParameter("@tradeId", exitOrder.TradeId);
+            command.AddParameter("@orderType", (int)exitOrder.OrderType);
+            command.AddDecimalToTextParameter("@orderPrice", exitOrder.OrderPrice);
+            command.AddDecimalToTextParameter("@filledPrice", exitOrder.FilledPrice);
+            command.AddDecimalToTextParameter("@orderQuantity", exitOrder.OrderQuantity);
+            command.AddDecimalToTextParameter("@filledQuantity", exitOrder.FilledQuantity);
             command.AddDecimalToIntegerParameter("@orderValue",
-                                                takeProfitOrder.OrderValue,
+                                                exitOrder.OrderValue,
                                                 DecimalToIntegerScale.OrderValue);
             command.AddDecimalToIntegerParameter("@filledValue",
-                                                takeProfitOrder.FilledValue,
+                                                exitOrder.FilledValue,
                                                 DecimalToIntegerScale.FilledValue);
-            command.AddNullableParameter("@notes", takeProfitOrder.Notes);
-            command.AddDateTimeToTextParameter("@cancellationTime", takeProfitOrder.CancellationTime);
-            command.AddDateTimeToTextParameter("@filledTime", takeProfitOrder.FilledTime);
+            command.AddNullableParameter("@notes", exitOrder.Notes);
+            command.AddDateTimeToTextParameter("@cancellationTime", exitOrder.CancellationTime);
+            command.AddDateTimeToTextParameter("@filledTime", exitOrder.FilledTime);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var id = Convert.ToInt32((long)(await command.ExecuteScalarAsync() ?? 0));
 
             await _metadataRepository.SaveLastUpdateUtcAsync(connection);
             ClearRecordCountCache();
-            takeProfitOrder.Id = id;
-            OnCreated(takeProfitOrder);
+            exitOrder.Id = id;
+            OnCreated(exitOrder);
 
             return id;
         }
-        partial void OnCreated(TakeProfitOrder takeProfitOrder);
+        partial void OnCreated(ExitOrder exitOrder);
 
         /// <summary>
-        /// Determines whether a takeProfitOrder can be safely deleted based on the absence of related records.
+        /// Determines whether a exitOrder can be safely deleted based on the absence of related records.
         /// </summary>
-        /// <remarks>A takeProfitOrder can be deleted only if there are no associated records. Use this method
-        /// before attempting to delete a takeProfitOrder to avoid violating referential integrity.</remarks>
-        /// <param name="id">The identifier of the takeProfitOrder record to check for deletability.</param>
-        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the takeProfitOrder
+        /// <remarks>A exitOrder can be deleted only if there are no associated records. Use this method
+        /// before attempting to delete a exitOrder to avoid violating referential integrity.</remarks>
+        /// <param name="id">The identifier of the exitOrder record to check for deletability.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the exitOrder
         /// can be deleted; otherwise, <see langword="false"/>.</returns>
         public Task<bool> CanDeleteAsync(int id)
         {
@@ -188,24 +188,24 @@ namespace TD.SQLite
             return affectedRows > 0;
         }
 
-        public async Task<bool> UpdateAsync(TakeProfitOrder takeProfitOrder)
+        public async Task<bool> UpdateAsync(ExitOrder exitOrder)
         {
-            ArgumentNullException.ThrowIfNull(takeProfitOrder);
-            ValidateOrThrow(takeProfitOrder);
+            ArgumentNullException.ThrowIfNull(exitOrder);
+            ValidateOrThrow(exitOrder);
 
             await using var connection = await GetOpenConnectionAsync();
-            var existingTakeProfitOrder = await GetByIdAsync(takeProfitOrder.Id);
-            bool noChanges = existingTakeProfitOrder != null
-                          && existingTakeProfitOrder.OrderType == takeProfitOrder.OrderType
-                          && existingTakeProfitOrder.OrderPrice == takeProfitOrder.OrderPrice
-                          && existingTakeProfitOrder.FilledPrice == takeProfitOrder.FilledPrice
-                          && existingTakeProfitOrder.OrderQuantity == takeProfitOrder.OrderQuantity
-                          && existingTakeProfitOrder.FilledQuantity == takeProfitOrder.FilledQuantity
-                          && existingTakeProfitOrder.OrderValue == takeProfitOrder.OrderValue
-                          && existingTakeProfitOrder.FilledValue == takeProfitOrder.FilledValue
-                          && existingTakeProfitOrder.Notes == takeProfitOrder.Notes
-                          && existingTakeProfitOrder.FilledTime == takeProfitOrder.FilledTime
-                          && existingTakeProfitOrder.UpdatedAt == takeProfitOrder.UpdatedAt;
+            var existingExitOrder = await GetByIdAsync(exitOrder.Id);
+            bool noChanges = existingExitOrder != null
+                          && existingExitOrder.OrderType == exitOrder.OrderType
+                          && existingExitOrder.OrderPrice == exitOrder.OrderPrice
+                          && existingExitOrder.FilledPrice == exitOrder.FilledPrice
+                          && existingExitOrder.OrderQuantity == exitOrder.OrderQuantity
+                          && existingExitOrder.FilledQuantity == exitOrder.FilledQuantity
+                          && existingExitOrder.OrderValue == exitOrder.OrderValue
+                          && existingExitOrder.FilledValue == exitOrder.FilledValue
+                          && existingExitOrder.Notes == exitOrder.Notes
+                          && existingExitOrder.FilledTime == exitOrder.FilledTime
+                          && existingExitOrder.UpdatedAt == exitOrder.UpdatedAt;
 
             if (noChanges)
                 return false;
@@ -226,33 +226,33 @@ namespace TD.SQLite
                 UpdatedAt = @updatedAt
             WHERE Id = @id";
 
-            command.AddParameter("@id", takeProfitOrder.Id);
-            command.AddParameter("@orderType", (int)takeProfitOrder.OrderType);
-            command.AddDecimalToTextParameter("@orderPrice", takeProfitOrder.OrderPrice);
-            command.AddDecimalToTextParameter("@filledPrice", takeProfitOrder.FilledPrice);
-            command.AddDecimalToTextParameter("@orderQuantity", takeProfitOrder.OrderQuantity);
-            command.AddDecimalToTextParameter("@filledQuantity", takeProfitOrder.FilledQuantity);
+            command.AddParameter("@id", exitOrder.Id);
+            command.AddParameter("@orderType", (int)exitOrder.OrderType);
+            command.AddDecimalToTextParameter("@orderPrice", exitOrder.OrderPrice);
+            command.AddDecimalToTextParameter("@filledPrice", exitOrder.FilledPrice);
+            command.AddDecimalToTextParameter("@orderQuantity", exitOrder.OrderQuantity);
+            command.AddDecimalToTextParameter("@filledQuantity", exitOrder.FilledQuantity);
             command.AddDecimalToIntegerParameter("@orderValue",
-                                                takeProfitOrder.OrderValue,
+                                                exitOrder.OrderValue,
                                                 DecimalToIntegerScale.OrderValue);
             command.AddDecimalToIntegerParameter("@filledValue",
-                                                takeProfitOrder.FilledValue,
+                                                exitOrder.FilledValue,
                                                 DecimalToIntegerScale.FilledValue);
-            command.AddNullableParameter("@notes", takeProfitOrder.Notes);
-            command.AddDateTimeToTextParameter("@filledTime", takeProfitOrder.FilledTime);
+            command.AddNullableParameter("@notes", exitOrder.Notes);
+            command.AddDateTimeToTextParameter("@filledTime", exitOrder.FilledTime);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var affectedRows = await command.ExecuteNonQueryAsync();
             if (affectedRows > 0)
             {
                 await _metadataRepository.SaveLastUpdateUtcAsync(connection);
-                OnUpdated(takeProfitOrder);
+                OnUpdated(exitOrder);
             }
 
             return affectedRows > 0;
         }
-        partial void OnUpdated(TakeProfitOrder takeProfitOrder);
-        partial void OnUpdated(int takeProfitOrderId);
+        partial void OnUpdated(ExitOrder exitOrder);
+        partial void OnUpdated(int exitOrderId);
 
         public async Task<bool> UpdateCancellationTimeAsync(int id, DateTime cancellationTime)
         {
@@ -275,9 +275,9 @@ namespace TD.SQLite
             return affectedRows > 0;
         }
 
-        private static TakeProfitOrder MapTakeProfitOrder(SqliteDataReader reader)
+        private static ExitOrder MapExitOrder(SqliteDataReader reader)
         {
-            var takeProfitOrder = new TakeProfitOrder
+            var exitOrder = new ExitOrder
             {
                 Id = reader.GetInt32(ColNrs.Id),
                 TradeId = reader.GetInt32(ColNrs.TradeId),
@@ -304,7 +304,7 @@ namespace TD.SQLite
                 UpdatedAt = ToLocalDateTime(reader.GetString(ColNrs.UpdatedAt)) ?? DateTime.MinValue
             };
 
-            return takeProfitOrder;
+            return exitOrder;
         }
 
         /// <summary>

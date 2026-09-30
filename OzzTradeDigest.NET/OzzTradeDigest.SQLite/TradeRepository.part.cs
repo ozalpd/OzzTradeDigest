@@ -125,7 +125,7 @@ namespace TD.SQLite
 
             try
             {
-                var tpOrders = await TakeProfitOrderRepository.GetByTradeIdAsync(trade.Id);
+                var tpOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
                 trade.TakeProfitOrders = tpOrders.ToList();
                 foreach (var item in trade.TakeProfitOrders)
                 {
@@ -242,25 +242,25 @@ namespace TD.SQLite
         public async Task SaveTakeProfitOrdersAsync(Trade trade, bool updateTrade = true)
         {
             bool anyChanges = false;
-            var existingOrders = await TakeProfitOrderRepository.GetByTradeIdAsync(trade.Id);
+            var existingOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
             var existingOrderIds = existingOrders.Select(o => o.Id).ToHashSet();
             foreach (var order in trade.TakeProfitOrders)
             {
                 if (order.Id == 0)
                 {
                     order.TradeId = trade.Id;
-                    await TakeProfitOrderRepository.CreateAsync(order);
+                    await ExitOrderRepository.CreateAsync(order);
                     anyChanges = true;
                 }
                 else if (existingOrderIds.Contains(order.Id))
                 {
-                    anyChanges = await TakeProfitOrderRepository.UpdateAsync(order) || anyChanges;
+                    anyChanges = await ExitOrderRepository.UpdateAsync(order) || anyChanges;
                     existingOrderIds.Remove(order.Id);
                 }
             }
             foreach (var id in existingOrderIds)
             {
-                await TakeProfitOrderRepository.DeleteAsync(id);
+                await ExitOrderRepository.DeleteAsync(id);
                 anyChanges = true;
             }
 

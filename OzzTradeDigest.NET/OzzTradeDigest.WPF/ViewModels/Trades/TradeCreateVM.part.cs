@@ -168,7 +168,7 @@ namespace TD.WPF.ViewModels.Trades
         {
             if (PlannedTP == null || OrderQuantity == null)
                 return;
-            var tpOrder = new TakeProfitOrder
+            var tpOrder = new ExitOrder
             {
                 Id = 0,
                 TradeId = Trade.Id,

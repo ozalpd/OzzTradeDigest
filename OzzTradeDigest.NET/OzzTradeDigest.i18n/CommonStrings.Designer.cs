@@ -61,6 +61,24 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Stop Loss Order.
+        /// </summary>
+        public static string AddStopLossOrder {
+            get {
+                return ResourceManager.GetString("AddStopLossOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Take Profit Order.
+        /// </summary>
+        public static string AddTakeProfitOrder {
+            get {
+                return ResourceManager.GetString("AddTakeProfitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Admin.
         /// </summary>
         public static string Admin {
@@ -75,6 +93,60 @@ namespace TD.i18n {
         public static string AppTitle {
             get {
                 return ResourceManager.GetString("AppTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Stop Loss Order.
+        /// </summary>
+        public static string CreateStopLossOrder {
+            get {
+                return ResourceManager.GetString("CreateStopLossOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Take Profit Order.
+        /// </summary>
+        public static string CreateTakeProfitOrder {
+            get {
+                return ResourceManager.GetString("CreateTakeProfitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Stop Loss Order.
+        /// </summary>
+        public static string DeleteStopLossOrder {
+            get {
+                return ResourceManager.GetString("DeleteStopLossOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Take Profit Order.
+        /// </summary>
+        public static string DeleteTakeProfitOrder {
+            get {
+                return ResourceManager.GetString("DeleteTakeProfitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Stop Loss Order.
+        /// </summary>
+        public static string EditStopLossOrder {
+            get {
+                return ResourceManager.GetString("EditStopLossOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Take Profit Order.
+        /// </summary>
+        public static string EditTakeProfitOrder {
+            get {
+                return ResourceManager.GetString("EditTakeProfitOrder", resourceCulture);
             }
         }
         

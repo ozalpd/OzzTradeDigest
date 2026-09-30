@@ -13,7 +13,7 @@ namespace TD.WPF.Views.Trades
     {
         private readonly TakeProfitOrderEditVM _viewModel;
 
-        public TakeProfitOrder TakeProfitOrder => _viewModel.TakeProfitOrder;
+        public ExitOrder TakeProfitOrder => _viewModel.TakeProfitOrder;
 
         /// <summary>
         /// This constructor should not be called, but we need it for the designer to work.
@@ -23,7 +23,7 @@ namespace TD.WPF.Views.Trades
         {
             InitializeComponent();
 
-            _viewModel = new TakeProfitOrderEditVM(new TakeProfitOrder());
+            _viewModel = new TakeProfitOrderEditVM(new ExitOrder());
             _isDirty = _viewModel;
             DataContext = _viewModel;
             SourceInitialized += TakeProfitOrderEditView_SourceInitialized;
@@ -33,7 +33,7 @@ namespace TD.WPF.Views.Trades
         /// This constructor should be used at runtime to create the view with a real TakeProfitOrder.
         /// </summary>
         /// <param name="takeProfitOrder">The real TakeProfitOrder to be used by the view.</param>
-        public TakeProfitOrderEditView(TakeProfitOrder takeProfitOrder) : base(new TakeProfitOrderEditVM(takeProfitOrder))
+        public TakeProfitOrderEditView(ExitOrder takeProfitOrder) : base(new TakeProfitOrderEditVM(takeProfitOrder))
         {
             InitializeComponent();
             _viewModel = (TakeProfitOrderEditVM)DataContext;

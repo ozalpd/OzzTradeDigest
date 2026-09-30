@@ -926,7 +926,7 @@
 
                                 <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal">
                                     <Button Style="{StaticResource IconButtonStyle-22x18}"
-                                            ToolTip="{x:Static i18n:LocalizedStrings.AddStopLossOrder}"
+                                            ToolTip="{x:Static i18n:CommonStrings.AddStopLossOrder}"
                                             Command="{Binding StopLossOrderCreateCommand}"
                                             CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
                                         <Viewbox Width="14" Height="14">
@@ -973,7 +973,7 @@
                                     </Button>
 
                                     <Button Style="{StaticResource IconButtonStyle-22x18}"
-                                            ToolTip="{x:Static i18n:LocalizedStrings.DeleteStopLossOrder}"
+                                            ToolTip="{x:Static i18n:CommonStrings.DeleteStopLossOrder}"
                                             Background="#C80000"
                                             Command="{Binding StopLossOrderDeleteCommand}"
                                             CommandParameter="{Binding}">
@@ -1040,7 +1040,7 @@
 
                                 <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Horizontal">
                                     <Button Style="{StaticResource IconButtonStyle-22x18}"
-                                            ToolTip="{x:Static i18n:LocalizedStrings.AddTakeProfitOrder}"
+                                            ToolTip="{x:Static i18n:CommonStrings.AddTakeProfitOrder}"
                                             Command="{Binding TakeProfitOrderCreateCommand}"
                                             CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
                                         <Viewbox Width="14" Height="14">
@@ -1087,7 +1087,7 @@
                                     </Button>
 
                                     <Button Style="{StaticResource IconButtonStyle-22x18}"
-                                            ToolTip="{x:Static i18n:LocalizedStrings.DeleteTakeProfitOrder}"
+                                            ToolTip="{x:Static i18n:CommonStrings.DeleteTakeProfitOrder}"
                                             Background="#C80000"
                                             Command="{Binding TakeProfitOrderDeleteCommand}"
                                             CommandParameter="{Binding}">

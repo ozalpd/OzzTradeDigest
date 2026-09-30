@@ -20,7 +20,7 @@ namespace TD.SQLite
     {
         public TradeRepository(string databasePath, IEntryOrderRepository? entryOrderRepository = null,
                                IStopLossOrderRepository? stopLossOrderRepository = null, ISymbolRepository? symbolRepository = null,
-                               ITakeProfitOrderRepository? takeProfitOrderRepository = null, ITradeImageRepository? tradeImageRepository = null,
+                               IExitOrderRepository? exitOrderRepository = null, ITradeImageRepository? tradeImageRepository = null,
                                ITradingAccountRepository? tradingAccountRepository = null) : base(databasePath, "Trades")
 
         {
@@ -32,8 +32,8 @@ namespace TD.SQLite
                 _stopLossOrderRepository = stopLossOrderRepository;
             if (symbolRepository != null)
                 _symbolRepository = symbolRepository;
-            if (takeProfitOrderRepository != null)
-                _takeProfitOrderRepository = takeProfitOrderRepository;
+            if (exitOrderRepository != null)
+                _exitOrderRepository = exitOrderRepository;
             if (tradeImageRepository != null)
                 _tradeImageRepository = tradeImageRepository;
             if (tradingAccountRepository != null)
@@ -41,7 +41,7 @@ namespace TD.SQLite
 
             InitializeDatabase();
             OnInitialized(entryOrderRepository == null, stopLossOrderRepository == null, symbolRepository == null,
-                          takeProfitOrderRepository == null, tradeImageRepository == null, tradingAccountRepository == null);
+                          exitOrderRepository == null, tradeImageRepository == null, tradingAccountRepository == null);
         }
         private readonly string _databasePath;
         private readonly string _selectStatement;
@@ -85,18 +85,18 @@ namespace TD.SQLite
         }
         private ISymbolRepository? _symbolRepository;
 
-        protected ITakeProfitOrderRepository TakeProfitOrderRepository
+        protected IExitOrderRepository ExitOrderRepository
         {
             get
             {
-                if (_takeProfitOrderRepository == null)
+                if (_exitOrderRepository == null)
                 {
-                    _takeProfitOrderRepository = new TakeProfitOrderRepository(_databasePath);
+                    _exitOrderRepository = new ExitOrderRepository(_databasePath);
                 }
-                return _takeProfitOrderRepository;
+                return _exitOrderRepository;
             }
         }
-        private ITakeProfitOrderRepository? _takeProfitOrderRepository;
+        private IExitOrderRepository? _exitOrderRepository;
 
         protected ITradeImageRepository TradeImageRepository
         {
@@ -137,7 +137,7 @@ namespace TD.SQLite
         /// which can be useful to determine if any additional initialization or event wiring is needed.
         /// </summary>
         partial void OnInitialized(bool isEntryOrderRepository, bool isStopLossOrderRepository, bool isSymbolRepository,
-                                   bool isTakeProfitOrderRepository, bool isTradeImageRepository, bool isTradingAccountRepository);
+                                   bool isExitOrderRepository, bool isTradeImageRepository, bool isTradingAccountRepository);
 
         public async Task<IReadOnlyList<Trade>> GetAllAsync()
         {
@@ -598,8 +598,8 @@ namespace TD.SQLite
             // Checking any entryOrder record exists through EntryOrder.TradeId reference
             result = result && !(await EntryOrderRepository.AnyByTradeIdAsync(id));
 
-            // Checking any takeProfitOrder record exists through TakeProfitOrder.TradeId reference
-            result = result && !(await TakeProfitOrderRepository.AnyByTradeIdAsync(id));
+            // Checking any exitOrder record exists through ExitOrder.TradeId reference
+            result = result && !(await ExitOrderRepository.AnyByTradeIdAsync(id));
 
             // Checking any stopLossOrder record exists through StopLossOrder.TradeId reference
             result = result && !(await StopLossOrderRepository.AnyByTradeIdAsync(id));

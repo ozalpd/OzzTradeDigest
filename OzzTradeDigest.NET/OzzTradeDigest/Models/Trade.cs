@@ -16,7 +16,7 @@ namespace TD.Models
         public Trade()
         {
             this.EntryOrders = new HashSet<EntryOrder>();
-            this.TakeProfitOrders = new HashSet<TakeProfitOrder>();
+            this.TakeProfitOrders = new HashSet<ExitOrder>();
             this.StopLossOrders = new HashSet<StopLossOrder>();
             this.TradeImages = new HashSet<TradeImage>();
             this.TradingAccount = new TradingAccount();
@@ -157,7 +157,7 @@ namespace TD.Models
         public ICollection<EntryOrder> EntryOrders { get; set; }
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "TakeProfitOrders")]
-        public ICollection<TakeProfitOrder> TakeProfitOrders { get; set; }
+        public ICollection<ExitOrder> TakeProfitOrders { get; set; }
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "StopLossOrders")]
         public ICollection<StopLossOrder> StopLossOrders { get; set; }

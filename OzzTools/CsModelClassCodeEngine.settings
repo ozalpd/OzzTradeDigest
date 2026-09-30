@@ -810,7 +810,7 @@
       <GenerateQueryParam>false</GenerateQueryParam>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="ModelClassEntitySetting">
-      <Name>TakeProfitOrder</Name>
+      <Name>ExitOrder</Name>
       <Exclude>false</Exclude>
       <OverwriteExisting>true</OverwriteExisting>
       <Properties>
@@ -831,6 +831,15 @@
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
           <Required />
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>ExitMode</Name>
+          <Exclude>false</Exclude>
+          <DataType />
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
           <IsSearchParameter>false</IsSearchParameter>
         </ModelPropertySetting>
         <ModelPropertySetting>
@@ -847,53 +856,6 @@
           <Name>OrderPrice</Name>
           <Exclude>false</Exclude>
           <CustomAttributes>GreaterThan(0);PriceSide(PriceSide.Above)</CustomAttributes>
-          <DataType />
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
-          <IsSearchParameter>false</IsSearchParameter>
-        </ModelPropertySetting>
-      </Properties>
-      <GenerateQueryParam>false</GenerateQueryParam>
-    </BaseEntitySetting>
-    <BaseEntitySetting xsi:type="ModelClassEntitySetting">
-      <Name>StopLossOrder</Name>
-      <Exclude>false</Exclude>
-      <OverwriteExisting>true</OverwriteExisting>
-      <Properties>
-        <ModelPropertySetting>
-          <Name>TradeId</Name>
-          <Exclude>false</Exclude>
-          <CustomAttributes>RequiredSelection</CustomAttributes>
-          <DataType />
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Range>1, int.MaxValue</Range>
-          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
-          <IsSearchParameter>true</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>Trade</Name>
-          <Exclude>false</Exclude>
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required />
-          <IsSearchParameter>false</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>OrderType</Name>
-          <Exclude>false</Exclude>
-          <CustomAttributes>RequiredSelection</CustomAttributes>
-          <DataType />
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
-          <IsSearchParameter>false</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>OrderPrice</Name>
-          <Exclude>false</Exclude>
-          <CustomAttributes>GreaterThan(0);PriceSide(PriceSide.Below)</CustomAttributes>
           <DataType />
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />

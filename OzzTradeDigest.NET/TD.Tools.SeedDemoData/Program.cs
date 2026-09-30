@@ -234,21 +234,21 @@ static async Task<Trade> EnsureDemoTradeAsync(ITradeRepository tradeRepository, 
         OrderQuantity = quantity,
         UpdatedAt = DateTime.UtcNow
     };
-    var tp1 = new TakeProfitOrder
+    var tp1 = new ExitOrder
     {
         OrderType = ExitOrderType.Limit,
         OrderPrice = (entryPrice * tp1Multiplier).RoundToQuantum(),
         OrderQuantity = quantity * 0.4m, // 40% of the quantity for TP1
         UpdatedAt = DateTime.UtcNow,
     };
-    var tp2 = new TakeProfitOrder
+    var tp2 = new ExitOrder
     {
         OrderType = ExitOrderType.Limit,
         OrderPrice = (entryPrice * tp2Multiplier).RoundToQuantum(),
         OrderQuantity = quantity * 0.3m, // 30% of the quantity for TP2
         UpdatedAt = DateTime.UtcNow
     };
-    var tp3 = new TakeProfitOrder
+    var tp3 = new ExitOrder
     {
         OrderType = ExitOrderType.TrailingStop,
         OrderPrice = (entryPrice * tp3Multiplier).RoundToQuantum(),

@@ -7,12 +7,12 @@ namespace TD.WPF.ViewModels.Trades
 {
     public partial class TakeProfitOrderCreateVM : AbstractCreateEditVM
     {
-        private TakeProfitOrder _takeProfitOrder;
-        public TakeProfitOrder TakeProfitOrder => _takeProfitOrder;
+        private ExitOrder _takeProfitOrder;
+        public ExitOrder TakeProfitOrder => _takeProfitOrder;
 
         public TakeProfitOrderCreateVM()
         {
-            _takeProfitOrder = new TakeProfitOrder();
+            _takeProfitOrder = new ExitOrder();
             ExitOrderTypeValues = GetValues<ExitOrderType>().Where(v => v.Value <= ExitOrderType.TrailingStop)
                                                             .ToList();
             OnInitialized();

@@ -11,9 +11,9 @@ using TD.i18n;
 //----------------------------------------------------------------------------------
 namespace TD.Models
 {
-    public partial class TakeProfitOrder
+    public partial class ExitOrder
     {
-        public TakeProfitOrder()
+        public ExitOrder()
         {
             this.Trade = new Trade();
 
@@ -34,6 +34,10 @@ namespace TD.Models
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Trade")]
         public Trade Trade { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ExitMode")]
+        public ExitMode ExitMode { get; set; }
 
         [RequiredSelection]
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
@@ -87,14 +91,15 @@ namespace TD.Models
 
 
         /// <summary>
-        /// Clones all properties in a new TakeProfitOrder instance,
+        /// Clones all properties in a new ExitOrder instance,
         /// except PrimaryKey(s)
         /// </summary>
-        /// <returns>New TakeProfitOrder instance</returns>
-        public TakeProfitOrder Clone()
+        /// <returns>New ExitOrder instance</returns>
+        public ExitOrder Clone()
         {
-            var clone = new TakeProfitOrder();
+            var clone = new ExitOrder();
             clone.TradeId = this.TradeId;
+            clone.ExitMode = this.ExitMode;
             clone.OrderType = this.OrderType;
             clone.OrderPrice = this.OrderPrice;
             clone.FilledPrice = this.FilledPrice;
@@ -109,12 +114,12 @@ namespace TD.Models
             return clone;
         }
 
-        // Use below method in a partial class file (eg. TakeProfitOrder.part.cs)
+        // Use below method in a partial class file (eg. ExitOrder.part.cs)
         // to add more detailed data to clone
-        partial void Cloning(TakeProfitOrder clone);
+        partial void Cloning(ExitOrder clone);
 
 
-        // Use below method in a partial class file (eg. TakeProfitOrder.part.cs)
+        // Use below method in a partial class file (eg. ExitOrder.part.cs)
         // to add some functionality after the constructor
         partial void OnInitilazed();
     }

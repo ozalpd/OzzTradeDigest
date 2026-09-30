@@ -85,6 +85,36 @@
       </Members>
     </EnumDefinition>
     <EnumDefinition>
+      <Name>ExitMode</Name>
+      <NamespaceName>TD</NamespaceName>
+      <Members>
+        <EnumMember>
+          <Name>TakeProfit</Name>
+          <Value>10</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>StopLoss</Name>
+          <Value>20</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>ManualExit</Name>
+          <Value>30</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>TimedExit</Name>
+          <Value>40</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>Algorithm</Name>
+          <Value>50</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>MarginCall</Name>
+          <Value>60</Value>
+        </EnumMember>
+      </Members>
+    </EnumDefinition>
+    <EnumDefinition>
       <Name>ExitOrderType</Name>
       <NamespaceName>TD</NamespaceName>
       <Members>
@@ -1699,11 +1729,11 @@
       </Properties>
     </EntityDefinition>
     <EntityDefinition>
-      <Name>TakeProfitOrder</Name>
+      <Name>ExitOrder</Name>
       <NamespaceName>TD</NamespaceName>
       <DisplayOrder>15</DisplayOrder>
       <Abstract>false</Abstract>
-      <DisplayName>Entry Order</DisplayName>
+      <DisplayName>Exit Order</DisplayName>
       <DisplayMember>Id</DisplayMember>
       <BaseTypeName>ITradeOrder</BaseTypeName>
       <Properties>
@@ -1734,8 +1764,23 @@
           <DependentPropertyType>int</DependentPropertyType>
         </BaseProperty>
         <BaseProperty xsi:type="SimpleProperty">
-          <Name>OrderType</Name>
+          <Name>ExitMode</Name>
           <DisplayOrder>10300</DisplayOrder>
+          <DisplayName>Exit Mode</DisplayName>
+          <TypeName>int</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <EnumTypeName>ExitMode</EnumTypeName>
+          <IsKey>false</IsKey>
+          <IsForeignKey>false</IsForeignKey>
+          <IsImmutable>false</IsImmutable>
+          <IsNullable>false</IsNullable>
+          <IsStoreGenerated>false</IsStoreGenerated>
+        </BaseProperty>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>OrderType</Name>
+          <DisplayOrder>10400</DisplayOrder>
           <DisplayName>Order Type</DisplayName>
           <TypeName>int</TypeName>
           <IsClientComputed>false</IsClientComputed>
@@ -1750,74 +1795,7 @@
         </BaseProperty>
         <BaseProperty xsi:type="SimpleProperty">
           <Name>OrderPrice</Name>
-          <DisplayOrder>10400</DisplayOrder>
-          <DisplayName>Order Price</DisplayName>
-          <TypeName>decimal</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-          <EnumTypeName />
-          <IsKey>false</IsKey>
-          <IsForeignKey>false</IsForeignKey>
-          <IsImmutable>false</IsImmutable>
-          <IsNullable>false</IsNullable>
-          <IsStoreGenerated>false</IsStoreGenerated>
-        </BaseProperty>
-      </Properties>
-    </EntityDefinition>
-    <EntityDefinition>
-      <Name>StopLossOrder</Name>
-      <NamespaceName>TD</NamespaceName>
-      <DisplayOrder>16</DisplayOrder>
-      <Abstract>false</Abstract>
-      <DisplayName>Entry Order</DisplayName>
-      <DisplayMember>Id</DisplayMember>
-      <BaseTypeName>ITradeOrder</BaseTypeName>
-      <Properties>
-        <BaseProperty xsi:type="SimpleProperty">
-          <Name>TradeId</Name>
-          <DisplayOrder>10100</DisplayOrder>
-          <DisplayName>Trade Id</DisplayName>
-          <TypeName>int</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-          <EnumTypeName />
-          <IsKey>false</IsKey>
-          <IsForeignKey>true</IsForeignKey>
-          <IsImmutable>true</IsImmutable>
-          <IsNullable>false</IsNullable>
-          <IsStoreGenerated>false</IsStoreGenerated>
-        </BaseProperty>
-        <BaseProperty xsi:type="ComplexProperty">
-          <Name>Trade</Name>
-          <DisplayOrder>10200</DisplayOrder>
-          <DisplayName>Trade</DisplayName>
-          <TypeName>Trade</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-          <DependentPropertyName>TradeId</DependentPropertyName>
-          <DependentPropertyType>int</DependentPropertyType>
-        </BaseProperty>
-        <BaseProperty xsi:type="SimpleProperty">
-          <Name>OrderType</Name>
-          <DisplayOrder>10300</DisplayOrder>
-          <DisplayName>Order Type</DisplayName>
-          <TypeName>int</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-          <EnumTypeName>ExitOrderType</EnumTypeName>
-          <IsKey>false</IsKey>
-          <IsForeignKey>false</IsForeignKey>
-          <IsImmutable>false</IsImmutable>
-          <IsNullable>false</IsNullable>
-          <IsStoreGenerated>false</IsStoreGenerated>
-        </BaseProperty>
-        <BaseProperty xsi:type="SimpleProperty">
-          <Name>OrderPrice</Name>
-          <DisplayOrder>10400</DisplayOrder>
+          <DisplayOrder>10500</DisplayOrder>
           <DisplayName>Order Price</DisplayName>
           <TypeName>decimal</TypeName>
           <IsClientComputed>false</IsClientComputed>
@@ -1835,7 +1813,7 @@
     <EntityDefinition>
       <Name>TradeImage</Name>
       <NamespaceName>TD</NamespaceName>
-      <DisplayOrder>17</DisplayOrder>
+      <DisplayOrder>16</DisplayOrder>
       <Abstract>false</Abstract>
       <DisplayName>Trade Image</DisplayName>
       <DisplayMember>TradeId</DisplayMember>
@@ -1920,7 +1898,7 @@
     <EntityDefinition>
       <Name>Trade</Name>
       <NamespaceName>TD</NamespaceName>
-      <DisplayOrder>18</DisplayOrder>
+      <DisplayOrder>17</DisplayOrder>
       <Abstract>false</Abstract>
       <DisplayName>Trade</DisplayName>
       <DisplayMember>Label</DisplayMember>
@@ -2464,8 +2442,8 @@
   <SourceClassPrefix />
   <CodeEngineList>
     <string>Localization_Resource_Generator</string>
-    <string>Wpf_Mvvm_View_ViewModel_Generator</string>
     <string>CS_Model_Class_Generator</string>
+    <string>Wpf_Mvvm_View_ViewModel_Generator</string>
     <string>CS_Sqlite_Repository_Generator</string>
     <string>Sqlite_Scripts_Generator</string>
   </CodeEngineList>

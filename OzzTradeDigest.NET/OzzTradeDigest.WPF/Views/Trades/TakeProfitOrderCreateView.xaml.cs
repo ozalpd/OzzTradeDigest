@@ -14,7 +14,7 @@ namespace TD.WPF.Views.Trades
         private readonly TakeProfitOrderCreateVM _viewModel;
         private Trade? _preselectedTrade;
 
-        public TakeProfitOrder TakeProfitOrder => _viewModel.TakeProfitOrder;
+        public ExitOrder TakeProfitOrder => _viewModel.TakeProfitOrder;
 
         /// <summary>
         /// This constructor should not be called, but we need it for the designer to work.

@@ -7,12 +7,12 @@ namespace TD.WPF.ViewModels.Trades
 {
     public partial class TradeHistoryVM
     {
-        public ObservableCollection<TakeProfitOrder> TakeProfitOrders { get; }
+        public ObservableCollection<ExitOrder> TakeProfitOrders { get; }
         public TakeProfitOrderCreateCommand TakeProfitOrderCreateCommand { get; }
         public TakeProfitOrderDeleteCommand TakeProfitOrderDeleteCommand { get; }
         public TakeProfitOrderEditCommand TakeProfitOrderEditCommand { get; }
 
-        public TakeProfitOrder? SelectedTakeProfitOrder
+        public ExitOrder? SelectedTakeProfitOrder
         {
             get { return _selectedTakeProfitOrder; }
             set
@@ -23,7 +23,7 @@ namespace TD.WPF.ViewModels.Trades
                 RaisePropertyChanged(nameof(SelectedTakeProfitOrder));
             }
         }
-        TakeProfitOrder? _selectedTakeProfitOrder;
+        ExitOrder? _selectedTakeProfitOrder;
 
         /// <summary>
         /// Removes <paramref name="tpOrder"/> from <see cref="Trade.TakeProfitOrders"/> of
@@ -38,7 +38,7 @@ namespace TD.WPF.ViewModels.Trades
         /// </remarks>
         /// <param name="tpOrder">The take-profit order to delete.</param>
         /// <returns><c>true</c> if the order was found and removed; otherwise <c>false</c>.</returns>
-        public async Task<bool> DeleteTakeProfitOrderAsync(TakeProfitOrder tpOrder)
+        public async Task<bool> DeleteTakeProfitOrderAsync(ExitOrder tpOrder)
         {
             if (SelectedTrade == null)
                 return false;
@@ -88,7 +88,7 @@ namespace TD.WPF.ViewModels.Trades
         /// before saving; if it already exists it is updated in place.
         /// </remarks>
         /// <param name="tpOrder">The take-profit order to add or update.</param>
-        public async Task SaveTakeProfitOrderAsync(TakeProfitOrder tpOrder)
+        public async Task SaveTakeProfitOrderAsync(ExitOrder tpOrder)
         {
             if (SelectedTrade == null)
                 return;

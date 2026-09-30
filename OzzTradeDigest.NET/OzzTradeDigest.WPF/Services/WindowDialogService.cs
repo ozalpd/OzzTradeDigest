@@ -138,7 +138,7 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, TakeProfitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade)
+        public (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade)
         {
             var dialog = new TakeProfitOrderCreateView(preselectedTrade)
             {
@@ -150,7 +150,7 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, TakeProfitOrder takeProfitOrder)
+        public (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder)
         {
             var dialog = new TakeProfitOrderEditView(takeProfitOrder)
             {

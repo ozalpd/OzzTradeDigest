@@ -1305,7 +1305,7 @@
       <RepositoryName>IEntryOrderRepository</RepositoryName>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">
-      <Name>TakeProfitOrder</Name>
+      <Name>ExitOrder</Name>
       <Exclude>false</Exclude>
       <OverwriteExisting>true</OverwriteExisting>
       <Properties>
@@ -1330,6 +1330,19 @@
           <IsPreselectedInCreate>true</IsPreselectedInCreate>
           <IsMultiLine>false</IsMultiLine>
           <CreateViewMode>ReadOnly</CreateViewMode>
+          <EditViewMode>Editable</EditViewMode>
+          <ShowInCollection>true</ShowInCollection>
+          <ShowInDetail>true</ShowInDetail>
+          <ValueConstraint />
+        </WpfMvvmPropertySetting>
+        <WpfMvvmPropertySetting>
+          <Name>ExitMode</Name>
+          <Exclude>false</Exclude>
+          <CreateEditOrder>10300</CreateEditOrder>
+          <DefaultValue />
+          <IsPreselectedInCreate>false</IsPreselectedInCreate>
+          <IsMultiLine>false</IsMultiLine>
+          <CreateViewMode>Editable</CreateViewMode>
           <EditViewMode>Editable</EditViewMode>
           <ShowInCollection>true</ShowInCollection>
           <ShowInDetail>true</ShowInDetail>
@@ -1380,85 +1393,7 @@
       <GenModeCreateView>SkipManuallyEdited</GenModeCreateView>
       <GenModeEditView>SkipManuallyEdited</GenModeEditView>
       <GenModeDetailView>DoNotGenerate</GenModeDetailView>
-      <RepositoryName>ITakeProfitOrderRepository</RepositoryName>
-    </BaseEntitySetting>
-    <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">
-      <Name>StopLossOrder</Name>
-      <Exclude>false</Exclude>
-      <OverwriteExisting>true</OverwriteExisting>
-      <Properties>
-        <WpfMvvmPropertySetting>
-          <Name>TradeId</Name>
-          <Exclude>false</Exclude>
-          <CreateEditOrder>10100</CreateEditOrder>
-          <DefaultValue />
-          <IsPreselectedInCreate>false</IsPreselectedInCreate>
-          <IsMultiLine>false</IsMultiLine>
-          <CreateViewMode>Editable</CreateViewMode>
-          <EditViewMode>ReadOnly</EditViewMode>
-          <ShowInCollection>true</ShowInCollection>
-          <ShowInDetail>true</ShowInDetail>
-          <ValueConstraint />
-        </WpfMvvmPropertySetting>
-        <WpfMvvmPropertySetting>
-          <Name>Trade</Name>
-          <Exclude>false</Exclude>
-          <CreateEditOrder>10200</CreateEditOrder>
-          <DefaultValue />
-          <IsPreselectedInCreate>true</IsPreselectedInCreate>
-          <IsMultiLine>false</IsMultiLine>
-          <CreateViewMode>Editable</CreateViewMode>
-          <EditViewMode>Editable</EditViewMode>
-          <ShowInCollection>true</ShowInCollection>
-          <ShowInDetail>true</ShowInDetail>
-          <ValueConstraint />
-        </WpfMvvmPropertySetting>
-        <WpfMvvmPropertySetting>
-          <Name>OrderType</Name>
-          <Exclude>false</Exclude>
-          <CreateEditOrder>10100</CreateEditOrder>
-          <DefaultValue />
-          <IsPreselectedInCreate>false</IsPreselectedInCreate>
-          <IsMultiLine>false</IsMultiLine>
-          <CreateViewMode>Editable</CreateViewMode>
-          <EditViewMode>Editable</EditViewMode>
-          <ShowInCollection>true</ShowInCollection>
-          <ShowInDetail>true</ShowInDetail>
-          <ValueConstraint />
-        </WpfMvvmPropertySetting>
-        <WpfMvvmPropertySetting>
-          <Name>OrderPrice</Name>
-          <Exclude>false</Exclude>
-          <CreateEditOrder>10400</CreateEditOrder>
-          <DefaultValue />
-          <IsPreselectedInCreate>false</IsPreselectedInCreate>
-          <IsMultiLine>false</IsMultiLine>
-          <CreateViewMode>Editable</CreateViewMode>
-          <EditViewMode>Editable</EditViewMode>
-          <ShowInCollection>true</ShowInCollection>
-          <ShowInDetail>true</ShowInDetail>
-          <ValueConstraint />
-        </WpfMvvmPropertySetting>
-      </Properties>
-      <SubFolder>Trades</SubFolder>
-      <CommandVmNamespace>TD.WPF.ViewModels.Trades</CommandVmNamespace>
-      <CommandVmTypeName>TradeHistoryVM</CommandVmTypeName>
-      <DetailColumnLayout>OneColumn</DetailColumnLayout>
-      <InputColumnLayout>TwoColumns</InputColumnLayout>
-      <GenModeCreateCommand>SkipManuallyEdited</GenModeCreateCommand>
-      <GenModeEditCommand>SkipManuallyEdited</GenModeEditCommand>
-      <GenModeDeleteCommand>SkipManuallyEdited</GenModeDeleteCommand>
-      <GenModeDetailCommand>DoNotGenerate</GenModeDetailCommand>
-      <GenModeLoadCommand>DoNotGenerate</GenModeLoadCommand>
-      <GenModeCreateVM>GenerateIfNotExists</GenModeCreateVM>
-      <GenModeEditVM>GenerateIfNotExists</GenModeEditVM>
-      <GenerateGetPaged>false</GenerateGetPaged>
-      <GenModeCollectionVM>DoNotGenerate</GenModeCollectionVM>
-      <GenModeLookupService>DoNotGenerate</GenModeLookupService>
-      <GenModeCreateView>SkipManuallyEdited</GenModeCreateView>
-      <GenModeEditView>SkipManuallyEdited</GenModeEditView>
-      <GenModeDetailView>DoNotGenerate</GenModeDetailView>
-      <RepositoryName>IStopLossOrderRepository</RepositoryName>
+      <RepositoryName>IExitOrderExitOrderRepository</RepositoryName>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">
       <Name>TradeImage</Name>

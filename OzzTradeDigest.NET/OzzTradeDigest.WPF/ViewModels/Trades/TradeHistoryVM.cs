@@ -37,7 +37,7 @@ namespace TD.WPF.ViewModels.Trades
             StopLossOrderDeleteCommand = new StopLossOrderDeleteCommand(this);
             StopLossOrderEditCommand = new StopLossOrderEditCommand(this, windowDialogService);
 
-            TakeProfitOrders = new ObservableCollection<TakeProfitOrder>();
+            TakeProfitOrders = new ObservableCollection<ExitOrder>();
             TakeProfitOrderCreateCommand = new TakeProfitOrderCreateCommand(this, windowDialogService);
             TakeProfitOrderDeleteCommand = new TakeProfitOrderDeleteCommand(this);
             TakeProfitOrderEditCommand = new TakeProfitOrderEditCommand(this, windowDialogService);

@@ -10,7 +10,7 @@ public class AppDataSources
 {
     public AppDataSources(ICurrencyRepository currencyRepository, IEntryOrderRepository entryOrderRepository,
                           IExchangeRepository exchangeRepository, IStopLossOrderRepository stopLossOrderRepository,
-                          ISymbolRepository symbolRepository, ITakeProfitOrderRepository takeProfitOrderRepository,
+                          ISymbolRepository symbolRepository, IExitOrderRepository takeProfitOrderRepository,
                           ITradingAccountRepository tradingAccountRepository,
                           ITradeRepository tradeRepository)
     {
@@ -31,7 +31,7 @@ public class AppDataSources
     public ITradingAccountRepository TradingAccountRepository { get; }
 
     public IEntryOrderRepository EntryOrderRepository { get; }
-    public ITakeProfitOrderRepository TakeProfitOrderRepository { get; }
+    public IExitOrderRepository TakeProfitOrderRepository { get; }
     public IStopLossOrderRepository StopLossOrderRepository { get; }
     public ITradeRepository TradeRepository { get; }
 }

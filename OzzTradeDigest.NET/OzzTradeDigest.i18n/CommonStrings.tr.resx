@@ -58,11 +58,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+    <data name="AddStopLossOrder" xml:space="preserve">
+        <value>Zarar Kes Emri Ekle</value>
+    </data>
+    <data name="AddTakeProfitOrder" xml:space="preserve">
+        <value>Kar Al Emri Ekle</value>
+    </data>
     <data name="Admin" xml:space="preserve">
         <value>Admin</value>
     </data>
     <data name="AppTitle" xml:space="preserve">
         <value>Ozz Trade Diary</value>
+    </data>
+    <data name="CreateStopLossOrder" xml:space="preserve">
+        <value>Zarar Kes Emri Oluştur</value>
+    </data>
+    <data name="CreateTakeProfitOrder" xml:space="preserve">
+        <value>Kar Al Emri Oluştur</value>
+    </data>
+    <data name="DeleteStopLossOrder" xml:space="preserve">
+        <value>Zarar Kes Emrini Sil</value>
+    </data>
+    <data name="DeleteTakeProfitOrder" xml:space="preserve">
+        <value>Kar Al Emrini Sil</value>
+    </data>
+    <data name="EditStopLossOrder" xml:space="preserve">
+        <value>Zarar Kes Emrini Düzenle</value>
+    </data>
+    <data name="EditTakeProfitOrder" xml:space="preserve">
+        <value>Kar Al Emrini Düzenle</value>
     </data>
     <data name="Home" xml:space="preserve">
         <value>Ana Sayfa</value>

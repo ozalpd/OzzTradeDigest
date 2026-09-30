@@ -55,6 +55,22 @@ namespace TD.Models
         StopLimit = 50,
     }
 
+    public enum ExitMode : int
+    {
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TakeProfit")]
+        TakeProfit = 10,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "StopLoss")]
+        StopLoss = 20,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ManualExit")]
+        ManualExit = 30,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TimedExit")]
+        TimedExit = 40,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Algorithm")]
+        Algorithm = 50,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "MarginCall")]
+        MarginCall = 60
+    }
+
     public enum TradeImageCategory : int
     {
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Setup", Order = 10)]

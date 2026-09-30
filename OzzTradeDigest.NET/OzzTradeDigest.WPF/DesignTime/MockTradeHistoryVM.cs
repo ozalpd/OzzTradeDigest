@@ -73,7 +73,7 @@ namespace TD.WPF.DesignTime
             });
 
             // Take profit orders
-            _selectedItem.TakeProfitOrders.Add(new TakeProfitOrder
+            _selectedItem.TakeProfitOrders.Add(new ExitOrder
             {
                 Id = 1,
                 TradeId = 1,
@@ -85,7 +85,7 @@ namespace TD.WPF.DesignTime
                 FilledTime = DateTime.Now.AddDays(-9),
                 UpdatedAt = DateTime.Now.AddDays(-9)
             });
-            _selectedItem.TakeProfitOrders.Add(new TakeProfitOrder
+            _selectedItem.TakeProfitOrders.Add(new ExitOrder
             {
                 Id = 2,
                 TradeId = 1,
@@ -97,7 +97,7 @@ namespace TD.WPF.DesignTime
                 FilledTime = DateTime.Now.AddDays(-8).AddHours(-6),
                 UpdatedAt = DateTime.Now.AddDays(-8)
             });
-            _selectedItem.TakeProfitOrders.Add(new TakeProfitOrder
+            _selectedItem.TakeProfitOrders.Add(new ExitOrder
             {
                 Id = 3,
                 TradeId = 1,

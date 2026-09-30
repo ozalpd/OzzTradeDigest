@@ -106,6 +106,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Exit Order.
+        /// </summary>
+        public static string AddExitOrder {
+            get {
+                return ResourceManager.GetString("AddExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Holiday.
         /// </summary>
         public static string AddHoliday {
@@ -142,6 +151,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add New Exit Order.
+        /// </summary>
+        public static string AddNewExitOrder {
+            get {
+                return ResourceManager.GetString("AddNewExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Holiday.
         /// </summary>
         public static string AddNewHoliday {
@@ -160,29 +178,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add New Stop Loss Order.
-        /// </summary>
-        public static string AddNewStopLossOrder {
-            get {
-                return ResourceManager.GetString("AddNewStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Add New Symbol.
         /// </summary>
         public static string AddNewSymbol {
             get {
                 return ResourceManager.GetString("AddNewSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add New Take Profit Order.
-        /// </summary>
-        public static string AddNewTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("AddNewTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -241,6 +241,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Remove Exit Order.
+        /// </summary>
+        public static string AddRemoveExitOrder {
+            get {
+                return ResourceManager.GetString("AddRemoveExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Remove Holiday.
         /// </summary>
         public static string AddRemoveHoliday {
@@ -259,29 +268,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Remove Stop Loss Order.
-        /// </summary>
-        public static string AddRemoveStopLossOrder {
-            get {
-                return ResourceManager.GetString("AddRemoveStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Add Remove Symbol.
         /// </summary>
         public static string AddRemoveSymbol {
             get {
                 return ResourceManager.GetString("AddRemoveSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add Remove Take Profit Order.
-        /// </summary>
-        public static string AddRemoveTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("AddRemoveTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -322,29 +313,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Stop Loss Order.
-        /// </summary>
-        public static string AddStopLossOrder {
-            get {
-                return ResourceManager.GetString("AddStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Add Symbol.
         /// </summary>
         public static string AddSymbol {
             get {
                 return ResourceManager.GetString("AddSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add Take Profit Order.
-        /// </summary>
-        public static string AddTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("AddTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -381,6 +354,15 @@ namespace TD.i18n {
         public static string AfterHours {
             get {
                 return ResourceManager.GetString("AfterHours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Algorithm.
+        /// </summary>
+        public static string Algorithm {
+            get {
+                return ResourceManager.GetString("Algorithm", resourceCulture);
             }
         }
         
@@ -538,6 +520,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Exit Order.
+        /// </summary>
+        public static string CreateExitOrder {
+            get {
+                return ResourceManager.GetString("CreateExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create Holiday.
         /// </summary>
         public static string CreateHoliday {
@@ -556,29 +547,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Stop Loss Order.
-        /// </summary>
-        public static string CreateStopLossOrder {
-            get {
-                return ResourceManager.GetString("CreateStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Create Symbol.
         /// </summary>
         public static string CreateSymbol {
             get {
                 return ResourceManager.GetString("CreateSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Create Take Profit Order.
-        /// </summary>
-        public static string CreateTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("CreateTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -790,6 +763,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete Exit Order.
+        /// </summary>
+        public static string DeleteExitOrder {
+            get {
+                return ResourceManager.GetString("DeleteExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete Holiday.
         /// </summary>
         public static string DeleteHoliday {
@@ -808,29 +790,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete Stop Loss Order.
-        /// </summary>
-        public static string DeleteStopLossOrder {
-            get {
-                return ResourceManager.GetString("DeleteStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Delete Symbol.
         /// </summary>
         public static string DeleteSymbol {
             get {
                 return ResourceManager.GetString("DeleteSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Delete Take Profit Order.
-        /// </summary>
-        public static string DeleteTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("DeleteTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -907,6 +871,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Exit Order.
+        /// </summary>
+        public static string EditExitOrder {
+            get {
+                return ResourceManager.GetString("EditExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Holiday.
         /// </summary>
         public static string EditHoliday {
@@ -925,29 +898,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit Stop Loss Order.
-        /// </summary>
-        public static string EditStopLossOrder {
-            get {
-                return ResourceManager.GetString("EditStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Edit Symbol.
         /// </summary>
         public static string EditSymbol {
             get {
                 return ResourceManager.GetString("EditSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Edit Take Profit Order.
-        /// </summary>
-        public static string EditTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("EditTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -1146,6 +1101,42 @@ namespace TD.i18n {
         public static string Exit {
             get {
                 return ResourceManager.GetString("Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Mode.
+        /// </summary>
+        public static string ExitMode {
+            get {
+                return ResourceManager.GetString("ExitMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Order.
+        /// </summary>
+        public static string ExitOrder {
+            get {
+                return ResourceManager.GetString("ExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Orders.
+        /// </summary>
+        public static string ExitOrders {
+            get {
+                return ResourceManager.GetString("ExitOrders", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Orders List.
+        /// </summary>
+        public static string ExitOrdersList {
+            get {
+                return ResourceManager.GetString("ExitOrdersList", resourceCulture);
             }
         }
         
@@ -1434,6 +1425,24 @@ namespace TD.i18n {
         public static string MakerFeeRate {
             get {
                 return ResourceManager.GetString("MakerFeeRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manual Exit.
+        /// </summary>
+        public static string ManualExit {
+            get {
+                return ResourceManager.GetString("ManualExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Margin Call.
+        /// </summary>
+        public static string MarginCall {
+            get {
+                return ResourceManager.GetString("MarginCall", resourceCulture);
             }
         }
         
@@ -1879,6 +1888,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove Exit Order.
+        /// </summary>
+        public static string RemoveExitOrder {
+            get {
+                return ResourceManager.GetString("RemoveExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Holiday.
         /// </summary>
         public static string RemoveHoliday {
@@ -1897,29 +1915,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove Stop Loss Order.
-        /// </summary>
-        public static string RemoveStopLossOrder {
-            get {
-                return ResourceManager.GetString("RemoveStopLossOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Remove Symbol.
         /// </summary>
         public static string RemoveSymbol {
             get {
                 return ResourceManager.GetString("RemoveSymbol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Remove Take Profit Order.
-        /// </summary>
-        public static string RemoveTakeProfitOrder {
-            get {
-                return ResourceManager.GetString("RemoveTakeProfitOrder", resourceCulture);
             }
         }
         
@@ -2077,11 +2077,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stop Loss Order.
+        ///   Looks up a localized string similar to Stop Loss.
         /// </summary>
-        public static string StopLossOrder {
+        public static string StopLoss {
             get {
-                return ResourceManager.GetString("StopLossOrder", resourceCulture);
+                return ResourceManager.GetString("StopLoss", resourceCulture);
             }
         }
         
@@ -2091,15 +2091,6 @@ namespace TD.i18n {
         public static string StopLossOrders {
             get {
                 return ResourceManager.GetString("StopLossOrders", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Stop Loss Orders List.
-        /// </summary>
-        public static string StopLossOrdersList {
-            get {
-                return ResourceManager.GetString("StopLossOrdersList", resourceCulture);
             }
         }
         
@@ -2185,11 +2176,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Take Profit Order.
+        ///   Looks up a localized string similar to Take Profit.
         /// </summary>
-        public static string TakeProfitOrder {
+        public static string TakeProfit {
             get {
-                return ResourceManager.GetString("TakeProfitOrder", resourceCulture);
+                return ResourceManager.GetString("TakeProfit", resourceCulture);
             }
         }
         
@@ -2199,15 +2190,6 @@ namespace TD.i18n {
         public static string TakeProfitOrders {
             get {
                 return ResourceManager.GetString("TakeProfitOrders", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Take Profit Orders List.
-        /// </summary>
-        public static string TakeProfitOrdersList {
-            get {
-                return ResourceManager.GetString("TakeProfitOrdersList", resourceCulture);
             }
         }
         
@@ -2280,6 +2262,15 @@ namespace TD.i18n {
         public static string TickerFull {
             get {
                 return ResourceManager.GetString("TickerFull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Timed Exit.
+        /// </summary>
+        public static string TimedExit {
+            get {
+                return ResourceManager.GetString("TimedExit", resourceCulture);
             }
         }
         

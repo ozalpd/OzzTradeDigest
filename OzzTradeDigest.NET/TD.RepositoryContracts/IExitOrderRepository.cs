@@ -10,16 +10,16 @@ using TD.Models;
 
 namespace TD.RepositoryContracts
 {
-    public partial interface ITakeProfitOrderRepository
+    public partial interface IExitOrderRepository
     {
-        Task<IReadOnlyList<TakeProfitOrder>> GetAllAsync();
+        Task<IReadOnlyList<ExitOrder>> GetAllAsync();
         Task<bool> AnyByTradeIdAsync(int tradeId);
-        Task<IReadOnlyList<TakeProfitOrder>> GetByTradeIdAsync(int tradeId);
-        Task<TakeProfitOrder?> GetByIdAsync(int? id);
-        Task<int> CreateAsync(TakeProfitOrder takeProfitOrder);
+        Task<IReadOnlyList<ExitOrder>> GetByTradeIdAsync(int tradeId);
+        Task<ExitOrder?> GetByIdAsync(int? id);
+        Task<int> CreateAsync(ExitOrder exitOrder);
         Task<bool> CanDeleteAsync(int id);
         Task<bool> DeleteAsync(int id);
-        Task<bool> UpdateAsync(TakeProfitOrder takeProfitOrder);
+        Task<bool> UpdateAsync(ExitOrder exitOrder);
         Task<bool> UpdateCancellationTimeAsync(int id, DateTime cancellationTime);
     }
 }

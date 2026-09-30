@@ -133,7 +133,7 @@ namespace TD.WPF.Services
         /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
         /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
         /// langword="false"/>. The second item is the created Take Profit Order if confirmed; otherwise, <see langword="null"/>.</returns>
-        (bool IsConfirmed, TakeProfitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade);
+        (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade);
 
         /// <summary>
         /// Displays a modal dialog for editing the specified Take Profit Order and returns the result indicating whether the dialog
@@ -145,7 +145,7 @@ namespace TD.WPF.Services
         /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
         /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the takeProfitOrder
         /// during editing; otherwise, <see langword="false"/>.</returns>
-        (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, TakeProfitOrder takeProfitOrder);
+        (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder);
 
         /// <summary>
         /// Displays the Trade creation dialog and returns the result indicating whether the user confirmed the dialog

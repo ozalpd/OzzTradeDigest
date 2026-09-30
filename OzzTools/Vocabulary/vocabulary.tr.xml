@@ -53,6 +53,10 @@
     <Translation>Borsa Ekle</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddExitOrder</Name>
+    <Translation>Çıkış Emri Ekle</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddHoliday</Name>
     <Translation>Tatil Ekle</Translation>
   </Vocab>
@@ -91,6 +95,10 @@
   <Vocab>
     <Name>AddNewExchange</Name>
     <Translation>Yeni Borsa Ekle</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>AddNewExitOrder</Name>
+    <Translation>Yeni Çıkış Emri Ekle</Translation>
   </Vocab>
   <Vocab>
     <Name>AddNewHoliday</Name>
@@ -189,6 +197,10 @@
     <Translation>Borsa Ekle/Çıkart</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddRemoveExitOrder</Name>
+    <Translation>Çıkış Emri Ekle/Çıkar</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddRemoveHoliday</Name>
     <Translation>Tatil Ekle/Çıkar</Translation>
   </Vocab>
@@ -279,6 +291,10 @@
   <Vocab>
     <Name>AfterHours</Name>
     <Translation>Seans Sonrası</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Algorithm</Name>
+    <Translation>Algoritma</Translation>
   </Vocab>
   <Vocab>
     <Name>All</Name>
@@ -557,6 +573,10 @@
     <Translation>Borsa Oluştur</Translation>
   </Vocab>
   <Vocab>
+    <Name>CreateExitOrder</Name>
+    <Translation>Çıkış Emri Oluştur</Translation>
+  </Vocab>
+  <Vocab>
     <Name>CreateHoliday</Name>
     <Translation>Tatil Oluştur</Translation>
   </Vocab>
@@ -793,6 +813,10 @@
     <Translation>Borsayı Sil</Translation>
   </Vocab>
   <Vocab>
+    <Name>DeleteExitOrder</Name>
+    <Translation>Çıkış Emrini Sil</Translation>
+  </Vocab>
+  <Vocab>
     <Name>DeleteHoliday</Name>
     <Translation>Tatili Sil</Translation>
   </Vocab>
@@ -943,6 +967,10 @@
   <Vocab>
     <Name>EditExchange</Name>
     <Translation>Borsayı Düzenle</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>EditExitOrder</Name>
+    <Translation>Çıkış Emrini Düzenle</Translation>
   </Vocab>
   <Vocab>
     <Name>EditHoliday</Name>
@@ -1121,8 +1149,28 @@
     <Translation>Kapat</Translation>
   </Vocab>
   <Vocab>
+    <Name>ExitMode</Name>
+    <Translation>Çıkış Şekli</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrder</Name>
+    <Translation>Çıkış Emri</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrders</Name>
+    <Translation>Çıkış Emirleri</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitOrdersList</Name>
+    <Translation>Çıkış Emir Listesi</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ExitOrderType</Name>
     <Translation>Çıkış Emir Tipi</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitPurpose</Name>
+    <Translation>Çıkış Amacı</Translation>
   </Vocab>
   <Vocab>
     <Name>ExitTime</Name>
@@ -1419,6 +1467,14 @@
   <Vocab>
     <Name>ManageData</Name>
     <Translation>Veriyi Yönet</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ManualExit</Name>
+    <Translation>Manuel Çıkış</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>MarginCall</Name>
+    <Translation>Marjin Çağrısı</Translation>
   </Vocab>
   <Vocab>
     <Name>Market</Name>
@@ -1981,6 +2037,10 @@
     <Translation>Borsayı Çıkart</Translation>
   </Vocab>
   <Vocab>
+    <Name>RemoveExitOrder</Name>
+    <Translation>Çıkış Emrini Çıkar</Translation>
+  </Vocab>
+  <Vocab>
     <Name>RemoveHoliday</Name>
     <Translation>Tatil Çıkar</Translation>
   </Vocab>
@@ -2415,6 +2475,10 @@
   <Vocab>
     <Name>TickerFull</Name>
     <Translation>Uzun İşlem Kodu</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TimedExit</Name>
+    <Translation>Süreli Çıkış</Translation>
   </Vocab>
   <Vocab>
     <Name>Timezone</Name>

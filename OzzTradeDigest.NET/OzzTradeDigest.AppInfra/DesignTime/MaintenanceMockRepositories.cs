@@ -74,16 +74,16 @@ namespace TD.AppInfra.DesignTime
         public Task UpdateExchangeHasAnySymbolAsync(int exchangeId) => Task.CompletedTask;
     }
 
-    public class TakeProfitOrderMockRepository : ITakeProfitOrderRepository
+    public class ExitOrderMockRepository : IExitOrderRepository
     {
         public Task<bool> AnyByTradeIdAsync(int tradeId) => throw new NotImplementedException();
         public Task<bool> CanDeleteAsync(int id) => Task.FromResult(false);
-        public Task<int> CreateAsync(TakeProfitOrder takeProfitOrder) => throw new NotImplementedException();
+        public Task<int> CreateAsync(ExitOrder exitOrder) => throw new NotImplementedException();
         public Task<bool> DeleteAsync(int id) => throw new NotImplementedException();
-        public Task<IReadOnlyList<TakeProfitOrder>> GetAllAsync() => Task.FromResult<IReadOnlyList<TakeProfitOrder>>(Array.Empty<TakeProfitOrder>());
-        public Task<TakeProfitOrder?> GetByIdAsync(int? id) => Task.FromResult<TakeProfitOrder?>(null);
-        public Task<IReadOnlyList<TakeProfitOrder>> GetByTradeIdAsync(int tradeId) => Task.FromResult<IReadOnlyList<TakeProfitOrder>>(Array.Empty<TakeProfitOrder>());
-        public Task<bool> UpdateAsync(TakeProfitOrder takeProfitOrder) => throw new NotImplementedException();
+        public Task<IReadOnlyList<ExitOrder>> GetAllAsync() => Task.FromResult<IReadOnlyList<ExitOrder>>(Array.Empty<ExitOrder>());
+        public Task<ExitOrder?> GetByIdAsync(int? id) => Task.FromResult<ExitOrder?>(null);
+        public Task<IReadOnlyList<ExitOrder>> GetByTradeIdAsync(int tradeId) => Task.FromResult<IReadOnlyList<ExitOrder>>(Array.Empty<ExitOrder>());
+        public Task<bool> UpdateAsync(ExitOrder exitOrder) => throw new NotImplementedException();
         public Task<bool> UpdateCancellationTimeAsync(int id, DateTime cancellationTime) => throw new NotImplementedException();
     }
 

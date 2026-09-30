@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TD.WPF.Views.Trades"
         xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
-        Title="{x:Static i18n:LocalizedStrings.CreateTakeProfitOrder}"
+        Title="{x:Static i18n:CommonStrings.CreateTakeProfitOrder}"
         Height="420" Width="420" MinHeight="370" MinWidth="420"
         WindowStartupLocation="CenterOwner"
         mc:Ignorable="d">

@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS TakeProfitOrders(
+CREATE TABLE IF NOT EXISTS ExitOrders(
     Id INTEGER PRIMARY KEY,
 	TradeId INTEGER Not Null, 
 	OrderType INTEGER Not Null, 
@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS TakeProfitOrders(
 	FilledTime TEXT, 
 	UpdatedAt TEXT Not Null 
 );
-Create Index If Not Exists idx_TakeProfitOrders_FilledTime on TakeProfitOrders(FilledTime);
-Create Index If Not Exists idx_TakeProfitOrders_UpdatedAt on TakeProfitOrders(UpdatedAt DESC, Id);
+Create Index If Not Exists idx_ExitOrders_FilledTime on ExitOrders(FilledTime);
+Create Index If Not Exists idx_ExitOrders_UpdatedAt on ExitOrders(UpdatedAt DESC, Id);

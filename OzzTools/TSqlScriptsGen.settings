@@ -1052,7 +1052,7 @@
       <CustomStoredProcs>false</CustomStoredProcs>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="StorageEntitySetting">
-      <Name>TakeProfitOrder</Name>
+      <Name>ExitOrder</Name>
       <Exclude>false</Exclude>
       <OverwriteExisting>true</OverwriteExisting>
       <Properties>
@@ -1100,9 +1100,9 @@
       <InheritedEntity>ITradeOrder</InheritedEntity>
       <UseInheritance>false</UseInheritance>
       <SchemaName>dbo</SchemaName>
-      <TableName>TakeProfitOrders</TableName>
+      <TableName>ExitOrders</TableName>
       <HasLogTable>false</HasLogTable>
-      <LogTableName>TakeProfitOrdersLog</LogTableName>
+      <LogTableName>ExitOrdersLog</LogTableName>
       <StoredProcGeneration>CUD</StoredProcGeneration>
       <CustomStoredProcs>false</CustomStoredProcs>
     </BaseEntitySetting>

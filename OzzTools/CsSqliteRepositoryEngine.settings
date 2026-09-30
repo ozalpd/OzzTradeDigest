@@ -852,7 +852,7 @@
       <UpdatedAtName>UpdatedAt</UpdatedAtName>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
-      <Name>TakeProfitOrder</Name>
+      <Name>ExitOrder</Name>
       <Exclude>false</Exclude>
       <OverwriteExisting>true</OverwriteExisting>
       <Properties>
@@ -871,6 +871,15 @@
           <AutoLoad>false</AutoLoad>
           <CheckIfAltered>false</CheckIfAltered>
           <ColumnName>Trade</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>ExitMode</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>ExitMode</ColumnName>
           <SingleColumnUpdate>false</SingleColumnUpdate>
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
@@ -894,56 +903,8 @@
         </SqliteRepositoryPropertySetting>
       </Properties>
       <GenerateGetPaged>false</GenerateGetPaged>
-      <TableName>TakeProfitOrders</TableName>
-      <FileNameDDL>TakeProfitOrder.sql</FileNameDDL>
-      <OrderByClause>ORDER BY UpdatedAt DESC, Id</OrderByClause>
-      <UpdatedAtName>UpdatedAt</UpdatedAtName>
-    </BaseEntitySetting>
-    <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
-      <Name>StopLossOrder</Name>
-      <Exclude>false</Exclude>
-      <OverwriteExisting>true</OverwriteExisting>
-      <Properties>
-        <SqliteRepositoryPropertySetting>
-          <Name>TradeId</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>false</CheckIfAltered>
-          <ColumnName>TradeId</ColumnName>
-          <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
-          <Name>Trade</Name>
-          <Exclude>true</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>false</CheckIfAltered>
-          <ColumnName>Trade</ColumnName>
-          <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
-          <Name>OrderType</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>true</CheckIfAltered>
-          <ColumnName>OrderType</ColumnName>
-          <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
-          <Name>OrderPrice</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>true</CheckIfAltered>
-          <ColumnName>OrderPrice</ColumnName>
-          <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-      </Properties>
-      <GenerateGetPaged>false</GenerateGetPaged>
-      <TableName>StopLossOrders</TableName>
-      <FileNameDDL>StopLossOrder.sql</FileNameDDL>
+      <TableName>ExitOrders</TableName>
+      <FileNameDDL>ExitOrder.sql</FileNameDDL>
       <OrderByClause>ORDER BY UpdatedAt DESC, Id</OrderByClause>
       <UpdatedAtName>UpdatedAt</UpdatedAtName>
     </BaseEntitySetting>

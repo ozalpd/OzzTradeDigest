@@ -7,7 +7,7 @@
         xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         xmlns:ctr="clr-namespace:TD.WPF.Controls"
         xmlns:base="clr-namespace:TD.WPF.Views"
-        Title="{x:Static i18n:LocalizedStrings.EditTakeProfitOrder}"
+        Title="{x:Static i18n:CommonStrings.EditTakeProfitOrder}"
         Height="420" Width="720" MinHeight="370" MinWidth="720"
         WindowStartupLocation="CenterOwner"
         mc:Ignorable="d">
