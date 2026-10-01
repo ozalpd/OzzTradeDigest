@@ -13,7 +13,7 @@ namespace TD.WPF.Views.Trades
     {
         private readonly StopLossOrderEditVM _viewModel;
 
-        public StopLossOrder StopLossOrder => _viewModel.StopLossOrder;
+        public ExitOrder StopLossOrder => _viewModel.StopLossOrder;
 
         /// <summary>
         /// This constructor should not be called, but we need it for the designer to work.
@@ -23,7 +23,7 @@ namespace TD.WPF.Views.Trades
         {
             InitializeComponent();
 
-            _viewModel = new StopLossOrderEditVM(new StopLossOrder());
+            _viewModel = new StopLossOrderEditVM(new ExitOrder());
             _isDirty = _viewModel;
             DataContext = _viewModel;
             SourceInitialized += StopLossOrderEditView_SourceInitialized;
@@ -33,7 +33,7 @@ namespace TD.WPF.Views.Trades
         /// This constructor should be used at runtime to create the view with a real StopLossOrder.
         /// </summary>
         /// <param name="stopLossOrder">The real StopLossOrder to be used by the view.</param>
-        public StopLossOrderEditView(StopLossOrder stopLossOrder) : base(new StopLossOrderEditVM(stopLossOrder))
+        public StopLossOrderEditView(ExitOrder stopLossOrder) : base(new StopLossOrderEditVM(stopLossOrder))
         {
             InitializeComponent();
             _viewModel = (StopLossOrderEditVM)DataContext;

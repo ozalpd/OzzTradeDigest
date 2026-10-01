@@ -153,7 +153,7 @@ namespace TD.WPF.ViewModels.Trades
         {
             if (PlannedSL == null || OrderQuantity == null)
                 return;
-            var slOrder = new StopLossOrder
+            var slOrder = new ExitOrder
             {
                 Id = 0,
                 TradeId = Trade.Id,

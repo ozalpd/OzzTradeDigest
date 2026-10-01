@@ -17,7 +17,7 @@ namespace TD.Models
         {
             this.EntryOrders = new HashSet<EntryOrder>();
             this.TakeProfitOrders = new HashSet<ExitOrder>();
-            this.StopLossOrders = new HashSet<StopLossOrder>();
+            this.StopLossOrders = new HashSet<ExitOrder>();
             this.TradeImages = new HashSet<TradeImage>();
             this.TradingAccount = new TradingAccount();
             this.Symbol = new Symbol();
@@ -160,7 +160,7 @@ namespace TD.Models
         public ICollection<ExitOrder> TakeProfitOrders { get; set; }
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "StopLossOrders")]
-        public ICollection<StopLossOrder> StopLossOrders { get; set; }
+        public ICollection<ExitOrder> StopLossOrders { get; set; }
 
         [StringLength(2048, ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "MaxStringLength")]
         [DataType(DataType.MultilineText)]

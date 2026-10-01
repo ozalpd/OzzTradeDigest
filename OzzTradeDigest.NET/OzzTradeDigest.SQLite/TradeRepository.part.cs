@@ -125,25 +125,18 @@ namespace TD.SQLite
 
             try
             {
-                var tpOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
-                trade.TakeProfitOrders = tpOrders.ToList();
-                foreach (var item in trade.TakeProfitOrders)
+                var exitOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
+                trade.TakeProfitOrders = exitOrders.Where(o => o.ExitMode == ExitMode.TakeProfit)
+                                                   .ToList();
+                trade.StopLossOrders = exitOrders.Where(o => o.ExitMode == ExitMode.StopLoss)
+                                                 .ToList();
+                foreach (var order in trade.TakeProfitOrders)
                 {
-                    item.Trade = trade;
+                    order.Trade = trade;
                 }
-            }
-            catch (Exception)
-            {
-                // handle/log as needed
-            }
-
-            try
-            {
-                var slOrders = await StopLossOrderRepository.GetByTradeIdAsync(trade.Id);
-                trade.StopLossOrders = slOrders.ToList();
-                foreach (var item in trade.StopLossOrders)
+                foreach (var order in trade.StopLossOrders)
                 {
-                    item.Trade = trade;
+                    order.Trade = trade;
                 }
             }
             catch (Exception)
@@ -210,25 +203,29 @@ namespace TD.SQLite
         public async Task SaveStopLossOrdersAsync(Trade trade, bool updateTrade = true)
         {
             bool anyChanges = false;
-            var existingOrders = await StopLossOrderRepository.GetByTradeIdAsync(trade.Id);
-            var existingOrderIds = existingOrders.Select(o => o.Id).ToHashSet();
+            var existingOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
+            var existingOrderIds = existingOrders.Where(o => o.ExitMode == ExitMode.StopLoss)
+                                                 .Select(o => o.Id).ToHashSet();
             foreach (var order in trade.StopLossOrders)
             {
                 if (order.Id == 0)
                 {
                     order.TradeId = trade.Id;
-                    await StopLossOrderRepository.CreateAsync(order);
+                    order.ExitMode = ExitMode.StopLoss;
+                    await ExitOrderRepository.CreateAsync(order);
                     anyChanges = true;
                 }
                 else if (existingOrderIds.Contains(order.Id))
                 {
-                    anyChanges = await StopLossOrderRepository.UpdateAsync(order) || anyChanges;
+                    order.TradeId = trade.Id;
+                    order.ExitMode = ExitMode.StopLoss;
+                    anyChanges = await ExitOrderRepository.UpdateAsync(order) || anyChanges;
                     existingOrderIds.Remove(order.Id);
                 }
             }
             foreach (var id in existingOrderIds)
             {
-                await StopLossOrderRepository.DeleteAsync(id);
+                await ExitOrderRepository.DeleteAsync(id);
                 anyChanges = true;
             }
 
@@ -243,17 +240,19 @@ namespace TD.SQLite
         {
             bool anyChanges = false;
             var existingOrders = await ExitOrderRepository.GetByTradeIdAsync(trade.Id);
-            var existingOrderIds = existingOrders.Select(o => o.Id).ToHashSet();
+            var existingOrderIds = existingOrders.Where(o => o.ExitMode == ExitMode.TakeProfit).Select(o => o.Id).ToHashSet();
             foreach (var order in trade.TakeProfitOrders)
             {
                 if (order.Id == 0)
                 {
                     order.TradeId = trade.Id;
+                    order.ExitMode = ExitMode.TakeProfit;
                     await ExitOrderRepository.CreateAsync(order);
                     anyChanges = true;
                 }
                 else if (existingOrderIds.Contains(order.Id))
                 {
+                    order.ExitMode = ExitMode.TakeProfit;
                     anyChanges = await ExitOrderRepository.UpdateAsync(order) || anyChanges;
                     existingOrderIds.Remove(order.Id);
                 }

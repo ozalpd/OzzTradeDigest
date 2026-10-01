@@ -89,7 +89,7 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, StopLossOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade)
+        public (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade)
         {
             var dialog = new StopLossOrderCreateView(preselectedTrade)
             {
@@ -101,7 +101,7 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, StopLossOrder stopLossOrder)
+        public (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder)
         {
             var dialog = new StopLossOrderEditView(stopLossOrder)
             {

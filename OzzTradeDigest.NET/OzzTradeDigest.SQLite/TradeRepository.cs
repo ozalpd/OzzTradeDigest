@@ -19,29 +19,26 @@ namespace TD.SQLite
     public partial class TradeRepository : AbstractDatabaseRepository<Trade>, ITradeRepository
     {
         public TradeRepository(string databasePath, IEntryOrderRepository? entryOrderRepository = null,
-                               IStopLossOrderRepository? stopLossOrderRepository = null, ISymbolRepository? symbolRepository = null,
-                               IExitOrderRepository? exitOrderRepository = null, ITradeImageRepository? tradeImageRepository = null,
-                               ITradingAccountRepository? tradingAccountRepository = null) : base(databasePath, "Trades")
+                               IExitOrderRepository? exitOrderRepository = null, ISymbolRepository? symbolRepository = null,
+                               ITradeImageRepository? tradeImageRepository = null, ITradingAccountRepository? tradingAccountRepository = null) : base(databasePath, "Trades")
 
         {
             _selectStatement = $"SELECT {string.Join(", ", ColumnNames)} FROM {_tableName}";
             _databasePath = databasePath;
             if (entryOrderRepository != null)
                 _entryOrderRepository = entryOrderRepository;
-            if (stopLossOrderRepository != null)
-                _stopLossOrderRepository = stopLossOrderRepository;
-            if (symbolRepository != null)
-                _symbolRepository = symbolRepository;
             if (exitOrderRepository != null)
                 _exitOrderRepository = exitOrderRepository;
+            if (symbolRepository != null)
+                _symbolRepository = symbolRepository;
             if (tradeImageRepository != null)
                 _tradeImageRepository = tradeImageRepository;
             if (tradingAccountRepository != null)
                 _tradingAccountRepository = tradingAccountRepository;
 
             InitializeDatabase();
-            OnInitialized(entryOrderRepository == null, stopLossOrderRepository == null, symbolRepository == null,
-                          exitOrderRepository == null, tradeImageRepository == null, tradingAccountRepository == null);
+            OnInitialized(entryOrderRepository == null, exitOrderRepository == null, symbolRepository == null,
+                          tradeImageRepository == null, tradingAccountRepository == null);
         }
         private readonly string _databasePath;
         private readonly string _selectStatement;
@@ -59,18 +56,18 @@ namespace TD.SQLite
         }
         private IEntryOrderRepository? _entryOrderRepository;
 
-        protected IStopLossOrderRepository StopLossOrderRepository
+        protected IExitOrderRepository ExitOrderRepository
         {
             get
             {
-                if (_stopLossOrderRepository == null)
+                if (_exitOrderRepository == null)
                 {
-                    _stopLossOrderRepository = new StopLossOrderRepository(_databasePath);
+                    _exitOrderRepository = new ExitOrderRepository(_databasePath);
                 }
-                return _stopLossOrderRepository;
+                return _exitOrderRepository;
             }
         }
-        private IStopLossOrderRepository? _stopLossOrderRepository;
+        private IExitOrderRepository? _exitOrderRepository;
 
         protected ISymbolRepository SymbolRepository
         {
@@ -84,19 +81,6 @@ namespace TD.SQLite
             }
         }
         private ISymbolRepository? _symbolRepository;
-
-        protected IExitOrderRepository ExitOrderRepository
-        {
-            get
-            {
-                if (_exitOrderRepository == null)
-                {
-                    _exitOrderRepository = new ExitOrderRepository(_databasePath);
-                }
-                return _exitOrderRepository;
-            }
-        }
-        private IExitOrderRepository? _exitOrderRepository;
 
         protected ITradeImageRepository TradeImageRepository
         {
@@ -136,8 +120,8 @@ namespace TD.SQLite
         /// The parameters indicate whether the corresponding repository was created by this repository (true) or provided externally (false),
         /// which can be useful to determine if any additional initialization or event wiring is needed.
         /// </summary>
-        partial void OnInitialized(bool isEntryOrderRepository, bool isStopLossOrderRepository, bool isSymbolRepository,
-                                   bool isExitOrderRepository, bool isTradeImageRepository, bool isTradingAccountRepository);
+        partial void OnInitialized(bool isEntryOrderRepository, bool isExitOrderRepository, bool isSymbolRepository,
+                                   bool isTradeImageRepository, bool isTradingAccountRepository);
 
         public async Task<IReadOnlyList<Trade>> GetAllAsync()
         {
@@ -600,9 +584,6 @@ namespace TD.SQLite
 
             // Checking any exitOrder record exists through ExitOrder.TradeId reference
             result = result && !(await ExitOrderRepository.AnyByTradeIdAsync(id));
-
-            // Checking any stopLossOrder record exists through StopLossOrder.TradeId reference
-            result = result && !(await StopLossOrderRepository.AnyByTradeIdAsync(id));
 
             // Checking any tradeImage record exists through TradeImage.TradeId reference
             result = result && !(await TradeImageRepository.AnyByTradeIdAsync(id));

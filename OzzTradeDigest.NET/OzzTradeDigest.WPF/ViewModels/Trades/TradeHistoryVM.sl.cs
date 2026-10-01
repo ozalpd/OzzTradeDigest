@@ -7,12 +7,12 @@ namespace TD.WPF.ViewModels.Trades
 {
     public partial class TradeHistoryVM
     {
-        public ObservableCollection<StopLossOrder> StopLossOrders { get; }
+        public ObservableCollection<ExitOrder> StopLossOrders { get; }
         public StopLossOrderCreateCommand StopLossOrderCreateCommand { get; }
         public StopLossOrderDeleteCommand StopLossOrderDeleteCommand { get; }
         public StopLossOrderEditCommand StopLossOrderEditCommand { get; }
 
-        public StopLossOrder? SelectedStopLossOrder
+        public ExitOrder? SelectedStopLossOrder
         {
             get { return _selectedStopLossOrder; }
             set
@@ -23,7 +23,7 @@ namespace TD.WPF.ViewModels.Trades
                 RaisePropertyChanged(nameof(SelectedStopLossOrder));
             }
         }
-        StopLossOrder? _selectedStopLossOrder;
+        ExitOrder? _selectedStopLossOrder;
 
         /// <summary>
         /// Removes <paramref name="slOrder"/> from <see cref="Trade.StopLossOrders"/> of
@@ -38,7 +38,7 @@ namespace TD.WPF.ViewModels.Trades
         /// </remarks>
         /// <param name="slOrder">The stop-loss order to delete.</param>
         /// <returns><c>true</c> if the order was found and removed; otherwise <c>false</c>.</returns>
-        public async Task<bool> DeleteStopLossOrderAsync(StopLossOrder slOrder)
+        public async Task<bool> DeleteStopLossOrderAsync(ExitOrder slOrder)
         {
             if (SelectedTrade == null)
                 return false;
@@ -88,7 +88,7 @@ namespace TD.WPF.ViewModels.Trades
         /// before saving; if it already exists it is updated in place.
         /// </remarks>
         /// <param name="slOrder">The stop-loss order to add or update.</param>
-        public async Task SaveStopLossOrderAsync(StopLossOrder slOrder)
+        public async Task SaveStopLossOrderAsync(ExitOrder slOrder)
         {
             if (SelectedTrade == null)
                 return;

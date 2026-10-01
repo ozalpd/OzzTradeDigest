@@ -108,7 +108,7 @@ namespace TD.WPF.DesignTime
             });
 
             // Stop loss order
-            _selectedItem.StopLossOrders.Add(new StopLossOrder
+            _selectedItem.StopLossOrders.Add(new ExitOrder
             {
                 Id = 1,
                 TradeId = 1,

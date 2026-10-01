@@ -86,7 +86,7 @@ namespace TD.WPF.Services
         /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
         /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
         /// langword="false"/>. The second item is the created Stop Loss Order if confirmed; otherwise, <see langword="null"/>.</returns>
-        (bool IsConfirmed, StopLossOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade);
+        (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade);
 
         /// <summary>
         /// Displays a modal dialog for editing the specified Stop Loss Order and returns the result indicating whether the dialog
@@ -98,7 +98,7 @@ namespace TD.WPF.Services
         /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
         /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the stopLossOrder
         /// during editing; otherwise, <see langword="false"/>.</returns>
-        (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, StopLossOrder stopLossOrder);
+        (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder);
 
         /// <summary>
         /// Displays the Symbol creation dialog and returns the result indicating whether the user confirmed the dialog

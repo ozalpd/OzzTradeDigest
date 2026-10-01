@@ -32,7 +32,7 @@ namespace TD.WPF.ViewModels.Trades
             EntryOrderDeleteCommand = new EntryOrderDeleteCommand(this);
             EntryOrderEditCommand = new EntryOrderEditCommand(this, windowDialogService);
 
-            StopLossOrders = new ObservableCollection<StopLossOrder>();
+            StopLossOrders = new ObservableCollection<ExitOrder>();
             StopLossOrderCreateCommand = new StopLossOrderCreateCommand(this, windowDialogService);
             StopLossOrderDeleteCommand = new StopLossOrderDeleteCommand(this);
             StopLossOrderEditCommand = new StopLossOrderEditCommand(this, windowDialogService);

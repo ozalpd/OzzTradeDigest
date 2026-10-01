@@ -9,8 +9,8 @@ namespace TD.AppInfra.Models;
 public class AppDataSources
 {
     public AppDataSources(ICurrencyRepository currencyRepository, IEntryOrderRepository entryOrderRepository,
-                          IExchangeRepository exchangeRepository, IStopLossOrderRepository stopLossOrderRepository,
-                          ISymbolRepository symbolRepository, IExitOrderRepository takeProfitOrderRepository,
+                          IExchangeRepository exchangeRepository, IExitOrderRepository exitOrderRepository,
+                          ISymbolRepository symbolRepository,
                           ITradingAccountRepository tradingAccountRepository,
                           ITradeRepository tradeRepository)
     {
@@ -20,8 +20,7 @@ public class AppDataSources
         TradingAccountRepository = tradingAccountRepository ?? throw new ArgumentNullException(nameof(tradingAccountRepository));
 
         EntryOrderRepository = entryOrderRepository ?? throw new ArgumentNullException(nameof(entryOrderRepository));
-        TakeProfitOrderRepository = takeProfitOrderRepository ?? throw new ArgumentNullException(nameof(takeProfitOrderRepository));
-        StopLossOrderRepository = stopLossOrderRepository ?? throw new ArgumentNullException(nameof(stopLossOrderRepository));
+        ExitOrderRepository = exitOrderRepository ?? throw new ArgumentNullException(nameof(exitOrderRepository));
         TradeRepository = tradeRepository ?? throw new ArgumentNullException(nameof(tradeRepository));
     }
 
@@ -31,7 +30,6 @@ public class AppDataSources
     public ITradingAccountRepository TradingAccountRepository { get; }
 
     public IEntryOrderRepository EntryOrderRepository { get; }
-    public IExitOrderRepository TakeProfitOrderRepository { get; }
-    public IStopLossOrderRepository StopLossOrderRepository { get; }
+    public IExitOrderRepository ExitOrderRepository { get; }
     public ITradeRepository TradeRepository { get; }
 }

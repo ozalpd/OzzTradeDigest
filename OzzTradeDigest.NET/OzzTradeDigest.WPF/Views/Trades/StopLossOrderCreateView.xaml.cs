@@ -14,7 +14,7 @@ namespace TD.WPF.Views.Trades
         private readonly StopLossOrderCreateVM _viewModel;
         private Trade? _preselectedTrade;
 
-        public StopLossOrder StopLossOrder => _viewModel.StopLossOrder;
+        public ExitOrder StopLossOrder => _viewModel.StopLossOrder;
 
         /// <summary>
         /// This constructor should not be called, but we need it for the designer to work.

@@ -44,19 +44,6 @@ namespace TD.AppInfra.DesignTime
         public Task LoadNavigationCollections(Exchange exchange) => Task.CompletedTask;
     }
 
-    public class StopLossOrderMockRepository : IStopLossOrderRepository
-    {
-        public Task<bool> AnyByTradeIdAsync(int tradeId) => Task.FromResult(false);
-        public Task<bool> CanDeleteAsync(int id) => Task.FromResult(false);
-        public Task<int> CreateAsync(StopLossOrder stopLossOrder) => throw new NotImplementedException();
-        public Task<bool> DeleteAsync(int id) => throw new NotImplementedException();
-        public Task<IReadOnlyList<StopLossOrder>> GetAllAsync() => Task.FromResult<IReadOnlyList<StopLossOrder>>(Array.Empty<StopLossOrder>());
-        public Task<StopLossOrder?> GetByIdAsync(int? id) => Task.FromResult<StopLossOrder?>(null);
-        public Task<IReadOnlyList<StopLossOrder>> GetByTradeIdAsync(int tradeId) => Task.FromResult<IReadOnlyList<StopLossOrder>>(Array.Empty<StopLossOrder>());
-        public Task<bool> UpdateAsync(StopLossOrder stopLossOrder) => throw new NotImplementedException();
-        public Task<bool> UpdateCancellationTimeAsync(int id, DateTime cancellationTime) => throw new NotImplementedException();
-    }
-
     public class SymbolMockRepository : ISymbolRepository
     {
         public Task<bool> AnyByExchangeIdAsync(int exchangeId) => Task.FromResult(false);

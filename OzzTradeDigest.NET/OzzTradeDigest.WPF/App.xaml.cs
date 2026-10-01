@@ -34,20 +34,18 @@ namespace TD.WPF
                                      currencyRepository: currencyRepository,
                                      symbolRepository: symbolRepository);
             var entryOrderRepository = new EntryOrderRepository(databasePath);
-            var stopLossOrderRepository = new StopLossOrderRepository(databasePath);
             var exitOrderRepository = new ExitOrderRepository(databasePath);
             var tradingAccountRepository = new TradingAccountRepository(databasePath, exchangeRepository);
             var tradeRepository = new TradeRepository(databasePath,
                                   entryOrderRepository: entryOrderRepository,
-                                  stopLossOrderRepository: stopLossOrderRepository,
-                                  symbolRepository: symbolRepository,
                                   exitOrderRepository: exitOrderRepository,
+                                  symbolRepository: symbolRepository,
                                   tradeImageRepository: new TradeImageRepository(databasePath),
                                   tradingAccountRepository: tradingAccountRepository);
 
-            var dataSources = new AppDataSources(currencyRepository, entryOrderRepository, exchangeRepository,
-                                                 stopLossOrderRepository, symbolRepository, exitOrderRepository,
-                                                 tradingAccountRepository, tradeRepository);
+            var dataSources = new AppDataSources(currencyRepository, entryOrderRepository,
+                                                 exchangeRepository, exitOrderRepository,
+                                                 symbolRepository, tradingAccountRepository, tradeRepository);
             if (settings.AutoBackupEnabled)
             {
                 await AutoBackupHelper.RunAsync();

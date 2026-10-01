@@ -227,7 +227,7 @@ static async Task<Trade> EnsureDemoTradeAsync(ITradeRepository tradeRepository, 
     }
     decimal quantity = perOrderQuantity * entryOrderCount; // Total planned quantity across all entry orders
 
-    var slOrder = new StopLossOrder
+    var slOrder = new ExitOrder
     {
         OrderType = ExitOrderType.Stop,
         OrderPrice = (entryPrice * slMultiplier).RoundToQuantum(),

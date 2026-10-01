@@ -2379,7 +2379,7 @@
           <Name>TakeProfitOrders</Name>
           <DisplayOrder>103200</DisplayOrder>
           <DisplayName>Take Profit Orders</DisplayName>
-          <TypeName>ICollection&lt;TakeProfitOrder&gt;</TypeName>
+          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
           <RestrictedData>false</RestrictedData>
@@ -2388,7 +2388,7 @@
           <Name>StopLossOrders</Name>
           <DisplayOrder>103300</DisplayOrder>
           <DisplayName>Stop Loss Orders</DisplayName>
-          <TypeName>ICollection&lt;StopLossOrder&gt;</TypeName>
+          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
           <RestrictedData>false</RestrictedData>
