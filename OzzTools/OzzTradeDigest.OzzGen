@@ -85,7 +85,7 @@
       </Members>
     </EnumDefinition>
     <EnumDefinition>
-      <Name>ExitMode</Name>
+      <Name>ExitOrderMode</Name>
       <NamespaceName>TD</NamespaceName>
       <Members>
         <EnumMember>
@@ -1764,14 +1764,14 @@
           <DependentPropertyType>int</DependentPropertyType>
         </BaseProperty>
         <BaseProperty xsi:type="SimpleProperty">
-          <Name>ExitMode</Name>
+          <Name>ExitOrderMode</Name>
           <DisplayOrder>10300</DisplayOrder>
-          <DisplayName>Exit Mode</DisplayName>
+          <DisplayName>Exit Order Mode</DisplayName>
           <TypeName>int</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
           <RestrictedData>false</RestrictedData>
-          <EnumTypeName>ExitMode</EnumTypeName>
+          <EnumTypeName>ExitOrderMode</EnumTypeName>
           <IsKey>false</IsKey>
           <IsForeignKey>false</IsForeignKey>
           <IsImmutable>false</IsImmutable>

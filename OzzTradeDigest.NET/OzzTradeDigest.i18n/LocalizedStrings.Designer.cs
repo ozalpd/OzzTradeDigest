@@ -1105,20 +1105,20 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit Mode.
-        /// </summary>
-        public static string ExitMode {
-            get {
-                return ResourceManager.GetString("ExitMode", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Exit Order.
         /// </summary>
         public static string ExitOrder {
             get {
                 return ResourceManager.GetString("ExitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Order Mode.
+        /// </summary>
+        public static string ExitOrderMode {
+            get {
+                return ResourceManager.GetString("ExitOrderMode", resourceCulture);
             }
         }
         

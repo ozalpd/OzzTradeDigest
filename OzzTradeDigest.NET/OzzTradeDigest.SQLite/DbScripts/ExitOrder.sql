@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS ExitOrders(
     Id INTEGER PRIMARY KEY,
 	TradeId INTEGER Not Null, 
-	ExitMode INTEGER Not Null, 
+	ExitOrderMode INTEGER Not Null, 
 	OrderType INTEGER Not Null, 
 	OrderPrice TEXT Not Null, 
 	FilledPrice TEXT, 

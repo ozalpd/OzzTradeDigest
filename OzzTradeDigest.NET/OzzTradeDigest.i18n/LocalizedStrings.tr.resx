@@ -406,11 +406,11 @@
     <data name="Exit" xml:space="preserve">
         <value>Kapat</value>
     </data>
-    <data name="ExitMode" xml:space="preserve">
-        <value>Çıkış Şekli</value>
-    </data>
     <data name="ExitOrder" xml:space="preserve">
         <value>Çıkış Emri</value>
+    </data>
+    <data name="ExitOrderMode" xml:space="preserve">
+        <value>Çıkış Emir Şekli</value>
     </data>
     <data name="ExitOrders" xml:space="preserve">
         <value>Çıkış Emirleri</value>

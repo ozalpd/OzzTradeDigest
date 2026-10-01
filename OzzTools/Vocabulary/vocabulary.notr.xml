@@ -1157,6 +1157,10 @@
     <Translation>Exit Order</Translation>
   </Vocab>
   <Vocab>
+    <Name>ExitOrderMode</Name>
+    <Translation>Exit Order Mode</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ExitOrders</Name>
     <Translation>Exit Orders</Translation>
   </Vocab>

@@ -406,11 +406,11 @@
     <data name="Exit" xml:space="preserve">
         <value>Exit</value>
     </data>
-    <data name="ExitMode" xml:space="preserve">
-        <value>Exit Mode</value>
-    </data>
     <data name="ExitOrder" xml:space="preserve">
         <value>Exit Order</value>
+    </data>
+    <data name="ExitOrderMode" xml:space="preserve">
+        <value>Exit Order Mode</value>
     </data>
     <data name="ExitOrders" xml:space="preserve">
         <value>Exit Orders</value>

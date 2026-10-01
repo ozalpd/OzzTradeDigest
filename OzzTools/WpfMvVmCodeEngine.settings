@@ -1336,7 +1336,7 @@
           <ValueConstraint />
         </WpfMvvmPropertySetting>
         <WpfMvvmPropertySetting>
-          <Name>ExitMode</Name>
+          <Name>ExitOrderMode</Name>
           <Exclude>false</Exclude>
           <CreateEditOrder>10300</CreateEditOrder>
           <DefaultValue />

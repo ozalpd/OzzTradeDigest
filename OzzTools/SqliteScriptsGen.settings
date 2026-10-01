@@ -1077,7 +1077,7 @@
           <ForeignKeyTable>Trades</ForeignKeyTable>
         </StorageColumnSetting>
         <StorageColumnSetting>
-          <Name>ExitMode</Name>
+          <Name>ExitOrderMode</Name>
           <Exclude>false</Exclude>
           <DataType>INTEGER</DataType>
           <Length>0</Length>

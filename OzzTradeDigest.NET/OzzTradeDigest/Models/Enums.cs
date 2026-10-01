@@ -55,7 +55,7 @@ namespace TD.Models
         StopLimit = 50,
     }
 
-    public enum ExitMode : int
+    public enum ExitOrderMode : int
     {
         [Display(ResourceType = typeof(LocalizedStrings), Name = "TakeProfit")]
         TakeProfit = 10,

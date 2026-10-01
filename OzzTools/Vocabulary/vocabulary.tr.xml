@@ -1157,6 +1157,10 @@
     <Translation>Çıkış Emri</Translation>
   </Vocab>
   <Vocab>
+    <Name>ExitOrderMode</Name>
+    <Translation>Çıkış Emir Şekli</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ExitOrders</Name>
     <Translation>Çıkış Emirleri</Translation>
   </Vocab>

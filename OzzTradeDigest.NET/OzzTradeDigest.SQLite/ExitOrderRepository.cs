@@ -123,13 +123,13 @@ namespace TD.SQLite
 
             await using var command = connection.CreateCommand();
             command.CommandText = @$"INSERT INTO {_tableName} ({string.Join(", ", ColumnNames[1..])})
-            VALUES (@tradeId, @exitMode, @orderType, @orderPrice, @filledPrice, @orderQuantity,
+            VALUES (@tradeId, @exitOrderMode, @orderType, @orderPrice, @filledPrice, @orderQuantity,
                     @filledQuantity, @orderValue, @filledValue, @notes, @cancellationTime, @filledTime,
                     @updatedAt);
             SELECT last_insert_rowid();";
 
             command.AddParameter("@tradeId", exitOrder.TradeId);
-            command.AddParameter("@exitMode", (int)exitOrder.ExitMode);
+            command.AddParameter("@exitOrderMode", (int)exitOrder.ExitOrderMode);
             command.AddParameter("@orderType", (int)exitOrder.OrderType);
             command.AddDecimalToTextParameter("@orderPrice", exitOrder.OrderPrice);
             command.AddDecimalToTextParameter("@filledPrice", exitOrder.FilledPrice);
@@ -198,7 +198,7 @@ namespace TD.SQLite
             await using var connection = await GetOpenConnectionAsync();
             var existingExitOrder = await GetByIdAsync(exitOrder.Id);
             bool noChanges = existingExitOrder != null
-                          && existingExitOrder.ExitMode == exitOrder.ExitMode
+                          && existingExitOrder.ExitOrderMode == exitOrder.ExitOrderMode
                           && existingExitOrder.OrderType == exitOrder.OrderType
                           && existingExitOrder.OrderPrice == exitOrder.OrderPrice
                           && existingExitOrder.FilledPrice == exitOrder.FilledPrice
@@ -215,9 +215,9 @@ namespace TD.SQLite
 
             await using var command = connection.CreateCommand();
             // TradeId, CancellationTime are not updated to avoid complications with existing references,
-            // so only ExitMode, OrderType, OrderPrice, FilledPrice, OrderQuantity, FilledQuantity, OrderValue, FilledValue, Notes, FilledTime, UpdatedAt are updated
+            // so only ExitOrderMode, OrderType, OrderPrice, FilledPrice, OrderQuantity, FilledQuantity, OrderValue, FilledValue, Notes, FilledTime, UpdatedAt are updated
             command.CommandText = @$"UPDATE {_tableName} SET
-                ExitMode = @exitMode,
+                ExitOrderMode = @exitOrderMode,
                 OrderType = @orderType,
                 OrderPrice = @orderPrice,
                 FilledPrice = @filledPrice,
@@ -231,7 +231,7 @@ namespace TD.SQLite
             WHERE Id = @id";
 
             command.AddParameter("@id", exitOrder.Id);
-            command.AddParameter("@exitMode", (int)exitOrder.ExitMode);
+            command.AddParameter("@exitOrderMode", (int)exitOrder.ExitOrderMode);
             command.AddParameter("@orderType", (int)exitOrder.OrderType);
             command.AddDecimalToTextParameter("@orderPrice", exitOrder.OrderPrice);
             command.AddDecimalToTextParameter("@filledPrice", exitOrder.FilledPrice);
@@ -286,7 +286,7 @@ namespace TD.SQLite
             {
                 Id = reader.GetInt32(ColNrs.Id),
                 TradeId = reader.GetInt32(ColNrs.TradeId),
-                ExitMode = (ExitMode)reader.GetInt32(ColNrs.ExitMode),
+                ExitOrderMode = (ExitOrderMode)reader.GetInt32(ColNrs.ExitOrderMode),
                 OrderType = (ExitOrderType)reader.GetInt32(ColNrs.OrderType),
                 OrderPrice = reader.GetDecimalFromText(ColNrs.OrderPrice) ?? 0m,
                 FilledPrice = reader.IsDBNull(ColNrs.FilledPrice) ? null
@@ -320,7 +320,7 @@ namespace TD.SQLite
         {
             public readonly static int Id = 0;
             public readonly static int TradeId = 1;
-            public readonly static int ExitMode = 2;
+            public readonly static int ExitOrderMode = 2;
             public readonly static int OrderType = 3;
             public readonly static int OrderPrice = 4;
             public readonly static int FilledPrice = 5;
@@ -340,7 +340,7 @@ namespace TD.SQLite
         public readonly string[] ColumnNames = new[] {
             "Id",
             "TradeId",
-            "ExitMode",
+            "ExitOrderMode",
             "OrderType",
             "OrderPrice",
             "FilledPrice",

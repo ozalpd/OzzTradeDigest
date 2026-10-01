@@ -36,8 +36,8 @@ namespace TD.Models
         public Trade Trade { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "ExitMode")]
-        public ExitMode ExitMode { get; set; }
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ExitOrderMode")]
+        public ExitOrderMode ExitOrderMode { get; set; }
 
         [RequiredSelection]
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
@@ -99,7 +99,7 @@ namespace TD.Models
         {
             var clone = new ExitOrder();
             clone.TradeId = this.TradeId;
-            clone.ExitMode = this.ExitMode;
+            clone.ExitOrderMode = this.ExitOrderMode;
             clone.OrderType = this.OrderType;
             clone.OrderPrice = this.OrderPrice;
             clone.FilledPrice = this.FilledPrice;

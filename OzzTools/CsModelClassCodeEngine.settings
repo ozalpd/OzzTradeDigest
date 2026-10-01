@@ -834,7 +834,7 @@
           <IsSearchParameter>false</IsSearchParameter>
         </ModelPropertySetting>
         <ModelPropertySetting>
-          <Name>ExitMode</Name>
+          <Name>ExitOrderMode</Name>
           <Exclude>false</Exclude>
           <DataType />
           <DTOExclusion>false</DTOExclusion>
