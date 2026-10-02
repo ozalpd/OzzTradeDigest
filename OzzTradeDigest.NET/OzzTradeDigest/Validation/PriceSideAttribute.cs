@@ -82,9 +82,9 @@ namespace TD.Validation
             PriceSide targetSide;
             if (validationContext.ObjectInstance is ExitOrder exitOrder)
             {
-                if (exitOrder.ExitOrderMode == ExitOrderMode.TakeProfit)
+                if (exitOrder.ExitOrderMode == ExitOrderMode.PlannedTP)
                     targetSide = PriceSide.Above;
-                else if (exitOrder.ExitOrderMode == ExitOrderMode.StopLoss)
+                else if (exitOrder.ExitOrderMode == ExitOrderMode.PlannedSL)
                     targetSide = PriceSide.Below;
                 else
                     return ValidationResult.Success; // Manual, Timed, Algorithm, MarginCall

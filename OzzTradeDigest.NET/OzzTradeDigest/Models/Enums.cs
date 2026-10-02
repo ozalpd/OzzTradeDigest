@@ -57,10 +57,10 @@ namespace TD.Models
 
     public enum ExitOrderMode : int
     {
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "TakeProfit")]
-        TakeProfit = 10,
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "StopLoss")]
-        StopLoss = 20,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "PlannedTP")]
+        PlannedTP = 10,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "PlannedSL")]
+        PlannedSL = 20,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "ManualExit")]
         ManualExit = 30,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "TimedExit")]

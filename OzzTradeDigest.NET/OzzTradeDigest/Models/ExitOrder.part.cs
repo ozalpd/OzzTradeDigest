@@ -52,51 +52,30 @@ namespace TD.Models
 
 
         /// <summary>
-        /// Gets the planned profit amount for this specific take profit Filled,
-        /// calculated from the trade's entry price, this Filled's price and quantity.
+        /// Realized profit (positive) or loss (negative) for this fill.
         /// </summary>
-        public decimal? FilledProfitAmount
+        public decimal? RealizedProfitLoss
         {
             get
             {
-                if (Trade == null || FilledPrice <= 0)
+                if (Trade == null || FilledPrice == null || FilledQuantity == null)
                     return null;
 
                 var entryPrice = Trade.ExecutedEntryPrice ?? Trade.PlannedEntryPrice;
-                var quantity = FilledQuantity;
-
-                if (entryPrice == null || quantity == null || quantity <= 0)
+                if (entryPrice == null || FilledQuantity is not > 0)
                     return null;
 
-                return Trade.TradeDirection == TradeDirection.Long
-                    ? (FilledPrice - entryPrice.Value) * quantity.Value
-                    : (entryPrice.Value - FilledPrice) * quantity.Value;
+                decimal diff = Trade.TradeDirection == TradeDirection.Long
+                    ? FilledPrice.Value - entryPrice.Value
+                    : entryPrice.Value - FilledPrice.Value;
+
+                return diff * FilledQuantity.Value;
             }
         }
 
-
-        /// <summary>
-        /// Gets the planned risk amount for this specific stop loss Filled,
-        /// calculated from the trade's entry price, this Filled's price and quantity.
-        /// </summary>
-        public decimal? FilledRiskAmount
-        {
-            get
-            {
-                if (Trade == null || FilledPrice <= 0)
-                    return null;
-
-                var entryPrice = Trade.ExecutedEntryPrice ?? Trade.PlannedEntryPrice;
-                var quantity = FilledQuantity;
-
-                if (entryPrice == null || quantity == null || quantity <= 0)
-                    return null;
-
-                return Trade.TradeDirection == TradeDirection.Long
-                    ? (entryPrice.Value - FilledPrice) * quantity.Value
-                    : (FilledPrice - entryPrice.Value) * quantity.Value;
-            }
-        }
+        // Backward-compatibility / semantic aliases:
+        public decimal? FilledProfitAmount => RealizedProfitLoss;
+        public decimal? FilledRiskAmount => RealizedProfitLoss.HasValue ? -RealizedProfitLoss.Value : null;
 
         public bool IsCancelled => CancellationTime.HasValue;
 

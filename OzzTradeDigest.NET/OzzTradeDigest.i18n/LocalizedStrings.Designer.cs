@@ -2077,15 +2077,6 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stop Loss.
-        /// </summary>
-        public static string StopLoss {
-            get {
-                return ResourceManager.GetString("StopLoss", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Stop Loss Orders.
         /// </summary>
         public static string StopLossOrders {
@@ -2172,15 +2163,6 @@ namespace TD.i18n {
         public static string Tags {
             get {
                 return ResourceManager.GetString("Tags", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Take Profit.
-        /// </summary>
-        public static string TakeProfit {
-            get {
-                return ResourceManager.GetString("TakeProfit", resourceCulture);
             }
         }
         

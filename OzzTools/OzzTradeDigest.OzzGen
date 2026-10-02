@@ -89,11 +89,11 @@
       <NamespaceName>TD</NamespaceName>
       <Members>
         <EnumMember>
-          <Name>TakeProfit</Name>
+          <Name>PlannedTP</Name>
           <Value>10</Value>
         </EnumMember>
         <EnumMember>
-          <Name>StopLoss</Name>
+          <Name>PlannedSL</Name>
           <Value>20</Value>
         </EnumMember>
         <EnumMember>

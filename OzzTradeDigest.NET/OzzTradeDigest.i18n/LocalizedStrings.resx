@@ -730,9 +730,6 @@
     <data name="StopLimit" xml:space="preserve">
         <value>Stop Limit</value>
     </data>
-    <data name="StopLoss" xml:space="preserve">
-        <value>Stop Loss</value>
-    </data>
     <data name="StopLossOrders" xml:space="preserve">
         <value>Stop Loss Orders</value>
     </data>
@@ -762,9 +759,6 @@
     </data>
     <data name="Tags" xml:space="preserve">
         <value>Tags</value>
-    </data>
-    <data name="TakeProfit" xml:space="preserve">
-        <value>Take Profit</value>
     </data>
     <data name="TakeProfitOrders" xml:space="preserve">
         <value>Take Profit Orders</value>
