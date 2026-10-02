@@ -49,7 +49,7 @@ See [`CHANGELOG.md`](CHANGELOG.md) for release history.
 ### Data Layer
 - Raw SQLite data access via Microsoft.Data.Sqlite — no ORM
 - Repository implementations in `TD.SQLite`, contracts in `TD.RepositoryContracts`
-- Repositories implemented: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `EntryOrder`, `StopLossOrder`, `TakeProfitOrder`
+- Repositories implemented: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `EntryOrder`, `ExitOrder`
 - Navigation collections auto-loaded for `Exchange` (Symbols, TradingAccounts) and `Trade` (orders, images)
 - Type-safe decimal SQLite persistence — scaled integers for values, `TEXT` for precision-sensitive price/quantity fields
 

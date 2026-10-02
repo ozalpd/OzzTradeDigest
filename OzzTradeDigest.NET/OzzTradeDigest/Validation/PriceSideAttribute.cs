@@ -30,6 +30,12 @@ namespace TD.Validation
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
     public class PriceSideAttribute : ValidationAttribute
     {
+        /// <summary>
+        /// Initializes a new instance where the required price side is determined dynamically
+        /// from the validated instance (e.g., via <see cref="ExitOrder.ExitOrderMode"/>).
+        /// </summary>
+        public PriceSideAttribute() { }
+
         /// <param name="side">
         /// The required side relative to entry price for a <see cref="TradeDirection.Long"/> position.
         /// Automatically inverted for <see cref="TradeDirection.Short"/> positions.
@@ -40,7 +46,7 @@ namespace TD.Validation
         }
 
         /// <summary>The required side for a Long position.</summary>
-        public PriceSide Side { get; }
+        public PriceSide? Side { get; }
 
         /// <summary>
         /// Name of the property on the validated object that exposes the parent <see cref="Trade"/>.
@@ -55,7 +61,6 @@ namespace TD.Validation
 
             if (validationContext.ObjectInstance is not Trade trade)
             {
-                // Reach through the navigation property to the parent Trade
                 var tradeProp = validationContext.ObjectType.GetProperty(TradeProperty);
                 if (tradeProp == null)
                     return ValidationResult.Success;
@@ -66,7 +71,7 @@ namespace TD.Validation
                 trade = trade2;
             }
 
-            // Only enforce during the planning phase; once a position is open price levels move freely
+            // Only enforce during planning phase
             if (trade.TradeStatus != TradeStatus.Planned && trade.TradeStatus != TradeStatus.Pending)
                 return ValidationResult.Success;
 
@@ -74,25 +79,41 @@ namespace TD.Validation
             if (trade.PlannedEntryPrice is not > 0)
                 return ValidationResult.Success;
 
+            PriceSide targetSide;
+            if (validationContext.ObjectInstance is ExitOrder exitOrder)
+            {
+                if (exitOrder.ExitOrderMode == ExitOrderMode.TakeProfit)
+                    targetSide = PriceSide.Above;
+                else if (exitOrder.ExitOrderMode == ExitOrderMode.StopLoss)
+                    targetSide = PriceSide.Below;
+                else
+                    return ValidationResult.Success; // Manual, Timed, Algorithm, MarginCall
+            }
+            else if (Side.HasValue)
+            {
+                targetSide = Side.Value;
+            }
+            else
+            {
+                return ValidationResult.Success;
+            }
+
             var price = Convert.ToDecimal(value);
             var entryPrice = trade.PlannedEntryPrice!.Value;
 
             bool isDirectionSet = trade.TradeDirection == TradeDirection.Long || trade.TradeDirection == TradeDirection.Short;
             if (!isDirectionSet)
             {
-                string message = "Trade direction must be set to Long or Short before setting price.";
-                return new ValidationResult(message, new[] { validationContext.MemberName! });
+                return new ValidationResult("Trade direction must be set to Long or Short before setting price.", new[] { validationContext.MemberName! });
             }
 
-            // Long → Side is taken as-is. Short → Side is inverted.
-            bool mustBeAbove = (trade.TradeDirection == TradeDirection.Long) == (Side == PriceSide.Above);
+            bool mustBeAbove = (trade.TradeDirection == TradeDirection.Long) == (targetSide == PriceSide.Above);
             bool isValid = mustBeAbove ? price > entryPrice : price < entryPrice;
 
             if (!isValid)
             {
                 string sideLabel = mustBeAbove ? ErrorStrings.PriceSideMustBeAbove : ErrorStrings.PriceSideMustBeBelow;
                 string message = string.Format(sideLabel, validationContext.DisplayName, entryPrice);
-
                 return new ValidationResult(message, new[] { validationContext.MemberName! });
             }
 

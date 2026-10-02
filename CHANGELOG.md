@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Consolidated exit order entities (`StopLossOrder` and `TakeProfitOrder`) into a unified `ExitOrder` entity and `ExitOrders` table.
+- Added `ExitOrderMode` enum (`TakeProfit`, `StopLoss`, `ManualExit`, `TimedExit`, `Algorithm`, `MarginCall`) with localized display attributes.
+
 ### Changed
+- Updated `PriceSideAttribute` to dynamically evaluate required price side relative to entry price based on `ExitOrder.ExitOrderMode` (Above for `TakeProfit`, Below for `StopLoss` for Long positions; inverted for Short positions; skipped for manual/system exits).
+- Updated `Trade` model and `TradeRepository.part.cs` to manage and populate `TakeProfitOrders` and `StopLossOrders` as `ExitOrder` collections filtered by `ExitOrderMode`.
 - Renamed the application from **OzzTradeDiary** to **OzzTradeDigest**; repository moved to https://github.com/ozalpd/OzzTradeDigest. Solution file, project folders/files (`OzzTradeDigest`, `OzzTradeDigest.AppInfra`, `OzzTradeDigest.i18n`, `OzzTradeDigest.SQLite`, `OzzTradeDigest.WPF`), and documentation (README, Copilot instructions, agents, prompts, instruction files) updated to the new name via `git mv`. The application icon is redesigned.
 
 ## [0.2.3] - 2026-06-07

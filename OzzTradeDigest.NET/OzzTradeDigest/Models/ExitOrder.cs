@@ -45,7 +45,7 @@ namespace TD.Models
         public ExitOrderType OrderType { get; set; }
 
         [GreaterThan(0)]
-        [PriceSide(PriceSide.Above)]
+        [PriceSide()]
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
         [Display(ResourceType = typeof(LocalizedStrings), Name = "OrderPrice")]
         public decimal OrderPrice { get; set; }

@@ -71,10 +71,10 @@ Internal tracking versions: `OzzTradeDigest` `0.0.60`, `OzzTradeDigest.AppInfra`
 - `Trade` non-calculated persisted fields include: `TradingAccountId`, `SymbolId`, `TradeDirection`, `EntryMethod`, `TradeStatus`, `Tags` (255 chars), `MarketType`, `EntryTime`, `ExitTime`, `CancellationTime`, `SetupNotes` (2048 chars), `ReviewNotes` (2048 chars), `UpdatedAt`. These are plain persisted columns and must be included in repository insert/update mappings and DDL.
 - `Trade.CancellationTime` is a timestamp set when `TradeStatus` is set to `TradeStatus.Cancelled`; it is `null` for all other statuses.
 - `Trade.Tags` is a plain string (max 255 chars) for free-form comma-separated or structured tags; persisted as `TEXT`.
-- `Trade.RemainingPositionValue` is calculated from `ExecutedPositionValue` minus the sum of `OrderValue` from closed `TakeProfitOrders` and `StopLossOrders`; it is also persisted.
+- `Trade.RemainingPositionValue` is calculated from `ExecutedPositionValue` minus the sum of `OrderValue` from closed `ExitOrders` (or closed `TakeProfitOrders` and `StopLossOrders`); it is also persisted.
 - Order entities should expose calculated `OrderValue` and `FilledValue` partial properties instead of persisted `OrderAmount` / `FilledAmount` fields.
-- Calculated order value properties for `EntryOrder`, `StopLossOrder`, and `TakeProfitOrder` should stay aligned with their related price/quantity fields.
-- Order entities (`EntryOrder`, `StopLossOrder`, `TakeProfitOrder`) use `FilledTime` (not `ExecuteTime`) for the broker-confirmed fill timestamp. `DisplayOrder` has been removed; use `UpdatedAt` for sorting instead.
+- Calculated order value properties for `EntryOrder` and `ExitOrder` should stay aligned with their related price/quantity fields.
+- Order entities (`EntryOrder`, `ExitOrder`) use `FilledTime` (not `ExecuteTime`) for the broker-confirmed fill timestamp. `DisplayOrder` has been removed; use `UpdatedAt` for sorting instead.
 - Fee rates on `TradingAccount`: `MakerFeeRate Nullable<decimal>` (limit order rate) and `TakerFeeRate Nullable<decimal>` (market order rate) are per-account because fee tiers vary by account VIP level, not just by exchange.
 
 ### ViewModels (TD.AppInfra and TD.WPF namespaces)
@@ -145,7 +145,7 @@ Internal tracking versions: `OzzTradeDigest` `0.0.60`, `OzzTradeDigest.AppInfra`
 - `ExchangeRepository` should receive dependent repositories (such as `SymbolRepository` and `TradingAccountRepository`) via constructor injection instead of creating/managing those dependencies internally.
 - Keep initialization ownership explicit: avoid re-initializing `TradingAccountRepository` inside `ExchangeRepository`; construct and pass dependencies from the caller/composition root.
 - Keep `Trade.OrderQuantity` and `Trade.FilledQuantity` aligned across repository mapping, validation, and SQL schema generation.
-- Implemented repositories: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `EntryOrder`, `StopLossOrder`, `TakeProfitOrder`; remaining repositories will be added
+- Implemented repositories: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `EntryOrder`, `ExitOrder`; remaining repositories will be added
 - **Each model has a matching DDL file** in `OzzTradeDigest.SQLite/DbScripts` named `<ModelName>.sql`; optional seed files are named `<PluralTableName>-Data.sql`
 - DDL scripts in `DbScripts/` folder are **generated** by OzzCodeGen — do not edit manually
 - Seed scripts in `DbScripts/` (for example `<PluralTableName>-Data.sql`) are also generated artifacts — do not edit manually
@@ -213,7 +213,8 @@ Internal tracking versions: `OzzTradeDigest` `0.0.60`, `OzzTradeDigest.AppInfra`
 - `MarketType`: Unspecified (0), Stock (20), Fund (30), Futures (40), Forex (50), Option (60), Commodity (70), Crypto (80), CryptoPerpetual (90), Index (100)
 - `TradeDirection`: Long (200), Short (100)
 - `EntryOrderType`: Market (10), Limit (20), StopMarket (40), StopLimit (50) — used on `EntryOrder.OrderType`
-- `ExitOrderType`: Market (10), Limit (20), TrailingStop (30), Stop (40), StopLimit (50) — used on `StopLossOrder.OrderType` and `TakeProfitOrder.OrderType`
+- `ExitOrderType`: Market (10), Limit (20), TrailingStop (30), Stop (40), StopLimit (50) — used on `ExitOrder.OrderType`
+- `ExitOrderMode`: TakeProfit (10), StopLoss (20), ManualExit (30), TimedExit (40), Algorithm (50), MarginCall (60) — used on `ExitOrder.ExitOrderMode`
 - `PriceSide`: Above, Below — used by `PriceSideAttribute` to specify which side of the entry price a planned price level must be on; defined in `TD.Models` (`Enums.cs`) alongside the other domain enums
 - `TradeStatus`: Missed (-10), Cancelled (-20), Planned (10), Pending (20), Active (30), Closed (40). Negative values = never opened; use range queries: `status < 0` (abandoned), `status <= Pending` (no position opened), `status > Pending` (active or closed, may have execution results). `Cancelled` uses -20 to align with the convention used in other enums in this codebase.
 

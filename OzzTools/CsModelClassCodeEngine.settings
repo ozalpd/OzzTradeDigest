@@ -855,7 +855,7 @@
         <ModelPropertySetting>
           <Name>OrderPrice</Name>
           <Exclude>false</Exclude>
-          <CustomAttributes>GreaterThan(0);PriceSide(PriceSide.Above)</CustomAttributes>
+          <CustomAttributes>GreaterThan(0);PriceSide()</CustomAttributes>
           <DataType />
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
