@@ -35,7 +35,11 @@ namespace TD.WPF.Views
             Title = $"Ozz Trade Diary - v{AppVersion.Version}";
             _viewModel = new MainWindowVM(_dataSources);
             DataContext = _viewModel;
-            await _viewModel.TradeHistory.InitializeAsync();
+
+            var historyVM = _viewModel.TradeHistory;
+            await historyVM.InitializeAsync();
+            if (!historyVM.LoadTradesInProgress)
+                await historyVM.LoadTradesAsync();
         }
 
         private void MainWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)

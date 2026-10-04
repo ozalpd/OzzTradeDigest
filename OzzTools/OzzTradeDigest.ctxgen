@@ -1,7 +1,7 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "..\\OzzTradeDigest.NET",
-  "LastPackedAt": "2026-09-28T18:02:44.8175372+03:00",
+  "LastPackedAt": "2026-10-04T17:16:39.5087254+03:00",
   "RepoUrl": "https://github.com/ozalpd/OzzTradeDigest",
   "License": "MIT",
   "IsOpenSource": true,
@@ -99,7 +99,7 @@
     },
     "OzzTradeDigest\\Models\\Enums.cs": {
       "RelativePath": "OzzTradeDigest\\Models\\Enums.cs",
-      "LastWriteTime": "2026-10-01T05:24:37.3675514+03:00",
+      "LastWriteTime": "2026-10-02T20:34:51.6435077+03:00",
       "FileSize": 9860,
       "ContextNote": "",
       "PackingMode": 20
@@ -113,15 +113,15 @@
     },
     "OzzTradeDigest\\Models\\ExitOrder.cs": {
       "RelativePath": "OzzTradeDigest\\Models\\ExitOrder.cs",
-      "LastWriteTime": "2026-10-01T05:29:04.4399756+03:00",
-      "FileSize": 5291,
+      "LastWriteTime": "2026-10-02T03:10:30.6369797+03:00",
+      "FileSize": 5276,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest\\Models\\ExitOrder.part.cs": {
       "RelativePath": "OzzTradeDigest\\Models\\ExitOrder.part.cs",
-      "LastWriteTime": "2026-10-01T05:16:23.6932836+03:00",
-      "FileSize": 7449,
+      "LastWriteTime": "2026-10-02T19:55:20.6059008+03:00",
+      "FileSize": 6708,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -204,8 +204,8 @@
     },
     "OzzTradeDigest\\Validation\\PriceSideAttribute.cs": {
       "RelativePath": "OzzTradeDigest\\Validation\\PriceSideAttribute.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.366782+03:00",
-      "FileSize": 4630,
+      "LastWriteTime": "2026-10-02T20:33:24.5128454+03:00",
+      "FileSize": 5381,
       "ContextNote": "",
       "PackingMode": 20
     },
@@ -414,14 +414,14 @@
     },
     "OzzTradeDigest.i18n\\ActionStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ActionStrings.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2478663+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 9592,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\ActionStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ActionStrings.tr.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2478663+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 9785,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
@@ -435,14 +435,14 @@
     },
     "OzzTradeDigest.i18n\\CommonStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\CommonStrings.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2478663+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 5266,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\CommonStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\CommonStrings.tr.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 5281,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
@@ -456,36 +456,36 @@
     },
     "OzzTradeDigest.i18n\\ErrorStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ErrorStrings.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 6598,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\ErrorStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\ErrorStrings.tr.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 6740,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs",
-      "LastWriteTime": "2026-10-01T05:27:51.5323779+03:00",
-      "FileSize": 85519,
+      "LastWriteTime": "2026-10-02T20:34:38.1539067+03:00",
+      "FileSize": 84937,
       "ContextNote": "",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\LocalizedStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\LocalizedStrings.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
-      "FileSize": 31485,
+      "LastWriteTime": "2026-10-02T20:34:23.1475485+03:00",
+      "FileSize": 31289,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\LocalizedStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\LocalizedStrings.tr.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2558521+03:00",
-      "FileSize": 32121,
+      "LastWriteTime": "2026-10-02T20:34:23.1475485+03:00",
+      "FileSize": 31930,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
@@ -498,14 +498,14 @@
     },
     "OzzTradeDigest.i18n\\MessageStrings.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\MessageStrings.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 6567,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.i18n\\MessageStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.i18n\\MessageStrings.tr.resx",
-      "LastWriteTime": "2026-10-01T05:27:40.2498719+03:00",
+      "LastWriteTime": "2026-10-02T20:34:23.1418201+03:00",
       "FileSize": 6835,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
@@ -610,7 +610,7 @@
     },
     "OzzTradeDigest.SQLite\\TradeRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.SQLite\\TradeRepository.part.cs",
-      "LastWriteTime": "2026-10-01T05:25:54.9378945+03:00",
+      "LastWriteTime": "2026-10-02T20:33:24.5262746+03:00",
       "FileSize": 11968,
       "ContextNote": "",
       "PackingMode": 20
@@ -1499,8 +1499,8 @@
     },
     "OzzTradeDigest.WPF\\Views\\MainWindow.xaml.cs": {
       "RelativePath": "OzzTradeDigest.WPF\\Views\\MainWindow.xaml.cs",
-      "LastWriteTime": "2026-08-31T19:43:24.3449518+03:00",
-      "FileSize": 3413,
+      "LastWriteTime": "2026-10-04T17:01:13.1658704+03:00",
+      "FileSize": 3557,
       "ContextNote": "",
       "PackingMode": 20
     },
