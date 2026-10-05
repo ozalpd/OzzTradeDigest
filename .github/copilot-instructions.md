@@ -4,7 +4,7 @@
 
 Early-stage development (pre-release, no public release yet).
 
-Internal tracking versions: `OzzTradeDigest` `0.0.60`, `OzzTradeDigest.AppInfra` `0.0.60`, `OzzTradeDigest.RepositoryContracts` `0.0.60`, `OzzTradeDigest.WPF` `0.0.60`, `OzzTradeDigest.SQLite` `0.0.60`, `OzzTradeDigest.i18n` `0.0.60`.
+Internal tracking versions: `OzzTradeDigest` `0.2.3`, `OzzTradeDigest.AppInfra` `0.2.3`, `OzzTradeDigest.RepositoryContracts` `0.2.3`, `OzzTradeDigest.WPF` `0.2.3`, `OzzTradeDigest.SQLite` `0.2.3`, `OzzTradeDigest.i18n` `0.2.3`.
 
 - **Changelog discipline**: Any behavior change (repository logic, initialization, seeding, schema generation impact, UI-visible behavior) must be recorded in `CHANGELOG.md`.
 
@@ -210,7 +210,7 @@ Internal tracking versions: `OzzTradeDigest` `0.0.60`, `OzzTradeDigest.AppInfra`
 
 ## Key Enums
 
-- `MarketType`: Unspecified (0), Stock (20), Fund (30), Futures (40), Forex (50), Option (60), Commodity (70), Crypto (80), CryptoPerpetual (90), Index (100)
+- `MarketType`: Unspecified (0), Stock (20), Fund (30), Futures (40), Forex (50), Option (60), Commodity (70), CryptoSpot (80), CryptoPerpetual (90), Index (100)
 - `TradeDirection`: Long (200), Short (100)
 - `EntryOrderType`: Market (10), Limit (20), StopMarket (40), StopLimit (50) — used on `EntryOrder.OrderType`
 - `ExitOrderType`: Market (10), Limit (20), TrailingStop (30), Stop (40), StopLimit (50) — used on `ExitOrder.OrderType`

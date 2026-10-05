@@ -4,7 +4,7 @@ A Windows desktop trade journaling application for tracking trades across multip
 
 > **Status**: Pre-release development (no public release yet)
 > 
-> **Internal tracking versions**: `OzzTradeDigest` `0.0.63`, `OzzTradeDigest.AppInfra` `0.0.63`, `OzzTradeDigest.RepositoryContracts` `0.0.63`, `OzzTradeDigest.WPF` `0.0.63`, `OzzTradeDigest.SQLite` `0.0.63`, `OzzTradeDigest.i18n` `0.0.63`
+> **Internal tracking versions**: `OzzTradeDigest` `0.2.3`, `OzzTradeDigest.AppInfra` `0.2.3`, `OzzTradeDigest.RepositoryContracts` `0.2.3`, `OzzTradeDigest.WPF` `0.2.3`, `OzzTradeDigest.SQLite` `0.2.3`, `OzzTradeDigest.i18n` `0.2.3`
 
 ## Changelog
 
@@ -78,15 +78,12 @@ See [`CHANGELOG.md`](CHANGELOG.md) for release history.
 - Introduce `TD.AppContracts` to host shared application-service/lookup contracts (for example `IExchangeLookupService`, `ISymbolLookupService`) used by both WPF and future MAUI frontends
 - Add a MAUI frontend project (`OzzTradeDigest.MAUI`) that reuses platform-agnostic core (`TD`), localization (`TD.i18n`), app infra (`TD.AppInfra`), and contract layers
 - Keep lookup/app-service contracts in `TD.AppContracts` (separate from WPF-only assemblies) so both WPF and MAUI can share the same service abstractions
-- Remaining model repository classes in `OzzTradeDigest.SQLite`
-- Functional data layer repositories and query logic
-- Multi-market support: Stock, Forex, Crypto, Futures, Options, Commodities, and more
-- Trade tracking with entry/exit orders, stop-loss, and take-profit levels
-- Long and short trade directions
-- Separate order type enums for entries and exits (EntryOrderType, ExitOrderType)
-- Trade images with chart attachments and notes
-- Multi-account and multi-exchange support
-- Automatic SQLite database backup with ZIP archiving
+- Trade filter enhancements (TradeDirection and MarketType filters in toolbar)
+- Fee auto-calculation wiring based on account fee rates
+- Trade summary and analytics view (`SummaryWindow` + `SummaryWindowVM`)
+- CSV export and exchange trade history import (e.g. ByBit CSV import)
+- Database backup manual UI trigger in menu/toolbar
+- Dedicated App Settings dialog
 
 ## Prerequisites
 

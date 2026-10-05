@@ -17,7 +17,7 @@ Files in `OzzTradeDigest.SQLite/DbScripts/` are **auto-generated** by OzzCodeGen
 
 - Primary key: `Id INTEGER PRIMARY KEY`
 - Strings: `TEXT`
-- Numbers: `INTEGER` (ints, enums, bools) or `REAL` (decimals)
-- Dates: `INTEGER` (stored as ticks), **not** ISO 8601 text
+- Numbers: `INTEGER` (ints, enums, bools, scaled decimals) or `TEXT` (precision-sensitive price/quantity decimals)
+- Dates: `TEXT` (stored as ISO 8601 formatted text)
 - Foreign keys: `{Entity}Id INTEGER Not Null`
 - Nullable columns marked with `Null`, required with `Not Null`

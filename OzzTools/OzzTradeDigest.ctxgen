@@ -1,14 +1,14 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "..\\OzzTradeDigest.NET",
-  "LastPackedAt": "2026-10-04T17:16:39.5087254+03:00",
+  "LastPackedAt": "2026-10-05T22:51:50.4462153+03:00",
   "RepoUrl": "https://github.com/ozalpd/OzzTradeDigest",
   "License": "MIT",
   "IsOpenSource": true,
   "Description": "Ozz Trade Digest is a desktop trading journal application that designed to help traders record, review, and understand their trading activity across multiple markets. The application supports trade journaling essentials such as stop-loss and take-profit planning, trade images, notes, and performance statistics.",
   "SystemPrompt": "",
   "Layout": 0,
-  "LayoutHeader": "",
+  "LayoutHeader": "OzzTradeDigest - Consolidated Source Code",
   "SelectedSuffixes": [],
   "ExcludedFolders": [
     "bin",
