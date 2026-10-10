@@ -108,6 +108,19 @@ namespace TD.SQLite
         }
         private ITradingAccountRepository? _tradingAccountRepository;
 
+        protected ITradeNoteRepository TradeNoteRepository
+        {
+            get
+            {
+                if (_tradeNoteRepository == null)
+                {
+                    _tradeNoteRepository = new TradeNoteRepository(_databasePath);
+                }
+                return _tradeNoteRepository;
+            }
+        }
+        private ITradeNoteRepository? _tradeNoteRepository;
+
 
         private void InitializeDatabase()
         {
@@ -497,8 +510,7 @@ namespace TD.SQLite
                     @marketType, @cancellationTime, @plannedEntryPrice, @executedEntryPrice, @plannedPositionValue, @executedPositionValue,
                     @orderQuantity, @filledQuantity, @plannedProfit, @plannedTP, @executedTP, @plannedSL,
                     @executedSL, @plannedRiskAmount, @plannedRiskRewardRatio, @realizedProfitLoss, @netProfitLoss, @realizedRiskAmount,
-                    @totalFeesCalculated, @totalFeesCorrected, @fundingFeeTotal, @tags, @setupNotes, @reviewNotes,
-                    @updatedAt);
+                    @totalFeesCalculated, @totalFeesCorrected, @fundingFeeTotal, @tags, @adherenceScore, @updatedAt);
             SELECT last_insert_rowid();";
 
             command.AddParameter("@tradingAccountId", trade.TradingAccountId);
@@ -549,8 +561,9 @@ namespace TD.SQLite
                                                 trade.FundingFeeTotal,
                                                 DecimalToIntegerScale.FundingFeeTotal);
             command.AddNullableParameter("@tags", trade.Tags);
-            command.AddNullableParameter("@setupNotes", trade.SetupNotes);
-            command.AddNullableParameter("@reviewNotes", trade.ReviewNotes);
+            command.AddDecimalToIntegerParameter("@adherenceScore",
+                                                trade.AdherenceScore,
+                                                DecimalToIntegerScale.AdherenceScore);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var id = Convert.ToInt32((long)(await command.ExecuteScalarAsync() ?? 0));
@@ -587,6 +600,9 @@ namespace TD.SQLite
 
             // Checking any tradeImage record exists through TradeImage.TradeId reference
             result = result && !(await TradeImageRepository.AnyByTradeIdAsync(id));
+
+            // Checking any tradeNote record exists through TradeNote.TradeId reference
+            result = result && !(await TradeNoteRepository.AnyByTradeIdAsync(id));
 
             return result;
         }
@@ -639,15 +655,14 @@ namespace TD.SQLite
                           && existingTrade.TotalFeesCorrected == trade.TotalFeesCorrected
                           && existingTrade.FundingFeeTotal == trade.FundingFeeTotal
                           && existingTrade.Tags == trade.Tags
-                          && existingTrade.ReviewNotes == trade.ReviewNotes
                           && existingTrade.UpdatedAt == trade.UpdatedAt;
 
             if (noChanges)
                 return false;
 
             await using var command = connection.CreateCommand();
-            // TradingAccountId, SymbolId, TradeDirection, MarketType, CancellationTime, SetupNotes are not updated to avoid complications with existing references,
-            // so only EntryTime, ExitTime, TradeStatus, PlannedEntryPrice, ExecutedEntryPrice, PlannedPositionValue, ExecutedPositionValue, OrderQuantity, FilledQuantity, PlannedProfit, PlannedTP, ExecutedTP, PlannedSL, ExecutedSL, PlannedRiskAmount, PlannedRiskRewardRatio, RealizedProfitLoss, NetProfitLoss, RealizedRiskAmount, TotalFeesCalculated, TotalFeesCorrected, FundingFeeTotal, Tags, ReviewNotes, UpdatedAt are updated
+            // TradingAccountId, SymbolId, TradeDirection, MarketType, CancellationTime, AdherenceScore are not updated to avoid complications with existing references,
+            // so only EntryTime, ExitTime, TradeStatus, PlannedEntryPrice, ExecutedEntryPrice, PlannedPositionValue, ExecutedPositionValue, OrderQuantity, FilledQuantity, PlannedProfit, PlannedTP, ExecutedTP, PlannedSL, ExecutedSL, PlannedRiskAmount, PlannedRiskRewardRatio, RealizedProfitLoss, NetProfitLoss, RealizedRiskAmount, TotalFeesCalculated, TotalFeesCorrected, FundingFeeTotal, Tags, UpdatedAt are updated
             command.CommandText = @$"UPDATE {_tableName} SET
                 EntryTime = @entryTime,
                 ExitTime = @exitTime,
@@ -672,7 +687,6 @@ namespace TD.SQLite
                 TotalFeesCorrected = @totalFeesCorrected,
                 FundingFeeTotal = @fundingFeeTotal,
                 Tags = @tags,
-                ReviewNotes = @reviewNotes,
                 UpdatedAt = @updatedAt
             WHERE Id = @id";
 
@@ -720,7 +734,6 @@ namespace TD.SQLite
                                                 trade.FundingFeeTotal,
                                                 DecimalToIntegerScale.FundingFeeTotal);
             command.AddNullableParameter("@tags", trade.Tags);
-            command.AddNullableParameter("@reviewNotes", trade.ReviewNotes);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var affectedRows = await command.ExecuteNonQueryAsync();
@@ -735,6 +748,29 @@ namespace TD.SQLite
         partial void OnUpdated(Trade trade);
         partial void OnUpdated(int tradeId);
 
+        public async Task<bool> UpdateAdherenceScoreAsync(int id, decimal adherenceScore)
+        {
+            await using var connection = await GetOpenConnectionAsync();
+            await using var command = connection.CreateCommand();
+            command.CommandText = @$"UPDATE {_tableName} SET
+                AdherenceScore = @adherenceScore,                UpdatedAt = @updatedAt            WHERE Id = @id";
+
+            command.AddParameter("@id", id);
+            command.AddDecimalToIntegerParameter("@adherenceScore",
+                                                adherenceScore,
+                                                DecimalToIntegerScale.AdherenceScore);
+            command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
+
+            var affectedRows = await command.ExecuteNonQueryAsync();
+            if (affectedRows > 0)
+            {
+                await _metadataRepository.SaveLastUpdateUtcAsync(connection);
+                OnUpdated(id);
+            }
+
+            return affectedRows > 0;
+        }
+
         public async Task<bool> UpdateCancellationTimeAsync(int id, DateTime cancellationTime)
         {
             await using var connection = await GetOpenConnectionAsync();
@@ -744,48 +780,6 @@ namespace TD.SQLite
 
             command.AddParameter("@id", id);
             command.AddDateTimeToTextParameter("@cancellationTime", cancellationTime);
-            command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
-
-            var affectedRows = await command.ExecuteNonQueryAsync();
-            if (affectedRows > 0)
-            {
-                await _metadataRepository.SaveLastUpdateUtcAsync(connection);
-                OnUpdated(id);
-            }
-
-            return affectedRows > 0;
-        }
-
-        public async Task<bool> UpdateReviewNotesAsync(int id, string reviewNotes)
-        {
-            await using var connection = await GetOpenConnectionAsync();
-            await using var command = connection.CreateCommand();
-            command.CommandText = @$"UPDATE {_tableName} SET
-                ReviewNotes = @reviewNotes,                UpdatedAt = @updatedAt            WHERE Id = @id";
-
-            command.AddParameter("@id", id);
-            command.AddNullableParameter("@reviewNotes", reviewNotes);
-            command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
-
-            var affectedRows = await command.ExecuteNonQueryAsync();
-            if (affectedRows > 0)
-            {
-                await _metadataRepository.SaveLastUpdateUtcAsync(connection);
-                OnUpdated(id);
-            }
-
-            return affectedRows > 0;
-        }
-
-        public async Task<bool> UpdateSetupNotesAsync(int id, string setupNotes)
-        {
-            await using var connection = await GetOpenConnectionAsync();
-            await using var command = connection.CreateCommand();
-            command.CommandText = @$"UPDATE {_tableName} SET
-                SetupNotes = @setupNotes,                UpdatedAt = @updatedAt            WHERE Id = @id";
-
-            command.AddParameter("@id", id);
-            command.AddNullableParameter("@setupNotes", setupNotes);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var affectedRows = await command.ExecuteNonQueryAsync();
@@ -878,10 +872,9 @@ namespace TD.SQLite
                                                 DecimalToIntegerScale.FundingFeeTotal),
                 Tags = reader.IsDBNull(ColNrs.Tags) ? null
                      : reader.GetString(ColNrs.Tags),
-                SetupNotes = reader.IsDBNull(ColNrs.SetupNotes) ? null
-                           : reader.GetString(ColNrs.SetupNotes),
-                ReviewNotes = reader.IsDBNull(ColNrs.ReviewNotes) ? null
-                            : reader.GetString(ColNrs.ReviewNotes),
+                AdherenceScore = reader.IsDBNull(ColNrs.AdherenceScore) ? null
+                               : reader.GetDecimalFromInteger(ColNrs.AdherenceScore,
+                                               DecimalToIntegerScale.AdherenceScore),
                 UpdatedAt = ToLocalDateTime(reader.GetString(ColNrs.UpdatedAt)) ?? DateTime.MinValue
             };
 
@@ -922,9 +915,8 @@ namespace TD.SQLite
             public readonly static int TotalFeesCorrected = 26;
             public readonly static int FundingFeeTotal = 27;
             public readonly static int Tags = 28;
-            public readonly static int SetupNotes = 29;
-            public readonly static int ReviewNotes = 30;
-            public readonly static int UpdatedAt = 31;
+            public readonly static int AdherenceScore = 29;
+            public readonly static int UpdatedAt = 30;
         }
 
         /// <summary>
@@ -960,8 +952,7 @@ namespace TD.SQLite
             "TotalFeesCorrected",
             "FundingFeeTotal",
             "Tags",
-            "SetupNotes",
-            "ReviewNotes",
+            "AdherenceScore",
             "UpdatedAt"
         };
 
@@ -989,6 +980,7 @@ namespace TD.SQLite
             public readonly static int TotalFeesCalculated = 4;
             public readonly static int TotalFeesCorrected = 4;
             public readonly static int FundingFeeTotal = 4;
+            public readonly static int AdherenceScore = 4;
         }
     }
 }

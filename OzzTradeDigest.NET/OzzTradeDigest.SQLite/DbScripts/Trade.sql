@@ -28,8 +28,7 @@ CREATE TABLE IF NOT EXISTS Trades(
 	TotalFeesCorrected INTEGER, 
 	FundingFeeTotal INTEGER, 
 	Tags TEXT, 
-	SetupNotes TEXT, 
-	ReviewNotes TEXT, 
+	AdherenceScore INTEGER, 
 	UpdatedAt TEXT Not Null 
 );
 Create Index If Not Exists idx_Trades_TradingAccountId on Trades(TradingAccountId, UpdatedAt DESC, EntryTime DESC);
@@ -40,4 +39,6 @@ Create Index If Not Exists idx_Trades_PlannedPositionValue on Trades(PlannedPosi
 Create Index If Not Exists idx_Trades_ExecutedPositionValue on Trades(ExecutedPositionValue, EntryTime DESC);
 Create Index If Not Exists idx_Trades_PlannedProfit on Trades(PlannedProfit, UpdatedAt DESC, EntryTime DESC);
 Create Index If Not Exists idx_Trades_RealizedProfitLoss on Trades(RealizedProfitLoss, EntryTime DESC);
+Create Index If Not Exists idx_Trades_Tags on Trades(Tags COLLATE NOCASE);
+Create Index If Not Exists idx_Trades_AdherenceScore on Trades(AdherenceScore);
 Create Index If Not Exists idx_Trades_UpdatedAt on Trades(UpdatedAt DESC, Id);

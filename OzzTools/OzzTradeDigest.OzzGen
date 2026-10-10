@@ -305,6 +305,32 @@
       </Members>
     </EnumDefinition>
     <EnumDefinition>
+      <Name>TradeAdherence</Name>
+      <NamespaceName>TD</NamespaceName>
+      <Members>
+        <EnumMember>
+          <Name>Excellent</Name>
+          <Value>10</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>Good</Name>
+          <Value>8</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>Moderate</Name>
+          <Value>5</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>Poor</Name>
+          <Value>3</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>VeryPoor</Name>
+          <Value>1</Value>
+        </EnumMember>
+      </Members>
+    </EnumDefinition>
+    <EnumDefinition>
       <Name>TradeDateType</Name>
       <NamespaceName>TD</NamespaceName>
       <Members>
@@ -341,28 +367,32 @@
       </Members>
     </EnumDefinition>
     <EnumDefinition>
-      <Name>TradeImageCategory</Name>
+      <Name>TradeNoteCategory</Name>
       <NamespaceName>TD</NamespaceName>
       <Members>
         <EnumMember>
-          <Name>Setup</Name>
+          <Name>SetupNote</Name>
           <Value>10</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Entry</Name>
+          <Name>EntryNote</Name>
           <Value>20</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Exit</Name>
+          <Name>Management</Name>
           <Value>30</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Review</Name>
+          <Name>ExitNote</Name>
           <Value>40</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Other</Name>
+          <Name>Review</Name>
           <Value>50</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>Other</Name>
+          <Value>1010</Value>
         </EnumMember>
       </Members>
     </EnumDefinition>
@@ -1831,7 +1861,7 @@
           <IsKey>false</IsKey>
           <IsForeignKey>true</IsForeignKey>
           <IsImmutable>true</IsImmutable>
-          <IsNullable>true</IsNullable>
+          <IsNullable>false</IsNullable>
           <IsStoreGenerated>false</IsStoreGenerated>
         </BaseProperty>
         <BaseProperty xsi:type="ComplexProperty">
@@ -1845,25 +1875,10 @@
           <DependentPropertyName>TradeId</DependentPropertyName>
           <DependentPropertyType>int</DependentPropertyType>
         </BaseProperty>
-        <BaseProperty xsi:type="SimpleProperty">
-          <Name>Category</Name>
-          <DisplayOrder>10300</DisplayOrder>
-          <DisplayName>Category</DisplayName>
-          <TypeName>int</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-          <EnumTypeName>TradeImageCategory</EnumTypeName>
-          <IsKey>false</IsKey>
-          <IsForeignKey>false</IsForeignKey>
-          <IsImmutable>false</IsImmutable>
-          <IsNullable>false</IsNullable>
-          <IsStoreGenerated>false</IsStoreGenerated>
-        </BaseProperty>
         <BaseProperty xsi:type="StringProperty">
           <Name>ImageURL</Name>
           <Comment>Web URL or local file path of the image associated with a trade that is referred by TradeId</Comment>
-          <DisplayOrder>10400</DisplayOrder>
+          <DisplayOrder>10300</DisplayOrder>
           <DisplayName>Image URL</DisplayName>
           <TypeName>string</TypeName>
           <IsClientComputed>false</IsClientComputed>
@@ -1877,10 +1892,103 @@
           <IsStoreGenerated>false</IsStoreGenerated>
           <MaxLength>0</MaxLength>
         </BaseProperty>
-        <BaseProperty xsi:type="StringProperty">
-          <Name>Notes</Name>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>TradeNoteId</Name>
+          <DisplayOrder>10400</DisplayOrder>
+          <DisplayName>Trade Note Id</DisplayName>
+          <TypeName>int</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <EnumTypeName />
+          <IsKey>false</IsKey>
+          <IsForeignKey>true</IsForeignKey>
+          <IsImmutable>false</IsImmutable>
+          <IsNullable>true</IsNullable>
+          <IsStoreGenerated>false</IsStoreGenerated>
+        </BaseProperty>
+        <BaseProperty xsi:type="ComplexProperty">
+          <Name>TradeNote</Name>
           <DisplayOrder>10500</DisplayOrder>
-          <DisplayName>Notes</DisplayName>
+          <DisplayName>Trade Note</DisplayName>
+          <TypeName>TradeNote</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <DependentPropertyName>TradeNoteId</DependentPropertyName>
+          <DependentPropertyType>int</DependentPropertyType>
+        </BaseProperty>
+      </Properties>
+    </EntityDefinition>
+    <EntityDefinition>
+      <Name>TradeNote</Name>
+      <NamespaceName>TD</NamespaceName>
+      <DisplayOrder>17</DisplayOrder>
+      <Abstract>false</Abstract>
+      <DisplayName>Trade Note</DisplayName>
+      <DisplayMember>Id</DisplayMember>
+      <BaseTypeName>IUpdatedAt</BaseTypeName>
+      <Properties>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>TradeId</Name>
+          <DisplayOrder>100100</DisplayOrder>
+          <DisplayName>Trade Id</DisplayName>
+          <TypeName>int</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <EnumTypeName />
+          <IsKey>false</IsKey>
+          <IsForeignKey>true</IsForeignKey>
+          <IsImmutable>true</IsImmutable>
+          <IsNullable>false</IsNullable>
+          <IsStoreGenerated>false</IsStoreGenerated>
+        </BaseProperty>
+        <BaseProperty xsi:type="ComplexProperty">
+          <Name>Trade</Name>
+          <DisplayOrder>100200</DisplayOrder>
+          <DisplayName>Trade</DisplayName>
+          <TypeName>Trade</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <DependentPropertyName>TradeId</DependentPropertyName>
+          <DependentPropertyType>int</DependentPropertyType>
+        </BaseProperty>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>Category</Name>
+          <DisplayOrder>100300</DisplayOrder>
+          <DisplayName>Category</DisplayName>
+          <TypeName>int</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <EnumTypeName>TradeNoteCategory</EnumTypeName>
+          <IsKey>false</IsKey>
+          <IsForeignKey>false</IsForeignKey>
+          <IsImmutable>true</IsImmutable>
+          <IsNullable>false</IsNullable>
+          <IsStoreGenerated>false</IsStoreGenerated>
+        </BaseProperty>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>Adherence</Name>
+          <DisplayOrder>100400</DisplayOrder>
+          <DisplayName>Adherence</DisplayName>
+          <TypeName>int</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+          <EnumTypeName>TradeAdherence</EnumTypeName>
+          <IsKey>false</IsKey>
+          <IsForeignKey>false</IsForeignKey>
+          <IsImmutable>false</IsImmutable>
+          <IsNullable>true</IsNullable>
+          <IsStoreGenerated>false</IsStoreGenerated>
+        </BaseProperty>
+        <BaseProperty xsi:type="StringProperty">
+          <Name>Content</Name>
+          <DisplayOrder>100500</DisplayOrder>
+          <DisplayName>Content</DisplayName>
           <TypeName>string</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
@@ -1889,16 +1997,25 @@
           <IsKey>false</IsKey>
           <IsForeignKey>false</IsForeignKey>
           <IsImmutable>false</IsImmutable>
-          <IsNullable>true</IsNullable>
+          <IsNullable>false</IsNullable>
           <IsStoreGenerated>false</IsStoreGenerated>
-          <MaxLength>0</MaxLength>
+          <MaxLength>2048</MaxLength>
+        </BaseProperty>
+        <BaseProperty xsi:type="CollectionProperty">
+          <Name>TradeImages</Name>
+          <DisplayOrder>100600</DisplayOrder>
+          <DisplayName>Trade Images</DisplayName>
+          <TypeName>ICollection&lt;TradeImage&gt;</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
         </BaseProperty>
       </Properties>
     </EntityDefinition>
     <EntityDefinition>
       <Name>Trade</Name>
       <NamespaceName>TD</NamespaceName>
-      <DisplayOrder>17</DisplayOrder>
+      <DisplayOrder>18</DisplayOrder>
       <Abstract>false</Abstract>
       <DisplayName>Trade</DisplayName>
       <DisplayMember>Label</DisplayMember>
@@ -2366,38 +2483,11 @@
           <IsStoreGenerated>false</IsStoreGenerated>
           <MaxLength>255</MaxLength>
         </BaseProperty>
-        <BaseProperty xsi:type="CollectionProperty">
-          <Name>EntryOrders</Name>
+        <BaseProperty xsi:type="SimpleProperty">
+          <Name>AdherenceScore</Name>
           <DisplayOrder>103100</DisplayOrder>
-          <DisplayName>Entry Orders</DisplayName>
-          <TypeName>ICollection&lt;EntryOrder&gt;</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-        </BaseProperty>
-        <BaseProperty xsi:type="CollectionProperty">
-          <Name>TakeProfitOrders</Name>
-          <DisplayOrder>103200</DisplayOrder>
-          <DisplayName>Take Profit Orders</DisplayName>
-          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-        </BaseProperty>
-        <BaseProperty xsi:type="CollectionProperty">
-          <Name>StopLossOrders</Name>
-          <DisplayOrder>103300</DisplayOrder>
-          <DisplayName>Stop Loss Orders</DisplayName>
-          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
-          <IsClientComputed>false</IsClientComputed>
-          <IsServerComputed>false</IsServerComputed>
-          <RestrictedData>false</RestrictedData>
-        </BaseProperty>
-        <BaseProperty xsi:type="StringProperty">
-          <Name>SetupNotes</Name>
-          <DisplayOrder>103400</DisplayOrder>
-          <DisplayName>Setup Notes</DisplayName>
-          <TypeName>string</TypeName>
+          <DisplayName>Adherence Score</DisplayName>
+          <TypeName>decimal</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
           <RestrictedData>false</RestrictedData>
@@ -2407,23 +2497,42 @@
           <IsImmutable>true</IsImmutable>
           <IsNullable>true</IsNullable>
           <IsStoreGenerated>false</IsStoreGenerated>
-          <MaxLength>2048</MaxLength>
         </BaseProperty>
-        <BaseProperty xsi:type="StringProperty">
-          <Name>ReviewNotes</Name>
-          <DisplayOrder>103500</DisplayOrder>
-          <DisplayName>Review Notes</DisplayName>
-          <TypeName>string</TypeName>
+        <BaseProperty xsi:type="CollectionProperty">
+          <Name>TradeNotes</Name>
+          <DisplayOrder>103200</DisplayOrder>
+          <DisplayName>Trade Notes</DisplayName>
+          <TypeName>ICollection&lt;TradeNote&gt;</TypeName>
           <IsClientComputed>false</IsClientComputed>
           <IsServerComputed>false</IsServerComputed>
           <RestrictedData>false</RestrictedData>
-          <EnumTypeName />
-          <IsKey>false</IsKey>
-          <IsForeignKey>false</IsForeignKey>
-          <IsImmutable>false</IsImmutable>
-          <IsNullable>true</IsNullable>
-          <IsStoreGenerated>false</IsStoreGenerated>
-          <MaxLength>2048</MaxLength>
+        </BaseProperty>
+        <BaseProperty xsi:type="CollectionProperty">
+          <Name>EntryOrders</Name>
+          <DisplayOrder>103300</DisplayOrder>
+          <DisplayName>Entry Orders</DisplayName>
+          <TypeName>ICollection&lt;EntryOrder&gt;</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+        </BaseProperty>
+        <BaseProperty xsi:type="CollectionProperty">
+          <Name>TakeProfitOrders</Name>
+          <DisplayOrder>103400</DisplayOrder>
+          <DisplayName>Take Profit Orders</DisplayName>
+          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
+        </BaseProperty>
+        <BaseProperty xsi:type="CollectionProperty">
+          <Name>StopLossOrders</Name>
+          <DisplayOrder>103500</DisplayOrder>
+          <DisplayName>Stop Loss Orders</DisplayName>
+          <TypeName>ICollection&lt;ExitOrder&gt;</TypeName>
+          <IsClientComputed>false</IsClientComputed>
+          <IsServerComputed>false</IsServerComputed>
+          <RestrictedData>false</RestrictedData>
         </BaseProperty>
         <BaseProperty xsi:type="CollectionProperty">
           <Name>TradeImages</Name>
@@ -2443,8 +2552,8 @@
   <CodeEngineList>
     <string>Localization_Resource_Generator</string>
     <string>CS_Model_Class_Generator</string>
-    <string>Wpf_Mvvm_View_ViewModel_Generator</string>
     <string>CS_Sqlite_Repository_Generator</string>
     <string>Sqlite_Scripts_Generator</string>
+    <string>Wpf_Mvvm_View_ViewModel_Generator</string>
   </CodeEngineList>
 </CodeGenProject>

@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using TD.Validation;
 using TD.i18n;
 //----------------------------------------------------------------------------------
 //
@@ -11,12 +10,13 @@ using TD.i18n;
 //----------------------------------------------------------------------------------
 namespace TD.Models
 {
-    public partial class TradeImage
+    public partial class TradeNote
     {
-        public TradeImage()
+        public TradeNote()
         {
+            this.TradeImages = new HashSet<TradeImage>();
             this.Trade = new Trade();
-            this.ImageURL = string.Empty;
+            this.Content = string.Empty;
 
             OnInitilazed();
         }
@@ -27,28 +27,27 @@ namespace TD.Models
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Id")]
         public int Id { get; set; }
 
-        [RequiredSelection]
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
-        [Range(1, int.MaxValue, ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName ="ValueMin")]
         [Display(ResourceType = typeof(LocalizedStrings), Name = "TradeId")]
         public int TradeId { get; set; }
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Trade")]
         public Trade Trade { get; set; }
 
-        /// <summary>
-        /// Web URL or local file path of the image associated with a trade that is referred by TradeId
-        /// </summary>
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
-        [DataType(DataType.ImageUrl)]
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "ImageURL")]
-        public string ImageURL { get; set; }
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Category")]
+        public TradeNoteCategory Category { get; set; }
 
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradeNoteId")]
-        public int? TradeNoteId { get; set; }
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Adherence")]
+        public TradeAdherence? Adherence { get; set; }
 
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradeNote")]
-        public TradeNote? TradeNote { get; set; }
+        [StringLength(2048, ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "MaxStringLength")]
+        [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Content")]
+        public string Content { get; set; }
+
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradeImages")]
+        public ICollection<TradeImage> TradeImages { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required")]
         [DataType(DataType.Date)]
@@ -57,28 +56,29 @@ namespace TD.Models
 
 
         /// <summary>
-        /// Clones all properties in a new TradeImage instance,
+        /// Clones all properties in a new TradeNote instance,
         /// except PrimaryKey(s)
         /// </summary>
-        /// <returns>New TradeImage instance</returns>
-        public TradeImage Clone()
+        /// <returns>New TradeNote instance</returns>
+        public TradeNote Clone()
         {
-            var clone = new TradeImage();
+            var clone = new TradeNote();
             clone.TradeId = this.TradeId;
-            clone.ImageURL = this.ImageURL;
-            clone.TradeNoteId = this.TradeNoteId;
+            clone.Category = this.Category;
+            clone.Adherence = this.Adherence;
+            clone.Content = this.Content;
             clone.UpdatedAt = this.UpdatedAt;
 
             Cloning(clone);
             return clone;
         }
 
-        // Use below method in a partial class file (eg. TradeImage.part.cs)
+        // Use below method in a partial class file (eg. TradeNote.part.cs)
         // to add more detailed data to clone
-        partial void Cloning(TradeImage clone);
+        partial void Cloning(TradeNote clone);
 
 
-        // Use below method in a partial class file (eg. TradeImage.part.cs)
+        // Use below method in a partial class file (eg. TradeNote.part.cs)
         // to add some functionality after the constructor
         partial void OnInitilazed();
     }

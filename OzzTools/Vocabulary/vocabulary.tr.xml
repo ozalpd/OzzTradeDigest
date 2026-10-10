@@ -161,6 +161,10 @@
     <Translation>Yeni İşlem Resmi Ekle</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddNewTradeNote</Name>
+    <Translation>Yeni İşlem Notu Ekle</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddNewTradingAccount</Name>
     <Translation>Yeni İşlem Hesabı Ekle</Translation>
   </Vocab>
@@ -229,6 +233,10 @@
     <Translation>İşlem Resmi Ekle/Çıkart</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddRemoveTradeNote</Name>
+    <Translation>İşlem Notu Ekle/Çıkar</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddRemoveTradingAccount</Name>
     <Translation>İşlem Hesabı Ekle/Çİkart</Translation>
   </Vocab>
@@ -281,8 +289,20 @@
     <Translation>İşlem Resmi Ekle</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddTradeNote</Name>
+    <Translation>İşlem Notu Ekle</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddTradingAccount</Name>
     <Translation>İşlem Hesabı Ekle</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Adherence</Name>
+    <Translation>İşlem Disiplini</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>AdherenceScore</Name>
+    <Translation>İşlem Disiplin Skoru</Translation>
   </Vocab>
   <Vocab>
     <Name>Admin</Name>
@@ -501,6 +521,10 @@
     <Translation>Kişi Listesi</Translation>
   </Vocab>
   <Vocab>
+    <Name>Content</Name>
+    <Translation>İçerik</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Countries</Name>
     <Translation>Ülkeler</Translation>
   </Vocab>
@@ -643,6 +667,10 @@
   <Vocab>
     <Name>CreateTradeImage</Name>
     <Translation>İşlem Resmi Oluştur</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>CreateTradeNote</Name>
+    <Translation>İşlem Notu Oluştur</Translation>
   </Vocab>
   <Vocab>
     <Name>CreateTradingAccount</Name>
@@ -881,6 +909,10 @@
     <Translation>İşlem Resmini Sil</Translation>
   </Vocab>
   <Vocab>
+    <Name>DeleteTradeNote</Name>
+    <Translation>İşlem Notunu Sil</Translation>
+  </Vocab>
+  <Vocab>
     <Name>DeleteTradingAccount</Name>
     <Translation>İşlem Hesabını Sil</Translation>
   </Vocab>
@@ -1045,6 +1077,10 @@
     <Translation>İşlem Resmini Düzenle</Translation>
   </Vocab>
   <Vocab>
+    <Name>EditTradeNote</Name>
+    <Translation>İşlem Notunu Düzenle</Translation>
+  </Vocab>
+  <Vocab>
     <Name>EditTradingAccount</Name>
     <Translation>İşlem Hesabını Düzenle</Translation>
   </Vocab>
@@ -1077,6 +1113,10 @@
     <Translation>İşlem Şekli</Translation>
   </Vocab>
   <Vocab>
+    <Name>EntryNote</Name>
+    <Translation>Giriş</Translation>
+  </Vocab>
+  <Vocab>
     <Name>EntryOrder</Name>
     <Translation>Giriş Emri</Translation>
   </Vocab>
@@ -1099,6 +1139,10 @@
   <Vocab>
     <Name>Erase</Name>
     <Translation>Tam Sil</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Excellent</Name>
+    <Translation>Mükemmel</Translation>
   </Vocab>
   <Vocab>
     <Name>Exchange</Name>
@@ -1151,6 +1195,10 @@
   <Vocab>
     <Name>ExitMode</Name>
     <Translation>Çıkış Şekli</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitNote</Name>
+    <Translation>Çıkış</Translation>
   </Vocab>
   <Vocab>
     <Name>ExitOrder</Name>
@@ -1271,6 +1319,10 @@
   <Vocab>
     <Name>Futures</Name>
     <Translation>Vadeli İşlem</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Good</Name>
+    <Translation>İyi</Translation>
   </Vocab>
   <Vocab>
     <Name>HasAnySymbol</Name>
@@ -1473,6 +1525,10 @@
     <Translation>Veriyi Yönet</Translation>
   </Vocab>
   <Vocab>
+    <Name>Management</Name>
+    <Translation>Pozisyon Yönetimi</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ManualExit</Name>
     <Translation>Manuel Çıkış</Translation>
   </Vocab>
@@ -1507,6 +1563,10 @@
   <Vocab>
     <Name>MissedOrCancelled</Name>
     <Translation>Kaçmış veya İptal</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Moderate</Name>
+    <Translation>Moderate  </Translation>
   </Vocab>
   <Vocab>
     <Name>ModifierId</Name>
@@ -1829,6 +1889,10 @@
     <Translation>Lütfen Bekleyiniz</Translation>
   </Vocab>
   <Vocab>
+    <Name>Poor</Name>
+    <Translation>Zayıf</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PositionX</Name>
     <Translation>X Pozisyonu</Translation>
   </Vocab>
@@ -2073,6 +2137,10 @@
     <Translation>İşlem Resmini Çıkart</Translation>
   </Vocab>
   <Vocab>
+    <Name>RemoveTradeNote</Name>
+    <Translation>İşlem Notunu Çıkar</Translation>
+  </Vocab>
+  <Vocab>
     <Name>RemoveTradingAccount</Name>
     <Translation>İşlem Hesabını Çıkart</Translation>
   </Vocab>
@@ -2246,7 +2314,11 @@
   </Vocab>
   <Vocab>
     <Name>Setup</Name>
-    <Translation>Setup</Translation>
+    <Translation>İşlem Planı</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>SetupNote</Name>
+    <Translation>İşlem Planı</Translation>
   </Vocab>
   <Vocab>
     <Name>SetupNotes</Name>
@@ -2525,6 +2597,10 @@
     <Translation>İşlem</Translation>
   </Vocab>
   <Vocab>
+    <Name>TradeAdherence</Name>
+    <Translation>İşlem Disiplini</Translation>
+  </Vocab>
+  <Vocab>
     <Name>TradeDateType</Name>
     <Translation>İşlem Tarih Türü</Translation>
   </Vocab>
@@ -2555,6 +2631,26 @@
   <Vocab>
     <Name>TradeImagesList</Name>
     <Translation>İşlem Resim Listesi</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNote</Name>
+    <Translation>İşlem Notu</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNoteCategory</Name>
+    <Translation>İşlem Not Kategorisi</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNoteId</Name>
+    <Translation>İşlem Notu</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNotes</Name>
+    <Translation>İşlem Notları</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNotesList</Name>
+    <Translation>İşlem Not Listesi</Translation>
   </Vocab>
   <Vocab>
     <Name>Trades</Name>
@@ -2675,6 +2771,10 @@
   <Vocab>
     <Name>Version</Name>
     <Translation>Sürüm:</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>VeryPoor</Name>
+    <Translation>Yetersiz</Translation>
   </Vocab>
   <Vocab>
     <Name>View</Name>

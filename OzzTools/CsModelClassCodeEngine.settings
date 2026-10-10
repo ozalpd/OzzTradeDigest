@@ -878,7 +878,58 @@
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
           <Range>1, int.MaxValue</Range>
+          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
+          <IsSearchParameter>true</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>Trade</Name>
+          <Exclude>false</Exclude>
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
           <Required />
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>ImageURL</Name>
+          <Exclude>false</Exclude>
+          <DataType>ImageUrl</DataType>
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
+          <IsSearchParameter>true</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>TradeNoteId</Name>
+          <Exclude>false</Exclude>
+          <DataType />
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required />
+          <IsSearchParameter>true</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>TradeNote</Name>
+          <Exclude>false</Exclude>
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required />
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+      </Properties>
+      <GenerateQueryParam>false</GenerateQueryParam>
+    </BaseEntitySetting>
+    <BaseEntitySetting xsi:type="ModelClassEntitySetting">
+      <Name>TradeNote</Name>
+      <Exclude>false</Exclude>
+      <OverwriteExisting>false</OverwriteExisting>
+      <Properties>
+        <ModelPropertySetting>
+          <Name>TradeId</Name>
+          <Exclude>false</Exclude>
+          <DataType />
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
           <IsSearchParameter>true</IsSearchParameter>
         </ModelPropertySetting>
         <ModelPropertySetting>
@@ -892,7 +943,6 @@
         <ModelPropertySetting>
           <Name>Category</Name>
           <Exclude>false</Exclude>
-          <CustomAttributes>RequiredSelection</CustomAttributes>
           <DataType />
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
@@ -900,22 +950,30 @@
           <IsSearchParameter>false</IsSearchParameter>
         </ModelPropertySetting>
         <ModelPropertySetting>
-          <Name>ImageURL</Name>
+          <Name>Adherence</Name>
           <Exclude>false</Exclude>
-          <DataType>ImageUrl</DataType>
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
-          <IsSearchParameter>true</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>Notes</Name>
-          <Exclude>false</Exclude>
-          <DataType>MultilineText</DataType>
+          <DataType />
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
           <Required />
-          <IsSearchParameter>true</IsSearchParameter>
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>Content</Name>
+          <Exclude>false</Exclude>
+          <DataType />
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required>ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "Required"</Required>
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>TradeImages</Name>
+          <Exclude>false</Exclude>
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required />
+          <IsSearchParameter>false</IsSearchParameter>
         </ModelPropertySetting>
       </Properties>
       <GenerateQueryParam>false</GenerateQueryParam>
@@ -1213,6 +1271,24 @@
           <IsSearchParameter>false</IsSearchParameter>
         </ModelPropertySetting>
         <ModelPropertySetting>
+          <Name>AdherenceScore</Name>
+          <Exclude>false</Exclude>
+          <DataType />
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Range />
+          <Required />
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
+          <Name>TradeNotes</Name>
+          <Exclude>false</Exclude>
+          <DTOExclusion>false</DTOExclusion>
+          <HtmlEncode xsi:nil="true" />
+          <Required />
+          <IsSearchParameter>false</IsSearchParameter>
+        </ModelPropertySetting>
+        <ModelPropertySetting>
           <Name>EntryOrders</Name>
           <Exclude>false</Exclude>
           <DTOExclusion>false</DTOExclusion>
@@ -1231,24 +1307,6 @@
         <ModelPropertySetting>
           <Name>StopLossOrders</Name>
           <Exclude>false</Exclude>
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required />
-          <IsSearchParameter>false</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>SetupNotes</Name>
-          <Exclude>false</Exclude>
-          <DataType>MultilineText</DataType>
-          <DTOExclusion>false</DTOExclusion>
-          <HtmlEncode xsi:nil="true" />
-          <Required />
-          <IsSearchParameter>false</IsSearchParameter>
-        </ModelPropertySetting>
-        <ModelPropertySetting>
-          <Name>ReviewNotes</Name>
-          <Exclude>false</Exclude>
-          <DataType>MultilineText</DataType>
           <DTOExclusion>false</DTOExclusion>
           <HtmlEncode xsi:nil="true" />
           <Required />

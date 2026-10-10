@@ -106,6 +106,9 @@
     <data name="AddNewTradeImage" xml:space="preserve">
         <value>Add New Trade Image</value>
     </data>
+    <data name="AddNewTradeNote" xml:space="preserve">
+        <value>Add New Trade Note</value>
+    </data>
     <data name="AddNewTradingAccount" xml:space="preserve">
         <value>Add New Trading Account</value>
     </data>
@@ -136,6 +139,9 @@
     <data name="AddRemoveTradeImage" xml:space="preserve">
         <value>Add Remove Trade Image</value>
     </data>
+    <data name="AddRemoveTradeNote" xml:space="preserve">
+        <value>Add Remove Trade Note</value>
+    </data>
     <data name="AddRemoveTradingAccount" xml:space="preserve">
         <value>Add Remove Trading Account</value>
     </data>
@@ -151,8 +157,17 @@
     <data name="AddTradeImage" xml:space="preserve">
         <value>Add Trade Image</value>
     </data>
+    <data name="AddTradeNote" xml:space="preserve">
+        <value>Add Trade Note</value>
+    </data>
     <data name="AddTradingAccount" xml:space="preserve">
         <value>Add Trading Account</value>
+    </data>
+    <data name="Adherence" xml:space="preserve">
+        <value>Adherence</value>
+    </data>
+    <data name="AdherenceScore" xml:space="preserve">
+        <value>Adherence Score</value>
     </data>
     <data name="AfterHours" xml:space="preserve">
         <value>After Hours</value>
@@ -196,6 +211,9 @@
     <data name="Commodity" xml:space="preserve">
         <value>Commodity</value>
     </data>
+    <data name="Content" xml:space="preserve">
+        <value>Content</value>
+    </data>
     <data name="CountryCode" xml:space="preserve">
         <value>Country Code</value>
     </data>
@@ -228,6 +246,9 @@
     </data>
     <data name="CreateTradeImage" xml:space="preserve">
         <value>Create Trade Image</value>
+    </data>
+    <data name="CreateTradeNote" xml:space="preserve">
+        <value>Create Trade Note</value>
     </data>
     <data name="CreateTradingAccount" xml:space="preserve">
         <value>Create Trading Account</value>
@@ -310,6 +331,9 @@
     <data name="DeleteTradeImage" xml:space="preserve">
         <value>Delete Trade Image</value>
     </data>
+    <data name="DeleteTradeNote" xml:space="preserve">
+        <value>Delete Trade Note</value>
+    </data>
     <data name="DeleteTradingAccount" xml:space="preserve">
         <value>Delete Trading Account</value>
     </data>
@@ -346,6 +370,9 @@
     <data name="EditTradeImage" xml:space="preserve">
         <value>Edit Trade Image</value>
     </data>
+    <data name="EditTradeNote" xml:space="preserve">
+        <value>Edit Trade Note</value>
+    </data>
     <data name="EditTradingAccount" xml:space="preserve">
         <value>Edit Trading Account</value>
     </data>
@@ -355,8 +382,8 @@
     <data name="Email" xml:space="preserve">
         <value>Email</value>
     </data>
-    <data name="Entry" xml:space="preserve">
-        <value>Entry</value>
+    <data name="EntryNote" xml:space="preserve">
+        <value>Entry Note</value>
     </data>
     <data name="EntryOrder" xml:space="preserve">
         <value>Entry Order</value>
@@ -372,6 +399,9 @@
     </data>
     <data name="EntryTime" xml:space="preserve">
         <value>Entry Time</value>
+    </data>
+    <data name="Excellent" xml:space="preserve">
+        <value>Excellent</value>
     </data>
     <data name="Exchange" xml:space="preserve">
         <value>Exchange</value>
@@ -403,8 +433,8 @@
     <data name="ExecutedTP" xml:space="preserve">
         <value>Executed TP</value>
     </data>
-    <data name="Exit" xml:space="preserve">
-        <value>Exit</value>
+    <data name="ExitNote" xml:space="preserve">
+        <value>Exit Note</value>
     </data>
     <data name="ExitOrder" xml:space="preserve">
         <value>Exit Order</value>
@@ -456,6 +486,9 @@
     </data>
     <data name="Futures" xml:space="preserve">
         <value>Futures</value>
+    </data>
+    <data name="Good" xml:space="preserve">
+        <value>Good</value>
     </data>
     <data name="HasAnySymbol" xml:space="preserve">
         <value>Has Any Symbol</value>
@@ -514,6 +547,9 @@
     <data name="MakerFeeRate" xml:space="preserve">
         <value>Maker Fee Rate</value>
     </data>
+    <data name="Management" xml:space="preserve">
+        <value>Management</value>
+    </data>
     <data name="ManualExit" xml:space="preserve">
         <value>Manual Exit</value>
     </data>
@@ -531,6 +567,9 @@
     </data>
     <data name="MissedOrCancelled" xml:space="preserve">
         <value>Missed Or Cancelled</value>
+    </data>
+    <data name="Moderate" xml:space="preserve">
+        <value>Moderate</value>
     </data>
     <data name="Month" xml:space="preserve">
         <value>Month</value>
@@ -606,6 +645,9 @@
     </data>
     <data name="PlannedTP" xml:space="preserve">
         <value>Planned TP</value>
+    </data>
+    <data name="Poor" xml:space="preserve">
+        <value>Poor</value>
     </data>
     <data name="PreMarket" xml:space="preserve">
         <value>Pre Market</value>
@@ -685,6 +727,9 @@
     <data name="RemoveTradeImage" xml:space="preserve">
         <value>Remove Trade Image</value>
     </data>
+    <data name="RemoveTradeNote" xml:space="preserve">
+        <value>Remove Trade Note</value>
+    </data>
     <data name="RemoveTradingAccount" xml:space="preserve">
         <value>Remove Trading Account</value>
     </data>
@@ -693,9 +738,6 @@
     </data>
     <data name="Review" xml:space="preserve">
         <value>Review</value>
-    </data>
-    <data name="ReviewNotes" xml:space="preserve">
-        <value>Review Notes</value>
     </data>
     <data name="Session" xml:space="preserve">
         <value>Session</value>
@@ -712,11 +754,8 @@
     <data name="SettingType" xml:space="preserve">
         <value>Setting Type</value>
     </data>
-    <data name="Setup" xml:space="preserve">
-        <value>Setup</value>
-    </data>
-    <data name="SetupNotes" xml:space="preserve">
-        <value>Setup Notes</value>
+    <data name="SetupNote" xml:space="preserve">
+        <value>Setup Note</value>
     </data>
     <data name="Short" xml:space="preserve">
         <value>Short</value>
@@ -805,6 +844,9 @@
     <data name="Trade" xml:space="preserve">
         <value>Trade</value>
     </data>
+    <data name="TradeAdherence" xml:space="preserve">
+        <value>Trade Adherence</value>
+    </data>
     <data name="TradeDateType" xml:space="preserve">
         <value>Trade Date Type</value>
     </data>
@@ -820,14 +862,26 @@
     <data name="TradeImage" xml:space="preserve">
         <value>Trade Image</value>
     </data>
-    <data name="TradeImageCategory" xml:space="preserve">
-        <value>Trade Image Category</value>
-    </data>
     <data name="TradeImages" xml:space="preserve">
         <value>Trade Images</value>
     </data>
     <data name="TradeImagesList" xml:space="preserve">
         <value>Trade Images List</value>
+    </data>
+    <data name="TradeNote" xml:space="preserve">
+        <value>Trade Note</value>
+    </data>
+    <data name="TradeNoteCategory" xml:space="preserve">
+        <value>Trade Note Category</value>
+    </data>
+    <data name="TradeNoteId" xml:space="preserve">
+        <value>Trade Note Id</value>
+    </data>
+    <data name="TradeNotes" xml:space="preserve">
+        <value>Trade Notes</value>
+    </data>
+    <data name="TradeNotesList" xml:space="preserve">
+        <value>Trade Notes List</value>
     </data>
     <data name="Trades" xml:space="preserve">
         <value>Trades</value>
@@ -876,6 +930,9 @@
     </data>
     <data name="UpdateTime" xml:space="preserve">
         <value>Update Time</value>
+    </data>
+    <data name="VeryPoor" xml:space="preserve">
+        <value>Very Poor</value>
     </data>
     <data name="Waiting" xml:space="preserve">
         <value>Waiting</value>

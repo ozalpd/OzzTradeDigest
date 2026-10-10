@@ -932,15 +932,6 @@
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
         <SqliteRepositoryPropertySetting>
-          <Name>Category</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>true</CheckIfAltered>
-          <ColumnName>Category</ColumnName>
-          <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
           <Name>ImageURL</Name>
           <Exclude>false</Exclude>
           <AutoLoad>false</AutoLoad>
@@ -950,11 +941,20 @@
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
         <SqliteRepositoryPropertySetting>
-          <Name>Notes</Name>
+          <Name>TradeNoteId</Name>
           <Exclude>false</Exclude>
           <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>true</CheckIfAltered>
-          <ColumnName>Notes</ColumnName>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>TradeNoteId</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>TradeNote</Name>
+          <Exclude>true</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>TradeNote</ColumnName>
           <SingleColumnUpdate>false</SingleColumnUpdate>
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
@@ -963,6 +963,72 @@
       <TableName>TradeImages</TableName>
       <FileNameDDL>TradeImage.sql</FileNameDDL>
       <OrderByClause>ORDER BY TradeId DESC, Category, UpdatedAt</OrderByClause>
+      <UpdatedAtName>UpdatedAt</UpdatedAtName>
+    </BaseEntitySetting>
+    <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
+      <Name>TradeNote</Name>
+      <Exclude>false</Exclude>
+      <OverwriteExisting>false</OverwriteExisting>
+      <Properties>
+        <SqliteRepositoryPropertySetting>
+          <Name>TradeId</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>TradeId</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>Trade</Name>
+          <Exclude>true</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>Trade</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>Category</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>Category</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>Adherence</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>Adherence</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>Content</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>Content</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>TradeImages</Name>
+          <Exclude>true</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>TradeImages</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+      </Properties>
+      <GenerateGetPaged>false</GenerateGetPaged>
+      <TableName>TradeNotes</TableName>
+      <FileNameDDL>TradeNote.sql</FileNameDDL>
+      <OrderByClause>ORDER BY Id</OrderByClause>
       <UpdatedAtName>UpdatedAt</UpdatedAtName>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
@@ -1241,6 +1307,24 @@
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
         <SqliteRepositoryPropertySetting>
+          <Name>AdherenceScore</Name>
+          <Exclude>false</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>AdherenceScore</ColumnName>
+          <SingleColumnUpdate>true</SingleColumnUpdate>
+          <DecimalToIntegerScale>4</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
+          <Name>TradeNotes</Name>
+          <Exclude>true</Exclude>
+          <AutoLoad>false</AutoLoad>
+          <CheckIfAltered>false</CheckIfAltered>
+          <ColumnName>TradeNotes</ColumnName>
+          <SingleColumnUpdate>false</SingleColumnUpdate>
+          <DecimalToIntegerScale>0</DecimalToIntegerScale>
+        </SqliteRepositoryPropertySetting>
+        <SqliteRepositoryPropertySetting>
           <Name>EntryOrders</Name>
           <Exclude>false</Exclude>
           <AutoLoad>true</AutoLoad>
@@ -1265,24 +1349,6 @@
           <CheckIfAltered>false</CheckIfAltered>
           <ColumnName>StopLossOrders</ColumnName>
           <SingleColumnUpdate>false</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
-          <Name>SetupNotes</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>false</CheckIfAltered>
-          <ColumnName>SetupNotes</ColumnName>
-          <SingleColumnUpdate>true</SingleColumnUpdate>
-          <DecimalToIntegerScale>0</DecimalToIntegerScale>
-        </SqliteRepositoryPropertySetting>
-        <SqliteRepositoryPropertySetting>
-          <Name>ReviewNotes</Name>
-          <Exclude>false</Exclude>
-          <AutoLoad>false</AutoLoad>
-          <CheckIfAltered>false</CheckIfAltered>
-          <ColumnName>ReviewNotes</ColumnName>
-          <SingleColumnUpdate>true</SingleColumnUpdate>
           <DecimalToIntegerScale>0</DecimalToIntegerScale>
         </SqliteRepositoryPropertySetting>
         <SqliteRepositoryPropertySetting>

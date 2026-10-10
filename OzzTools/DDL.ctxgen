@@ -1,0 +1,136 @@
+﻿{
+  "ProfileName": "Default Profile",
+  "TargetSourcePath": "C:\\Users\\ozalp\\Source\\Repos\\OzzTradeDigest\\OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts",
+  "LastPackedAt": "2026-10-10T12:15:04.9654382+03:00",
+  "RepoUrl": "",
+  "License": "",
+  "IsOpenSource": null,
+  "Description": "",
+  "SystemPrompt": "",
+  "Layout": 0,
+  "LayoutHeader": "DDL Files of OzzTradeDigest",
+  "SelectedSuffixes": [],
+  "ExcludedFolders": [
+    "bin",
+    "obj",
+    ".git",
+    ".vs",
+    ".vscode",
+    "packages",
+    "node_modules",
+    "GeneratedCodes",
+    "Library",
+    "Temp",
+    "UserSettings",
+    "Logs",
+    "Build",
+    "Builds"
+  ],
+  "TrackedFiles": {
+    "Currencies-Data.sql": {
+      "RelativePath": "Currencies-Data.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileSize": 2770,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Currency.sql": {
+      "RelativePath": "Currency.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileSize": 463,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "EntryOrder.sql": {
+      "RelativePath": "EntryOrder.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileSize": 539,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Exchange.sql": {
+      "RelativePath": "Exchange.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileSize": 770,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Exchanges-Data.sql": {
+      "RelativePath": "Exchanges-Data.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileSize": 1946,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "ExitOrder.sql": {
+      "RelativePath": "ExitOrder.sql",
+      "LastWriteTime": "2026-10-01T05:28:21.6392277+03:00",
+      "FileSize": 569,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Holiday.sql": {
+      "RelativePath": "Holiday.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileSize": 295,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Holidays-Data.sql": {
+      "RelativePath": "Holidays-Data.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileSize": 19392,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Session.sql": {
+      "RelativePath": "Session.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileSize": 214,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Sessions-Data.sql": {
+      "RelativePath": "Sessions-Data.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileSize": 1969,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Symbol.sql": {
+      "RelativePath": "Symbol.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileSize": 810,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Symbols-Data.sql": {
+      "RelativePath": "Symbols-Data.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.297834+03:00",
+      "FileSize": 34553,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "Trade.sql": {
+      "RelativePath": "Trade.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.297834+03:00",
+      "FileSize": 1836,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "TradeImage.sql": {
+      "RelativePath": "TradeImage.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.297834+03:00",
+      "FileSize": 381,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "TradingAccount.sql": {
+      "RelativePath": "TradingAccount.sql",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
+      "FileSize": 664,
+      "ContextNote": "",
+      "PackingMode": 20
+    }
+  }
+}

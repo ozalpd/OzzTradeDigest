@@ -161,6 +161,10 @@
     <Translation>Add New Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddNewTradeNote</Name>
+    <Translation>Add New Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddNewTradingAccount</Name>
     <Translation>Add New Trading Account</Translation>
   </Vocab>
@@ -229,6 +233,10 @@
     <Translation>Add Remove Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddRemoveTradeNote</Name>
+    <Translation>Add Remove Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddRemoveTradingAccount</Name>
     <Translation>Add Remove Trading Account</Translation>
   </Vocab>
@@ -281,8 +289,20 @@
     <Translation>Add Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>AddTradeNote</Name>
+    <Translation>Add Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>AddTradingAccount</Name>
     <Translation>Add Trading Account</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Adherence</Name>
+    <Translation>Adherence</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>AdherenceScore</Name>
+    <Translation>Adherence Score</Translation>
   </Vocab>
   <Vocab>
     <Name>Admin</Name>
@@ -501,6 +521,10 @@
     <Translation>Contacts List</Translation>
   </Vocab>
   <Vocab>
+    <Name>Content</Name>
+    <Translation>Content</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Countries</Name>
     <Translation>Countries</Translation>
   </Vocab>
@@ -643,6 +667,10 @@
   <Vocab>
     <Name>CreateTradeImage</Name>
     <Translation>Create Trade Image</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>CreateTradeNote</Name>
+    <Translation>Create Trade Note</Translation>
   </Vocab>
   <Vocab>
     <Name>CreateTradingAccount</Name>
@@ -881,6 +909,10 @@
     <Translation>Delete Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>DeleteTradeNote</Name>
+    <Translation>Delete Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>DeleteTradingAccount</Name>
     <Translation>Delete Trading Account</Translation>
   </Vocab>
@@ -1045,6 +1077,10 @@
     <Translation>Edit Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>EditTradeNote</Name>
+    <Translation>Edit Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>EditTradingAccount</Name>
     <Translation>Edit Trading Account</Translation>
   </Vocab>
@@ -1077,6 +1113,10 @@
     <Translation>Entry Method</Translation>
   </Vocab>
   <Vocab>
+    <Name>EntryNote</Name>
+    <Translation>Entry Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>EntryOrder</Name>
     <Translation>Entry Order</Translation>
   </Vocab>
@@ -1099,6 +1139,10 @@
   <Vocab>
     <Name>Erase</Name>
     <Translation>Erase</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Excellent</Name>
+    <Translation>Excellent</Translation>
   </Vocab>
   <Vocab>
     <Name>Exchange</Name>
@@ -1151,6 +1195,10 @@
   <Vocab>
     <Name>ExitMode</Name>
     <Translation>Exit Mode</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ExitNote</Name>
+    <Translation>Exit Note</Translation>
   </Vocab>
   <Vocab>
     <Name>ExitOrder</Name>
@@ -1271,6 +1319,10 @@
   <Vocab>
     <Name>Futures</Name>
     <Translation>Futures</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Good</Name>
+    <Translation>Good</Translation>
   </Vocab>
   <Vocab>
     <Name>HasAnySymbol</Name>
@@ -1473,6 +1525,10 @@
     <Translation>Manage Data</Translation>
   </Vocab>
   <Vocab>
+    <Name>Management</Name>
+    <Translation>Management</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ManualExit</Name>
     <Translation>Manual Exit</Translation>
   </Vocab>
@@ -1507,6 +1563,10 @@
   <Vocab>
     <Name>MissedOrCancelled</Name>
     <Translation>Missed Or Cancelled</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Moderate</Name>
+    <Translation>Moderate</Translation>
   </Vocab>
   <Vocab>
     <Name>ModifierId</Name>
@@ -1829,6 +1889,10 @@
     <Translation>Please Wait</Translation>
   </Vocab>
   <Vocab>
+    <Name>Poor</Name>
+    <Translation>Poor</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PositionX</Name>
     <Translation>Position X</Translation>
   </Vocab>
@@ -2073,6 +2137,10 @@
     <Translation>Remove Trade Image</Translation>
   </Vocab>
   <Vocab>
+    <Name>RemoveTradeNote</Name>
+    <Translation>Remove Trade Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>RemoveTradingAccount</Name>
     <Translation>Remove Trading Account</Translation>
   </Vocab>
@@ -2247,6 +2315,10 @@
   <Vocab>
     <Name>Setup</Name>
     <Translation>Setup</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>SetupNote</Name>
+    <Translation>Setup Note</Translation>
   </Vocab>
   <Vocab>
     <Name>SetupNotes</Name>
@@ -2525,6 +2597,10 @@
     <Translation>Trade</Translation>
   </Vocab>
   <Vocab>
+    <Name>TradeAdherence</Name>
+    <Translation>Trade Adherence</Translation>
+  </Vocab>
+  <Vocab>
     <Name>TradeDateType</Name>
     <Translation>Trade Date Type</Translation>
   </Vocab>
@@ -2555,6 +2631,26 @@
   <Vocab>
     <Name>TradeImagesList</Name>
     <Translation>Trade Images List</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNote</Name>
+    <Translation>Trade Note</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNoteCategory</Name>
+    <Translation>Trade Note Category</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNoteId</Name>
+    <Translation>Trade Note Id</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNotes</Name>
+    <Translation>Trade Notes</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradeNotesList</Name>
+    <Translation>Trade Notes List</Translation>
   </Vocab>
   <Vocab>
     <Name>Trades</Name>
@@ -2675,6 +2771,10 @@
   <Vocab>
     <Name>Version</Name>
     <Translation>Version:</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>VeryPoor</Name>
+    <Translation>Very Poor</Translation>
   </Vocab>
   <Vocab>
     <Name>View</Name>

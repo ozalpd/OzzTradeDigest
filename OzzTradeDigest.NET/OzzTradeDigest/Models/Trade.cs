@@ -15,6 +15,7 @@ namespace TD.Models
     {
         public Trade()
         {
+            this.TradeNotes = new HashSet<TradeNote>();
             this.EntryOrders = new HashSet<EntryOrder>();
             this.TakeProfitOrders = new HashSet<ExitOrder>();
             this.StopLossOrders = new HashSet<ExitOrder>();
@@ -153,6 +154,12 @@ namespace TD.Models
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Tags")]
         public string? Tags { get; set; }
 
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "AdherenceScore")]
+        public decimal? AdherenceScore { get; set; }
+
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradeNotes")]
+        public ICollection<TradeNote> TradeNotes { get; set; }
+
         [Display(ResourceType = typeof(LocalizedStrings), Name = "EntryOrders")]
         public ICollection<EntryOrder> EntryOrders { get; set; }
 
@@ -161,16 +168,6 @@ namespace TD.Models
 
         [Display(ResourceType = typeof(LocalizedStrings), Name = "StopLossOrders")]
         public ICollection<ExitOrder> StopLossOrders { get; set; }
-
-        [StringLength(2048, ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "MaxStringLength")]
-        [DataType(DataType.MultilineText)]
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "SetupNotes")]
-        public string? SetupNotes { get; set; }
-
-        [StringLength(2048, ErrorMessageResourceType = typeof(ErrorStrings), ErrorMessageResourceName = "MaxStringLength")]
-        [DataType(DataType.MultilineText)]
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "ReviewNotes")]
-        public string? ReviewNotes { get; set; }
 
         /// <summary>
         /// Keeps Web URL or local file path of the images associated with the trade, along with optional notes. This collection allows for multiple images to be linked to a single trade, providing visual documentation or evidence of the trade setup, execution, or outcome. Each TradeImage instance contains details about the image and its relation to the trade, facilitating better organization and reference within the trading diary.
@@ -211,8 +208,7 @@ namespace TD.Models
             clone.TotalFeesCorrected = this.TotalFeesCorrected;
             clone.FundingFeeTotal = this.FundingFeeTotal;
             clone.Tags = this.Tags;
-            clone.SetupNotes = this.SetupNotes;
-            clone.ReviewNotes = this.ReviewNotes;
+            clone.AdherenceScore = this.AdherenceScore;
             clone.UpdatedAt = this.UpdatedAt;
 
             Cloning(clone);

@@ -71,18 +71,45 @@ namespace TD.Models
         MarginCall = 60
     }
 
-    public enum TradeImageCategory : int
+    public enum TradeAdherence : int
+    {
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Excellent", Order = 10)]
+        /// <summary>Flawless execution, followed the trade plan precisely</summary>
+        Excellent = 100,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Good", Order = 20)]
+        /// <summary>Minor deviations from the plan, but overall good execution</summary>
+        Good = 75,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Moderate", Order = 30)]
+        /// <summary>Moderate deviation (e.g., exited too early or bent rules noticeably)</summary>
+        Moderate = 50,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Poor", Order = 40)]
+        /// <summary>Severe rule violation, off-plan, or reactive/emotional trading</summary>
+        Poor = 25,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "VeryPoor", Order = 50)]
+        /// <summary>Catastrophic execution, complete disregard for the plan</summary>
+        VeryPoor = 0,
+    }
+
+    public enum TradeNoteCategory : int
     {
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Setup", Order = 10)]
-        Setup = 10,  // Chart showing the trade setup / entry signal
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Entry", Order = 20)]
-        Entry = 20,  // Screenshot at entry execution
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Exit", Order = 30)]
-        Exit = 30,  // Screenshot at exit execution
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Review", Order = 40)]
-        Review = 40,  // Post-trade analysis / journaling
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Other", Order = 50)]
-        Other = 50,  // Uncategorized
+        ///<summary>Pre-trade thesis, market structure, entry conditions, trade plan</summary>
+        Setup = 10,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "EntryNote", Order = 20)]
+        ///<summary>Execution context, entry price notes, slippage, initial reaction</summary>
+        EntryNote = 20,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Management", Order = 30)]
+        ///<summary>Active trade adjustments (scaling in/out, moving SL to BE, trailing)</summary>
+        Management = 30,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ExitNote", Order = 40)]
+        ///<summary>Exit rationale, target hit, stop-out notes, market condition changes</summary>
+        ExitNote = 40,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Review", Order = 50)]
+        ///<summary>Post-trade autopsy, emotional check, rule adherence, key lessons</summary>
+        Review = 50,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Other", Order = 1010)]
+        ///<summary>Uncategorized or general market observations</summary>
+        Other = 1010
     }
 
     public enum MarketType : int

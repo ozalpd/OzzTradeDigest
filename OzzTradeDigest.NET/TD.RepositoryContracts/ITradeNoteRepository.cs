@@ -10,17 +10,15 @@ using TD.Models;
 
 namespace TD.RepositoryContracts
 {
-    public partial interface ITradeImageRepository
+    public partial interface ITradeNoteRepository
     {
-        Task<IReadOnlyList<TradeImage>> GetAllAsync();
+        Task<IReadOnlyList<TradeNote>> GetAllAsync();
         Task<bool> AnyByTradeIdAsync(int tradeId);
-        Task<IReadOnlyList<TradeImage>> GetByTradeIdAsync(int tradeId);
-        Task<bool> AnyByTradeNoteIdAsync(int tradeNoteId);
-        Task<IReadOnlyList<TradeImage>> GetByTradeNoteIdAsync(int tradeNoteId);
-        Task<TradeImage?> GetByIdAsync(int? id);
-        Task<int> CreateAsync(TradeImage tradeImage);
+        Task<IReadOnlyList<TradeNote>> GetByTradeIdAsync(int tradeId);
+        Task<TradeNote?> GetByIdAsync(int? id);
+        Task<int> CreateAsync(TradeNote tradeNote);
         Task<bool> CanDeleteAsync(int id);
         Task<bool> DeleteAsync(int id);
-        Task<bool> UpdateAsync(TradeImage tradeImage);
+        Task<bool> UpdateAsync(TradeNote tradeNote);
     }
 }

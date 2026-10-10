@@ -205,6 +205,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add New Trade Note.
+        /// </summary>
+        public static string AddNewTradeNote {
+            get {
+                return ResourceManager.GetString("AddNewTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Trading Account.
         /// </summary>
         public static string AddNewTradingAccount {
@@ -295,6 +304,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Remove Trade Note.
+        /// </summary>
+        public static string AddRemoveTradeNote {
+            get {
+                return ResourceManager.GetString("AddRemoveTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Remove Trading Account.
         /// </summary>
         public static string AddRemoveTradingAccount {
@@ -340,11 +358,38 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Trade Note.
+        /// </summary>
+        public static string AddTradeNote {
+            get {
+                return ResourceManager.GetString("AddTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Trading Account.
         /// </summary>
         public static string AddTradingAccount {
             get {
                 return ResourceManager.GetString("AddTradingAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adherence.
+        /// </summary>
+        public static string Adherence {
+            get {
+                return ResourceManager.GetString("Adherence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adherence Score.
+        /// </summary>
+        public static string AdherenceScore {
+            get {
+                return ResourceManager.GetString("AdherenceScore", resourceCulture);
             }
         }
         
@@ -475,6 +520,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        public static string Content {
+            get {
+                return ResourceManager.GetString("Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Country Code.
         /// </summary>
         public static string CountryCode {
@@ -570,6 +624,15 @@ namespace TD.i18n {
         public static string CreateTradeImage {
             get {
                 return ResourceManager.GetString("CreateTradeImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Trade Note.
+        /// </summary>
+        public static string CreateTradeNote {
+            get {
+                return ResourceManager.GetString("CreateTradeNote", resourceCulture);
             }
         }
         
@@ -817,6 +880,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete Trade Note.
+        /// </summary>
+        public static string DeleteTradeNote {
+            get {
+                return ResourceManager.GetString("DeleteTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete Trading Account.
         /// </summary>
         public static string DeleteTradingAccount {
@@ -925,6 +997,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Trade Note.
+        /// </summary>
+        public static string EditTradeNote {
+            get {
+                return ResourceManager.GetString("EditTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Trading Account.
         /// </summary>
         public static string EditTradingAccount {
@@ -952,11 +1033,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entry.
+        ///   Looks up a localized string similar to Entry Note.
         /// </summary>
-        public static string Entry {
+        public static string EntryNote {
             get {
-                return ResourceManager.GetString("Entry", resourceCulture);
+                return ResourceManager.GetString("EntryNote", resourceCulture);
             }
         }
         
@@ -1002,6 +1083,15 @@ namespace TD.i18n {
         public static string EntryTime {
             get {
                 return ResourceManager.GetString("EntryTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Excellent.
+        /// </summary>
+        public static string Excellent {
+            get {
+                return ResourceManager.GetString("Excellent", resourceCulture);
             }
         }
         
@@ -1096,11 +1186,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit.
+        ///   Looks up a localized string similar to Exit Note.
         /// </summary>
-        public static string Exit {
+        public static string ExitNote {
             get {
-                return ResourceManager.GetString("Exit", resourceCulture);
+                return ResourceManager.GetString("ExitNote", resourceCulture);
             }
         }
         
@@ -1254,6 +1344,15 @@ namespace TD.i18n {
         public static string Futures {
             get {
                 return ResourceManager.GetString("Futures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Good.
+        /// </summary>
+        public static string Good {
+            get {
+                return ResourceManager.GetString("Good", resourceCulture);
             }
         }
         
@@ -1429,6 +1528,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Management.
+        /// </summary>
+        public static string Management {
+            get {
+                return ResourceManager.GetString("Management", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manual Exit.
         /// </summary>
         public static string ManualExit {
@@ -1479,6 +1587,15 @@ namespace TD.i18n {
         public static string MissedOrCancelled {
             get {
                 return ResourceManager.GetString("MissedOrCancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moderate.
+        /// </summary>
+        public static string Moderate {
+            get {
+                return ResourceManager.GetString("Moderate", resourceCulture);
             }
         }
         
@@ -1704,6 +1821,15 @@ namespace TD.i18n {
         public static string PlannedTP {
             get {
                 return ResourceManager.GetString("PlannedTP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Poor.
+        /// </summary>
+        public static string Poor {
+            get {
+                return ResourceManager.GetString("Poor", resourceCulture);
             }
         }
         
@@ -1942,6 +2068,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove Trade Note.
+        /// </summary>
+        public static string RemoveTradeNote {
+            get {
+                return ResourceManager.GetString("RemoveTradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Trading Account.
         /// </summary>
         public static string RemoveTradingAccount {
@@ -1965,15 +2100,6 @@ namespace TD.i18n {
         public static string Review {
             get {
                 return ResourceManager.GetString("Review", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Review Notes.
-        /// </summary>
-        public static string ReviewNotes {
-            get {
-                return ResourceManager.GetString("ReviewNotes", resourceCulture);
             }
         }
         
@@ -2023,20 +2149,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Setup.
+        ///   Looks up a localized string similar to Setup Note.
         /// </summary>
-        public static string Setup {
+        public static string SetupNote {
             get {
-                return ResourceManager.GetString("Setup", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Setup Notes.
-        /// </summary>
-        public static string SetupNotes {
-            get {
-                return ResourceManager.GetString("SetupNotes", resourceCulture);
+                return ResourceManager.GetString("SetupNote", resourceCulture);
             }
         }
         
@@ -2302,6 +2419,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trade Adherence.
+        /// </summary>
+        public static string TradeAdherence {
+            get {
+                return ResourceManager.GetString("TradeAdherence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trade Date Type.
         /// </summary>
         public static string TradeDateType {
@@ -2347,15 +2473,6 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trade Image Category.
-        /// </summary>
-        public static string TradeImageCategory {
-            get {
-                return ResourceManager.GetString("TradeImageCategory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Trade Images.
         /// </summary>
         public static string TradeImages {
@@ -2370,6 +2487,51 @@ namespace TD.i18n {
         public static string TradeImagesList {
             get {
                 return ResourceManager.GetString("TradeImagesList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trade Note.
+        /// </summary>
+        public static string TradeNote {
+            get {
+                return ResourceManager.GetString("TradeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trade Note Category.
+        /// </summary>
+        public static string TradeNoteCategory {
+            get {
+                return ResourceManager.GetString("TradeNoteCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trade Note Id.
+        /// </summary>
+        public static string TradeNoteId {
+            get {
+                return ResourceManager.GetString("TradeNoteId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trade Notes.
+        /// </summary>
+        public static string TradeNotes {
+            get {
+                return ResourceManager.GetString("TradeNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trade Notes List.
+        /// </summary>
+        public static string TradeNotesList {
+            get {
+                return ResourceManager.GetString("TradeNotesList", resourceCulture);
             }
         }
         
@@ -2514,6 +2676,15 @@ namespace TD.i18n {
         public static string UpdateTime {
             get {
                 return ResourceManager.GetString("UpdateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Very Poor.
+        /// </summary>
+        public static string VeryPoor {
+            get {
+                return ResourceManager.GetString("VeryPoor", resourceCulture);
             }
         }
         

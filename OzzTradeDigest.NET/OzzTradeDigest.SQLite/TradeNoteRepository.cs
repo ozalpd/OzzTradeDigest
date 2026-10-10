@@ -13,11 +13,11 @@ using TD.SQLite.Extensions;
 namespace TD.SQLite
 {
     /// <summary>
-    /// SQLite-based repository for TradeImage CRUD operations.
+    /// SQLite-based repository for TradeNote CRUD operations.
     /// </summary>
-    public partial class TradeImageRepository : AbstractDatabaseRepository<TradeImage>, ITradeImageRepository
+    public partial class TradeNoteRepository : AbstractDatabaseRepository<TradeNote>, ITradeNoteRepository
     {
-        public TradeImageRepository(string databasePath) : base(databasePath, "TradeImages")
+        public TradeNoteRepository(string databasePath) : base(databasePath, "TradeNotes")
         {
             _selectStatement = $"SELECT {string.Join(", ", ColumnNames)} FROM {_tableName}";
             _databasePath = databasePath;
@@ -28,29 +28,42 @@ namespace TD.SQLite
         private readonly string _databasePath;
         private readonly string _selectStatement;
 
+        protected ITradeImageRepository TradeImageRepository
+        {
+            get
+            {
+                if (_tradeImageRepository == null)
+                {
+                    _tradeImageRepository = new TradeImageRepository(_databasePath);
+                }
+                return _tradeImageRepository;
+            }
+        }
+        private ITradeImageRepository? _tradeImageRepository;
+
 
         private void InitializeDatabase()
         {
             using var connection = GetOpenConnection();
-            ExecuteScript(connection, "TradeImage.sql");
+            ExecuteScript(connection, "TradeNote.sql");
         }
 
         partial void OnInitialized();
 
-        public async Task<IReadOnlyList<TradeImage>> GetAllAsync()
+        public async Task<IReadOnlyList<TradeNote>> GetAllAsync()
         {
-            var result = new List<TradeImage>();
+            var result = new List<TradeNote>();
 
             await using var connection = await GetOpenConnectionAsync();
             await using var command = connection.CreateCommand();
             command.CommandText = _selectStatement;
-            command.CommandText += " ORDER BY TradeId DESC, Category, UpdatedAt";
+            command.CommandText += " ORDER BY Id";
 
             await using var reader = await command.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
-                var tradeImage = MapTradeImage(reader);
-                result.Add(tradeImage);
+                var tradeNote = MapTradeNote(reader);
+                result.Add(tradeNote);
             }
 
             return result;
@@ -70,65 +83,29 @@ namespace TD.SQLite
         }
 
 
-        public async Task<IReadOnlyList<TradeImage>> GetByTradeIdAsync(int tradeId)
+        public async Task<IReadOnlyList<TradeNote>> GetByTradeIdAsync(int tradeId)
         {
-            var result = new List<TradeImage>();
+            var result = new List<TradeNote>();
 
             await using var connection = await GetOpenConnectionAsync();
             await using var command = connection.CreateCommand();
             command.CommandText = _selectStatement;
             command.CommandText += " WHERE TradeId = @tradeId";
             command.AddParameter("@tradeId", tradeId);
-            command.CommandText += " ORDER BY TradeId DESC, Category, UpdatedAt";
+            command.CommandText += " ORDER BY Id";
 
             await using var reader = await command.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
-                var tradeImage = MapTradeImage(reader);
-                result.Add(tradeImage);
+                var tradeNote = MapTradeNote(reader);
+                result.Add(tradeNote);
             }
 
             return result;
         }
 
 
-        public async Task<bool> AnyByTradeNoteIdAsync(int tradeNoteId)
-        {
-            if (tradeNoteId < 1)
-                return false;
-
-            await using var connection = await GetOpenConnectionAsync();
-            await using var command = connection.CreateCommand();
-            command.CommandText = $"SELECT COUNT(1) FROM {_tableName} WHERE TradeNoteId = @tradeNoteId";
-            command.Parameters.AddWithValue("@tradeNoteId", tradeNoteId);
-            var result = await command.ExecuteScalarAsync();
-            return Convert.ToInt64(result) > 0;
-        }
-
-
-        public async Task<IReadOnlyList<TradeImage>> GetByTradeNoteIdAsync(int tradeNoteId)
-        {
-            var result = new List<TradeImage>();
-
-            await using var connection = await GetOpenConnectionAsync();
-            await using var command = connection.CreateCommand();
-            command.CommandText = _selectStatement;
-            command.CommandText += " WHERE TradeNoteId = @tradeNoteId";
-            command.AddParameter("@tradeNoteId", tradeNoteId);
-            command.CommandText += " ORDER BY TradeId DESC, Category, UpdatedAt";
-
-            await using var reader = await command.ExecuteReaderAsync();
-            while (await reader.ReadAsync())
-            {
-                var tradeImage = MapTradeImage(reader);
-                result.Add(tradeImage);
-            }
-
-            return result;
-        }
-
-
-        public async Task<TradeImage?> GetByIdAsync(int? id)
+        public async Task<TradeNote?> GetByIdAsync(int? id)
         {
             if (!id.HasValue || id.Value < 1)
                 return null;
@@ -143,55 +120,61 @@ namespace TD.SQLite
             if (!await reader.ReadAsync())
                 return null;
 
-            var tradeImage = MapTradeImage(reader);
+            var tradeNote = MapTradeNote(reader);
 
-            OnLoaded(tradeImage);
-            return tradeImage;
+            OnLoaded(tradeNote);
+            return tradeNote;
         }
-        partial void OnLoaded(TradeImage tradeImage);
+        partial void OnLoaded(TradeNote tradeNote);
 
-        public async Task<int> CreateAsync(TradeImage tradeImage)
+        public async Task<int> CreateAsync(TradeNote tradeNote)
         {
-            ArgumentNullException.ThrowIfNull(tradeImage);
-            ValidateOrThrow(tradeImage);
+            ArgumentNullException.ThrowIfNull(tradeNote);
+            ValidateOrThrow(tradeNote);
 
             await using var connection = await GetOpenConnectionAsync();
 
             await using var command = connection.CreateCommand();
             command.CommandText = @$"INSERT INTO {_tableName} ({string.Join(", ", ColumnNames[1..])})
-            VALUES (@tradeId, @imageURL, @tradeNoteId, @updatedAt);
+            VALUES (@tradeId, @category, @adherence, @content, @updatedAt);
             SELECT last_insert_rowid();";
 
-            command.AddParameter("@tradeId", tradeImage.TradeId);
-            command.AddParameter("@imageURL", tradeImage.ImageURL);
-            command.AddParameter("@tradeNoteId", tradeImage.TradeNoteId);
+            command.AddParameter("@tradeId", tradeNote.TradeId);
+            command.AddParameter("@category", (int)tradeNote.Category);
+            command.AddParameter("@adherence", (int?)tradeNote.Adherence);
+            command.AddParameter("@content", tradeNote.Content);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var id = Convert.ToInt32((long)(await command.ExecuteScalarAsync() ?? 0));
 
             await _metadataRepository.SaveLastUpdateUtcAsync(connection);
             ClearRecordCountCache();
-            tradeImage.Id = id;
-            OnCreated(tradeImage);
+            tradeNote.Id = id;
+            OnCreated(tradeNote);
 
             return id;
         }
-        partial void OnCreated(TradeImage tradeImage);
+        partial void OnCreated(TradeNote tradeNote);
 
         /// <summary>
-        /// Determines whether a tradeImage can be safely deleted based on the absence of related records.
+        /// Determines whether a tradeNote can be safely deleted based on the absence of related records.
         /// </summary>
-        /// <remarks>A tradeImage can be deleted only if there are no associated records. Use this method
-        /// before attempting to delete a tradeImage to avoid violating referential integrity.</remarks>
-        /// <param name="id">The identifier of the tradeImage record to check for deletability.</param>
-        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the tradeImage
+        /// <remarks>A tradeNote can be deleted only if there are no associated records. Use this method
+        /// before attempting to delete a tradeNote to avoid violating referential integrity.</remarks>
+        /// <param name="id">The identifier of the tradeNote record to check for deletability.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the tradeNote
         /// can be deleted; otherwise, <see langword="false"/>.</returns>
-        public Task<bool> CanDeleteAsync(int id)
+        public async Task<bool> CanDeleteAsync(int id)
         {
             if (id < 1)
-                return Task.FromResult(false);
+                return false;
 
-            return Task.FromResult(true);
+            bool result = true;
+
+            // Checking any tradeImage record exists through TradeImage.TradeNoteId reference
+            result = result && !(await TradeImageRepository.AnyByTradeNoteIdAsync(id));
+
+            return result;
         }
 
         public async Task<bool> DeleteAsync(int id)
@@ -211,59 +194,60 @@ namespace TD.SQLite
             return affectedRows > 0;
         }
 
-        public async Task<bool> UpdateAsync(TradeImage tradeImage)
+        public async Task<bool> UpdateAsync(TradeNote tradeNote)
         {
-            ArgumentNullException.ThrowIfNull(tradeImage);
-            ValidateOrThrow(tradeImage);
+            ArgumentNullException.ThrowIfNull(tradeNote);
+            ValidateOrThrow(tradeNote);
 
             await using var connection = await GetOpenConnectionAsync();
-            var existingTradeImage = await GetByIdAsync(tradeImage.Id);
-            bool noChanges = existingTradeImage != null
-                          && existingTradeImage.ImageURL == tradeImage.ImageURL
-                          && existingTradeImage.TradeNoteId == tradeImage.TradeNoteId
-                          && existingTradeImage.UpdatedAt == tradeImage.UpdatedAt;
+            var existingTradeNote = await GetByIdAsync(tradeNote.Id);
+            bool noChanges = existingTradeNote != null
+                          && existingTradeNote.Adherence == tradeNote.Adherence
+                          && existingTradeNote.Content == tradeNote.Content
+                          && existingTradeNote.UpdatedAt == tradeNote.UpdatedAt;
 
             if (noChanges)
                 return false;
 
             await using var command = connection.CreateCommand();
-            // TradeId is not updated to avoid complications with existing references,
-            // so only ImageURL, TradeNoteId, UpdatedAt are updated
+            // TradeId, Category are not updated to avoid complications with existing references,
+            // so only Adherence, Content, UpdatedAt are updated
             command.CommandText = @$"UPDATE {_tableName} SET
-                ImageURL = @imageURL,
-                TradeNoteId = @tradeNoteId,
+                Adherence = @adherence,
+                Content = @content,
                 UpdatedAt = @updatedAt
             WHERE Id = @id";
 
-            command.AddParameter("@id", tradeImage.Id);
-            command.AddParameter("@imageURL", tradeImage.ImageURL);
-            command.AddParameter("@tradeNoteId", tradeImage.TradeNoteId);
+            command.AddParameter("@id", tradeNote.Id);
+            command.AddParameter("@adherence", (int)tradeNote.Adherence);
+            command.AddParameter("@content", tradeNote.Content);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 
             var affectedRows = await command.ExecuteNonQueryAsync();
             if (affectedRows > 0)
             {
                 await _metadataRepository.SaveLastUpdateUtcAsync(connection);
-                OnUpdated(tradeImage);
+                OnUpdated(tradeNote);
             }
 
             return affectedRows > 0;
         }
-        partial void OnUpdated(TradeImage tradeImage);
+        partial void OnUpdated(TradeNote tradeNote);
 
-        private static TradeImage MapTradeImage(SqliteDataReader reader)
+        private static TradeNote MapTradeNote(SqliteDataReader reader)
         {
-            var tradeImage = new TradeImage
+            var tradeNote = new TradeNote
             {
                 Id = reader.GetInt32(ColNrs.Id),
                 TradeId = reader.GetInt32(ColNrs.TradeId),
-                ImageURL = reader.GetString(ColNrs.ImageURL),
-                TradeNoteId = reader.IsDBNull(ColNrs.TradeNoteId) ? null
-                            : reader.GetInt32(ColNrs.TradeNoteId),
+                Category = (TradeNoteCategory)reader.GetInt32(ColNrs.Category),
+                Adherence = reader.IsDBNull(ColNrs.Adherence) ? null
+                          : (TradeAdherence)reader.GetInt32(ColNrs.Adherence),
+                Content = reader.GetString(ColNrs.Content),
                 UpdatedAt = ToLocalDateTime(reader.GetString(ColNrs.UpdatedAt)) ?? DateTime.MinValue
             };
 
-            return tradeImage;
+            return tradeNote;
         }
 
         /// <summary>
@@ -273,9 +257,10 @@ namespace TD.SQLite
         {
             public readonly static int Id = 0;
             public readonly static int TradeId = 1;
-            public readonly static int ImageURL = 2;
-            public readonly static int TradeNoteId = 3;
-            public readonly static int UpdatedAt = 4;
+            public readonly static int Category = 2;
+            public readonly static int Adherence = 3;
+            public readonly static int Content = 4;
+            public readonly static int UpdatedAt = 5;
         }
 
         /// <summary>
@@ -284,8 +269,9 @@ namespace TD.SQLite
         public readonly string[] ColumnNames = new[] {
             "Id",
             "TradeId",
-            "ImageURL",
-            "TradeNoteId",
+            "Category",
+            "Adherence",
+            "Content",
             "UpdatedAt"
         };
     }

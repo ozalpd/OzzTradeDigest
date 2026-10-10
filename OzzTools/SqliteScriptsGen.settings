@@ -1138,25 +1138,11 @@
           <Indexed>true</Indexed>
           <Unique>false</Unique>
           <SortDesc>false</SortDesc>
-          <CompositeIndexColumns>Category; UpdatedAt</CompositeIndexColumns>
-          <Nullable>true</Nullable>
-          <CheckIfAltered>false</CheckIfAltered>
-          <DoNotLog>false</DoNotLog>
-          <ForeignKeyTable>Trades</ForeignKeyTable>
-        </StorageColumnSetting>
-        <StorageColumnSetting>
-          <Name>Category</Name>
-          <Exclude>false</Exclude>
-          <DataType>INTEGER</DataType>
-          <Length>0</Length>
-          <PrimaryKey>false</PrimaryKey>
-          <Indexed>false</Indexed>
-          <Unique>false</Unique>
-          <SortDesc>false</SortDesc>
           <CompositeIndexColumns>UpdatedAt</CompositeIndexColumns>
           <Nullable>false</Nullable>
           <CheckIfAltered>false</CheckIfAltered>
           <DoNotLog>false</DoNotLog>
+          <ForeignKeyTable>Trades</ForeignKeyTable>
         </StorageColumnSetting>
         <StorageColumnSetting>
           <Name>ImageURL</Name>
@@ -1172,7 +1158,79 @@
           <DoNotLog>false</DoNotLog>
         </StorageColumnSetting>
         <StorageColumnSetting>
-          <Name>Notes</Name>
+          <Name>TradeNoteId</Name>
+          <Exclude>false</Exclude>
+          <DataType>INTEGER</DataType>
+          <Length>0</Length>
+          <PrimaryKey>false</PrimaryKey>
+          <Indexed>true</Indexed>
+          <Unique>false</Unique>
+          <SortDesc>false</SortDesc>
+          <CompositeIndexColumns>UpdatedAt</CompositeIndexColumns>
+          <Nullable>true</Nullable>
+          <CheckIfAltered>false</CheckIfAltered>
+          <DoNotLog>false</DoNotLog>
+          <ForeignKeyTable>TradeNotes</ForeignKeyTable>
+        </StorageColumnSetting>
+      </Properties>
+      <InheritedEntity>IUpdatedAt</InheritedEntity>
+      <UseInheritance>false</UseInheritance>
+      <SchemaName>dbo</SchemaName>
+      <TableName>TradeImages</TableName>
+      <HasLogTable>false</HasLogTable>
+      <StoredProcGeneration>NoStoredProcedure</StoredProcGeneration>
+      <CustomStoredProcs>false</CustomStoredProcs>
+    </BaseEntitySetting>
+    <BaseEntitySetting xsi:type="StorageEntitySetting">
+      <Name>TradeNote</Name>
+      <Exclude>false</Exclude>
+      <OverwriteExisting>true</OverwriteExisting>
+      <Properties>
+        <StorageColumnSetting>
+          <Name>TradeId</Name>
+          <Exclude>false</Exclude>
+          <DataType>INTEGER</DataType>
+          <Length>0</Length>
+          <PrimaryKey>false</PrimaryKey>
+          <Indexed>false</Indexed>
+          <Unique>false</Unique>
+          <SortDesc>false</SortDesc>
+          <CompositeIndexColumns>UpdatedAt</CompositeIndexColumns>
+          <Nullable>false</Nullable>
+          <CheckIfAltered>false</CheckIfAltered>
+          <DoNotLog>false</DoNotLog>
+          <ForeignKeyTable>Trades</ForeignKeyTable>
+        </StorageColumnSetting>
+        <StorageColumnSetting>
+          <Name>Category</Name>
+          <Exclude>false</Exclude>
+          <DataType>INTEGER</DataType>
+          <Length>0</Length>
+          <PrimaryKey>false</PrimaryKey>
+          <Indexed>false</Indexed>
+          <Unique>false</Unique>
+          <SortDesc>false</SortDesc>
+          <CompositeIndexColumns>TradeId</CompositeIndexColumns>
+          <Nullable>false</Nullable>
+          <CheckIfAltered>false</CheckIfAltered>
+          <DoNotLog>false</DoNotLog>
+        </StorageColumnSetting>
+        <StorageColumnSetting>
+          <Name>Adherence</Name>
+          <Exclude>false</Exclude>
+          <DataType>INTEGER</DataType>
+          <Length>0</Length>
+          <PrimaryKey>false</PrimaryKey>
+          <Indexed>false</Indexed>
+          <Unique>false</Unique>
+          <SortDesc>false</SortDesc>
+          <CompositeIndexColumns>TradeId</CompositeIndexColumns>
+          <Nullable>true</Nullable>
+          <CheckIfAltered>true</CheckIfAltered>
+          <DoNotLog>false</DoNotLog>
+        </StorageColumnSetting>
+        <StorageColumnSetting>
+          <Name>Content</Name>
           <Exclude>false</Exclude>
           <DataType>TEXT</DataType>
           <Length>0</Length>
@@ -1180,7 +1238,7 @@
           <Indexed>false</Indexed>
           <Unique>false</Unique>
           <SortDesc>false</SortDesc>
-          <Nullable>true</Nullable>
+          <Nullable>false</Nullable>
           <CheckIfAltered>true</CheckIfAltered>
           <DoNotLog>false</DoNotLog>
         </StorageColumnSetting>
@@ -1188,7 +1246,7 @@
       <InheritedEntity>IUpdatedAt</InheritedEntity>
       <UseInheritance>false</UseInheritance>
       <SchemaName>dbo</SchemaName>
-      <TableName>TradeImages</TableName>
+      <TableName>TradeNotes</TableName>
       <HasLogTable>false</HasLogTable>
       <StoredProcGeneration>NoStoredProcedure</StoredProcGeneration>
       <CustomStoredProcs>false</CustomStoredProcs>
@@ -1568,7 +1626,7 @@
           <DataType>TEXT</DataType>
           <Length>0</Length>
           <PrimaryKey>false</PrimaryKey>
-          <Indexed>false</Indexed>
+          <Indexed>true</Indexed>
           <Unique>false</Unique>
           <SortDesc>false</SortDesc>
           <Nullable>true</Nullable>
@@ -1576,25 +1634,12 @@
           <DoNotLog>false</DoNotLog>
         </StorageColumnSetting>
         <StorageColumnSetting>
-          <Name>SetupNotes</Name>
+          <Name>AdherenceScore</Name>
           <Exclude>false</Exclude>
-          <DataType>TEXT</DataType>
+          <DataType>INTEGER</DataType>
           <Length>0</Length>
           <PrimaryKey>false</PrimaryKey>
-          <Indexed>false</Indexed>
-          <Unique>false</Unique>
-          <SortDesc>false</SortDesc>
-          <Nullable>true</Nullable>
-          <CheckIfAltered>false</CheckIfAltered>
-          <DoNotLog>false</DoNotLog>
-        </StorageColumnSetting>
-        <StorageColumnSetting>
-          <Name>ReviewNotes</Name>
-          <Exclude>false</Exclude>
-          <DataType>TEXT</DataType>
-          <Length>0</Length>
-          <PrimaryKey>false</PrimaryKey>
-          <Indexed>false</Indexed>
+          <Indexed>true</Indexed>
           <Unique>false</Unique>
           <SortDesc>false</SortDesc>
           <Nullable>true</Nullable>

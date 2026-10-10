@@ -171,5 +171,10 @@ namespace TD.AppInfra.DesignTime
         {
             throw new NotImplementedException();
         }
+
+        public Task<bool> UpdateAdherenceScoreAsync(int id, decimal adherenceScore)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
