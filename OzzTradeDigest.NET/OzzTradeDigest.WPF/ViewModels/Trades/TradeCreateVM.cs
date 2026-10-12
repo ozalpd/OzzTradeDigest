@@ -286,18 +286,6 @@ namespace TD.WPF.ViewModels.Trades
             }
         }
 
-        public string? SetupNotes
-        {
-            get { return _setupNotes; }
-            set
-            {
-                _setupNotes = value;
-                RaisePropertyChanged(nameof(SetupNotes));
-                ValidateProperty(_trade, nameof(SetupNotes));
-            }
-        }
-        string? _setupNotes;
-
         public bool ValidateModel()
         {
             return ValidateModel(_trade);

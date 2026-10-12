@@ -153,7 +153,16 @@ namespace TD.SQLite
             updatingFromSaveNavigationCollectionsAsync = true;
             try
             {
+                await SaveTradeNotesAsync(trade, updateTrade: false);
                 await SaveTradeImagesAsync(trade, updateTrade: false);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            try
+            {
                 await SaveEntryOrdersAsync(trade, updateTrade: false);
                 await SaveTakeProfitOrdersAsync(trade, updateTrade: false);
                 await SaveStopLossOrdersAsync(trade, updateTrade: false);
@@ -292,6 +301,38 @@ namespace TD.SQLite
             foreach (var id in existingImageIds)
             {
                 await TradeImageRepository.DeleteAsync(id);
+                anyChanges = true;
+            }
+
+            if (anyChanges && updateTrade)
+            {
+                trade.CalculateFromOrders();
+                await UpdateAsync(trade);
+            }
+        }
+
+        public async Task SaveTradeNotesAsync(Trade trade, bool updateTrade = true)
+        {
+            bool anyChanges = false;
+            var existingNotes = await TradeNoteRepository.GetByTradeIdAsync(trade.Id);
+            var existingNoteIds = existingNotes.Select(i => i.Id).ToHashSet();
+            foreach (var Note in trade.TradeNotes)
+            {
+                if (Note.Id == 0)
+                {
+                    Note.TradeId = trade.Id;
+                    await TradeNoteRepository.CreateAsync(Note);
+                    anyChanges = true;
+                }
+                else if (existingNoteIds.Contains(Note.Id))
+                {
+                    anyChanges = await TradeNoteRepository.UpdateAsync(Note) || anyChanges;
+                    existingNoteIds.Remove(Note.Id);
+                }
+            }
+            foreach (var id in existingNoteIds)
+            {
+                await TradeNoteRepository.DeleteAsync(id);
                 anyChanges = true;
             }
 

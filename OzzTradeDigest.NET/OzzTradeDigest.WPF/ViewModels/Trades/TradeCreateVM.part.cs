@@ -126,11 +126,23 @@ namespace TD.WPF.ViewModels.Trades
 
 
 
-        public void AddOrders()
+        public void AddRelatedEntities()
         {
             AddEntryOrder();
             AddStopLossOrder();
             AddTakeProfitOrder();
+
+            if (!string.IsNullOrWhiteSpace(SetupNotes))
+            {
+                var note = new TradeNote
+                {
+                    Content = SetupNotes,
+                    TradeId = Trade.Id,
+                    Category = TradeNoteCategory.Setup,
+                    UpdatedAt = DateTime.UtcNow
+                };
+                Trade.TradeNotes.Add(note);
+            }
         }
 
         private void AddEntryOrder()
@@ -236,5 +248,16 @@ namespace TD.WPF.ViewModels.Trades
             if (_allSymbols == null)
                 _allSymbols = await _symbolLookupService.GetSymbolsAsync(isActive: true);
         }
+
+        public string? SetupNotes
+        {
+            get { return _setupNotes; }
+            set
+            {
+                _setupNotes = value;
+                RaisePropertyChanged(nameof(SetupNotes));
+            }
+        }
+        string? _setupNotes;
     }
 }
