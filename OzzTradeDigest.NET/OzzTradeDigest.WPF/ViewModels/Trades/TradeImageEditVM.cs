@@ -20,7 +20,7 @@ namespace TD.WPF.ViewModels.Trades
         public TradeImageEditVM(TradeImage tradeImage)
         {
             _tradeImage = tradeImage;
-            TradeImageCategoryValues = GetValues<TradeImageCategory>();
+            TradeImageCategoryValues = GetValues<TradeNoteCategory>();
             OnInitialized();
         }
         partial void OnInitialized();
@@ -28,25 +28,11 @@ namespace TD.WPF.ViewModels.Trades
         /// <summary>
         /// Gets the collection of available TradeImageCategory enum members for selection or display.
         /// </summary>
-        public IEnumerable<EnumValueItem<TradeImageCategory>> TradeImageCategoryValues { get; }
+        public IEnumerable<EnumValueItem<TradeNoteCategory>> TradeImageCategoryValues { get; }
 
         public int? TradeId => _tradeImage.TradeId;
 
         public Trade? Trade => _tradeImage.Trade;
-
-        public TradeImageCategory Category
-        {
-            get { return _tradeImage.Category; }
-            set
-            {
-                if (_tradeImage.Category != value)
-                {
-                    _tradeImage.Category = value;
-                    RaisePropertyChanged(nameof(Category));
-                    ValidateProperty(_tradeImage, nameof(Category));
-                }
-            }
-        }
 
         public string ImageURL
         {
@@ -58,26 +44,6 @@ namespace TD.WPF.ViewModels.Trades
                     _tradeImage.ImageURL = value;
                     RaisePropertyChanged(nameof(ImageURL));
                     ValidateProperty(_tradeImage, nameof(ImageURL));
-                }
-            }
-        }
-
-        public string? Notes
-        {
-            get { return _tradeImage.Notes; }
-            set
-            {
-                if (!string.IsNullOrWhiteSpace(value) && _tradeImage.Notes != value)
-                {
-                    _tradeImage.Notes = value;
-                    RaisePropertyChanged(nameof(Notes));
-                    ValidateProperty(_tradeImage, nameof(Notes));
-                }
-                else if (string.IsNullOrWhiteSpace(value))
-                {
-                    _tradeImage.Notes = null;
-                    RaisePropertyChanged(nameof(Notes));
-                    ValidateProperty(_tradeImage, nameof(Notes));
                 }
             }
         }

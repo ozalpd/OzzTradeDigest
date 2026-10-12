@@ -219,7 +219,7 @@ namespace TD.SQLite
             WHERE Id = @id";
 
             command.AddParameter("@id", tradeNote.Id);
-            command.AddParameter("@adherence", (int)tradeNote.Adherence);
+            command.AddParameter("@adherence", (int?)tradeNote.Adherence);
             command.AddParameter("@content", tradeNote.Content);
             command.AddDateTimeToTextParameter("@updatedAt", DateTime.Now);
 

@@ -288,23 +288,15 @@ namespace TD.WPF.ViewModels.Trades
 
         public string? SetupNotes
         {
-            get { return _trade.SetupNotes; }
+            get { return _setupNotes; }
             set
             {
-                if (!string.IsNullOrWhiteSpace(value) && _trade.SetupNotes != value)
-                {
-                    _trade.SetupNotes = value;
-                    RaisePropertyChanged(nameof(SetupNotes));
-                    ValidateProperty(_trade, nameof(SetupNotes));
-                }
-                else if (string.IsNullOrWhiteSpace(value))
-                {
-                    _trade.SetupNotes = null;
-                    RaisePropertyChanged(nameof(SetupNotes));
-                    ValidateProperty(_trade, nameof(SetupNotes));
-                }
+                _setupNotes = value;
+                RaisePropertyChanged(nameof(SetupNotes));
+                ValidateProperty(_trade, nameof(SetupNotes));
             }
         }
+        string? _setupNotes;
 
         public bool ValidateModel()
         {

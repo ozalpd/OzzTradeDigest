@@ -396,14 +396,14 @@
                 </Grid.RowDefinitions>
                 <!-- ═══ Setup Notes ═══ -->
                 <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Margin="0,8,0,0"
-                           Text="{x:Static i18n:LocalizedStrings.SetupNotes}" FontWeight="Bold"/>
+                           Text="{x:Static i18n:CommonStrings.SetupNotes}" FontWeight="Bold"/>
                 <Border Grid.Row="1" Grid.ColumnSpan="6" Margin="0">
                     <TextBlock TextWrapping="Wrap" Text="{Binding SetupNotes, Mode=OneWay}" Margin="0,0,4,8"/>
                 </Border>
 
                 <!-- ═══ Review Notes ═══ -->
                 <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="0,8,0,0"
-                           Text="{x:Static i18n:LocalizedStrings.ReviewNotes}" FontWeight="Bold"/>
+                           Text="{x:Static i18n:CommonStrings.ReviewNotes}" FontWeight="Bold"/>
                 <Border Grid.Row="3" Grid.ColumnSpan="6" Margin="0">
                     <TextBlock TextWrapping="Wrap" Text="{Binding ReviewNotes, Mode=OneWay}" Margin="0,0,4,8"/>
                 </Border>

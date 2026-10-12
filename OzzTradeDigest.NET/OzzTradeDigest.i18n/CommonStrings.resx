@@ -115,6 +115,12 @@
     <data name="Records" xml:space="preserve">
         <value>Records</value>
     </data>
+    <data name="ReviewNotes" xml:space="preserve">
+        <value>Review Notes</value>
+    </data>
+    <data name="SetupNotes" xml:space="preserve">
+        <value>Setup Notes</value>
+    </data>
     <data name="TotalPages" xml:space="preserve">
         <value>Total Pages</value>
     </data>

@@ -192,14 +192,14 @@
                  Style="{StaticResource ValidationTextBoxStyle}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="14" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.SetupNotes}"/>
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:CommonStrings.SetupNotes}"/>
         <TextBox Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="4" Height="Auto"
                  TextWrapping="Wrap" VerticalAlignment="Stretch" VerticalContentAlignment="Top"
                  Text="{Binding SetupNotes, Mode=OneWay}"
                  Style="{StaticResource ReadOnlyTextBoxStyle}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="15" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.ReviewNotes}"/>
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:CommonStrings.ReviewNotes}"/>
         <TextBox x:Name="ReviewNotesTextBox" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="4"
                  Style="{StaticResource ValidationMutliLineTextBoxStyle}"
                  Text="{Binding ReviewNotes, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>

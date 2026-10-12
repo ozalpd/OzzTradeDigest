@@ -43,7 +43,7 @@ namespace TD.WPF.ViewModels.Trades
             TakeProfitOrderEditCommand = new TakeProfitOrderEditCommand(this, windowDialogService);
 
             TradeImages = new ObservableCollection<TradeImage>();
-            TradeImageCategoryValues = GetValues<TradeImageCategory>();
+            TradeImageCategoryValues = GetValues<TradeNoteCategory>();
             TradeImageCreateCommand = new TradeImageCreateCommand(this, windowDialogService);
             TradeImageDeleteCommand = new TradeImageDeleteCommand(this);
             TradeImageDetailCommand = new TradeImageDetailCommand(this, windowDialogService);

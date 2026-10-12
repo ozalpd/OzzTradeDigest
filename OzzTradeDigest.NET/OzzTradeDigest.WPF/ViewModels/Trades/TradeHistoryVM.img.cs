@@ -16,7 +16,7 @@ namespace TD.WPF.ViewModels.Trades
         /// <summary>
         /// Gets the collection of available TradeImageCategory enum members for selection or display.
         /// </summary>
-        public IEnumerable<EnumValueItem<TradeImageCategory>> TradeImageCategoryValues { get; }
+        public IEnumerable<EnumValueItem<TradeNoteCategory>> TradeImageCategoryValues { get; }
 
         public TradeImage? SelectedTradeImage
         {

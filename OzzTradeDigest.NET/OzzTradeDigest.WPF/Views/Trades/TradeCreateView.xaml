@@ -182,7 +182,7 @@
                  Style="{StaticResource ValidationTextBoxStyle}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="12" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.SetupNotes}"/>
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:CommonStrings.SetupNotes}"/>
         <TextBox x:Name="SetupNotesTextBox" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="4"
                  Style="{StaticResource ValidationMutliLineTextBoxStyle}"
                  Text="{Binding SetupNotes, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>

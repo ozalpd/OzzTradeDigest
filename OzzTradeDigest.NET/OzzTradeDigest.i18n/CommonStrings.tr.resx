@@ -115,6 +115,12 @@
     <data name="Records" xml:space="preserve">
         <value>Kayıtlat</value>
     </data>
+    <data name="ReviewNotes" xml:space="preserve">
+        <value>Değerlendirme Notu</value>
+    </data>
+    <data name="SetupNotes" xml:space="preserve">
+        <value>Setup Notu</value>
+    </data>
     <data name="TotalPages" xml:space="preserve">
         <value>Toplam Sayfa</value>
     </data>

@@ -118,42 +118,44 @@ namespace TD.WPF.DesignTime
                 UpdatedAt = DateTime.Now.AddDays(-10)
             });
 
+            string note = "BTC breaking above key resistance at 75k with strong volume." + Environment.NewLine +
+                          "DCA entry plan: first fill at resistance retest, second fill at 74.4k demand zone.";
             var settings = AppSettings.GetAppSettings();
-            _selectedItem.TradeImages.Add(new TradeImage
-            {
-                Category = TradeImageCategory.Setup,
-                ImageURL = Path.Combine(settings.GetDatabaseFolderPath(), "Images", "Demo-01.png"),
-                Notes = "Initial setup with entry and target levels.",
-                UpdatedAt = DateTime.Now.AddDays(-10)
-            });
+            AddNoteImg(TradeNoteCategory.Setup, note,
+                       Path.Combine(settings.GetDatabaseFolderPath(), "Images", "Demo-01.png"));
+            AddNoteImg(TradeNoteCategory.Management,
+                       "Initial setup with entry and target levels.",
+                       "https://s3.tradingview.com/snapshots/v/VxW2WUbH.png");
 
-            _selectedItem.TradeImages.Add(new TradeImage
-            {
-                Category = TradeImageCategory.Other,
-                ImageURL = "https://s3.tradingview.com/snapshots/v/VxW2WUbH.png",
-                Notes = "Initial setup with entry and target levels.",
-                UpdatedAt = DateTime.Now.AddDays(-10)
-            });
-
-            _selectedItem.TradeImages.Add(new TradeImage
-            {
-                Category = TradeImageCategory.Setup,
-                ImageURL = Path.Combine(settings.GetDatabaseFolderPath(), "Images", "Demo-02.png"),
-                Notes = "Initial setup with entry and target levels.",
-                UpdatedAt = DateTime.Now.AddDays(-10)
-            });
+            note = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
+                   "Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure " +
+                   "dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                   "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            AddNoteImg(TradeNoteCategory.Review, note,
+                       Path.Combine(settings.GetDatabaseFolderPath(), "Images", "Demo-02.png"));
 
             ReplaceCollection(TradeImages, _selectedItem.TradeImages);
             ReplaceCollection(EntryOrders, _selectedItem.EntryOrders);
             ReplaceCollection(TakeProfitOrders, _selectedItem.TakeProfitOrders);
             ReplaceCollection(StopLossOrders, _selectedItem.StopLossOrders);
 
-            _selectedItem.SetupNotes = "BTC breaking above key resistance at 75k with strong volume." + Environment.NewLine +
-                                       "DCA entry plan: first fill at resistance retest, second fill at 74.4k demand zone.";
-
-            _selectedItem.ReviewNotes = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam," +
-                "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            void AddNoteImg(TradeNoteCategory category, string note, string imgUrl)
+            {
+                var tradeImage = new TradeImage
+                {
+                    ImageURL = imgUrl,
+                    UpdatedAt = DateTime.Now.AddDays(-10)
+                };
+                var tradeNote = new TradeNote
+                {
+                    Category = category,
+                    Content = note,
+                    UpdatedAt = DateTime.Now.AddDays(-10)
+                };
+                tradeNote.TradeImages.Add(tradeImage);
+                _selectedItem.TradeImages.Add(tradeImage);
+                _selectedItem.TradeNotes.Add(tradeNote);
+            }
         }
     }
 }

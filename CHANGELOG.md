@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Added `TradeNote` model, `ITradeNoteRepository` contract, SQLite `TradeNoteRepository`, and schema DDL (`TradeNote.sql`).
+- Linked `TradeImage` to `TradeNote` via `TradeNoteId` and `TradeNote` navigation property, and `TradeNote.TradeImages` collection.
+- Added `TradeNoteCategory` and `TradeAdherence` enums with localized display attributes for note categorization and rule adherence tracking.
 - Consolidated exit order entities (`StopLossOrder` and `TakeProfitOrder`) into a unified `ExitOrder` entity and `ExitOrders` table.
 - Added `ExitOrderMode` enum (`TakeProfit`, `StopLoss`, `ManualExit`, `TimedExit`, `Algorithm`, `MarginCall`) with localized display attributes.
 

@@ -1159,7 +1159,7 @@
                                 </Grid.RowDefinitions>
                                 <!-- ═══ Setup Notes ═══ -->
                                 <TextBlock Grid.Row="0" Margin="-4,8,8,0"
-                                           Text="{x:Static i18n:LocalizedStrings.SetupNotes}" FontWeight="Bold">
+                                           Text="{x:Static i18n:CommonStrings.SetupNotes}" FontWeight="Bold">
                                     <TextBlock.Style>
                                         <Style TargetType="TextBlock">
                                             <Setter Property="Visibility" Value="Visible" />
@@ -1181,7 +1181,7 @@
 
                                 <!-- ═══ Review Notes ═══ -->
                                 <TextBlock Grid.Row="2" Margin="-4,8,8,0"
-                                           Text="{x:Static i18n:LocalizedStrings.ReviewNotes}" FontWeight="Bold">
+                                           Text="{x:Static i18n:CommonStrings.ReviewNotes}" FontWeight="Bold">
                                     <TextBlock.Style>
                                         <Style TargetType="TextBlock">
                                             <Setter Property="Visibility" Value="Visible" />

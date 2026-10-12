@@ -145,7 +145,7 @@ Internal tracking versions: `OzzTradeDigest` `0.2.3`, `OzzTradeDigest.AppInfra` 
 - `ExchangeRepository` should receive dependent repositories (such as `SymbolRepository` and `TradingAccountRepository`) via constructor injection instead of creating/managing those dependencies internally.
 - Keep initialization ownership explicit: avoid re-initializing `TradingAccountRepository` inside `ExchangeRepository`; construct and pass dependencies from the caller/composition root.
 - Keep `Trade.OrderQuantity` and `Trade.FilledQuantity` aligned across repository mapping, validation, and SQL schema generation.
-- Implemented repositories: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `EntryOrder`, `ExitOrder`; remaining repositories will be added
+- Implemented repositories: `Currency`, `Exchange`, `TradingAccount`, `Symbol`, `Trade`, `TradeImage`, `TradeNote`, `EntryOrder`, `ExitOrder`; remaining repositories will be added
 - **Each model has a matching DDL file** in `OzzTradeDigest.SQLite/DbScripts` named `<ModelName>.sql`; optional seed files are named `<PluralTableName>-Data.sql`
 - DDL scripts in `DbScripts/` folder are **generated** by OzzCodeGen — do not edit manually
 - Seed scripts in `DbScripts/` (for example `<PluralTableName>-Data.sql`) are also generated artifacts — do not edit manually
@@ -205,13 +205,16 @@ Internal tracking versions: `OzzTradeDigest` `0.2.3`, `OzzTradeDigest.AppInfra` 
 ## Key Entities
 
 - **Trade**: Core trade record with entry/exit details, market type, direction, status, and fee/P&L tracking
-- **TradeImage**: Image attachments and notes associated with a trade (web URLs or local file paths)
+- **TradeImage**: Image attachments and notes associated with a trade (web URLs or local file paths), optionally linked to a `TradeNote`
+- **TradeNote**: Categorized notes (`Setup`, `EntryNote`, `Management`, `ExitNote`, `Review`, `Other`) with rule adherence rating (`TradeAdherence`) and linked images
 - **TradingAccount**: Holds `MakerFeeRate` and `TakerFeeRate` for per-account fee calculation
 
 ## Key Enums
 
 - `MarketType`: Unspecified (0), Stock (20), Fund (30), Futures (40), Forex (50), Option (60), Commodity (70), CryptoSpot (80), CryptoPerpetual (90), Index (100)
 - `TradeDirection`: Long (200), Short (100)
+- `TradeNoteCategory`: Setup (10), EntryNote (20), Management (30), ExitNote (40), Review (50), Other (1010)
+- `TradeAdherence`: Excellent (100), Good (75), Moderate (50), Poor (25), VeryPoor (0)
 - `EntryOrderType`: Market (10), Limit (20), StopMarket (40), StopLimit (50) — used on `EntryOrder.OrderType`
 - `ExitOrderType`: Market (10), Limit (20), TrailingStop (30), Stop (40), StopLimit (50) — used on `ExitOrder.OrderType`
 - `ExitOrderMode`: TakeProfit (10), StopLoss (20), ManualExit (30), TimedExit (40), Algorithm (50), MarginCall (60) — used on `ExitOrder.ExitOrderMode`

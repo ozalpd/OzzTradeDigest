@@ -232,6 +232,24 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Review Notes.
+        /// </summary>
+        public static string ReviewNotes {
+            get {
+                return ResourceManager.GetString("ReviewNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Setup Notes.
+        /// </summary>
+        public static string SetupNotes {
+            get {
+                return ResourceManager.GetString("SetupNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total Pages.
         /// </summary>
         public static string TotalPages {

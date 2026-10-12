@@ -968,7 +968,7 @@
     <BaseEntitySetting xsi:type="SqliteRepositoryEntitySetting">
       <Name>TradeNote</Name>
       <Exclude>false</Exclude>
-      <OverwriteExisting>false</OverwriteExisting>
+      <OverwriteExisting>true</OverwriteExisting>
       <Properties>
         <SqliteRepositoryPropertySetting>
           <Name>TradeId</Name>
