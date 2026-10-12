@@ -13,7 +13,7 @@ namespace TD.WPF.ViewModels.Trades
 {
     public partial class TradeHistoryVM : TradeListVM
     {
-        public TradeHistoryVM(ITradeRepository tradeRepository, IWindowDialogService windowDialogService,
+        public TradeHistoryVM(ITradeRepository tradeRepository, ITradeNoteRepository tradeNoteRepository, IWindowDialogService windowDialogService,
                               ISymbolLookupService symbolLookupService, ITradingAccountLookupService tradingAccountLookupService)
             : base(tradeRepository, windowDialogService, symbolLookupService, tradingAccountLookupService)
         {
@@ -42,8 +42,11 @@ namespace TD.WPF.ViewModels.Trades
             TakeProfitOrderDeleteCommand = new TakeProfitOrderDeleteCommand(this);
             TakeProfitOrderEditCommand = new TakeProfitOrderEditCommand(this, windowDialogService);
 
+            TradeNotes = new ObservableCollection<TradeNote>();
+            TradeNoteCategoryValues = GetValues<TradeNoteCategory>();
+            TradeNoteRepository = tradeNoteRepository;
+
             TradeImages = new ObservableCollection<TradeImage>();
-            TradeImageCategoryValues = GetValues<TradeNoteCategory>();
             TradeImageCreateCommand = new TradeImageCreateCommand(this, windowDialogService);
             TradeImageDeleteCommand = new TradeImageDeleteCommand(this);
             TradeImageDetailCommand = new TradeImageDetailCommand(this, windowDialogService);
@@ -53,6 +56,7 @@ namespace TD.WPF.ViewModels.Trades
             QueryVM.ByTradeStatus = 0;
         }
 
+        public ITradeNoteRepository TradeNoteRepository { get; }
 
         protected override void OnPropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
@@ -60,6 +64,7 @@ namespace TD.WPF.ViewModels.Trades
 
             if (e.PropertyName == nameof(SelectedTrade))
             {
+                ReplaceTradeNotes();
                 ReplaceTradeImages();
                 ReplaceEntryOrders();
                 ReplaceStopLossOrders();

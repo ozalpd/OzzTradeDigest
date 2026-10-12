@@ -167,7 +167,7 @@ namespace TD.AppInfra.DesignTime
             throw new NotImplementedException();
         }
 
-        public Task SaveTradeImagesAsync(Trade trade, bool updateTrade = true)
+        public Task SaveTradeNotesAsync(Trade trade, bool updateTrade = true)
         {
             throw new NotImplementedException();
         }

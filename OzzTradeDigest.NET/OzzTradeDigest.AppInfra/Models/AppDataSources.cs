@@ -12,6 +12,7 @@ public class AppDataSources
                           IExchangeRepository exchangeRepository, IExitOrderRepository exitOrderRepository,
                           ISymbolRepository symbolRepository,
                           ITradingAccountRepository tradingAccountRepository,
+                          ITradeNoteRepository tradeNoteRepository,
                           ITradeRepository tradeRepository)
     {
         CurrencyRepository = currencyRepository ?? throw new ArgumentNullException(nameof(currencyRepository));
@@ -22,6 +23,7 @@ public class AppDataSources
         EntryOrderRepository = entryOrderRepository ?? throw new ArgumentNullException(nameof(entryOrderRepository));
         ExitOrderRepository = exitOrderRepository ?? throw new ArgumentNullException(nameof(exitOrderRepository));
         TradeRepository = tradeRepository ?? throw new ArgumentNullException(nameof(tradeRepository));
+        TradeNoteRepository = tradeNoteRepository ?? throw new ArgumentNullException(nameof(tradeNoteRepository));
     }
 
     public ICurrencyRepository CurrencyRepository { get; }
@@ -32,4 +34,5 @@ public class AppDataSources
     public IEntryOrderRepository EntryOrderRepository { get; }
     public IExitOrderRepository ExitOrderRepository { get; }
     public ITradeRepository TradeRepository { get; }
+    public ITradeNoteRepository TradeNoteRepository { get; }
 }

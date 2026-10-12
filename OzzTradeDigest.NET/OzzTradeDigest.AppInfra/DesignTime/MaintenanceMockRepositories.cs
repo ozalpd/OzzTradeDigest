@@ -86,4 +86,22 @@ namespace TD.AppInfra.DesignTime
         public Task<TradingAccount?> GetByTitleAsync(string? title) => Task.FromResult<TradingAccount?>(null);
         public Task<bool> UpdateAsync(TradingAccount tradingAccount) => throw new NotImplementedException();
     }
+
+    public class TradeNoteMockRepository : ITradeNoteRepository
+    {
+        public Task<bool> AnyByTradeIdAsync(int tradeId) => throw new NotImplementedException();
+        public Task<bool> CanDeleteAsync(int id) => Task.FromResult(false);
+        public Task<int> CreateAsync(TradeNote tradeNote) => throw new NotImplementedException();
+        public Task<bool> DeleteAsync(int id) => throw new NotImplementedException();
+        public Task<IReadOnlyList<TradeNote>> GetAllAsync() => Task.FromResult<IReadOnlyList<TradeNote>>(Array.Empty<TradeNote>());
+        public Task<TradeNote?> GetByIdAsync(int? id) => Task.FromResult<TradeNote?>(null);
+        public Task<IReadOnlyList<TradeNote>> GetByTradeIdAsync(int tradeId) => Task.FromResult<IReadOnlyList<TradeNote>>(Array.Empty<TradeNote>());
+
+        public Task SaveTradeImagesAsync(TradeNote tradeNote, bool updateTrade = true)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateAsync(TradeNote tradeNote) => throw new NotImplementedException();
+    }
 }

@@ -111,6 +111,23 @@ namespace TD.SQLite
 
             try
             {
+                var notes = await TradeNoteRepository.GetByTradeIdAsync(trade.Id);
+                trade.TradeNotes = notes.ToList();
+                foreach (var note in trade.TradeNotes)
+                {
+                    note.Trade = trade;
+                    note.TradeImages = trade.TradeImages
+                                            .Where(i => i.TradeNoteId == note.Id)
+                                            .ToList();
+                }
+            }
+            catch (Exception)
+            {
+                // handle/log as needed
+            }
+
+            try
+            {
                 var entryOrders = await EntryOrderRepository.GetByTradeIdAsync(trade.Id);
                 trade.EntryOrders = entryOrders.ToList();
                 foreach (var order in trade.EntryOrders)
@@ -154,7 +171,6 @@ namespace TD.SQLite
             try
             {
                 await SaveTradeNotesAsync(trade, updateTrade: false);
-                await SaveTradeImagesAsync(trade, updateTrade: false);
             }
             catch (Exception)
             {
@@ -279,38 +295,6 @@ namespace TD.SQLite
             }
         }
 
-        public async Task SaveTradeImagesAsync(Trade trade, bool updateTrade = true)
-        {
-            bool anyChanges = false;
-            var existingImages = await TradeImageRepository.GetByTradeIdAsync(trade.Id);
-            var existingImageIds = existingImages.Select(i => i.Id).ToHashSet();
-            foreach (var image in trade.TradeImages)
-            {
-                if (image.Id == 0)
-                {
-                    image.TradeId = trade.Id;
-                    await TradeImageRepository.CreateAsync(image);
-                    anyChanges = true;
-                }
-                else if (existingImageIds.Contains(image.Id))
-                {
-                    anyChanges = await TradeImageRepository.UpdateAsync(image) || anyChanges;
-                    existingImageIds.Remove(image.Id);
-                }
-            }
-            foreach (var id in existingImageIds)
-            {
-                await TradeImageRepository.DeleteAsync(id);
-                anyChanges = true;
-            }
-
-            if (anyChanges && updateTrade)
-            {
-                trade.CalculateFromOrders();
-                await UpdateAsync(trade);
-            }
-        }
-
         public async Task SaveTradeNotesAsync(Trade trade, bool updateTrade = true)
         {
             bool anyChanges = false;
@@ -338,7 +322,6 @@ namespace TD.SQLite
 
             if (anyChanges && updateTrade)
             {
-                trade.CalculateFromOrders();
                 await UpdateAsync(trade);
             }
         }

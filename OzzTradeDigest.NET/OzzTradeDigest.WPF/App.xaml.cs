@@ -36,6 +36,7 @@ namespace TD.WPF
             var entryOrderRepository = new EntryOrderRepository(databasePath);
             var exitOrderRepository = new ExitOrderRepository(databasePath);
             var tradingAccountRepository = new TradingAccountRepository(databasePath, exchangeRepository);
+            var tradeNoteRepository = new TradeNoteRepository(databasePath);
             var tradeRepository = new TradeRepository(databasePath,
                                   entryOrderRepository: entryOrderRepository,
                                   exitOrderRepository: exitOrderRepository,
@@ -45,7 +46,8 @@ namespace TD.WPF
 
             var dataSources = new AppDataSources(currencyRepository, entryOrderRepository,
                                                  exchangeRepository, exitOrderRepository,
-                                                 symbolRepository, tradingAccountRepository, tradeRepository);
+                                                 symbolRepository, tradingAccountRepository,
+                                                 tradeNoteRepository, tradeRepository);
             if (settings.AutoBackupEnabled)
             {
                 await AutoBackupHelper.RunAsync();
