@@ -1385,13 +1385,13 @@
       <GenModeDeleteCommand>SkipManuallyEdited</GenModeDeleteCommand>
       <GenModeDetailCommand>DoNotGenerate</GenModeDetailCommand>
       <GenModeLoadCommand>DoNotGenerate</GenModeLoadCommand>
-      <GenModeCreateVM>SkipManuallyEdited</GenModeCreateVM>
-      <GenModeEditVM>SkipManuallyEdited</GenModeEditVM>
+      <GenModeCreateVM>GenerateIfNotExists</GenModeCreateVM>
+      <GenModeEditVM>GenerateIfNotExists</GenModeEditVM>
       <GenerateGetPaged>false</GenerateGetPaged>
       <GenModeCollectionVM>DoNotGenerate</GenModeCollectionVM>
       <GenModeLookupService>DoNotGenerate</GenModeLookupService>
-      <GenModeCreateView>SkipManuallyEdited</GenModeCreateView>
-      <GenModeEditView>SkipManuallyEdited</GenModeEditView>
+      <GenModeCreateView>GenerateIfNotExists</GenModeCreateView>
+      <GenModeEditView>GenerateIfNotExists</GenModeEditView>
       <GenModeDetailView>DoNotGenerate</GenModeDetailView>
       <RepositoryName>IExitOrderExitOrderRepository</RepositoryName>
     </BaseEntitySetting>
@@ -1418,7 +1418,7 @@
           <Exclude>false</Exclude>
           <CreateEditOrder>10200</CreateEditOrder>
           <DefaultValue />
-          <IsPreselectedInCreate>true</IsPreselectedInCreate>
+          <IsPreselectedInCreate>false</IsPreselectedInCreate>
           <IsMultiLine>false</IsMultiLine>
           <CreateViewMode>Editable</CreateViewMode>
           <EditViewMode>ReadOnly</EditViewMode>
@@ -1457,7 +1457,7 @@
           <Exclude>false</Exclude>
           <CreateEditOrder>10500</CreateEditOrder>
           <DefaultValue />
-          <IsPreselectedInCreate>false</IsPreselectedInCreate>
+          <IsPreselectedInCreate>true</IsPreselectedInCreate>
           <IsMultiLine>false</IsMultiLine>
           <CreateViewMode>Editable</CreateViewMode>
           <EditViewMode>Editable</EditViewMode>
@@ -1489,7 +1489,7 @@
     <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">
       <Name>TradeNote</Name>
       <Exclude>false</Exclude>
-      <OverwriteExisting>false</OverwriteExisting>
+      <OverwriteExisting>true</OverwriteExisting>
       <Properties>
         <WpfMvvmPropertySetting>
           <Name>TradeId</Name>
@@ -1509,7 +1509,7 @@
           <Exclude>false</Exclude>
           <CreateEditOrder>100200</CreateEditOrder>
           <DefaultValue />
-          <IsPreselectedInCreate>false</IsPreselectedInCreate>
+          <IsPreselectedInCreate>true</IsPreselectedInCreate>
           <IsMultiLine>false</IsMultiLine>
           <CreateViewMode>Editable</CreateViewMode>
           <EditViewMode>Editable</EditViewMode>
@@ -1557,24 +1557,24 @@
           <ValueConstraint />
         </WpfMvvmPropertySetting>
       </Properties>
-      <SubFolder>TradeNotes</SubFolder>
-      <CommandVmNamespace />
-      <CommandVmTypeName>ITradeNotesVM</CommandVmTypeName>
+      <SubFolder>Trades</SubFolder>
+      <CommandVmNamespace>TD.WPF.ViewModels.Trades</CommandVmNamespace>
+      <CommandVmTypeName>TradeHistoryVM</CommandVmTypeName>
       <DetailColumnLayout>OneColumn</DetailColumnLayout>
       <InputColumnLayout>OneColumn</InputColumnLayout>
-      <GenModeCreateCommand>GenerateIfNotExists</GenModeCreateCommand>
-      <GenModeEditCommand>GenerateIfNotExists</GenModeEditCommand>
-      <GenModeDeleteCommand>GenerateIfNotExists</GenModeDeleteCommand>
-      <GenModeDetailCommand>DoNotGenerate</GenModeDetailCommand>
-      <GenModeLoadCommand>DoNotGenerate</GenModeLoadCommand>
+      <GenModeCreateCommand>SkipManuallyEdited</GenModeCreateCommand>
+      <GenModeEditCommand>SkipManuallyEdited</GenModeEditCommand>
+      <GenModeDeleteCommand>SkipManuallyEdited</GenModeDeleteCommand>
+      <GenModeDetailCommand>SkipManuallyEdited</GenModeDetailCommand>
+      <GenModeLoadCommand>SkipManuallyEdited</GenModeLoadCommand>
       <GenModeCreateVM>GenerateIfNotExists</GenModeCreateVM>
       <GenModeEditVM>GenerateIfNotExists</GenModeEditVM>
       <GenerateGetPaged>false</GenerateGetPaged>
-      <GenModeCollectionVM>GenerateIfNotExists</GenModeCollectionVM>
+      <GenModeCollectionVM>DoNotGenerate</GenModeCollectionVM>
       <GenModeLookupService>DoNotGenerate</GenModeLookupService>
       <GenModeCreateView>GenerateIfNotExists</GenModeCreateView>
       <GenModeEditView>GenerateIfNotExists</GenModeEditView>
-      <GenModeDetailView>DoNotGenerate</GenModeDetailView>
+      <GenModeDetailView>GenerateIfNotExists</GenModeDetailView>
       <RepositoryName>ITradeNoteRepository</RepositoryName>
     </BaseEntitySetting>
     <BaseEntitySetting xsi:type="WpfMvvmEntitySetting">

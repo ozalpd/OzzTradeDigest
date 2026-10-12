@@ -43,6 +43,10 @@ namespace TD.WPF.ViewModels.Trades
             TakeProfitOrderEditCommand = new TakeProfitOrderEditCommand(this, windowDialogService);
 
             TradeNotes = new ObservableCollection<TradeNote>();
+            TradeNoteCreateCommand = new TradeNoteCreateCommand(this, windowDialogService);
+            TradeNoteDeleteCommand = new TradeNoteDeleteCommand(this);
+            TradeNoteDetailCommand = new TradeNoteDetailCommand(this, windowDialogService);
+            TradeNoteEditCommand = new TradeNoteEditCommand(this, windowDialogService);
             TradeNoteCategoryValues = GetValues<TradeNoteCategory>();
             TradeNoteRepository = tradeNoteRepository;
 
@@ -73,12 +77,17 @@ namespace TD.WPF.ViewModels.Trades
                 EntryOrderCreateCommand.PreselectedTrade = SelectedTrade;
                 StopLossOrderCreateCommand.PreselectedTrade = SelectedTrade;
                 TakeProfitOrderCreateCommand.PreselectedTrade = SelectedTrade;
-                TradeImageCreateCommand.PreselectedTrade = SelectedTrade;
 
                 RaiseEntryOrderCmdCanExecute();
                 RaiseStopLossOrderCmdCanExecute();
                 RaiseTakeProfitOrderCmdCanExecute();
                 RaiseTradeImageCmdCanExecute();
+            }
+
+            if (e.PropertyName == nameof(SelectedTradeNote))
+            {
+                TradeImageCreateCommand.PreselectedTradeNote = SelectedTradeNote;
+
             }
 
             if (e.PropertyName == nameof(QueryVM.ByTradeStatus))

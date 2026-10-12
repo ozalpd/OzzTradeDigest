@@ -27,5 +27,11 @@ namespace TD.WPF.DesignTime
         public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
         public (bool IsConfirmed, bool IsDirty) ShowTradeImageEditDialog(Window owner, TradeImage tradeImage) => (false, false);
         public void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage) => throw new NotImplementedException();
+        public (bool IsConfirmed, ExitOrder? ExitOrder) ShowExitOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+        public (bool IsConfirmed, bool IsDirty) ShowExitOrderEditDialog(Window owner, ExitOrder exitOrder) => (false, false);
+        public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote) => (false, null);
+        public (bool IsConfirmed, TradeNote? TradeNote) ShowTradeNoteCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+        public (bool IsConfirmed, bool IsDirty) ShowTradeNoteEditDialog(Window owner, TradeNote tradeNote) => (false, false);
+        public void ShowTradeNoteDetailDialog(Window owner, TradeNote tradeNote) => throw new NotImplementedException();
     }
 }

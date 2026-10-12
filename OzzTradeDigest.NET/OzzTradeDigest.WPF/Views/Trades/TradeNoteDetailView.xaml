@@ -1,0 +1,64 @@
+<Window x:Class="TD.WPF.Views.Trades.TradeNoteDetailView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TD.WPF.Views.Trades"
+        xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
+        Title="{x:Static i18n:LocalizedStrings.TradeNote}"
+        Height="340" Width="420" MinHeight="340" MinWidth="420"
+        WindowStartupLocation="CenterOwner"
+        mc:Ignorable="d">
+    <Grid Margin="8,12">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" MinWidth="96" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Trade}"/>
+        <TextBlock Grid.Column="1" Grid.Row="0"
+                   Text="{Binding TradeId, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Trade}"/>
+        <TextBlock Grid.Column="1" Grid.Row="1"
+                   Text="{Binding Trade, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Category}"/>
+        <TextBlock Grid.Column="1" Grid.Row="2"
+                   Text="{Binding Category, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Adherence}"/>
+        <TextBlock Grid.Column="1" Grid.Row="3"
+                   Text="{Binding Adherence, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Content}"/>
+        <TextBlock Grid.Column="1" Grid.Row="4"
+                   Text="{Binding Content, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="5" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.UpdatedAt}"/>
+        <TextBlock Grid.Column="1" Grid.Row="5"
+                   Text="{Binding UpdatedAt, StringFormat=\{0:yyyy-MM-dd HH:mm\}, Mode=OneWay}"
+                   Margin="0,0,0,8"/>
+    </Grid>
+</Window>

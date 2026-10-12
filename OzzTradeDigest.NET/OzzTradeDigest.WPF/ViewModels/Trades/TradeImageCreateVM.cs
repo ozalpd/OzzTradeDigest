@@ -30,30 +30,30 @@ namespace TD.WPF.ViewModels.Trades
         /// </summary>
         public IEnumerable<EnumValueItem<TradeNoteCategory>> TradeImageCategoryValues { get; }
 
-        public int TradeId
+        public int? TradeNoteId
         {
-            get { return _tradeImage.TradeId; }
+            get { return _tradeImage.TradeNoteId; }
             set
             {
-                if (_tradeImage.TradeId != value)
+                if (_tradeImage.TradeNoteId != value)
                 {
-                    _tradeImage.TradeId = value;
-                    RaisePropertyChanged(nameof(TradeId));
-                    ValidateProperty(_tradeImage, nameof(TradeId));
+                    _tradeImage.TradeNoteId = value;
+                    RaisePropertyChanged(nameof(TradeNoteId));
+                    ValidateProperty(_tradeImage, nameof(TradeNoteId));
                 }
             }
         }
 
-        public Trade? Trade
+        public TradeNote? TradeNote
         {
-            get { return _tradeImage.Trade; }
+            get { return _tradeImage.TradeNote; }
             set
             {
-                if (_tradeImage.Trade != value)
+                if (_tradeImage.TradeNote != value)
                 {
-                    _tradeImage.Trade = value;
-                    RaisePropertyChanged(nameof(Trade));
-                    ValidateProperty(_tradeImage, nameof(Trade));
+                    _tradeImage.TradeNote = value;
+                    RaisePropertyChanged(nameof(TradeNote));
+                    ValidateProperty(_tradeImage, nameof(TradeNote));
                 }
             }
         }

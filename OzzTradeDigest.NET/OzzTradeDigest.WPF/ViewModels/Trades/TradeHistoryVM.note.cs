@@ -8,10 +8,10 @@ namespace TD.WPF.ViewModels.Trades;
 public partial class TradeHistoryVM
 {
     public ObservableCollection<TradeNote> TradeNotes { get; }
-    //public TradeNoteCreateCommand TradeNoteCreateCommand { get; }
-    //public TradeNoteDeleteCommand TradeNoteDeleteCommand { get; }
-    //public TradeNoteDetailCommand TradeNoteDetailCommand { get; }
-    //public TradeNoteEditCommand TradeNoteEditCommand { get; }
+    public TradeNoteCreateCommand TradeNoteCreateCommand { get; }
+    public TradeNoteDeleteCommand TradeNoteDeleteCommand { get; }
+    public TradeNoteDetailCommand TradeNoteDetailCommand { get; }
+    public TradeNoteEditCommand TradeNoteEditCommand { get; }
 
     /// <summary>
     /// Gets the collection of available TradeNoteCategory enum members for selection or display.
@@ -72,10 +72,10 @@ public partial class TradeHistoryVM
 
     private void RaiseTradeNoteCmdCanExecute()
     {
-        //TradeNoteCreateCommand.RaiseCanExecuteChanged();
-        //TradeNoteDeleteCommand.RaiseCanExecuteChanged();
-        //TradeNoteEditCommand.RaiseCanExecuteChanged();
-        //TradeNoteDetailCommand.RaiseCanExecuteChanged();
+        TradeNoteCreateCommand.RaiseCanExecuteChanged();
+        TradeNoteDeleteCommand.RaiseCanExecuteChanged();
+        TradeNoteEditCommand.RaiseCanExecuteChanged();
+        TradeNoteDetailCommand.RaiseCanExecuteChanged();
     }
 
     /// <summary>

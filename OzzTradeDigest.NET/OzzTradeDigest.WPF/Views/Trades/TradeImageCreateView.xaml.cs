@@ -10,7 +10,7 @@ namespace TD.WPF.Views.Trades
     public partial class TradeImageCreateView : Window
     {
         private readonly TradeImageCreateVM _viewModel;
-        private Trade? _preselectedTrade;
+        private TradeNote? _preselectedTradeNote;
 
         public TradeImage TradeImage => _viewModel.TradeImage;
 
@@ -27,22 +27,22 @@ namespace TD.WPF.Views.Trades
         /// This constructor should be used at runtime to create the view with a real TradeImage.
         /// </summary>
         /// <param name="tradeImage">The real TradeImage to be used by the view.</param>
-        public TradeImageCreateView(Trade? preselectedTrade)
+        public TradeImageCreateView(TradeNote? preselectedTradeNote)
         {
             InitializeComponent();
 
             _viewModel = new TradeImageCreateVM();
             DataContext = _viewModel;
-            _preselectedTrade = preselectedTrade;
+            _preselectedTradeNote = preselectedTradeNote;
             SourceInitialized += TradeImageCreateView_SourceInitialized;
         }
 
         private async void TradeImageCreateView_SourceInitialized(object? sender, EventArgs e)
         {
-            if (_preselectedTrade != null)
+            if (_preselectedTradeNote != null)
             {
-                _viewModel.Trade = _preselectedTrade;
-                _viewModel.TradeId = _preselectedTrade.Id;
+                _viewModel.TradeNote = _preselectedTradeNote;
+                _viewModel.TradeNoteId = _preselectedTradeNote.Id;
             }
             OnSourceInitialized();
         }

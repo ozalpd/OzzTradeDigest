@@ -89,21 +89,21 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade)
+        public (bool IsConfirmed, ExitOrder? ExitOrder) ShowExitOrderCreateDialog(Window owner, Trade? preselectedTrade)
         {
-            var dialog = new StopLossOrderCreateView(preselectedTrade)
+            var dialog = new ExitOrderCreateView(preselectedTrade)
             {
                 Owner = owner
             };
 
             var result = dialog.ShowDialog() == true;
-            return (result, result ? dialog.StopLossOrder : null);
+            return (result, result ? dialog.ExitOrder : null);
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder)
+        public (bool IsConfirmed, bool IsDirty) ShowExitOrderEditDialog(Window owner, ExitOrder exitOrder)
         {
-            var dialog = new StopLossOrderEditView(stopLossOrder)
+            var dialog = new ExitOrderEditView(exitOrder)
             {
                 Owner = owner
             };
@@ -129,30 +129,6 @@ namespace TD.WPF.Services
         public (bool IsConfirmed, bool IsDirty) ShowSymbolEditDialog(Window owner, Symbol symbol)
         {
             var dialog = new SymbolEditView(symbol)
-            {
-                Owner = owner
-            };
-
-            var result = dialog.ShowDialog() == true;
-            return (result, dialog.IsDirty);
-        }
-
-        /// <inheritdoc />
-        public (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade)
-        {
-            var dialog = new TakeProfitOrderCreateView(preselectedTrade)
-            {
-                Owner = owner
-            };
-
-            var result = dialog.ShowDialog() == true;
-            return (result, result ? dialog.TakeProfitOrder : null);
-        }
-
-        /// <inheritdoc />
-        public (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder)
-        {
-            var dialog = new TakeProfitOrderEditView(takeProfitOrder)
             {
                 Owner = owner
             };
@@ -198,9 +174,9 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, Trade? preselectedTrade)
+        public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote)
         {
-            var dialog = new TradeImageCreateView(preselectedTrade)
+            var dialog = new TradeImageCreateView(preselectedTradeNote)
             {
                 Owner = owner
             };
@@ -225,6 +201,41 @@ namespace TD.WPF.Services
         public void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage)
         {
             var dialog = new TradeImageDetailView(tradeImage)
+            {
+                Owner = owner
+            };
+
+            dialog.ShowDialog();
+        }
+
+        /// <inheritdoc />
+        public (bool IsConfirmed, TradeNote? TradeNote) ShowTradeNoteCreateDialog(Window owner, Trade? preselectedTrade)
+        {
+            var dialog = new TradeNoteCreateView(preselectedTrade)
+            {
+                Owner = owner
+            };
+
+            var result = dialog.ShowDialog() == true;
+            return (result, result ? dialog.TradeNote : null);
+        }
+
+        /// <inheritdoc />
+        public (bool IsConfirmed, bool IsDirty) ShowTradeNoteEditDialog(Window owner, TradeNote tradeNote)
+        {
+            var dialog = new TradeNoteEditView(tradeNote)
+            {
+                Owner = owner
+            };
+
+            var result = dialog.ShowDialog() == true;
+            return (result, dialog.IsDirty);
+        }
+
+        /// <inheritdoc />
+        public void ShowTradeNoteDetailDialog(Window owner, TradeNote tradeNote)
+        {
+            var dialog = new TradeNoteDetailView(tradeNote)
             {
                 Owner = owner
             };

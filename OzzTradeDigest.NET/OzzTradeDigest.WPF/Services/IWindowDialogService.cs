@@ -79,26 +79,26 @@ namespace TD.WPF.Services
         (bool IsConfirmed, bool IsDirty) ShowExchangeEditDialog(Window owner, Exchange exchange);
 
         /// <summary>
-        /// Displays the Stop Loss Order creation dialog and returns the result indicating whether the user confirmed the dialog
-        /// and the created Stop Loss Order, if any.
+        /// Displays the Exit Order creation dialog and returns the result indicating whether the user confirmed the dialog
+        /// and the created Exit Order, if any.
         /// </summary>
         /// <param name="owner">The window that will own the dialog. This determines the dialog's parent window for modality and positioning.</param>
         /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
         /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
-        /// langword="false"/>. The second item is the created Stop Loss Order if confirmed; otherwise, <see langword="null"/>.</returns>
-        (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade);
+        /// langword="false"/>. The second item is the created Exit Order if confirmed; otherwise, <see langword="null"/>.</returns>
+        (bool IsConfirmed, ExitOrder? ExitOrder) ShowExitOrderCreateDialog(Window owner, Trade? preselectedTrade);
 
         /// <summary>
-        /// Displays a modal dialog for editing the specified Stop Loss Order and returns the result indicating whether the dialog
+        /// Displays a modal dialog for editing the specified Exit Order and returns the result indicating whether the dialog
         /// was confirmed and if any changes were made.
         /// </summary>
         /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog
         /// positioning.</param>
-        /// <param name="stopLossOrder">The Stop Loss Order entity to edit. The dialog will display and allow editing of this stopLossOrder's properties.</param>
+        /// <param name="exitOrder">The Exit Order entity to edit. The dialog will display and allow editing of this exitOrder's properties.</param>
         /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
-        /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the stopLossOrder
+        /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the exitOrder
         /// during editing; otherwise, <see langword="false"/>.</returns>
-        (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder);
+        (bool IsConfirmed, bool IsDirty) ShowExitOrderEditDialog(Window owner, ExitOrder exitOrder);
 
         /// <summary>
         /// Displays the Symbol creation dialog and returns the result indicating whether the user confirmed the dialog
@@ -124,28 +124,6 @@ namespace TD.WPF.Services
         /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the symbol
         /// during editing; otherwise, <see langword="false"/>.</returns>
         (bool IsConfirmed, bool IsDirty) ShowSymbolEditDialog(Window owner, Symbol symbol);
-
-        /// <summary>
-        /// Displays the Take Profit Order creation dialog and returns the result indicating whether the user confirmed the dialog
-        /// and the created Take Profit Order, if any.
-        /// </summary>
-        /// <param name="owner">The window that will own the dialog. This determines the dialog's parent window for modality and positioning.</param>
-        /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
-        /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
-        /// langword="false"/>. The second item is the created Take Profit Order if confirmed; otherwise, <see langword="null"/>.</returns>
-        (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade);
-
-        /// <summary>
-        /// Displays a modal dialog for editing the specified Take Profit Order and returns the result indicating whether the dialog
-        /// was confirmed and if any changes were made.
-        /// </summary>
-        /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog
-        /// positioning.</param>
-        /// <param name="takeProfitOrder">The Take Profit Order entity to edit. The dialog will display and allow editing of this takeProfitOrder's properties.</param>
-        /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
-        /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the takeProfitOrder
-        /// during editing; otherwise, <see langword="false"/>.</returns>
-        (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder);
 
         /// <summary>
         /// Displays the Trade creation dialog and returns the result indicating whether the user confirmed the dialog
@@ -185,10 +163,10 @@ namespace TD.WPF.Services
         /// and the created Trade Image, if any.
         /// </summary>
         /// <param name="owner">The window that will own the dialog. This determines the dialog's parent window for modality and positioning.</param>
-        /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
+        /// <param name="preselectedTradeNote">An optional preselected tradeNote to initialize the dialog with.</param>
         /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
         /// langword="false"/>. The second item is the created Trade Image if confirmed; otherwise, <see langword="null"/>.</returns>
-        (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, Trade? preselectedTrade);
+        (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote);
 
         /// <summary>
         /// Displays a modal dialog for editing the specified Trade Image and returns the result indicating whether the dialog
@@ -209,6 +187,36 @@ namespace TD.WPF.Services
         /// positioning.</param>
         /// <param name="tradeImage">The tradeImage entity to display in the detail dialog.</param>
         void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage);
+
+        /// <summary>
+        /// Displays the Trade Note creation dialog and returns the result indicating whether the user confirmed the dialog
+        /// and the created Trade Note, if any.
+        /// </summary>
+        /// <param name="owner">The window that will own the dialog. This determines the dialog's parent window for modality and positioning.</param>
+        /// <param name="preselectedTrade">An optional preselected trade to initialize the dialog with.</param>
+        /// <returns>A tuple containing a Boolean value that is <see langword="true"/> if the user confirmed the dialog; otherwise, <see
+        /// langword="false"/>. The second item is the created Trade Note if confirmed; otherwise, <see langword="null"/>.</returns>
+        (bool IsConfirmed, TradeNote? TradeNote) ShowTradeNoteCreateDialog(Window owner, Trade? preselectedTrade);
+
+        /// <summary>
+        /// Displays a modal dialog for editing the specified Trade Note and returns the result indicating whether the dialog
+        /// was confirmed and if any changes were made.
+        /// </summary>
+        /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog
+        /// positioning.</param>
+        /// <param name="tradeNote">The Trade Note entity to edit. The dialog will display and allow editing of this tradeNote's properties.</param>
+        /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
+        /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the tradeNote
+        /// during editing; otherwise, <see langword="false"/>.</returns>
+        (bool IsConfirmed, bool IsDirty) ShowTradeNoteEditDialog(Window owner, TradeNote tradeNote);
+
+        /// <summary>
+        /// Displays a dialog showing detailed information for the specified tradeNote.
+        /// </summary>
+        /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog
+        /// positioning.</param>
+        /// <param name="tradeNote">The tradeNote entity to display in the detail dialog.</param>
+        void ShowTradeNoteDetailDialog(Window owner, TradeNote tradeNote);
 
         /// <summary>
         /// Displays the Trading Account creation dialog and returns the result indicating whether the user confirmed the dialog
