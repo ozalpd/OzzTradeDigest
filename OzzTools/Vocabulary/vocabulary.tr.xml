@@ -1529,6 +1529,10 @@
     <Translation>Pozisyon Yönetimi</Translation>
   </Vocab>
   <Vocab>
+    <Name>ManagementNote</Name>
+    <Translation>Pozisyon Yönetim Notu</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ManualExit</Name>
     <Translation>Manuel Çıkış</Translation>
   </Vocab>
@@ -2179,6 +2183,10 @@
   <Vocab>
     <Name>Review</Name>
     <Translation>Değerlendirme</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ReviewNote</Name>
+    <Translation>Değerlendirme Notu</Translation>
   </Vocab>
   <Vocab>
     <Name>ReviewNotes</Name>

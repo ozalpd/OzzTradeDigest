@@ -380,7 +380,7 @@ static async Task<Trade> EnsureDemoTradeAsync(ITradeRepository tradeRepository, 
         var tradeNote = new TradeNote
         {
             TradeId = trade.Id,
-            Category = random.Next(0, 2) == 0 ? TradeNoteCategory.Setup : TradeNoteCategory.Review,
+            Category = random.Next(0, 2) == 0 ? TradeNoteCategory.SetupNote : TradeNoteCategory.ReviewNote,
             Content = TD.Tools.Text.CreateLipsumParagraphs(random.Next(1, 3)),
             UpdatedAt = DateTime.UtcNow
         };
@@ -413,7 +413,7 @@ static async Task AppendDemoNotes(Trade trade, ITradeNoteRepository tradeNoteRep
     var tradeNote = new TradeNote
     {
         TradeId = trade.Id,
-        Category = TradeNoteCategory.Setup,
+        Category = TradeNoteCategory.SetupNote,
         Content = string.Join(" ", demoNotes),
         UpdatedAt = DateTime.UtcNow
     };

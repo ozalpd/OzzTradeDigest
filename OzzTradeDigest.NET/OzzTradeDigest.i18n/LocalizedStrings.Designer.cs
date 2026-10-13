@@ -1528,11 +1528,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Management.
+        ///   Looks up a localized string similar to Management Note.
         /// </summary>
-        public static string Management {
+        public static string ManagementNote {
             get {
-                return ResourceManager.GetString("Management", resourceCulture);
+                return ResourceManager.GetString("ManagementNote", resourceCulture);
             }
         }
         
@@ -2095,11 +2095,11 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Review.
+        ///   Looks up a localized string similar to Review Note.
         /// </summary>
-        public static string Review {
+        public static string ReviewNote {
             get {
-                return ResourceManager.GetString("Review", resourceCulture);
+                return ResourceManager.GetString("ReviewNote", resourceCulture);
             }
         }
         

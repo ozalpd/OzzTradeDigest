@@ -92,21 +92,21 @@ namespace TD.Models
 
     public enum TradeNoteCategory : int
     {
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Setup", Order = 10)]
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "SetupNote", Order = 10)]
         ///<summary>Pre-trade thesis, market structure, entry conditions, trade plan</summary>
-        Setup = 10,
+        SetupNote = 10,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "EntryNote", Order = 20)]
         ///<summary>Execution context, entry price notes, slippage, initial reaction</summary>
         EntryNote = 20,
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Management", Order = 30)]
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ManagementNote", Order = 30)]
         ///<summary>Active trade adjustments (scaling in/out, moving SL to BE, trailing)</summary>
-        Management = 30,
+        ManagementNote = 30,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "ExitNote", Order = 40)]
         ///<summary>Exit rationale, target hit, stop-out notes, market condition changes</summary>
         ExitNote = 40,
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Review", Order = 50)]
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "ReviewNote", Order = 50)]
         ///<summary>Post-trade autopsy, emotional check, rule adherence, key lessons</summary>
-        Review = 50,
+        ReviewNote = 50,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Other", Order = 1010)]
         ///<summary>Uncategorized or general market observations</summary>
         Other = 1010

@@ -547,8 +547,8 @@
     <data name="MakerFeeRate" xml:space="preserve">
         <value>Maker Fee Rate</value>
     </data>
-    <data name="Management" xml:space="preserve">
-        <value>Management</value>
+    <data name="ManagementNote" xml:space="preserve">
+        <value>Management Note</value>
     </data>
     <data name="ManualExit" xml:space="preserve">
         <value>Manual Exit</value>
@@ -736,8 +736,8 @@
     <data name="ReportType" xml:space="preserve">
         <value>Report Type</value>
     </data>
-    <data name="Review" xml:space="preserve">
-        <value>Review</value>
+    <data name="ReviewNote" xml:space="preserve">
+        <value>Review Note</value>
     </data>
     <data name="Session" xml:space="preserve">
         <value>Session</value>

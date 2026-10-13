@@ -1529,6 +1529,10 @@
     <Translation>Management</Translation>
   </Vocab>
   <Vocab>
+    <Name>ManagementNote</Name>
+    <Translation>Management Note</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ManualExit</Name>
     <Translation>Manual Exit</Translation>
   </Vocab>
@@ -2179,6 +2183,10 @@
   <Vocab>
     <Name>Review</Name>
     <Translation>Review</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>ReviewNote</Name>
+    <Translation>Review Note</Translation>
   </Vocab>
   <Vocab>
     <Name>ReviewNotes</Name>

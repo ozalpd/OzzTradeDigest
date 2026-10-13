@@ -547,8 +547,8 @@
     <data name="MakerFeeRate" xml:space="preserve">
         <value>Maker Ücret Oranı</value>
     </data>
-    <data name="Management" xml:space="preserve">
-        <value>Pozisyon Yönetimi</value>
+    <data name="ManagementNote" xml:space="preserve">
+        <value>Pozisyon Yönetim Notu</value>
     </data>
     <data name="ManualExit" xml:space="preserve">
         <value>Manuel Çıkış</value>
@@ -736,8 +736,8 @@
     <data name="ReportType" xml:space="preserve">
         <value>Rapor Tipi</value>
     </data>
-    <data name="Review" xml:space="preserve">
-        <value>Değerlendirme</value>
+    <data name="ReviewNote" xml:space="preserve">
+        <value>Değerlendirme Notu</value>
     </data>
     <data name="Session" xml:space="preserve">
         <value>Seans</value>

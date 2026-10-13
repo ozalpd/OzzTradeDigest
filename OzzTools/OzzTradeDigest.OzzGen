@@ -379,7 +379,7 @@
           <Value>20</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Management</Name>
+          <Name>ManagementNote</Name>
           <Value>30</Value>
         </EnumMember>
         <EnumMember>
@@ -387,7 +387,7 @@
           <Value>40</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Review</Name>
+          <Name>ReviewNote</Name>
           <Value>50</Value>
         </EnumMember>
         <EnumMember>

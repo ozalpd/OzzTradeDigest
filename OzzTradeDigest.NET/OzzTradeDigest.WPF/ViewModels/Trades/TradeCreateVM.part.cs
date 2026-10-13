@@ -138,7 +138,7 @@ namespace TD.WPF.ViewModels.Trades
                 {
                     Content = SetupNotes,
                     TradeId = Trade.Id,
-                    Category = TradeNoteCategory.Setup,
+                    Category = TradeNoteCategory.SetupNote,
                     UpdatedAt = DateTime.UtcNow
                 };
                 Trade.TradeNotes.Add(note);
