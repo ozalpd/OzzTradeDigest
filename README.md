@@ -45,6 +45,7 @@ See [`CHANGELOG.md`](CHANGELOG.md) for release history.
 - Full English and Turkish UI support
 - Localized DataAnnotations on model classes for display names and validation messages
 - All UI strings sourced from generated resource classes (`ActionStrings`, `CommonStrings`, `ErrorStrings`, `LocalizedStrings`, `MessageStrings`)
+- WPF enum display values use `EnumDescriptionConverter` with `DisplayAttribute`/resource-backed localization for consistent human-readable labels in bindings
 
 ### Data Layer
 - Raw SQLite data access via Microsoft.Data.Sqlite — no ORM

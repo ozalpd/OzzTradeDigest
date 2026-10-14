@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 - MainWindow trade detail pane now displays `TradeNotes` (category, adherence, updated time, content) with add/edit/detail/delete commands, plus the selected note's related `TradeImages` thumbnails.
+- Added `EnumDescriptionConverter` for WPF enum formatting, resolving localized `DisplayAttribute` values (and `DescriptionAttribute` fallback) in UI bindings such as `TradeNote` category/adherence display.
 - Added `TradeNote` model, `ITradeNoteRepository` contract, SQLite `TradeNoteRepository`, and schema DDL (`TradeNote.sql`).
 - Linked `TradeImage` to `TradeNote` via `TradeNoteId` and `TradeNote` navigation property, and `TradeNote.TradeImages` collection.
 - Added `TradeNoteCategory` and `TradeAdherence` enums with localized display attributes for note categorization and rule adherence tracking.
