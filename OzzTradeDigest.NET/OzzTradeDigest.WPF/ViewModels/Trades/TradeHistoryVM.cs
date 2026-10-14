@@ -77,11 +77,13 @@ namespace TD.WPF.ViewModels.Trades
                 EntryOrderCreateCommand.PreselectedTrade = SelectedTrade;
                 StopLossOrderCreateCommand.PreselectedTrade = SelectedTrade;
                 TakeProfitOrderCreateCommand.PreselectedTrade = SelectedTrade;
+                TradeNoteCreateCommand.PreselectedTrade = SelectedTrade;
 
                 RaiseEntryOrderCmdCanExecute();
                 RaiseStopLossOrderCmdCanExecute();
                 RaiseTakeProfitOrderCmdCanExecute();
                 RaiseTradeImageCmdCanExecute();
+                RaiseTradeNoteCmdCanExecute();
             }
 
             if (e.PropertyName == nameof(SelectedTradeNote))

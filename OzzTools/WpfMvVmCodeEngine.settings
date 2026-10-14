@@ -1549,7 +1549,7 @@
           <CreateEditOrder>100500</CreateEditOrder>
           <DefaultValue />
           <IsPreselectedInCreate>false</IsPreselectedInCreate>
-          <IsMultiLine>false</IsMultiLine>
+          <IsMultiLine>true</IsMultiLine>
           <CreateViewMode>Editable</CreateViewMode>
           <EditViewMode>Editable</EditViewMode>
           <ShowInCollection>true</ShowInCollection>
