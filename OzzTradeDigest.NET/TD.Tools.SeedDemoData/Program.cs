@@ -364,44 +364,36 @@ static async Task<Trade> EnsureDemoTradeAsync(ITradeRepository tradeRepository, 
     trade.Id = await tradeRepository.CreateAsync(trade);
     Console.WriteLine($"Created trade: {trade.Id} for {symbol.TickerFull} at {trade.EntryTime}");
 
-    await AppendDemoNotes(trade, tradeNoteRepository, rng);
-    if (noImages)
-        return trade;
-
-    var imgNrList = new List<int> { 1, 2, 3, 4, 5, 6 };
-    //scramble imgNrList
-    imgNrList = [.. imgNrList.OrderBy(x => random.Next())];
-
-    var settings = AppSettings.GetAppSettings();
-    var randomInt = random.Next(1, 5);
-    for (int i = 0; i < randomInt; i++)
+    await AppendDemoNotes(trade, tradeNoteRepository, tradeImageRepository, TradeNoteCategory.SetupNote);
+    if (trade.TradeStatus > TradeStatus.Pending)
     {
-        int imgNr = imgNrList[i];
-        var tradeNote = new TradeNote
+        await AppendDemoNotes(trade, tradeNoteRepository, tradeImageRepository, TradeNoteCategory.EntryNote, TD.Tools.Text.CreateLipsumParagraphs(1));
+        if (random.Next(0, 2) == 0)
         {
-            TradeId = trade.Id,
-            Category = random.Next(0, 2) == 0 ? TradeNoteCategory.SetupNote : TradeNoteCategory.ReviewNote,
-            Content = TD.Tools.Text.CreateLipsumParagraphs(random.Next(1, 3)),
-            UpdatedAt = DateTime.UtcNow
-        };
-        tradeNote.Id = await tradeNoteRepository.CreateAsync(tradeNote);
-
-        var image = new TradeImage
+            await AppendDemoNotes(trade, tradeNoteRepository, tradeImageRepository, TradeNoteCategory.ManagementNote, TD.Tools.Text.CreateLipsumParagraphs(random.Next(1, 3)));
+        }
+    }
+    if (trade.TradeStatus == TradeStatus.Closed)
+    {
+        await AppendDemoNotes(trade, tradeNoteRepository, tradeImageRepository, TradeNoteCategory.ExitNote, TD.Tools.Text.CreateLipsumParagraphs(1));
+        if (random.Next(0, 2) == 0)
         {
-            TradeId = trade.Id,
-            TradeNoteId = tradeNote.Id,
-            ImageURL = imgNr == 0 ? $"https://s3.tradingview.com/snapshots/v/VxW2WUbH.png" : Path.Combine(settings.GetDatabaseFolderPath(), "Images", $"Demo-{imgNr:D2}.png"),
-            UpdatedAt = DateTime.UtcNow
-        };
-
-        image.Id = await tradeImageRepository.CreateAsync(image);
+            await AppendDemoNotes(trade, tradeNoteRepository, tradeImageRepository, TradeNoteCategory.ReviewNote, TD.Tools.Text.CreateLipsumParagraphs(random.Next(1, 3)));
+        }
     }
 
     return trade;
 }
 
-static async Task AppendDemoNotes(Trade trade, ITradeNoteRepository tradeNoteRepository, Random? rng = null)
+static async Task AppendDemoNotes(Trade trade, ITradeNoteRepository tradeNoteRepository, ITradeImageRepository tradeImageRepository, TradeNoteCategory category, string noteContent = "")
 {
+    var random = new Random();
+    var imgNrList = new List<int> { 1, 2, 3, 4, 5, 6 };
+    imgNrList = [.. imgNrList.OrderBy(x => random.Next())];
+    int imgNr = imgNrList[random.Next(1, 5)];
+    var settings = AppSettings.GetAppSettings();
+
+
     var demoNotes = new[]
     {
         "This is a demo trade for local testing.",
@@ -413,11 +405,26 @@ static async Task AppendDemoNotes(Trade trade, ITradeNoteRepository tradeNoteRep
     var tradeNote = new TradeNote
     {
         TradeId = trade.Id,
-        Category = TradeNoteCategory.SetupNote,
-        Content = string.Join(" ", demoNotes),
+        Category = category,
+        Content = string.IsNullOrEmpty(noteContent) ? string.Join(" ", demoNotes) : noteContent,
         UpdatedAt = DateTime.UtcNow
     };
+    if (category > TradeNoteCategory.SetupNote)
+    {
+        var randomInt = random.Next(0, 4);
+        tradeNote.Adherence = (TradeAdherence)(25 * randomInt);
+    }
     tradeNote.Id = await tradeNoteRepository.CreateAsync(tradeNote);
+
+    var image = new TradeImage
+    {
+        TradeId = trade.Id,
+        TradeNoteId = tradeNote.Id,
+        ImageURL = Path.Combine(settings.GetDatabaseFolderPath(), "Images", $"Demo-{imgNr:D2}.png"),
+        UpdatedAt = DateTime.UtcNow
+    };
+
+    image.Id = await tradeImageRepository.CreateAsync(image);
 }
 
 static Dictionary<string, decimal> GetCryptoPriceDict()
