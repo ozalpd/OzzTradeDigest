@@ -11,4 +11,5 @@
     <converters:ProfitLossToColor x:Key="NetProfitLossForSelectedCell" ColorForProfit="#FF00C000" ColorForLoss="#FFC80000" ColorForDefault="#0078D7"/>
     <converters:EnumDescriptionConverter x:Key="EnumDescriptionConverter"/>
     <converters:ImageUrlToSource x:Key="ImageUrlToSource"/>
+    <converters:BoolToVisibility x:Key="BooleanToVisibilityConverter"/>
 </ResourceDictionary>

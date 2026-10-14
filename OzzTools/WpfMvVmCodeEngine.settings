@@ -1560,7 +1560,7 @@
       <SubFolder>Trades</SubFolder>
       <CommandVmNamespace>TD.WPF.ViewModels.Trades</CommandVmNamespace>
       <CommandVmTypeName>TradeHistoryVM</CommandVmTypeName>
-      <DetailColumnLayout>OneColumn</DetailColumnLayout>
+      <DetailColumnLayout>TwoColumns</DetailColumnLayout>
       <InputColumnLayout>OneColumn</InputColumnLayout>
       <GenModeCreateCommand>SkipManuallyEdited</GenModeCreateCommand>
       <GenModeEditCommand>SkipManuallyEdited</GenModeEditCommand>

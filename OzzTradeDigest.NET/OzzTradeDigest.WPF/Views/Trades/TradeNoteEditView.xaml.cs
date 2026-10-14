@@ -24,7 +24,6 @@ namespace TD.WPF.Views.Trades
             _viewModel = new TradeNoteEditVM(new TradeNote());
             _isDirty = _viewModel;
             DataContext = _viewModel;
-            SourceInitialized += TradeNoteEditView_SourceInitialized;
         }
 
         /// <summary>
@@ -36,12 +35,6 @@ namespace TD.WPF.Views.Trades
             InitializeComponent();
             _viewModel = (TradeNoteEditVM)DataContext;
         }
-
-        private async void TradeNoteEditView_SourceInitialized(object? sender, EventArgs e)
-        {
-            OnSourceInitialized();
-        }
-        partial void OnSourceInitialized();
 
         private void IntegerTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {

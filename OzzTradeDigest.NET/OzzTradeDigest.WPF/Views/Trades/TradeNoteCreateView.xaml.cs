@@ -42,10 +42,9 @@ namespace TD.WPF.Views.Trades
             if (_preselectedTrade != null)
             {
                 _viewModel.TradeId = _preselectedTrade.Id;
+                _viewModel.Trade = _preselectedTrade;
             }
-            OnSourceInitialized();
         }
-        partial void OnSourceInitialized();
 
         private void IntegerTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -59,6 +58,9 @@ namespace TD.WPF.Views.Trades
         {
             if (!_viewModel.ValidateModel())
                 return;
+
+            if (_viewModel.Category == TradeNoteCategory.SetupNote)
+                _viewModel.Adherence = null;
 
             DialogResult = true;
         }

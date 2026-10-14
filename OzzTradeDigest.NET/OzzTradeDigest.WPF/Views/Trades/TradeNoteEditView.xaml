@@ -7,11 +7,13 @@
         xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         xmlns:base="clr-namespace:TD.WPF.Views"
         Title="{x:Static i18n:LocalizedStrings.EditTradeNote}"
-        Height="290" Width="420" MinHeight="290" MinWidth="420"
+        Height="480" Width="720" MinHeight="250" MinWidth="720"
         WindowStartupLocation="CenterOwner"
         mc:Ignorable="d">
     <Grid Margin="8,12">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
@@ -25,35 +27,35 @@
 
         <TextBlock Grid.Column="0" Grid.Row="0" FontWeight="Bold"
                    Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Trade}"/>
-        <TextBox Grid.Row="0" Grid.Column="1"
-                 Text="{Binding TradeId, Mode=OneWay}"
-                 Style="{StaticResource ReadOnlyTextBoxStyle}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
+                 Style="{StaticResource ReadOnlyTextBoxStyle}" FontSize="16"
+                 Text="{Binding Trade.Label, Mode=OneWay}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold"
                    Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Category}"/>
-        <ComboBox x:Name="CategoryComboBox" Grid.Row="1" Grid.Column="1"
-                  Style="{StaticResource ValidationComboBoxStyle}"
-                  ItemsSource="{Binding TradeNoteCategoryValues}"
-                  DisplayMemberPath="DisplayValue"
-                  SelectedValuePath="Value"
-                  SelectedValue="{Binding Category, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
+        <TextBox x:Name="CategoryTextBox" Grid.Row="1" Grid.Column="1"
+                  Style="{StaticResource ReadOnlyTextBoxStyle}"
+                  Text="{Binding Category, Converter={StaticResource EnumDescriptionConverter}}"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Adherence}"/>
+        <TextBlock x:Name="AdherenceTextBlock" Grid.Column="0" Grid.Row="2" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Adherence}"
+                   Visibility="{Binding ShowAdherence, Converter={StaticResource BooleanToVisibilityConverter}}"/>
         <ComboBox x:Name="AdherenceComboBox" Grid.Row="2" Grid.Column="1"
                   Style="{StaticResource ValidationComboBoxStyle}"
                   ItemsSource="{Binding TradeAdherenceValues}"
                   DisplayMemberPath="DisplayValue"
                   SelectedValuePath="Value"
-                  SelectedValue="{Binding Adherence, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
+                  SelectedValue="{Binding Adherence, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"
+                  Visibility="{Binding ShowAdherence, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" FontWeight="Bold"
                    Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Content}"/>
         <TextBox x:Name="ContentTextBox" Grid.Row="3" Grid.Column="1"
                  Style="{StaticResource ValidationMutliLineTextBoxStyle}"
+                 Grid.ColumnSpan="3"
                  Text="{Binding Content, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
 
-        <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,6" VerticalAlignment="Bottom">
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,6" VerticalAlignment="Bottom">
             <Button Content="{x:Static i18n:ActionStrings.OK}" Width="90" Margin="0,0,18,0" IsDefault="True" IsEnabled="{Binding IsValid}" Click="OkButton_Click" />
             <Button Content="{x:Static i18n:ActionStrings.Cancel}" Width="90" IsCancel="True" />
         </StackPanel>
