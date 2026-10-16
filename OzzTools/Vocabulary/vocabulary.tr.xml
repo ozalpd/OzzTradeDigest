@@ -325,6 +325,10 @@
     <Translation>Tüm Tarihler</Translation>
   </Vocab>
   <Vocab>
+    <Name>AllSupportedGraphics</Name>
+    <Translation>Desteklenen Tüm Biçimler</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Always</Name>
     <Translation>Her zaman</Translation>
   </Vocab>
@@ -1895,6 +1899,10 @@
   <Vocab>
     <Name>Poor</Name>
     <Translation>Zayıf</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>PortableNetworkGraphic</Name>
+    <Translation>Taşınabilir Ağ Grafikleri</Translation>
   </Vocab>
   <Vocab>
     <Name>PositionX</Name>

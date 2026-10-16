@@ -88,6 +88,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Supported Graphics.
+        /// </summary>
+        public static string AllSupportedGraphics {
+            get {
+                return ResourceManager.GetString("AllSupportedGraphics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ozz Trade Diary.
         /// </summary>
         public static string AppTitle {
@@ -210,6 +219,15 @@ namespace TD.i18n {
         public static string PerPage {
             get {
                 return ResourceManager.GetString("PerPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Portable Network Graphic.
+        /// </summary>
+        public static string PortableNetworkGraphic {
+            get {
+                return ResourceManager.GetString("PortableNetworkGraphic", resourceCulture);
             }
         }
         

@@ -325,6 +325,10 @@
     <Translation>All Dates</Translation>
   </Vocab>
   <Vocab>
+    <Name>AllSupportedGraphics</Name>
+    <Translation>All Supported Graphics</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Always</Name>
     <Translation>Always</Translation>
   </Vocab>
@@ -1895,6 +1899,10 @@
   <Vocab>
     <Name>Poor</Name>
     <Translation>Poor</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>PortableNetworkGraphic</Name>
+    <Translation>Portable Network Graphic</Translation>
   </Vocab>
   <Vocab>
     <Name>PositionX</Name>
