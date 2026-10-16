@@ -43,6 +43,7 @@ namespace TD.WPF.Views.Trades
             {
                 _viewModel.TradeNote = _preselectedTradeNote;
                 _viewModel.TradeNoteId = _preselectedTradeNote.Id;
+                _viewModel.TradeId = _preselectedTradeNote.TradeId;
             }
             OnSourceInitialized();
         }

@@ -14,7 +14,7 @@ public partial class TradeNoteRepository
         _ = SaveTradeImagesAsync(tradeNote);
     }
 
-    public async Task SaveTradeImagesAsync(TradeNote tradeNote, bool updateTrade = true)
+    public async Task SaveTradeImagesAsync(TradeNote tradeNote)
     {
         if (updatingFromSaveImagesAsync || tradeNote == null)
             return;
@@ -42,11 +42,6 @@ public partial class TradeNoteRepository
         {
             await TradeImageRepository.DeleteAsync(id);
             anyChanges = true;
-        }
-
-        if (anyChanges && updateTrade)
-        {
-            await UpdateAsync(tradeNote);
         }
 
         updatingFromSaveImagesAsync = false;

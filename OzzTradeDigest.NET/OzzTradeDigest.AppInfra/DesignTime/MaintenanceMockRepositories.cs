@@ -96,12 +96,7 @@ namespace TD.AppInfra.DesignTime
         public Task<IReadOnlyList<TradeNote>> GetAllAsync() => Task.FromResult<IReadOnlyList<TradeNote>>(Array.Empty<TradeNote>());
         public Task<TradeNote?> GetByIdAsync(int? id) => Task.FromResult<TradeNote?>(null);
         public Task<IReadOnlyList<TradeNote>> GetByTradeIdAsync(int tradeId) => Task.FromResult<IReadOnlyList<TradeNote>>(Array.Empty<TradeNote>());
-
-        public Task SaveTradeImagesAsync(TradeNote tradeNote, bool updateTrade = true)
-        {
-            throw new NotImplementedException();
-        }
-
+        public Task SaveTradeImagesAsync(TradeNote tradeNote) => throw new NotImplementedException();
         public Task<bool> UpdateAsync(TradeNote tradeNote) => throw new NotImplementedException();
     }
 }

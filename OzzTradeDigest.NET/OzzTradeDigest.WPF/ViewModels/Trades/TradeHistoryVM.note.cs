@@ -25,6 +25,7 @@ public partial class TradeHistoryVM
         {
             _selectedTradeNote = value;
             RaisePropertyChanged(nameof(SelectedTradeNote));
+            RaiseTradeImageCmdCanExecute();
             RaiseTradeNoteCmdCanExecute();
         }
     }

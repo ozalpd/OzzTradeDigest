@@ -83,4 +83,12 @@
         <Setter Property="Background" Value="{Binding NetProfitLoss, Converter={StaticResource NetProfitLossForLightText}}"/>
     </Style>
 
+    <Style x:Key="ReadOnlyMutliLineTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource ReadOnlyTextBoxStyle}">
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="AcceptsReturn" Value="True"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+    </Style>
 </ResourceDictionary>

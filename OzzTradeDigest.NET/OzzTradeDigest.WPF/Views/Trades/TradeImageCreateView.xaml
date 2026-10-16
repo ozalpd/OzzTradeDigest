@@ -7,7 +7,7 @@
         xmlns:behaviors="clr-namespace:TD.WPF.Behaviors"
         xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         Title="{x:Static i18n:LocalizedStrings.CreateTradeImage}"
-        Height="832" Width="640" MinHeight="640" MinWidth="420"
+        Height="640" Width="640" MinHeight="640" MinWidth="420"
         WindowStartupLocation="CenterOwner"
         mc:Ignorable="d">
     <Grid Margin="8,12">
@@ -18,27 +18,24 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Trade}"/>
-        <TextBox Grid.Row="0" Grid.Column="1"
-                 Text="{Binding Trade.Label, Mode=OneWay}"
-                 Style="{StaticResource ReadOnlyTextBoxStyle}"/>
-
-        <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold"
                    Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Category}"/>
-        <ComboBox x:Name="CategoryComboBox" Grid.Row="1" Grid.Column="1"
-                  Style="{StaticResource ValidationComboBoxStyle}"
-                  ItemsSource="{Binding TradeImageCategoryValues}"
-                  DisplayMemberPath="DisplayValue"
-                  SelectedValuePath="Value"
-                  SelectedValue="{Binding Category, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
+        <TextBox x:Name="CategoryTextBox" Grid.Row="0" Grid.Column="1"
+                  Style="{StaticResource ReadOnlyTextBoxStyle}"
+                  Text="{Binding Category, Mode=OneWay, Converter={StaticResource EnumDescriptionConverter}}"/>
+        
+        <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold"
+                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Notes}"/>
+        <TextBox x:Name="NotesTextBox" Grid.Row="1" Grid.Column="1"
+                 Style="{StaticResource ReadOnlyMutliLineTextBoxStyle}"
+                 Text="{Binding Notes, Mode=OneWay}"/>
 
         <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold"
                    Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.ImageURL}"/>
@@ -76,12 +73,6 @@
                    Stretch="Uniform"
                    RenderOptions.BitmapScalingMode="HighQuality"/>
         </Border>
-        
-        <TextBlock Grid.Column="0" Grid.Row="4" FontWeight="Bold"
-                   Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.Notes}"/>
-        <TextBox x:Name="NotesTextBox" Grid.Row="4" Grid.Column="1"
-                 Style="{StaticResource ValidationMutliLineTextBoxStyle}"
-                 Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
 
         <StackPanel Grid.Row="5" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,6" VerticalAlignment="Bottom">
             <Button Content="{x:Static i18n:ActionStrings.OK}" Width="90" Margin="0,0,18,0" IsDefault="True" IsEnabled="{Binding IsValid}" Click="OkButton_Click" />
