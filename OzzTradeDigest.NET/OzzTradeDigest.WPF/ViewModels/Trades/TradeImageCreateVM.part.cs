@@ -1,4 +1,5 @@
 ﻿using TD.WPF.Commands;
+using TD.WPF.Helpers;
 
 namespace TD.WPF.ViewModels.Trades
 {
@@ -11,15 +12,11 @@ namespace TD.WPF.ViewModels.Trades
 
         public OpenFileCommand OpenFileCommand { get; private set; }
 
-        public string OpenFileDialogFilter => openImgFilter;
+        public string OpenFileDialogFilter => FileHelper.GetOpenImgFilter();
 
         public void SetFilePath(string filePath)
         {
             ImageURL = filePath;
         }
-
-        static string openImgFilter = "All supported graphics|*.jpg;*.jpeg;*.png;|" +
-                                      "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
-                                      "Portable Network Graphic (*.png)|*.png";
     }
 }

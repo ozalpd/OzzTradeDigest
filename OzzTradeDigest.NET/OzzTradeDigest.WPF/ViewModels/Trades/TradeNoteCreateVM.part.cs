@@ -2,18 +2,44 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using TD.Extensions;
 using TD.Models;
+using TD.WPF.Commands;
+using TD.WPF.Helpers;
 
 namespace TD.WPF.ViewModels.Trades;
 
-public partial class TradeNoteCreateVM
+public partial class TradeNoteCreateVM : IOpenFileContext
 {
     partial void OnInitialized()
     {
         SetCategoryValues();
+        OpenFileCommand = new OpenFileCommand(this);
         PropertyChanged += TradeNoteCreateVM_PropertyChanged;
     }
 
+    public OpenFileCommand OpenFileCommand { get; private set; }
+
+    public string OpenFileDialogFilter => FileHelper.GetOpenImgFilter();
+
+    public void SetFilePath(string filePath)
+    {
+        ImageURL = filePath;
+    }
+
     public bool ShowAdherence => Category > TradeNoteCategory.SetupNote;
+
+    public string ImageURL
+    {
+        get => _imageURL;
+        set
+        {
+            if (_imageURL != value)
+            {
+                _imageURL = value;
+                RaisePropertyChanged(nameof(ImageURL));
+            }
+        }
+    }
+    string _imageURL;
 
     public IEnumerable<EnumValueItem<TradeNoteCategory>> FilteredCategoryValues
     {

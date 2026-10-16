@@ -62,6 +62,15 @@ namespace TD.WPF.Views.Trades
             if (_viewModel.Category == TradeNoteCategory.SetupNote)
                 _viewModel.Adherence = null;
 
+            if (!string.IsNullOrWhiteSpace(_viewModel.ImageURL))
+            {
+                var img = new TradeImage
+                {
+                    ImageURL = _viewModel.ImageURL.Trim()
+                };
+                _viewModel.TradeNote.TradeImages.Add(img);
+            }
+
             DialogResult = true;
         }
     }
