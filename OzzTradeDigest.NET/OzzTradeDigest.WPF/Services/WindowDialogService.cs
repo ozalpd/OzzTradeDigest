@@ -186,18 +186,6 @@ namespace TD.WPF.Services
         }
 
         /// <inheritdoc />
-        public (bool IsConfirmed, bool IsDirty) ShowTradeImageEditDialog(Window owner, TradeImage tradeImage)
-        {
-            var dialog = new TradeImageEditView(tradeImage)
-            {
-                Owner = owner
-            };
-
-            var result = dialog.ShowDialog() == true;
-            return (result, dialog.IsDirty);
-        }
-
-        /// <inheritdoc />
         public void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage)
         {
             var dialog = new TradeImageDetailView(tradeImage)

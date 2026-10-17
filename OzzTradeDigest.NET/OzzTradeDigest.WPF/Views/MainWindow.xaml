@@ -556,9 +556,8 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
                                 <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Grid DataContext="{Binding SelectedTrade}">
                                 <Grid.ColumnDefinitions>
@@ -1260,7 +1259,7 @@
                                 </StackPanel>
 
                                 <ListBox Grid.Row="1" Grid.ColumnSpan="2" Margin="-4,4,0,4"
-                                         MaxHeight="200"
+                                         MaxHeight="400"
                                          x:Name="TradeNotesListBox"
                                          ItemsSource="{Binding TradeNotes}"
                                          SelectedItem="{Binding SelectedTradeNote}"
@@ -1364,7 +1363,6 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <TextBlock Grid.Row="0" Margin="-4,8,8,0"
                                            Text="{x:Static i18n:LocalizedStrings.TradeImages}" FontWeight="Bold"/>
@@ -1392,30 +1390,6 @@
                                             </Path>
                                         </Viewbox>
                                     </Button>
-                                    <Button Style="{StaticResource IconButtonStyle-22x18}"
-                                            ToolTip="{x:Static i18n:ActionStrings.Edit}"
-                                            Command="{Binding TradeImageEditCommand}"
-                                            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
-                                        <Viewbox Width="14" Height="14">
-                                            <Path>
-                                                <Path.Style>
-                                                    <Style TargetType="Path">
-                                                        <Setter Property="Fill" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-                                                        <Setter Property="Data" Value="{StaticResource pencil-square}"/>
-                                                        <Style.Triggers>
-                                                            <DataTrigger Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
-                                                                <Setter Property="Fill" Value="#808890"/>
-                                                            </DataTrigger>
-                                                            <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Button}}" Value="True">
-                                                                <Setter Property="Fill" Value="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>
-                                                            </DataTrigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </Path.Style>
-                                            </Path>
-                                        </Viewbox>
-                                    </Button>
-
                                     <Button Style="{StaticResource IconButtonStyle-22x18}"
                                             ToolTip="{x:Static i18n:LocalizedStrings.DeleteTradeImage}"
                                             Background="#C80000"
@@ -1484,9 +1458,6 @@
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>
                                 </ListBox>
-                                <Border Grid.Row="2" Grid.ColumnSpan="2" Margin="-4,0">
-                                    <TextBlock TextWrapping="Wrap" Text="{Binding SelectedTradeImage.Notes, Mode=OneWay}" Margin="0,0,4,8"/>
-                                </Border>
                             </Grid>
                         </Grid>
                     </ScrollViewer>

@@ -169,18 +169,6 @@ namespace TD.WPF.Services
         (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote);
 
         /// <summary>
-        /// Displays a modal dialog for editing the specified Trade Image and returns the result indicating whether the dialog
-        /// was confirmed and if any changes were made.
-        /// </summary>
-        /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog
-        /// positioning.</param>
-        /// <param name="tradeImage">The Trade Image entity to edit. The dialog will display and allow editing of this tradeImage's properties.</param>
-        /// <returns>A tuple containing two values: IsConfirmed is <see langword="true"/> if the user confirmed the dialog;
-        /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the tradeImage
-        /// during editing; otherwise, <see langword="false"/>.</returns>
-        (bool IsConfirmed, bool IsDirty) ShowTradeImageEditDialog(Window owner, TradeImage tradeImage);
-
-        /// <summary>
         /// Displays a dialog showing detailed information for the specified tradeImage.
         /// </summary>
         /// <param name="owner">The window that will own the dialog. This parameter determines the parent window for modal behavior and dialog

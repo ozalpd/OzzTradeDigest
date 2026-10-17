@@ -1420,7 +1420,7 @@
           <DefaultValue />
           <IsPreselectedInCreate>false</IsPreselectedInCreate>
           <IsMultiLine>false</IsMultiLine>
-          <CreateViewMode>Editable</CreateViewMode>
+          <CreateViewMode>Exclude</CreateViewMode>
           <EditViewMode>ReadOnly</EditViewMode>
           <ShowInCollection>true</ShowInCollection>
           <ShowInDetail>true</ShowInDetail>
@@ -1472,17 +1472,17 @@
       <DetailColumnLayout>OneColumn</DetailColumnLayout>
       <InputColumnLayout>OneColumn</InputColumnLayout>
       <GenModeCreateCommand>SkipManuallyEdited</GenModeCreateCommand>
-      <GenModeEditCommand>SkipManuallyEdited</GenModeEditCommand>
+      <GenModeEditCommand>DoNotGenerate</GenModeEditCommand>
       <GenModeDeleteCommand>SkipManuallyEdited</GenModeDeleteCommand>
       <GenModeDetailCommand>SkipManuallyEdited</GenModeDetailCommand>
       <GenModeLoadCommand>DoNotGenerate</GenModeLoadCommand>
       <GenModeCreateVM>GenerateIfNotExists</GenModeCreateVM>
-      <GenModeEditVM>GenerateIfNotExists</GenModeEditVM>
+      <GenModeEditVM>DoNotGenerate</GenModeEditVM>
       <GenerateGetPaged>false</GenerateGetPaged>
       <GenModeCollectionVM>DoNotGenerate</GenModeCollectionVM>
       <GenModeLookupService>DoNotGenerate</GenModeLookupService>
       <GenModeCreateView>SkipManuallyEdited</GenModeCreateView>
-      <GenModeEditView>SkipManuallyEdited</GenModeEditView>
+      <GenModeEditView>DoNotGenerate</GenModeEditView>
       <GenModeDetailView>SkipManuallyEdited</GenModeDetailView>
       <RepositoryName>ITradeImageRepository</RepositoryName>
     </BaseEntitySetting>

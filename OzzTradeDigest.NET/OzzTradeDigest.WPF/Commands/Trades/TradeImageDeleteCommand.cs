@@ -17,7 +17,8 @@ public partial class TradeImageDeleteCommand : AbstractCommand
     public override bool CanExecute(object? parameter)
     {
         var tradeImage = _viewModel.SelectedTradeImage;
-        return tradeImage != null && tradeImage.Id > 0;
+        var note = _viewModel.SelectedTradeNote;
+        return tradeImage != null && note != null && note.Id == tradeImage.TradeNoteId && tradeImage.Id > 0;
     }
 
     public override async void Execute(object? parameter)

@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using TD.Extensions;
 using TD.Models;
 using TD.WPF.Commands.Trades;
 
@@ -11,7 +10,6 @@ public partial class TradeHistoryVM
     public TradeImageCreateCommand TradeImageCreateCommand { get; }
     public TradeImageDeleteCommand TradeImageDeleteCommand { get; }
     public TradeImageDetailCommand TradeImageDetailCommand { get; }
-    public TradeImageEditCommand TradeImageEditCommand { get; }
 
 
     public TradeImage? SelectedTradeImage
@@ -70,7 +68,6 @@ public partial class TradeHistoryVM
     {
         TradeImageCreateCommand.RaiseCanExecuteChanged();
         TradeImageDeleteCommand.RaiseCanExecuteChanged();
-        TradeImageEditCommand.RaiseCanExecuteChanged();
         TradeImageDetailCommand.RaiseCanExecuteChanged();
     }
 
