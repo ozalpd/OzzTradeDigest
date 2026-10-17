@@ -19,6 +19,8 @@ public partial class TradeHistoryVM
         {
             _selectedTradeImage = value;
             RaisePropertyChanged(nameof(SelectedTradeImage));
+            if (SelectedTradeImage != null)
+                SelectedTradeNote = SelectedTradeImage.TradeNote;
             RaiseTradeImageCmdCanExecute();
         }
     }

@@ -119,6 +119,10 @@ namespace TD.SQLite
                     note.TradeImages = trade.TradeImages
                                             .Where(i => i.TradeNoteId == note.Id)
                                             .ToList();
+                    foreach (var image in note.TradeImages)
+                    {
+                        image.TradeNote = note;
+                    }
                 }
             }
             catch (Exception)
