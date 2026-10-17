@@ -12,7 +12,7 @@
         xmlns:designTime="clr-namespace:TD.WPF.DesignTime"
         mc:Ignorable="d"
         Title="Ozz Trade Diary"
-        Height="1024" Width="1440" MinHeight="540" MinWidth="1280">
+        Height="940" Width="1440" MinHeight="864" MinWidth="1280">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -557,7 +557,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Grid DataContext="{Binding SelectedTrade}">
@@ -1314,13 +1313,13 @@
                                     </Button>
                                 </StackPanel>
                                 <ListBox Grid.Row="1" Grid.ColumnSpan="6" Margin="-4,4,0,4"
-                                         MaxHeight="400"
                                          x:Name="TradeNotesListBox"
                                          ItemsSource="{Binding TradeNotes}"
                                          SelectedItem="{Binding SelectedTradeNote}"
                                          Background="Transparent"
                                          BorderThickness="0"
                                          HorizontalContentAlignment="Stretch"
+                                         VerticalContentAlignment="Stretch"
                                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                                     <ListBox.ItemContainerStyle>
                                         <Style TargetType="ListBoxItem">
@@ -1391,12 +1390,17 @@
                                                         <DataTemplate>
                                                             <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="2"
                                                                     Background="#F0F0F0" ToolTip="{Binding Notes}">
-                                                                <Image Width="{Binding Path=(behaviors:AsyncImageLoader.ThumbWidth), RelativeSource={RelativeSource Self}}"
+                                                                <Grid>
+                                                                    <Image Width="{Binding Path=(behaviors:AsyncImageLoader.ThumbWidth), RelativeSource={RelativeSource Self}}"
                                                                        Height="{Binding Path=(behaviors:AsyncImageLoader.ThumbHeight), RelativeSource={RelativeSource Self}}"
                                                                        Stretch="Fill"
                                                                        behaviors:AsyncImageLoader.SourceUrl="{Binding ImageURL}"
                                                                        behaviors:AsyncImageLoader.ThumbMaxSize="32"
                                                                        RenderOptions.BitmapScalingMode="HighQuality"/>
+                                                                    <Button Opacity="0"
+                                                                        Tag="{Binding}"
+                                                                        Click="TradeImageThumbnail_Click"/>
+                                                                </Grid>
                                                             </Border>
                                                         </DataTemplate>
                                                     </ListBox.ItemTemplate>
@@ -1406,61 +1410,9 @@
                                     </ListBox.ItemTemplate>
                                 </ListBox>
                                 <!-- Selected note's related TradeImage thumbnails -->
-                            </Grid>
-
-                            <!-- ═══ Trade Images ═══ -->
-                            <Grid Grid.Row="3">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <ListBox Grid.ColumnSpan="2" Grid.Row="1" Margin="-4,4,0,4"
-                                         x:Name="TradeImagesListBox"
-                                         ItemsSource="{Binding TradeImages}"
-                                         SelectedItem="{Binding SelectedTradeImage}"
-                                         Background="Transparent"
-                                         BorderThickness="0"
-                                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                                    <ListBox.ItemsPanel>
-                                        <ItemsPanelTemplate>
-                                            <WrapPanel Orientation="Horizontal"/>
-                                        </ItemsPanelTemplate>
-                                    </ListBox.ItemsPanel>
-                                    <ListBox.ItemContainerStyle>
-                                        <Style TargetType="ListBoxItem">
-                                            <Setter Property="Padding" Value="2"/>
-                                            <Setter Property="Margin" Value="2"/>
-                                            <Setter Property="Cursor" Value="Hand"/>
-                                        </Style>
-                                    </ListBox.ItemContainerStyle>
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="2"
-                                                    Background="#F0F0F0" ToolTip="{Binding Notes}">
-                                                <Grid>
-                                                    <Image x:Name="ThumbImg"
-                                                           Width="{Binding Path=(behaviors:AsyncImageLoader.ThumbWidth), RelativeSource={RelativeSource Self}}"
-                                                           Height="{Binding Path=(behaviors:AsyncImageLoader.ThumbHeight), RelativeSource={RelativeSource Self}}"
-                                                           Stretch="Fill"
-                                                           behaviors:AsyncImageLoader.SourceUrl="{Binding ImageURL}"
-                                                           behaviors:AsyncImageLoader.ThumbMaxSize="90"
-                                                           RenderOptions.BitmapScalingMode="HighQuality"/>
-                                                    <Border VerticalAlignment="Bottom" Background="#AA000000" Padding="2,1" CornerRadius="0,0,2,2">
-                                                        <TextBlock Text="{Binding Category}" Foreground="White"
-                                                                   FontSize="9" HorizontalAlignment="Center"/>
-                                                    </Border>
-                                                    <Button Opacity="0"
-                                                            Tag="{Binding}"
-                                                            Click="TradeImageThumbnail_Click"/>
-                                                </Grid>
-                                            </Border>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
+                                <Image Grid.Row="2" Grid.ColumnSpan="6" behaviors:AsyncImageLoader.SourceUrl="{Binding SelectedTradeImage.ImageURL, Mode=OneWay}"
+                                       Stretch="Uniform" 
+                                       RenderOptions.BitmapScalingMode="HighQuality"/>
                             </Grid>
                         </Grid>
                     </ScrollViewer>

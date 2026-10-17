@@ -61,7 +61,16 @@ public partial class TradeHistoryVM
         TradeImages.Clear();
         if (SelectedTrade != null)
         {
+            var selectedImage = SelectedTradeImage;
             ReplaceCollection(TradeImages, SelectedTrade.TradeImages);
+            if (selectedImage != null && TradeImages.Contains(selectedImage))
+            {
+                SelectedTradeImage = selectedImage;
+            }
+            else
+            {
+                SelectedTradeImage = null;
+            }
         }
         RaiseTradeImageCmdCanExecute();
     }

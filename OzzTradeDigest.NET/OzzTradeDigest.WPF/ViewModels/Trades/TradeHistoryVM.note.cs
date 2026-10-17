@@ -24,6 +24,16 @@ public partial class TradeHistoryVM
         set
         {
             _selectedTradeNote = value;
+            var selectedImage = SelectedTradeImage;
+            if (SelectedTradeNote == null)
+            {
+                SelectedTradeImage = null;
+            }
+            else if (selectedImage != null
+                && !SelectedTradeNote.TradeImages.Any(i => i.Id == selectedImage.Id))
+            {
+                SelectedTradeImage = null;
+            }
             RaisePropertyChanged(nameof(SelectedTradeNote));
             RaiseTradeImageCmdCanExecute();
             RaiseTradeNoteCmdCanExecute();
