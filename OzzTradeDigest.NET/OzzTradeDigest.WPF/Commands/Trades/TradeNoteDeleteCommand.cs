@@ -17,7 +17,15 @@ public partial class TradeNoteDeleteCommand : AbstractCommand
     public override bool CanExecute(object? parameter)
     {
         var tradeNote = _viewModel.SelectedTradeNote;
-        return tradeNote != null && tradeNote.Id > 0;
+        if (tradeNote is null || tradeNote.Id < 1)
+            return false;
+
+        var result = _viewModel.TradeNoteRepository
+                               .CanDeleteAsync(tradeNote.Id)
+                               .GetAwaiter()
+                               .GetResult();
+
+        return result;
     }
 
     public override async void Execute(object? parameter)
