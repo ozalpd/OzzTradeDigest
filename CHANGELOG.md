@@ -7,7 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
-- MainWindow trade detail pane now displays `TradeNotes` (category, adherence, updated time, content) with add/edit/detail/delete commands, plus the selected note's related `TradeImages` thumbnails.
+- Added `BubbleScroll` WPF attached behavior (`TD.WPF.Behaviors`) that forwards mouse-wheel input from nested `DataGrid`/`ListBox` controls to the parent `ScrollViewer`, so the MainWindow trade detail pane scrolls with the wheel even when the cursor is over one of the child grids/lists. Applied to the three order `DataGrid` controls and the trade-notes `ListBox`.
+- MainWindow trade detail pane now displays `TradeNotes`
 - Added `EnumDescriptionConverter` for WPF enum formatting, resolving localized `DisplayAttribute` values (and `DescriptionAttribute` fallback) in UI bindings such as `TradeNote` category/adherence display.
 - Added `TradeNote` model, `ITradeNoteRepository` contract, SQLite `TradeNoteRepository`, and schema DDL (`TradeNote.sql`).
 - Linked `TradeImage` to `TradeNote` via `TradeNoteId` and `TradeNote` navigation property, and `TradeNote.TradeImages` collection.
