@@ -95,5 +95,43 @@ namespace TD.WPF.Views
             detailView.ShowDialog();
         }
         private DateTime _lastClickToImgButton;
+
+        private void MasterDetailGrid_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (e.OldValue is System.ComponentModel.INotifyPropertyChanged oldVm)
+                oldVm.PropertyChanged -= TradeHistory_PropertyChanged;
+            if (e.NewValue is System.ComponentModel.INotifyPropertyChanged newVm)
+                newVm.PropertyChanged += TradeHistory_PropertyChanged;
+
+            UpdateDetailColumns();
+        }
+
+        private void TradeHistory_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(TD.WPF.ViewModels.Trades.TradeHistoryVM.SelectedTrade))
+                UpdateDetailColumns();
+        }
+
+        private void UpdateDetailColumns()
+        {
+            if (MasterColumn is null || SplitterColumn is null || DetailColumn is null)
+                return;
+
+            bool hasSelection = _viewModel?.TradeHistory?.SelectedTrade is not null;
+            if (hasSelection)
+            {
+                MasterColumn.Width = new GridLength(3, GridUnitType.Star);
+                SplitterColumn.Width = new GridLength(5);
+                DetailColumn.Width = new GridLength(2, GridUnitType.Star);
+                DetailColumn.MinWidth = 640;
+            }
+            else
+            {
+                MasterColumn.Width = new GridLength(1, GridUnitType.Star);
+                SplitterColumn.Width = new GridLength(0);
+                DetailColumn.Width = new GridLength(0);
+                DetailColumn.MinWidth = 0;
+            }
+        }
     }
 }

@@ -355,10 +355,11 @@
             </ToolBar>
         </Grid>
         <!-- Master / Detail content area -->
-        <Grid Grid.Row="3" DataContext="{Binding TradeHistory}" d:DataContext="{d:DesignInstance Type=designTime:MockTradeHistoryVM, IsDesignTimeCreatable=True}">
+        <Grid Grid.Row="3" x:Name="MasterDetailGrid" DataContext="{Binding TradeHistory}" DataContextChanged="MasterDetailGrid_DataContextChanged" d:DataContext="{d:DesignInstance Type=designTime:MockTradeHistoryVM, IsDesignTimeCreatable=True}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" MinWidth="480"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition x:Name="MasterColumn" Width="3*" MinWidth="620"/>
+                <ColumnDefinition x:Name="SplitterColumn" Width="5"/>
+                <ColumnDefinition x:Name="DetailColumn" Width="2*" MinWidth="640"/>
             </Grid.ColumnDefinitions>
 
             <!-- Trade list + pager (master) -->
@@ -367,68 +368,68 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
-                <DataGrid Grid.Row="0"
-                          ItemsSource="{Binding Trades}"
-                          SelectedItem="{Binding SelectedTrade, Mode=TwoWay}"
-                          AutoGenerateColumns="False"
-                          IsReadOnly="True"
-                          SelectionMode="Single"
-                          CanUserReorderColumns="True"
-                          CanUserResizeColumns="True"
-                          CanUserSortColumns="True"
-                          GridLinesVisibility="Horizontal"
-                          AlternatingRowBackground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
-                    <DataGrid.Columns>
-                        <!-- Identity / context -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeDirection}" Width="70"
-                                            Binding="{Binding TradeDirection}"
-                                            CellStyle="{StaticResource TradeDirectionCellStyleLight}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeStatus}" Width="90"
-                                            Binding="{Binding TradeStatus}"
-                                            CellStyle="{StaticResource TradeStatusCellStyle}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradingAccount}" Width="110"
-                                            Binding="{Binding TradingAccount.Title}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Symbol}" Width="110"
-                                            Binding="{Binding Symbol.TickerFull}"/>
-                        <!-- Timing -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.EntryTime}" Width="90"
-                                            Binding="{Binding EntryTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExitTime}" Width="90"
-                                            Binding="{Binding ExitTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
-                        <!-- Plan -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedEntryPrice}" Width="90"
-                                            Binding="{Binding RoundedPlannedEntryPrice}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <!-- Execution -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.FilledQuantity}" Width="80"
-                                            Binding="{Binding RoundedFilledQuantity}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExecutedEntryPrice}" Width="90"
-                                            Binding="{Binding RoundedExecutedEntryPrice}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <!-- P&L -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedProfit}" Width="80"
-                                            Binding="{Binding PlannedProfitLoss, StringFormat=\{0:N2\}}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.RealizedProfitLoss}" Width="80"
-                                            Binding="{Binding RealizedProfitLoss, StringFormat=\{0:N2\}}"
-                                            CellStyle="{StaticResource NetProfitLossCellStyleLight}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.NetProfitLoss}" Width="80"
-                                            Binding="{Binding NetProfitLoss, StringFormat=\{0:N2\}}"
-                                            CellStyle="{StaticResource NetProfitLossCellStyleLight}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <!-- Risk -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedRiskRewardRatio}" Width="60"
-                                            Binding="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}}"
-                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                        <!-- Tags -->
-                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Tags}" Width="*"
-                                            Binding="{Binding Tags}"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-
+                <ScrollViewer Grid.Row="0" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <DataGrid MinWidth="832"
+                              ItemsSource="{Binding Trades}"
+                              SelectedItem="{Binding SelectedTrade, Mode=TwoWay}"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              SelectionMode="Single"
+                              CanUserReorderColumns="True"
+                              CanUserResizeColumns="True"
+                              CanUserSortColumns="True"
+                              GridLinesVisibility="Horizontal"
+                              AlternatingRowBackground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                        <DataGrid.Columns>
+                            <!-- Identity / context -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeDirection}" Width="70"
+                                                Binding="{Binding TradeDirection}"
+                                                CellStyle="{StaticResource TradeDirectionCellStyleLight}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeStatus}" Width="90"
+                                                Binding="{Binding TradeStatus}"
+                                                CellStyle="{StaticResource TradeStatusCellStyle}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradingAccount}" Width="110"
+                                                Binding="{Binding TradingAccount.Title}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Symbol}" Width="110"
+                                                Binding="{Binding Symbol.TickerFull}"/>
+                            <!-- Timing -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.EntryTime}" Width="90"
+                                                Binding="{Binding EntryTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExitTime}" Width="90"
+                                                Binding="{Binding ExitTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
+                            <!-- Plan -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedEntryPrice}" Width="90"
+                                                Binding="{Binding RoundedPlannedEntryPrice}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <!-- Execution -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.FilledQuantity}" Width="80"
+                                                Binding="{Binding RoundedFilledQuantity}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExecutedEntryPrice}" Width="90"
+                                                Binding="{Binding RoundedExecutedEntryPrice}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <!-- P&L -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedProfit}" Width="80"
+                                                Binding="{Binding PlannedProfitLoss, StringFormat=\{0:N2\}}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.RealizedProfitLoss}" Width="80"
+                                                Binding="{Binding RealizedProfitLoss, StringFormat=\{0:N2\}}"
+                                                CellStyle="{StaticResource NetProfitLossCellStyleLight}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.NetProfitLoss}" Width="80"
+                                                Binding="{Binding NetProfitLoss, StringFormat=\{0:N2\}}"
+                                                CellStyle="{StaticResource NetProfitLossCellStyleLight}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <!-- Risk -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedRiskRewardRatio}" Width="60"
+                                                Binding="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}}"
+                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                            <!-- Tags -->
+                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Tags}" Width="*"
+                                                Binding="{Binding Tags}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
                 <!-- Pager bar -->
                 <Border Grid.Row="1"
                         BorderThickness="0,1,0,0"
@@ -491,13 +492,15 @@
                 </Border>
             </Grid>
 
-            <!-- Splitter
-            <GridSplitter Grid.Column="1" Width="5"
+            <GridSplitter Grid.Column="1"
                           HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          ResizeBehavior="PreviousAndNext"
+                          Cursor="SizeWE"
                           Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
--->
+
             <!-- Trade detail (detail pane) -->
-            <Border Grid.Column="1" Padding="4,0" d:Visibility="Visible">
+            <Border Grid.Column="2" Padding="4,0" d:Visibility="Visible">
                 <Border.Style>
                     <Style TargetType="Border">
                         <Setter Property="Visibility" Value="Visible" />
@@ -552,7 +555,7 @@
                         </Border>
                     </Grid>
 
-                    <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" MaxWidth="640">
+                    <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
                         <Grid Margin="4,4,4,8">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -1415,7 +1418,7 @@
                                 </ListBox>
                                 <!-- Selected note's related TradeImage thumbnails -->
                                 <Image Grid.Row="2" Grid.ColumnSpan="6" behaviors:AsyncImageLoader.SourceUrl="{Binding SelectedTradeImage.ImageURL, Mode=OneWay}"
-                                       Stretch="Uniform" 
+                                       Stretch="Uniform"
                                        RenderOptions.BitmapScalingMode="HighQuality"/>
                             </Grid>
                         </Grid>

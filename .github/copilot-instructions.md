@@ -6,7 +6,7 @@ Early-stage development (pre-release, no public release yet).
 
 Internal tracking versions: `OzzTradeDigest` `0.2.3`, `OzzTradeDigest.AppInfra` `0.2.3`, `OzzTradeDigest.RepositoryContracts` `0.2.3`, `OzzTradeDigest.WPF` `0.2.3`, `OzzTradeDigest.SQLite` `0.2.3`, `OzzTradeDigest.i18n` `0.2.3`.
 
-- **Changelog discipline**: Any behavior change (repository logic, initialization, seeding, schema generation impact, UI-visible behavior) must be recorded in `CHANGELOG.md`.
+- **Changelog discipline**: Any behavior change (repository logic, initialization, seeding, schema generation impact, UI-visible behavior) must be recorded in `CHANGELOG.md`. When a UI/layout refactor does not change observable runtime behavior (pure internal restructure), do NOT add a CHANGELOG.md entry; only document genuinely new behavior or user-visible changes. Internal patterns may still be recorded in AI docs (.github/instructions).
 
 ## Architecture
 

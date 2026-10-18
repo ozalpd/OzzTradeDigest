@@ -51,6 +51,7 @@ Reusable attached behaviors live in `TD.WPF.Behaviors`. Declare the namespace at
 - Use `Grid` with explicit row/column definitions for structured layouts
 - Use `StackPanel` only for simple linear arrangements
 - Icon buttons use `Path` with `Data="{StaticResource icon-key}"` inside a `Viewbox`
+- **Collapsible master/detail panes** (see `MainWindow`): place the `GridSplitter` in its own narrow column between master and detail columns (master `3*` / splitter `5` / detail `2*`) — never in the same column as the content it resizes. To collapse the detail side when nothing is selected, name the columns (`MasterColumn"`/`SplitterColumn"`/`DetailColumn"`) and set `Width`/`MinWidth` in code-behind from the pane VM's `PropertyChanged" event (`UpdateDetailColumns()&#39;s `DataContextChanged"). Style triggers on `ColumnDefinition&#39;s `SelectedTrade"). Style triggers on `ColumnDefinition&#39;s `SelectedTrade"). Style triggers on `ColumnDefinition` do not re-evaluate reliably at runtime — use the code-behind approach.
 
 ## Maintenance Toolbar Buttons
 
