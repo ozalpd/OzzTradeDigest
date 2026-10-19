@@ -2685,6 +2685,14 @@
     <Translation>Trade Status Query</Translation>
   </Vocab>
   <Vocab>
+    <Name>TradFiPerpetual</Name>
+    <Translation>Trad Fi Perpetual</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>TradFiSpot</Name>
+    <Translation>Trad Fi Spot</Translation>
+  </Vocab>
+  <Vocab>
     <Name>TradingAccount</Name>
     <Translation>Trading Account</Translation>
   </Vocab>

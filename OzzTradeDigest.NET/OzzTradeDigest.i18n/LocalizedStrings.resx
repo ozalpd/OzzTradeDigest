@@ -895,6 +895,12 @@
     <data name="TradeStatusQuery" xml:space="preserve">
         <value>Trade Status Query</value>
     </data>
+    <data name="TradFiPerpetual" xml:space="preserve">
+        <value>Trad Fi Perpetual</value>
+    </data>
+    <data name="TradFiSpot" xml:space="preserve">
+        <value>Trad Fi Spot</value>
+    </data>
     <data name="TradingAccount" xml:space="preserve">
         <value>Trading Account</value>
     </data>

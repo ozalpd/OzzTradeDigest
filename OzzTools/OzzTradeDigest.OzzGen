@@ -149,6 +149,10 @@
           <Value>0</Value>
         </EnumMember>
         <EnumMember>
+          <Name>Index</Name>
+          <Value>10</Value>
+        </EnumMember>
+        <EnumMember>
           <Name>Stock</Name>
           <Value>20</Value>
         </EnumMember>
@@ -181,8 +185,12 @@
           <Value>90</Value>
         </EnumMember>
         <EnumMember>
-          <Name>Index</Name>
-          <Value>100</Value>
+          <Name>TradFiSpot</Name>
+          <Value>110</Value>
+        </EnumMember>
+        <EnumMember>
+          <Name>TradFiPerpetual</Name>
+          <Value>120</Value>
         </EnumMember>
       </Members>
     </EnumDefinition>

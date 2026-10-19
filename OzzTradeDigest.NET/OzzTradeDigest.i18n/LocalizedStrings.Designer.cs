@@ -2572,6 +2572,24 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trad Fi Perpetual.
+        /// </summary>
+        public static string TradFiPerpetual {
+            get {
+                return ResourceManager.GetString("TradFiPerpetual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trad Fi Spot.
+        /// </summary>
+        public static string TradFiSpot {
+            get {
+                return ResourceManager.GetString("TradFiSpot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trading Account.
         /// </summary>
         public static string TradingAccount {
