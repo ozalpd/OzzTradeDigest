@@ -116,6 +116,12 @@ namespace TD.Models
     {
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Unspecified")]
         Unspecified = 0,
+
+        // Market Benchmarks / Index Instruments
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "Index")]
+        Index = 10,
+
+        // Asset Classes
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Stock")]
         Stock = 20,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Fund")]
@@ -128,12 +134,18 @@ namespace TD.Models
         Option = 60,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "Commodity")]
         Commodity = 70,
+
+        // Crypto Native
         [Display(ResourceType = typeof(LocalizedStrings), Name = "CryptoSpot")]
         CryptoSpot = 80,
         [Display(ResourceType = typeof(LocalizedStrings), Name = "CryptoPerpetual")]
         CryptoPerpetual = 90,
-        [Display(ResourceType = typeof(LocalizedStrings), Name = "Index")]
-        Index = 100
+
+        // Crypto Exchange TradFi / Tokenized Order Books
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradFiSpot")]
+        TradFiSpot = 110,
+        [Display(ResourceType = typeof(LocalizedStrings), Name = "TradFiPerpetual")]
+        TradFiPerpetual = 120
     }
 
     /// <summary>
