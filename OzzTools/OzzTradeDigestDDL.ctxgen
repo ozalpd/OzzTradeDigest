@@ -1,7 +1,8 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "C:\\Users\\ozalp\\Source\\Repos\\OzzTradeDigest\\OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts",
-  "LastPackedAt": "2026-10-18T09:24:25.1271773+03:00",
+  "LatestSourceWriteAt": "2026-10-10T19:47:43.4350659+03:00",
+  "LastPackedAt": "2026-10-18T20:33:01.5193988+03:00",
   "RepoUrl": "",
   "License": "",
   "IsOpenSource": null,
@@ -29,112 +30,128 @@
   "TrackedFiles": {
     "Currencies-Data.sql": {
       "RelativePath": "Currencies-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileHash": "153798541CF033942B9EE0900A4050A580C126F3C611D9651CC14505FB4BE4A3",
       "FileSize": 2770,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Currency.sql": {
       "RelativePath": "Currency.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileHash": "FCB265A0230A21AFB8B6159FBD73EBE4AC894A9ECD6E99816752CF8D6F3BCDFE",
       "FileSize": 463,
       "ContextNote": "",
       "PackingMode": 20
     },
     "EntryOrder.sql": {
       "RelativePath": "EntryOrder.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
+      "FileHash": "2F24D5942CAD7D0A0825C402E117ABA9AA233520526F893156DE3A8D23BFB420",
       "FileSize": 539,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Exchange.sql": {
       "RelativePath": "Exchange.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileHash": "670B4CA9770DFC6A9B6D575F68FD2CFFBAEEE309848E0969D9EF969C445FC70C",
       "FileSize": 770,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Exchanges-Data.sql": {
       "RelativePath": "Exchanges-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileHash": "A4866DB06DA77F7A14E4041F23693C75135C35DF416EB72A1B802D56F6911214",
       "FileSize": 1946,
       "ContextNote": "",
       "PackingMode": 20
     },
     "ExitOrder.sql": {
       "RelativePath": "ExitOrder.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-01T05:28:21.6392277+03:00",
+      "FileHash": "EA71133A13628C72E3FB5224C71E49D1D2F4A18C25A9B4D5B58F5D439EF6D24D",
       "FileSize": 569,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Holiday.sql": {
       "RelativePath": "Holiday.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileHash": "9D0CDB3535449758B0F0BBEA70C74F6C73945E3171BEBAB41EDA0815D35B4E08",
       "FileSize": 295,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Holidays-Data.sql": {
       "RelativePath": "Holidays-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
+      "FileHash": "5D34C6A9991ED2718FFD2C43FE232006F4994E48D9845B37099AE694BE90B8BC",
       "FileSize": 19392,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Session.sql": {
       "RelativePath": "Session.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileHash": "19E535E3837F13E6BB6391B0B0ABF283A10921A6C68BA917388200E7AC0BB833",
       "FileSize": 214,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Sessions-Data.sql": {
       "RelativePath": "Sessions-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileHash": "E02E1B3389EB1581527BA00B71B8613982ED9445FEAD8E7BC1AADEEB354B559E",
       "FileSize": 1969,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Symbol.sql": {
       "RelativePath": "Symbol.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
+      "FileHash": "198A7702E2FDC1D1B6CA2081E955A396949D75E6C531EBFA5D5D9FD70F38D5D1",
       "FileSize": 810,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Symbols-Data.sql": {
       "RelativePath": "Symbols-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.297834+03:00",
+      "FileHash": "64A04F768EB67A7E127D9EEDC96BD5B21A0E344DB88668AD84B15FCA160E35EE",
       "FileSize": 34553,
       "ContextNote": "",
       "PackingMode": 20
     },
     "Trade.sql": {
       "RelativePath": "Trade.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:17:42.0919821+03:00",
+      "FileHash": "7B365FBFA0D42C012F392E4423A523709FD64384F79DD8147E7FEF5BFA5645FF",
       "FileSize": 1979,
       "ContextNote": "",
       "PackingMode": 20
     },
     "TradeImage.sql": {
       "RelativePath": "TradeImage.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:14:29.7201443+03:00",
+      "FileHash": "8555EC2CCBE7EBFDB07BDF1FDA5A0B5F0E7385F8133B196354C807D9C1D371F1",
       "FileSize": 455,
       "ContextNote": "",
       "PackingMode": 20
     },
     "TradeNote.sql": {
       "RelativePath": "TradeNote.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:47:43.4350659+03:00",
+      "FileHash": "01354C15F03205830D19D7CADB077F10F0B60A01209C1ABFFE206DD95BD6628F",
       "FileSize": 295,
       "ContextNote": "",
       "PackingMode": 20
     },
     "TradingAccount.sql": {
       "RelativePath": "TradingAccount.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
+      "FileHash": "A97FEFA37833E38653CA26AE6B4B5F621CC3B0675B54E89526453123811CE210",
       "FileSize": 664,
       "ContextNote": "",
       "PackingMode": 20
