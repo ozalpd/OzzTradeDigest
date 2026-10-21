@@ -133,5 +133,17 @@ namespace TD.WPF.Views
                 DetailColumn.MinWidth = 0;
             }
         }
+
+
+        private void TradesDataGrid_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (!e.WidthChanged || TradingAccountColumn is null)
+                return;
+
+            TradingAccountColumn.Visibility = e.NewSize.Width < _minWidthForAccountColumn
+                ? Visibility.Collapsed
+                : Visibility.Visible;
+        }
+        private const double _minWidthForAccountColumn = 1072;
     }
 }

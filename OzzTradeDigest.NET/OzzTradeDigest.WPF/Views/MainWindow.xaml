@@ -368,68 +368,67 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <ScrollViewer Grid.Row="0" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-                    <DataGrid MinWidth="832"
-                              ItemsSource="{Binding Trades}"
-                              SelectedItem="{Binding SelectedTrade, Mode=TwoWay}"
-                              AutoGenerateColumns="False"
-                              IsReadOnly="True"
-                              SelectionMode="Single"
-                              CanUserReorderColumns="True"
-                              CanUserResizeColumns="True"
-                              CanUserSortColumns="True"
-                              GridLinesVisibility="Horizontal"
-                              AlternatingRowBackground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
-                        <DataGrid.Columns>
-                            <!-- Identity / context -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeDirection}" Width="70"
-                                                Binding="{Binding TradeDirection}"
-                                                CellStyle="{StaticResource TradeDirectionCellStyleLight}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeStatus}" Width="90"
-                                                Binding="{Binding TradeStatus}"
-                                                CellStyle="{StaticResource TradeStatusCellStyle}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradingAccount}" Width="110"
-                                                Binding="{Binding TradingAccount.Title}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Symbol}" Width="110"
-                                                Binding="{Binding Symbol.TickerFull}"/>
-                            <!-- Timing -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.EntryTime}" Width="90"
-                                                Binding="{Binding EntryTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExitTime}" Width="90"
-                                                Binding="{Binding ExitTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
-                            <!-- Plan -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedEntryPrice}" Width="90"
-                                                Binding="{Binding RoundedPlannedEntryPrice}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <!-- Execution -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.FilledQuantity}" Width="80"
-                                                Binding="{Binding RoundedFilledQuantity}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExecutedEntryPrice}" Width="90"
-                                                Binding="{Binding RoundedExecutedEntryPrice}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <!-- P&L -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedProfit}" Width="80"
-                                                Binding="{Binding PlannedProfitLoss, StringFormat=\{0:N2\}}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.RealizedProfitLoss}" Width="80"
-                                                Binding="{Binding RealizedProfitLoss, StringFormat=\{0:N2\}}"
-                                                CellStyle="{StaticResource NetProfitLossCellStyleLight}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.NetProfitLoss}" Width="80"
-                                                Binding="{Binding NetProfitLoss, StringFormat=\{0:N2\}}"
-                                                CellStyle="{StaticResource NetProfitLossCellStyleLight}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <!-- Risk -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedRiskRewardRatio}" Width="60"
-                                                Binding="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}}"
-                                                ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
-                            <!-- Tags -->
-                            <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Tags}" Width="*"
-                                                Binding="{Binding Tags}"/>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </ScrollViewer>
+                <DataGrid Grid.Row="0"
+                          ItemsSource="{Binding Trades}"
+                          SelectedItem="{Binding SelectedTrade, Mode=TwoWay}"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          SelectionMode="Single"
+                          CanUserReorderColumns="True"
+                          CanUserResizeColumns="True"
+                          CanUserSortColumns="True"
+                          GridLinesVisibility="Horizontal"
+                          AlternatingRowBackground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                          SizeChanged="TradesDataGrid_SizeChanged">
+                    <DataGrid.Columns>
+                        <!-- Identity / context -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeDirection}" MinWidth="60"
+                                            Binding="{Binding TradeDirection}"
+                                            CellStyle="{StaticResource TradeDirectionCellStyleLight}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.TradeStatus}" MinWidth="60"
+                                            Binding="{Binding TradeStatus}"
+                                            CellStyle="{StaticResource TradeStatusCellStyle}"/>
+                        <DataGridTextColumn x:Name="TradingAccountColumn" Header="{x:Static i18n:LocalizedStrings.TradingAccount}" MinWidth="110"
+                                            Binding="{Binding TradingAccount.Title}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Symbol}" MinWidth="110"
+                                            Binding="{Binding Symbol.TickerFull}"/>
+                        <!-- Timing -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.EntryTime}" MinWidth="90"
+                                            Binding="{Binding EntryTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExitTime}" MinWidth="90"
+                                            Binding="{Binding ExitTime, StringFormat=\{0:yyyy-MM-dd\}}"/>
+                        <!-- Plan -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedEntryPrice}" MinWidth="90"
+                                            Binding="{Binding RoundedPlannedEntryPrice}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <!-- Execution -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.FilledQuantity}" MinWidth="80"
+                                            Binding="{Binding RoundedFilledQuantity}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.ExecutedEntryPrice}" MinWidth="90"
+                                            Binding="{Binding RoundedExecutedEntryPrice}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <!-- P&L -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedProfit}" MinWidth="80"
+                                            Binding="{Binding PlannedProfitLoss, StringFormat=\{0:N2\}}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.RealizedProfitLoss}" MinWidth="80"
+                                            Binding="{Binding RealizedProfitLoss, StringFormat=\{0:N2\}}"
+                                            CellStyle="{StaticResource NetProfitLossCellStyleLight}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.NetProfitLoss}" MinWidth="80"
+                                            Binding="{Binding NetProfitLoss, StringFormat=\{0:N2\}}"
+                                            CellStyle="{StaticResource NetProfitLossCellStyleLight}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <!-- Risk -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.PlannedRiskRewardRatio}" MinWidth="60"
+                                            Binding="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}}"
+                                            ElementStyle="{StaticResource RightAlignedDataGridTextBlockStyle}"/>
+                        <!-- Tags -->
+                        <DataGridTextColumn Header="{x:Static i18n:LocalizedStrings.Tags}" Width="*" MinWidth="80"
+                                            Binding="{Binding Tags}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
                 <!-- Pager bar -->
                 <Border Grid.Row="1"
                         BorderThickness="0,1,0,0"
@@ -437,8 +436,8 @@
                         Padding="6,2">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="320"/>
-                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="144"/>
                             <ColumnDefinition Width="160"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>

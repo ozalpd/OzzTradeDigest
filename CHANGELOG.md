@@ -15,11 +15,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added `TradeNoteCategory` and `TradeAdherence` enums with localized display attributes for note categorization and rule adherence tracking.
 - Consolidated exit order entities (`StopLossOrder` and `TakeProfitOrder`) into a unified `ExitOrder` entity and `ExitOrders` table.
 - Added `ExitOrderMode` enum (`TakeProfit`, `StopLoss`, `ManualExit`, `TimedExit`, `Algorithm`, `MarginCall`) with localized display attributes.
+- MainWindow trades `DataGrid` now automatically hides the `TradingAccount` column when the grid is narrower than 1072 px and shows it again at 1072 px or wider.
 
 ### Changed
 - Updated `PriceSideAttribute` to dynamically evaluate required price side relative to entry price based on `ExitOrder.ExitOrderMode` (Above for `TakeProfit`, Below for `StopLoss` for Long positions; inverted for Short positions; skipped for manual/system exits).
 - Updated `Trade` model and `TradeRepository.part.cs` to manage and populate `TakeProfitOrders` and `StopLossOrders` as `ExitOrder` collections filtered by `ExitOrderMode`.
 - Renamed the application from **OzzTradeDiary** to **OzzTradeDigest**; repository moved to https://github.com/ozalpd/OzzTradeDigest. Solution file, project folders/files (`OzzTradeDigest`, `OzzTradeDigest.AppInfra`, `OzzTradeDigest.i18n`, `OzzTradeDigest.SQLite`, `OzzTradeDigest.WPF`), and documentation (README, Copilot instructions, agents, prompts, instruction files) updated to the new name via `git mv`. The application icon is redesigned.
+
+### Fixed
+- Fixed MainWindow trades `DataGrid` columns rendering too narrow when the `Trades` collection is empty and not recovering after the first record is added: removed the `ScrollViewer` wrapping the grid (it measured the `DataGrid` with infinite width, collapsing the star-sized `Tags` column and preventing column-width redistribution); the grid now uses its own built-in scrolling and the obsolete `MinWidth` was dropped.
 
 ## [0.2.3] - 2026-06-07
 
