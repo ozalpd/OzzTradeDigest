@@ -7,291 +7,398 @@
    DisplayOrder The order in which the symbol is displayed
    IsActive Indicates if the symbol is active (1) or inactive (0)
 */
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (1, 'NASDAQ:AAPL', 'AAPL', null, 1, 'Apple Inc.', 2, 20, 1000, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (1, 'NASDAQ:AAPL', 'AAPL', null, 1, 'Apple Inc.', 2, 20, 1000, 1);
 
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (2, 'BYBIT:BTCUSDT', 'BTCUSDT', 'BTC', 2, 'Bitcoin Spot', 6, 80, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (3, 'BYBIT:BTCUSDC', 'BTCUSDC', 'BTC', 3, 'Bitcoin Spot', 6, 80, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (4, 'BYBIT:BTCUSDT.P', 'BTCUSDT.P', 'BTC', 2, 'Bitcoin Perpetual Contract', 6, 90, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (5, 'BYBIT:BTCUSDC.P', 'BTCUSDC.P', 'BTC', 3, 'Bitcoin Perpetual Contract', 6, 90, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (6, 'BYBIT:ETHUSDT', 'ETHUSDT', 'ETH', 2, 'Ethereum Spot', 6, 80, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (7, 'BYBIT:ETHUSDC', 'ETHUSDC', 'ETH', 3, 'Ethereum Spot', 6, 80, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (8, 'BYBIT:ETHUSDT.P', 'ETHUSDT.P', 'ETH', 2, 'Ethereum Perpetual Contract', 6, 90, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (9, 'BYBIT:ETHUSDC.P', 'ETHUSDC.P', 'ETH', 3, 'Ethereum Perpetual Contract', 6, 90, 200, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (2, 'BYBIT:BTCUSDT', 'BTCUSDT', 'BTC', 2, 'Bitcoin Spot', 6, 80, 100, 1),
+    (3, 'BYBIT:BTCUSDC', 'BTCUSDC', 'BTC', 3, 'Bitcoin Spot', 6, 80, 100, 1),
+    (4, 'BYBIT:BTCUSDT.P', 'BTCUSDT.P', 'BTC', 2, 'Bitcoin Perpetual Contract', 6, 90, 100, 1),
+    (5, 'BYBIT:BTCUSDC.P', 'BTCUSDC.P', 'BTC', 3, 'Bitcoin Perpetual Contract', 6, 90, 100, 1),
+    (6, 'BYBIT:ETHUSDT', 'ETHUSDT', 'ETH', 2, 'Ethereum Spot', 6, 80, 200, 1),
+    (7, 'BYBIT:ETHUSDC', 'ETHUSDC', 'ETH', 3, 'Ethereum Spot', 6, 80, 200, 1),
+    (8, 'BYBIT:ETHUSDT.P', 'ETHUSDT.P', 'ETH', 2, 'Ethereum Perpetual Contract', 6, 90, 200, 1),
+    (9, 'BYBIT:ETHUSDC.P', 'ETHUSDC.P', 'ETH', 3, 'Ethereum Perpetual Contract', 6, 90, 200, 1);
 
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (10, 'BINGX:BTCUSDT', 'BTCUSDT', 'BTC', 2, 'Bitcoin Spot', 5, 80, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (11, 'BINGX:BTCUSDC', 'BTCUSDC', 'BTC', 3, 'Bitcoin Spot', 5, 80, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (12, 'BINGX:BTCUSDT.P', 'BTCUSDT.P', 'BTC', 2, 'Bitcoin Perpetual Contract', 5, 90, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (13, 'BINGX:BTCUSDC.P', 'BTCUSDC.P', 'BTC', 3, 'Bitcoin Perpetual Contract', 5, 90, 100, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (14, 'BINGX:ETHUSDT', 'ETHUSDT', 'ETH', 2, 'Ethereum Spot', 5, 80, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (15, 'BINGX:ETHUSDC', 'ETHUSDC', 'ETH', 3, 'Ethereum Spot', 5, 80, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (16, 'BINGX:ETHUSDT.P', 'ETHUSDT.P', 'ETH', 2, 'Ethereum Perpetual Contract', 5, 90, 200, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (17, 'BINGX:ETHUSDC.P', 'ETHUSDC.P', 'ETH', 3, 'Ethereum Perpetual Contract', 5, 90, 200, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (10, 'BINGX:BTCUSDT', 'BTCUSDT', 'BTC', 2, 'Bitcoin Spot', 5, 80, 100, 1),
+    (11, 'BINGX:BTCUSDC', 'BTCUSDC', 'BTC', 3, 'Bitcoin Spot', 5, 80, 100, 1),
+    (12, 'BINGX:BTCUSDT.P', 'BTCUSDT.P', 'BTC', 2, 'Bitcoin Perpetual Contract', 5, 90, 100, 1),
+    (13, 'BINGX:BTCUSDC.P', 'BTCUSDC.P', 'BTC', 3, 'Bitcoin Perpetual Contract', 5, 90, 100, 1),
+    (14, 'BINGX:ETHUSDT', 'ETHUSDT', 'ETH', 2, 'Ethereum Spot', 5, 80, 200, 1),
+    (15, 'BINGX:ETHUSDC', 'ETHUSDC', 'ETH', 3, 'Ethereum Spot', 5, 80, 200, 1),
+    (16, 'BINGX:ETHUSDT.P', 'ETHUSDT.P', 'ETH', 2, 'Ethereum Perpetual Contract', 5, 90, 200, 1),
+    (17, 'BINGX:ETHUSDC.P', 'ETHUSDC.P', 'ETH', 3, 'Ethereum Perpetual Contract', 5, 90, 200, 1);
 
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (18, 'BYBIT:AVAXUSDT', 'AVAXUSDT', 'AVAX', 2, 'Avalanche Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (19, 'BYBIT:AVAXUSDC', 'AVAXUSDC', 'AVAX', 3, 'Avalanche Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (20, 'BYBIT:AVAXUSDT.P', 'AVAXUSDT.P', 'AVAX', 2, 'Avalanche Perpetual Contract', 6, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (21, 'BYBIT:AVAXUSDC.P', 'AVAXUSDC.P', 'AVAX', 3, 'Avalanche Perpetual Contract', 6, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (22, 'BYBIT:SOLUSDT', 'SOLUSDT', 'SOL', 2, 'Solana Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (23, 'BYBIT:SOLUSDC', 'SOLUSDC', 'SOL', 3, 'Solana Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (24, 'BYBIT:SOLUSDT.P', 'SOLUSDT.P', 'SOL', 2, 'Solana Perpetual Contract', 6, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (25, 'BYBIT:SOLUSDC.P', 'SOLUSDC.P', 'SOL', 3, 'Solana Perpetual Contract', 6, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (26, 'BYBIT:XRPUSDT', 'XRPUSDT', 'XRP', 2, 'XRP Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (27, 'BYBIT:XRPUSDC', 'XRPUSDC', 'XRP', 3, 'XRP Spot', 6, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (28, 'BYBIT:XRPUSDT.P', 'XRPUSDT.P', 'XRP', 2, 'XRP Perpetual Contract', 6, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (29, 'BYBIT:XRPUSDC.P', 'XRPUSDC.P', 'XRP', 3, 'XRP Perpetual Contract', 6, 90, 1000, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (18, 'BYBIT:AVAXUSDT', 'AVAXUSDT', 'AVAX', 2, 'Avalanche Spot', 6, 80, 1000, 1),
+    (19, 'BYBIT:AVAXUSDC', 'AVAXUSDC', 'AVAX', 3, 'Avalanche Spot', 6, 80, 1000, 1),
+    (20, 'BYBIT:AVAXUSDT.P', 'AVAXUSDT.P', 'AVAX', 2, 'Avalanche Perpetual Contract', 6, 90, 1000, 1),
+    (21, 'BYBIT:AVAXUSDC.P', 'AVAXUSDC.P', 'AVAX', 3, 'Avalanche Perpetual Contract', 6, 90, 1000, 1),
+    (22, 'BYBIT:SOLUSDT', 'SOLUSDT', 'SOL', 2, 'Solana Spot', 6, 80, 1000, 1),
+    (23, 'BYBIT:SOLUSDC', 'SOLUSDC', 'SOL', 3, 'Solana Spot', 6, 80, 1000, 1),
+    (24, 'BYBIT:SOLUSDT.P', 'SOLUSDT.P', 'SOL', 2, 'Solana Perpetual Contract', 6, 90, 1000, 1),
+    (25, 'BYBIT:SOLUSDC.P', 'SOLUSDC.P', 'SOL', 3, 'Solana Perpetual Contract', 6, 90, 1000, 1),
+    (26, 'BYBIT:XRPUSDT', 'XRPUSDT', 'XRP', 2, 'XRP Spot', 6, 80, 1000, 1),
+    (27, 'BYBIT:XRPUSDC', 'XRPUSDC', 'XRP', 3, 'XRP Spot', 6, 80, 1000, 1),
+    (28, 'BYBIT:XRPUSDT.P', 'XRPUSDT.P', 'XRP', 2, 'XRP Perpetual Contract', 6, 90, 1000, 1),
+    (29, 'BYBIT:XRPUSDC.P', 'XRPUSDC.P', 'XRP', 3, 'XRP Perpetual Contract', 6, 90, 1000, 1);
 
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (30, 'BINGX:AVAXUSDT', 'AVAXUSDT', 'AVAX', 2, 'Avalanche Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (31, 'BINGX:AVAXUSDC', 'AVAXUSDC', 'AVAX', 3, 'Avalanche Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (32, 'BINGX:AVAXUSDT.P', 'AVAXUSDT.P', 'AVAX', 2, 'Avalanche Perpetual Contract', 5, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (33, 'BINGX:AVAXUSDC.P', 'AVAXUSDC.P', 'AVAX', 3, 'Avalanche Perpetual Contract', 5, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (34, 'BINGX:SOLUSDT', 'SOLUSDT', 'SOL', 2, 'Solana Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (35, 'BINGX:SOLUSDC', 'SOLUSDC', 'SOL', 3, 'Solana Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (36, 'BINGX:SOLUSDT.P', 'SOLUSDT.P', 'SOL', 2, 'Solana Perpetual Contract', 5, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (37, 'BINGX:SOLUSDC.P', 'SOLUSDC.P', 'SOL', 3, 'Solana Perpetual Contract', 5, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (38, 'BINGX:XRPUSDT', 'XRPUSDT', 'XRP', 2, 'XRP Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (39, 'BINGX:XRPUSDC', 'XRPUSDC', 'XRP', 3, 'XRP Spot', 5, 80, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (40, 'BINGX:XRPUSDT.P', 'XRPUSDT.P', 'XRP', 2, 'XRP Perpetual Contract', 5, 90, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (41, 'BINGX:XRPUSDC.P', 'XRPUSDC.P', 'XRP', 3, 'XRP Perpetual Contract', 5, 90, 1000, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (30, 'BINGX:AVAXUSDT', 'AVAXUSDT', 'AVAX', 2, 'Avalanche Spot', 5, 80, 1000, 1),
+    (31, 'BINGX:AVAXUSDC', 'AVAXUSDC', 'AVAX', 3, 'Avalanche Spot', 5, 80, 1000, 1),
+    (32, 'BINGX:AVAXUSDT.P', 'AVAXUSDT.P', 'AVAX', 2, 'Avalanche Perpetual Contract', 5, 90, 1000, 1),
+    (33, 'BINGX:AVAXUSDC.P', 'AVAXUSDC.P', 'AVAX', 3, 'Avalanche Perpetual Contract', 5, 90, 1000, 1),
+    (34, 'BINGX:SOLUSDT', 'SOLUSDT', 'SOL', 2, 'Solana Spot', 5, 80, 1000, 1),
+    (35, 'BINGX:SOLUSDC', 'SOLUSDC', 'SOL', 3, 'Solana Spot', 5, 80, 1000, 1),
+    (36, 'BINGX:SOLUSDT.P', 'SOLUSDT.P', 'SOL', 2, 'Solana Perpetual Contract', 5, 90, 1000, 1),
+    (37, 'BINGX:SOLUSDC.P', 'SOLUSDC.P', 'SOL', 3, 'Solana Perpetual Contract', 5, 90, 1000, 1),
+    (38, 'BINGX:XRPUSDT', 'XRPUSDT', 'XRP', 2, 'XRP Spot', 5, 80, 1000, 1),
+    (39, 'BINGX:XRPUSDC', 'XRPUSDC', 'XRP', 3, 'XRP Spot', 5, 80, 1000, 1),
+    (40, 'BINGX:XRPUSDT.P', 'XRPUSDT.P', 'XRP', 2, 'XRP Perpetual Contract', 5, 90, 1000, 1),
+    (41, 'BINGX:XRPUSDC.P', 'XRPUSDC.P', 'XRP', 3, 'XRP Perpetual Contract', 5, 90, 1000, 1);
 
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (42, 'BIST:AEFES', 'AEFES', null, 21, 'Anadolu Efes Biracılık ve Malt Sanayii A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (43, 'BIST:AGHOL', 'AGHOL', null, 21, 'Anadolu Grubu Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (44, 'BIST:AKBNK', 'AKBNK', null, 21, 'Akbank T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (45, 'BIST:AKSA', 'AKSA', null, 21, 'Aksa Akrilik Kimya Sanayii A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (46, 'BIST:AKSEN', 'AKSEN', null, 21, 'Aksa Enerji Üretim A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (47, 'BIST:ALARK', 'ALARK', null, 21, 'Alarko Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (48, 'BIST:ALTNY', 'ALTNY', null, 21, 'Altınay Savunma Teknolojileri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (49, 'BIST:ANSGR', 'ANSGR', null, 21, 'Anadolu Sigorta A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (50, 'BIST:ARCLK', 'ARCLK', null, 21, 'Arçelik A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (51, 'BIST:ASELS', 'ASELS', null, 21, 'Aselsan Elektronik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (52, 'BIST:ASTOR', 'ASTOR', null, 21, 'Astor Enerji A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (53, 'BIST:BALSU', 'BALSU', null, 21, 'Balsu Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (54, 'BIST:BIMAS', 'BIMAS', null, 21, 'BİM Birleşik Mağazalar A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (55, 'BIST:BRSAN', 'BRSAN', null, 21, 'Borusan Boru Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (56, 'BIST:BRYAT', 'BRYAT', null, 21, 'Borusan Yatırım ve Pazarlama A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (57, 'BIST:BSOKE', 'BSOKE', null, 21, 'Batısöke Söke Çimento Sanayii T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (58, 'BIST:BTCIM', 'BTCIM', null, 21, 'Batıçim Batı Anadolu Çimento Sanayii A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (59, 'BIST:CANTE', 'CANTE', null, 21, 'Çan2 Termik A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (60, 'BIST:CCOLA', 'CCOLA', null, 21, 'Coca-Cola İçecek A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (61, 'BIST:CIMSA', 'CIMSA', null, 21, 'Çimsa Çimento Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (62, 'BIST:CWENE', 'CWENE', null, 21, 'CW Enerji Mühendislik Ticaret ve Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (63, 'BIST:DAPGM', 'DAPGM', null, 21, 'DAP Gayrimenkul Geliştirme A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (64, 'BIST:DOAS', 'DOAS', null, 21, 'Doğuş Otomotiv Servis ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (65, 'BIST:DOHOL', 'DOHOL', null, 21, 'Doğan Şirketler Grubu Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (66, 'BIST:DSTKF', 'DSTKF', null, 21, 'Destek Finans Faktoring A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (67, 'BIST:ECILC', 'ECILC', null, 21, 'EİS Eczacıbaşı İlaç, Sınai ve Finansal Yatırımlar Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (68, 'BIST:EFOR', 'EFOR', null, 21, 'Efor Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (69, 'BIST:EGEEN', 'EGEEN', null, 21, 'Ege Endüstri ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (70, 'BIST:EKGYO', 'EKGYO', null, 21, 'Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (71, 'BIST:ENERY', 'ENERY', null, 21, 'Enerya Enerji A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (72, 'BIST:ENJSA', 'ENJSA', null, 21, 'Enerjisa Enerji A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (73, 'BIST:ENKAI', 'ENKAI', null, 21, 'Enka İnşaat ve Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (74, 'BIST:EREGL', 'EREGL', null, 21, 'Ereğli Demir ve Çelik Fabrikaları T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (75, 'BIST:EUPWR', 'EUPWR', null, 21, 'Europower Enerji ve Otomasyon Teknolojileri Sanayi Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (76, 'BIST:FENER', 'FENER', null, 21, 'Fenerbahçe Futbol A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (77, 'BIST:FROTO', 'FROTO', null, 21, 'Ford Otomotiv Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (78, 'BIST:GARAN', 'GARAN', null, 21, 'Türkiye Garanti Bankası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (79, 'BIST:GENIL', 'GENIL', null, 21, 'Gen İlaç ve Sağlık Ürünleri Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (80, 'BIST:GESAN', 'GESAN', null, 21, 'Girişim Elektrik Sanayi Taahhüt ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (81, 'BIST:GLRMK', 'GLRMK', null, 21, 'Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (82, 'BIST:GRSEL', 'GRSEL', null, 21, 'Gür-Sel Turizm Taşımacılık ve Servis Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (83, 'BIST:GRTHO', 'GRTHO', null, 21, 'Graintürk Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (84, 'BIST:GSRAY', 'GSRAY', null, 21, 'Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (85, 'BIST:GUBRF', 'GUBRF', null, 21, 'Gübre Fabrikaları T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (86, 'BIST:HALKB', 'HALKB', null, 21, 'Türkiye Halk Bankası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (87, 'BIST:HEKTS', 'HEKTS', null, 21, 'Hektaş Ticaret T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (88, 'BIST:ISCTR', 'ISCTR', null, 21, 'Türkiye İş Bankası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (89, 'BIST:ISMEN', 'ISMEN', null, 21, 'İş Yatırım Menkul Değerler A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (90, 'BIST:IZENR', 'IZENR', null, 21, 'İzdemir Enerji Elektrik Üretim A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (91, 'BIST:KCAER', 'KCAER', null, 21, 'Kocaer Çelik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (92, 'BIST:KCHOL', 'KCHOL', null, 21, 'Koç Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (93, 'BIST:KLRHO', 'KLRHO', null, 21, 'Kiler Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (94, 'BIST:KONTR', 'KONTR', null, 21, 'Kontrolmatik Teknoloji Enerji ve Mühendislik A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (95, 'BIST:KRDMD', 'KRDMD', null, 21, 'Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (96, 'BIST:KTLEV', 'KTLEV', null, 21, 'Katılımevim Tasarruf Finansman A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (97, 'BIST:KUYAS', 'KUYAS', null, 21, 'Kuyas Yatırım A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (98, 'BIST:MAGEN', 'MAGEN', null, 21, 'Margün Enerji Üretim Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (99, 'BIST:MAVI', 'MAVI', null, 21, 'Mavi Giyim Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (100, 'BIST:MGROS', 'MGROS', null, 21, 'Migros Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (101, 'BIST:MIATK', 'MIATK', null, 21, 'Mia Teknoloji A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (102, 'BIST:MPARK', 'MPARK', null, 21, 'MLP Sağlık Hizmetleri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (103, 'BIST:OBAMS', 'OBAMS', null, 21, 'Oba Makarnacılık Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (104, 'BIST:ODAS', 'ODAS', null, 21, 'Odaş Elektrik Üretim Sanayi Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (105, 'BIST:OTKAR', 'OTKAR', null, 21, 'Otokar Otomotiv ve Savunma Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (106, 'BIST:OYAKC', 'OYAKC', null, 21, 'OYAK Çimento Fabrikaları A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (107, 'BIST:PASEU', 'PASEU', null, 21, 'Pasifik Eurasia Lojistik Dış Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (108, 'BIST:PATEK', 'PATEK', null, 21, 'Pasifik Teknoloji A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (109, 'BIST:PETKM', 'PETKM', null, 21, 'Petkim Petrokimya Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (110, 'BIST:PGSUS', 'PGSUS', null, 21, 'Pegasus Hava Taşımacılığı A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (111, 'BIST:QUAGR', 'QUAGR', null, 21, 'Qua Granite Hayal Yapı ve Ürünleri Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (112, 'BIST:RALYH', 'RALYH', null, 21, 'Ral Yatırım Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (113, 'BIST:REEDR', 'REEDR', null, 21, 'Reeder Teknoloji Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (114, 'BIST:SAHOL', 'SAHOL', null, 21, 'Hacı Ömer Sabancı Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (115, 'BIST:SASA', 'SASA', null, 21, 'SASA Polyester Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (116, 'BIST:SISE', 'SISE', null, 21, 'Türkiye Şişe ve Cam Fabrikaları A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (117, 'BIST:SKBNK', 'SKBNK', null, 21, 'Şekerbank T.A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (118, 'BIST:SOKM', 'SOKM', null, 21, 'Şok Marketler Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (119, 'BIST:TABGD', 'TABGD', null, 21, 'TAB Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (120, 'BIST:TAVHL', 'TAVHL', null, 21, 'TAV Havalimanları Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (121, 'BIST:TCELL', 'TCELL', null, 21, 'Turkcell İletişim Hizmetleri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (122, 'BIST:THYAO', 'THYAO', null, 21, 'Türk Hava Yolları A.O.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (123, 'BIST:TKFEN', 'TKFEN', null, 21, 'Tekfen Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (124, 'BIST:TOASO', 'TOASO', null, 21, 'Tofaş Türk Otomobil Fabrikası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (125, 'BIST:TRALT', 'TRALT', null, 21, 'Trakya Altın İşletmeleri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (126, 'BIST:TRENJ', 'TRENJ', null, 21, 'Tera Yatırım Teknoloji Holding A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (127, 'BIST:TRMET', 'TRMET', null, 21, 'Trakya Metal Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (128, 'BIST:TSKB', 'TSKB', null, 21, 'Türkiye Sınai Kalkınma Bankası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (129, 'BIST:TSPOR', 'TSPOR', null, 21, 'Trabzonspor Sportif Yatırım ve Futbol İşletmeciliği Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (130, 'BIST:TTKOM', 'TTKOM', null, 21, 'Türk Telekomünikasyon A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (131, 'BIST:TTRAK', 'TTRAK', null, 21, 'Türk Traktör ve Ziraat Makineleri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (132, 'BIST:TUKAS', 'TUKAS', null, 21, 'Tukaş Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (133, 'BIST:TUPRS', 'TUPRS', null, 21, 'Türkiye Petrol Rafinerileri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (134, 'BIST:TUREX', 'TUREX', null, 21, 'Turex Turizm Taşımacılık A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (135, 'BIST:TURSG', 'TURSG', null, 21, 'Türkiye Sigorta A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (136, 'BIST:ULKER', 'ULKER', null, 21, 'Ülker Bisküvi Sanayi A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (137, 'BIST:VAKBN', 'VAKBN', null, 21, 'Türkiye Vakıflar Bankası T.A.O.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (138, 'BIST:VESTL', 'VESTL', null, 21, 'Vestel Elektronik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (139, 'BIST:YEOTK', 'YEOTK', null, 21, 'YEO Teknoloji Enerji ve Endüstri A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (140, 'BIST:YKBNK', 'YKBNK', null, 21, 'Yapı ve Kredi Bankası A.Ş.', 4, 20, 1000, 1);
-Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive)
-			values (141, 'BIST:ZOREN', 'ZOREN', null, 21, 'Zorlu Enerji Elektrik Üretim A.Ş.', 4, 20, 1000, 1);
+Insert Into Symbols(Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+    (42, 'BIST:AEFES', 'AEFES', null, 21, 'Anadolu Efes Biracılık ve Malt Sanayii A.Ş.', 4, 20, 1000, 1),
+    (43, 'BIST:AGHOL', 'AGHOL', null, 21, 'Anadolu Grubu Holding A.Ş.', 4, 20, 1000, 1),
+    (44, 'BIST:AKBNK', 'AKBNK', null, 21, 'Akbank T.A.Ş.', 4, 20, 1000, 1),
+    (45, 'BIST:AKSA', 'AKSA', null, 21, 'Aksa Akrilik Kimya Sanayii A.Ş.', 4, 20, 1000, 1),
+    (46, 'BIST:AKSEN', 'AKSEN', null, 21, 'Aksa Enerji Üretim A.Ş.', 4, 20, 1000, 1),
+    (47, 'BIST:ALARK', 'ALARK', null, 21, 'Alarko Holding A.Ş.', 4, 20, 1000, 1),
+    (48, 'BIST:ALTNY', 'ALTNY', null, 21, 'Altınay Savunma Teknolojileri A.Ş.', 4, 20, 1000, 1),
+    (49, 'BIST:ANSGR', 'ANSGR', null, 21, 'Anadolu Sigorta A.Ş.', 4, 20, 1000, 1),
+    (50, 'BIST:ARCLK', 'ARCLK', null, 21, 'Arçelik A.Ş.', 4, 20, 1000, 1),
+    (51, 'BIST:ASELS', 'ASELS', null, 21, 'Aselsan Elektronik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (52, 'BIST:ASTOR', 'ASTOR', null, 21, 'Astor Enerji A.Ş.', 4, 20, 1000, 1),
+    (53, 'BIST:BALSU', 'BALSU', null, 21, 'Balsu Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (54, 'BIST:BIMAS', 'BIMAS', null, 21, 'BİM Birleşik Mağazalar A.Ş.', 4, 20, 1000, 1),
+    (55, 'BIST:BRSAN', 'BRSAN', null, 21, 'Borusan Boru Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (56, 'BIST:BRYAT', 'BRYAT', null, 21, 'Borusan Yatırım ve Pazarlama A.Ş.', 4, 20, 1000, 1),
+    (57, 'BIST:BSOKE', 'BSOKE', null, 21, 'Batısöke Söke Çimento Sanayii T.A.Ş.', 4, 20, 1000, 1),
+    (58, 'BIST:BTCIM', 'BTCIM', null, 21, 'Batıçim Batı Anadolu Çimento Sanayii A.Ş.', 4, 20, 1000, 1),
+    (59, 'BIST:CANTE', 'CANTE', null, 21, 'Çan2 Termik A.Ş.', 4, 20, 1000, 1),
+    (60, 'BIST:CCOLA', 'CCOLA', null, 21, 'Coca-Cola İçecek A.Ş.', 4, 20, 1000, 1),
+    (61, 'BIST:CIMSA', 'CIMSA', null, 21, 'Çimsa Çimento Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (62, 'BIST:CWENE', 'CWENE', null, 21, 'CW Enerji Mühendislik Ticaret ve Sanayi A.Ş.', 4, 20, 1000, 1),
+    (63, 'BIST:DAPGM', 'DAPGM', null, 21, 'DAP Gayrimenkul Geliştirme A.Ş.', 4, 20, 1000, 1),
+    (64, 'BIST:DOAS', 'DOAS', null, 21, 'Doğuş Otomotiv Servis ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (65, 'BIST:DOHOL', 'DOHOL', null, 21, 'Doğan Şirketler Grubu Holding A.Ş.', 4, 20, 1000, 1),
+    (66, 'BIST:DSTKF', 'DSTKF', null, 21, 'Destek Finans Faktoring A.Ş.', 4, 20, 1000, 1),
+    (67, 'BIST:ECILC', 'ECILC', null, 21, 'EİS Eczacıbaşı İlaç, Sınai ve Finansal Yatırımlar Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (68, 'BIST:EFOR', 'EFOR', null, 21, 'Efor Holding A.Ş.', 4, 20, 1000, 1),
+    (69, 'BIST:EGEEN', 'EGEEN', null, 21, 'Ege Endüstri ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (70, 'BIST:EKGYO', 'EKGYO', null, 21, 'Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.', 4, 20, 1000, 1),
+    (71, 'BIST:ENERY', 'ENERY', null, 21, 'Enerya Enerji A.Ş.', 4, 20, 1000, 1),
+    (72, 'BIST:ENJSA', 'ENJSA', null, 21, 'Enerjisa Enerji A.Ş.', 4, 20, 1000, 1),
+    (73, 'BIST:ENKAI', 'ENKAI', null, 21, 'Enka İnşaat ve Sanayi A.Ş.', 4, 20, 1000, 1),
+    (74, 'BIST:EREGL', 'EREGL', null, 21, 'Ereğli Demir ve Çelik Fabrikaları T.A.Ş.', 4, 20, 1000, 1),
+    (75, 'BIST:EUPWR', 'EUPWR', null, 21, 'Europower Enerji ve Otomasyon Teknolojileri Sanayi Ticaret A.Ş.', 4, 20, 1000, 1),
+    (76, 'BIST:FENER', 'FENER', null, 21, 'Fenerbahçe Futbol A.Ş.', 4, 20, 1000, 1),
+    (77, 'BIST:FROTO', 'FROTO', null, 21, 'Ford Otomotiv Sanayi A.Ş.', 4, 20, 1000, 1),
+    (78, 'BIST:GARAN', 'GARAN', null, 21, 'Türkiye Garanti Bankası A.Ş.', 4, 20, 1000, 1),
+    (79, 'BIST:GENIL', 'GENIL', null, 21, 'Gen İlaç ve Sağlık Ürünleri Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (80, 'BIST:GESAN', 'GESAN', null, 21, 'Girişim Elektrik Sanayi Taahhüt ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (81, 'BIST:GLRMK', 'GLRMK', null, 21, 'Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.', 4, 20, 1000, 1),
+    (82, 'BIST:GRSEL', 'GRSEL', null, 21, 'Gür-Sel Turizm Taşımacılık ve Servis Ticaret A.Ş.', 4, 20, 1000, 1),
+    (83, 'BIST:GRTHO', 'GRTHO', null, 21, 'Graintürk Holding A.Ş.', 4, 20, 1000, 1),
+    (84, 'BIST:GSRAY', 'GSRAY', null, 21, 'Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş.', 4, 20, 1000, 1),
+    (85, 'BIST:GUBRF', 'GUBRF', null, 21, 'Gübre Fabrikaları T.A.Ş.', 4, 20, 1000, 1),
+    (86, 'BIST:HALKB', 'HALKB', null, 21, 'Türkiye Halk Bankası A.Ş.', 4, 20, 1000, 1),
+    (87, 'BIST:HEKTS', 'HEKTS', null, 21, 'Hektaş Ticaret T.A.Ş.', 4, 20, 1000, 1),
+    (88, 'BIST:ISCTR', 'ISCTR', null, 21, 'Türkiye İş Bankası A.Ş.', 4, 20, 1000, 1),
+    (89, 'BIST:ISMEN', 'ISMEN', null, 21, 'İş Yatırım Menkul Değerler A.Ş.', 4, 20, 1000, 1),
+    (90, 'BIST:IZENR', 'IZENR', null, 21, 'İzdemir Enerji Elektrik Üretim A.Ş.', 4, 20, 1000, 1),
+    (91, 'BIST:KCAER', 'KCAER', null, 21, 'Kocaer Çelik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (92, 'BIST:KCHOL', 'KCHOL', null, 21, 'Koç Holding A.Ş.', 4, 20, 1000, 1),
+    (93, 'BIST:KLRHO', 'KLRHO', null, 21, 'Kiler Holding A.Ş.', 4, 20, 1000, 1),
+    (94, 'BIST:KONTR', 'KONTR', null, 21, 'Kontrolmatik Teknoloji Enerji ve Mühendislik A.Ş.', 4, 20, 1000, 1),
+    (95, 'BIST:KRDMD', 'KRDMD', null, 21, 'Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (96, 'BIST:KTLEV', 'KTLEV', null, 21, 'Katılımevim Tasarruf Finansman A.Ş.', 4, 20, 1000, 1),
+    (97, 'BIST:KUYAS', 'KUYAS', null, 21, 'Kuyas Yatırım A.Ş.', 4, 20, 1000, 1),
+    (98, 'BIST:MAGEN', 'MAGEN', null, 21, 'Margün Enerji Üretim Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (99, 'BIST:MAVI', 'MAVI', null, 21, 'Mavi Giyim Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (100, 'BIST:MGROS', 'MGROS', null, 21, 'Migros Ticaret A.Ş.', 4, 20, 1000, 1),
+    (101, 'BIST:MIATK', 'MIATK', null, 21, 'Mia Teknoloji A.Ş.', 4, 20, 1000, 1),
+    (102, 'BIST:MPARK', 'MPARK', null, 21, 'MLP Sağlık Hizmetleri A.Ş.', 4, 20, 1000, 1),
+    (103, 'BIST:OBAMS', 'OBAMS', null, 21, 'Oba Makarnacılık Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (104, 'BIST:ODAS', 'ODAS', null, 21, 'Odaş Elektrik Üretim Sanayi Ticaret A.Ş.', 4, 20, 1000, 1),
+    (105, 'BIST:OTKAR', 'OTKAR', null, 21, 'Otokar Otomotiv ve Savunma Sanayi A.Ş.', 4, 20, 1000, 1),
+    (106, 'BIST:OYAKC', 'OYAKC', null, 21, 'OYAK Çimento Fabrikaları A.Ş.', 4, 20, 1000, 1),
+    (107, 'BIST:PASEU', 'PASEU', null, 21, 'Pasifik Eurasia Lojistik Dış Ticaret A.Ş.', 4, 20, 1000, 1),
+    (108, 'BIST:PATEK', 'PATEK', null, 21, 'Pasifik Teknoloji A.Ş.', 4, 20, 1000, 1),
+    (109, 'BIST:PETKM', 'PETKM', null, 21, 'Petkim Petrokimya Holding A.Ş.', 4, 20, 1000, 1),
+    (110, 'BIST:PGSUS', 'PGSUS', null, 21, 'Pegasus Hava Taşımacılığı A.Ş.', 4, 20, 1000, 1),
+    (111, 'BIST:QUAGR', 'QUAGR', null, 21, 'Qua Granite Hayal Yapı ve Ürünleri Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (112, 'BIST:RALYH', 'RALYH', null, 21, 'Ral Yatırım Holding A.Ş.', 4, 20, 1000, 1),
+    (113, 'BIST:REEDR', 'REEDR', null, 21, 'Reeder Teknoloji Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (114, 'BIST:SAHOL', 'SAHOL', null, 21, 'Hacı Ömer Sabancı Holding A.Ş.', 4, 20, 1000, 1),
+    (115, 'BIST:SASA', 'SASA', null, 21, 'SASA Polyester Sanayi A.Ş.', 4, 20, 1000, 1),
+    (116, 'BIST:SISE', 'SISE', null, 21, 'Türkiye Şişe ve Cam Fabrikaları A.Ş.', 4, 20, 1000, 1),
+    (117, 'BIST:SKBNK', 'SKBNK', null, 21, 'Şekerbank T.A.Ş.', 4, 20, 1000, 1),
+    (118, 'BIST:SOKM', 'SOKM', null, 21, 'Şok Marketler Ticaret A.Ş.', 4, 20, 1000, 1),
+    (119, 'BIST:TABGD', 'TABGD', null, 21, 'TAB Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (120, 'BIST:TAVHL', 'TAVHL', null, 21, 'TAV Havalimanları Holding A.Ş.', 4, 20, 1000, 1),
+    (121, 'BIST:TCELL', 'TCELL', null, 21, 'Turkcell İletişim Hizmetleri A.Ş.', 4, 20, 1000, 1),
+    (122, 'BIST:THYAO', 'THYAO', null, 21, 'Türk Hava Yolları A.O.', 4, 20, 1000, 1),
+    (123, 'BIST:TKFEN', 'TKFEN', null, 21, 'Tekfen Holding A.Ş.', 4, 20, 1000, 1),
+    (124, 'BIST:TOASO', 'TOASO', null, 21, 'Tofaş Türk Otomobil Fabrikası A.Ş.', 4, 20, 1000, 1),
+    (125, 'BIST:TRALT', 'TRALT', null, 21, 'Trakya Altın İşletmeleri A.Ş.', 4, 20, 1000, 1),
+    (126, 'BIST:TRENJ', 'TRENJ', null, 21, 'Tera Yatırım Teknoloji Holding A.Ş.', 4, 20, 1000, 1),
+    (127, 'BIST:TRMET', 'TRMET', null, 21, 'Trakya Metal Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (128, 'BIST:TSKB', 'TSKB', null, 21, 'Türkiye Sınai Kalkınma Bankası A.Ş.', 4, 20, 1000, 1),
+    (129, 'BIST:TSPOR', 'TSPOR', null, 21, 'Trabzonspor Sportif Yatırım ve Futbol İşletmeciliği Ticaret A.Ş.', 4, 20, 1000, 1),
+    (130, 'BIST:TTKOM', 'TTKOM', null, 21, 'Türk Telekomünikasyon A.Ş.', 4, 20, 1000, 1),
+    (131, 'BIST:TTRAK', 'TTRAK', null, 21, 'Türk Traktör ve Ziraat Makineleri A.Ş.', 4, 20, 1000, 1),
+    (132, 'BIST:TUKAS', 'TUKAS', null, 21, 'Tukaş Gıda Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (133, 'BIST:TUPRS', 'TUPRS', null, 21, 'Türkiye Petrol Rafinerileri A.Ş.', 4, 20, 1000, 1),
+    (134, 'BIST:TUREX', 'TUREX', null, 21, 'Turex Turizm Taşımacılık A.Ş.', 4, 20, 1000, 1),
+    (135, 'BIST:TURSG', 'TURSG', null, 21, 'Türkiye Sigorta A.Ş.', 4, 20, 1000, 1),
+    (136, 'BIST:ULKER', 'ULKER', null, 21, 'Ülker Bisküvi Sanayi A.Ş.', 4, 20, 1000, 1),
+    (137, 'BIST:VAKBN', 'VAKBN', null, 21, 'Türkiye Vakıflar Bankası T.A.O.', 4, 20, 1000, 1),
+    (138, 'BIST:VESTL', 'VESTL', null, 21, 'Vestel Elektronik Sanayi ve Ticaret A.Ş.', 4, 20, 1000, 1),
+    (139, 'BIST:YEOTK', 'YEOTK', null, 21, 'YEO Teknoloji Enerji ve Endüstri A.Ş.', 4, 20, 1000, 1),
+    (140, 'BIST:YKBNK', 'YKBNK', null, 21, 'Yapı ve Kredi Bankası A.Ş.', 4, 20, 1000, 1),
+    (141, 'BIST:ZOREN', 'ZOREN', null, 21, 'Zorlu Enerji Elektrik Üretim A.Ş.', 4, 20, 1000, 1);
 			
+-- ============================================================================
+-- Bybit TradFi Stock & ETF Perpetual Contracts (MarketType = 120)
+-- ============================================================================
+
+INSERT INTO Symbols (Id, TickerFull, Ticker, BaseCurrency, PriceCurrencyId, Description, ExchangeId, MarketType, DisplayOrder, IsActive) Values
+(200, 'BYBIT:AALUSDT.P', 'AALUSDT.P', 'AAL', 2, 'American Airlines Group Perpetual Contract', 6, 120, 1000, 1),
+(201, 'BYBIT:AAOIUSDT.P', 'AAOIUSDT.P', 'AAOI', 2, 'Applied Optoelectronics Perpetual Contract', 6, 120, 1000, 1),
+(202, 'BYBIT:AAPLUSDT.P', 'AAPLUSDT.P', 'AAPL', 2, 'Apple Inc. Perpetual Contract', 6, 120, 1000, 1),
+(203, 'BYBIT:ACNUSDT.P', 'ACNUSDT.P', 'ACN', 2, 'Accenture plc Perpetual Contract', 6, 120, 1000, 1),
+(204, 'BYBIT:ADBEUSDT.P', 'ADBEUSDT.P', 'ADBE', 2, 'Adobe Inc. Perpetual Contract', 6, 120, 1000, 1),
+(205, 'BYBIT:ADIUSDT.P', 'ADIUSDT.P', 'ADI', 2, 'Analog Devices Perpetual Contract', 6, 120, 1000, 1),
+(206, 'BYBIT:AEHRUSDT.P', 'AEHRUSDT.P', 'AEHR', 2, 'Aehr Test Systems Perpetual Contract', 6, 120, 1000, 1),
+(207, 'BYBIT:ALABUSDT.P', 'ALABUSDT.P', 'ALAB', 2, 'Astera Labs Perpetual Contract', 6, 120, 1000, 1),
+(208, 'BYBIT:AMATUSDT.P', 'AMATUSDT.P', 'AMAT', 2, 'Applied Materials Perpetual Contract', 6, 120, 1000, 1),
+(209, 'BYBIT:AMCUSDT.P', 'AMCUSDT.P', 'AMC', 2, 'AMC Entertainment Perpetual Contract', 6, 120, 1000, 1),
+(210, 'BYBIT:AMDSTOCKUSDT.P', 'AMDSTOCKUSDT.P', 'AMD', 2, 'Advanced Micro Devices Perpetual Contract', 6, 120, 1000, 1),
+(211, 'BYBIT:AMGNUSDT.P', 'AMGNUSDT.P', 'AMGN', 2, 'Amgen Inc. Perpetual Contract', 6, 120, 1000, 1),
+(212, 'BYBIT:AMZNUSDT.P', 'AMZNUSDT.P', 'AMZN', 2, 'Amazon.com Inc. Perpetual Contract', 6, 120, 1000, 1),
+(213, 'BYBIT:AMZUUSDT.P', 'AMZUUSDT.P', 'AMZU', 2, 'Direxion Daily AMZN Bull 2X ETF Perpetual Contract', 6, 120, 1000, 1),
+(214, 'BYBIT:ANETUSDT.P', 'ANETUSDT.P', 'ANET', 2, 'Arista Networks Perpetual Contract', 6, 120, 1000, 1),
+(215, 'BYBIT:APLDUSDT.P', 'APLDUSDT.P', 'APLD', 2, 'Applied Digital Corp. Perpetual Contract', 6, 120, 1000, 1),
+(216, 'BYBIT:APPSTOCKUSDT.P', 'APPSTOCKUSDT.P', 'APP', 2, 'AppLovin Corp. Perpetual Contract', 6, 120, 1000, 1),
+(217, 'BYBIT:ARKKUSDT.P', 'ARKKUSDT.P', 'ARKK', 2, 'ARK Innovation ETF Perpetual Contract', 6, 120, 1000, 1),
+(218, 'BYBIT:ARMUSDT.P', 'ARMUSDT.P', 'ARM', 2, 'Arm Holdings Perpetual Contract', 6, 120, 1000, 1),
+(219, 'BYBIT:ASMLUSDT.P', 'ASMLUSDT.P', 'ASML', 2, 'ASML Holding Perpetual Contract', 6, 120, 1000, 1),
+(220, 'BYBIT:ASTSUSDT.P', 'ASTSUSDT.P', 'ASTS', 2, 'AST SpaceMobile Perpetual Contract', 6, 120, 1000, 1),
+(221, 'BYBIT:AVGOUSDT.P', 'AVGOUSDT.P', 'AVGO', 2, 'Broadcom Inc. Perpetual Contract', 6, 120, 1000, 1),
+(222, 'BYBIT:AXTIUSDT.P', 'AXTIUSDT.P', 'AXTI', 2, 'AXT Inc. Perpetual Contract', 6, 120, 1000, 1),
+(223, 'BYBIT:BABAUSDT.P', 'BABAUSDT.P', 'BABA', 2, 'Alibaba Group Perpetual Contract', 6, 120, 1000, 1),
+(224, 'BYBIT:BACUSDT.P', 'BACUSDT.P', 'BAC', 2, 'Bank of America Perpetual Contract', 6, 120, 1000, 1),
+(225, 'BYBIT:BBXUSDT.P', 'BBXUSDT.P', 'BB', 2, 'BlackBerry Ltd Perpetual Contract', 6, 120, 1000, 1),
+(226, 'BYBIT:BEUSDT.P', 'BEUSDT.P', 'BE', 2, 'Bloom Energy Perpetual Contract', 6, 120, 1000, 1),
+(227, 'BYBIT:BIIBUSDT.P', 'BIIBUSDT.P', 'BIIB', 2, 'Biogen Inc. Perpetual Contract', 6, 120, 1000, 1),
+(228, 'BYBIT:BITOUSDT.P', 'BITOUSDT.P', 'BITO', 2, 'ProShares Bitcoin Strategy ETF Perpetual Contract', 6, 120, 1000, 1),
+(229, 'BYBIT:BMNRUSDT.P', 'BMNRUSDT.P', 'BMNR', 2, 'BitMine Immersion Perpetual Contract', 6, 120, 1000, 1),
+(230, 'BYBIT:BMNUUSDT.P', 'BMNUUSDT.P', 'BMNU', 2, 'BMNU ETF Perpetual Contract', 6, 120, 1000, 1),
+(231, 'BYBIT:BNCUSDT.P', 'BNCUSDT.P', 'BNC', 2, 'BNCCORP Inc. Perpetual Contract', 6, 120, 1000, 1),
+(232, 'BYBIT:BOTUSDT.P', 'BOTUSDT.P', 'BOT', 2, 'Bot Stock Perpetual Contract', 6, 120, 1000, 1),
+(233, 'BYBIT:BRKBUSDT.P', 'BRKBUSDT.P', 'BRK.B', 2, 'Berkshire Hathaway Inc. Class B Perpetual Contract', 6, 120, 1000, 1),
+(234, 'BYBIT:BSPUSDT.P', 'BSPUSDT.P', 'BSP', 2, 'BSP Stock Perpetual Contract', 6, 120, 1000, 1),
+(235, 'BYBIT:BTDRUSDT.P', 'BTDRUSDT.P', 'BTDR', 2, 'Bitdeer Technologies Perpetual Contract', 6, 120, 1000, 1),
+(236, 'BYBIT:BWETUSDT.P', 'BWETUSDT.P', 'BWET', 2, 'BWET ETF Perpetual Contract', 6, 120, 1000, 1),
+(237, 'BYBIT:BXUSDT.P', 'BXUSDT.P', 'BX', 2, 'Blackstone Inc. Perpetual Contract', 6, 120, 1000, 1),
+(238, 'BYBIT:CATSTOCKUSDT.P', 'CATSTOCKUSDT.P', 'CAT', 2, 'Caterpillar Inc. Perpetual Contract', 6, 120, 1000, 1),
+(239, 'BYBIT:CBRSUSDT.P', 'CBRSUSDT.P', 'CBRS', 2, 'Cyberlux Corp Perpetual Contract', 6, 120, 1000, 1),
+(240, 'BYBIT:CGNXUSDT.P', 'CGNXUSDT.P', 'CGNX', 2, 'Cognex Corp Perpetual Contract', 6, 120, 1000, 1),
+(241, 'BYBIT:CIENUSDT.P', 'CIENUSDT.P', 'CIEN', 2, 'Ciena Corp Perpetual Contract', 6, 120, 1000, 1),
+(242, 'BYBIT:CIFRUSDT.P', 'CIFRUSDT.P', 'CIFR', 2, 'Cipher Mining Perpetual Contract', 6, 120, 1000, 1),
+(243, 'BYBIT:CLSKUSDT.P', 'CLSKUSDT.P', 'CLSK', 2, 'CleanSpark Inc. Perpetual Contract', 6, 120, 1000, 1),
+(244, 'BYBIT:COHRUSDT.P', 'COHRUSDT.P', 'COHR', 2, 'Coherent Corp. Perpetual Contract', 6, 120, 1000, 1),
+(245, 'BYBIT:COINUSDT.P', 'COINUSDT.P', 'COIN', 2, 'Coinbase Global Perpetual Contract', 6, 120, 1000, 1),
+(246, 'BYBIT:CONLUSDT.P', 'CONLUSDT.P', 'CONL', 2, 'GraniteShares 2x Long COIN ETF Perpetual Contract', 6, 120, 1000, 1),
+(247, 'BYBIT:CORZUSDT.P', 'CORZUSDT.P', 'CORZ', 2, 'Core Scientific Perpetual Contract', 6, 120, 1000, 1),
+(248, 'BYBIT:COSTUSDT.P', 'COSTUSDT.P', 'COST', 2, 'Costco Wholesale Perpetual Contract', 6, 120, 1000, 1),
+(249, 'BYBIT:CRCLUSDT.P', 'CRCLUSDT.P', 'CRCL', 2, 'Circle Stock Perpetual Contract', 6, 120, 1000, 1),
+(250, 'BYBIT:CRDOUSDT.P', 'CRDOUSDT.P', 'CRDO', 2, 'Credo Technology Perpetual Contract', 6, 120, 1000, 1),
+(251, 'BYBIT:CRMUSDT.P', 'CRMUSDT.P', 'CRM', 2, 'Salesforce Inc. Perpetual Contract', 6, 120, 1000, 1),
+(252, 'BYBIT:CRWDUSDT.P', 'CRWDUSDT.P', 'CRWD', 2, 'CrowdStrike Holdings Perpetual Contract', 6, 120, 1000, 1),
+(253, 'BYBIT:CRWVUSDT.P', 'CRWVUSDT.P', 'CRWV', 2, 'CoreWeave Perpetual Contract', 6, 120, 1000, 1),
+(254, 'BYBIT:CSCOUSDT.P', 'CSCOUSDT.P', 'CSCO', 2, 'Cisco Systems Perpetual Contract', 6, 120, 1000, 1),
+(255, 'BYBIT:CVNAUSDT.P', 'CVNAUSDT.P', 'CVNA', 2, 'Carvana Co. Perpetual Contract', 6, 120, 1000, 1),
+(256, 'BYBIT:CVXSTOCKUSDT.P', 'CVXSTOCKUSDT.P', 'CVX', 2, 'Chevron Corp. Perpetual Contract', 6, 120, 1000, 1),
+(257, 'BYBIT:CYPHUSDT.P', 'CYPHUSDT.P', 'CYPH', 2, 'Cypherpunk Holdings Perpetual Contract', 6, 120, 1000, 1),
+(258, 'BYBIT:DDOGUSDT.P', 'DDOGUSDT.P', 'DDOG', 2, 'Datadog Inc. Perpetual Contract', 6, 120, 1000, 1),
+(259, 'BYBIT:DELLUSDT.P', 'DELLUSDT.P', 'DELL', 2, 'Dell Technologies Perpetual Contract', 6, 120, 1000, 1),
+(260, 'BYBIT:DJTUSDT.P', 'DJTUSDT.P', 'DJT', 2, 'Trump Media & Technology Group Perpetual Contract', 6, 120, 1000, 1),
+(261, 'BYBIT:DKNGUSDT.P', 'DKNGUSDT.P', 'DKNG', 2, 'DraftKings Inc. Perpetual Contract', 6, 120, 1000, 1),
+(262, 'BYBIT:DRAMUSDT.P', 'DRAMUSDT.P', 'DRAM', 2, 'DRAM ETF Perpetual Contract', 6, 120, 1000, 1),
+(263, 'BYBIT:EBAYUSDT.P', 'EBAYUSDT.P', 'EBAY', 2, 'eBay Inc. Perpetual Contract', 6, 120, 1000, 1),
+(264, 'BYBIT:EWJUSDT.P', 'EWJUSDT.P', 'EWJ', 2, 'iShares MSCI Japan ETF Perpetual Contract', 6, 120, 1000, 1),
+(265, 'BYBIT:EWTUSDT.P', 'EWTUSDT.P', 'EWT', 2, 'iShares MSCI Taiwan ETF Perpetual Contract', 6, 120, 1000, 1),
+(266, 'BYBIT:EWYUSDT.P', 'EWYUSDT.P', 'EWY', 2, 'iShares MSCI South Korea ETF Perpetual Contract', 6, 120, 1000, 1),
+(267, 'BYBIT:EWZUSDT.P', 'EWZUSDT.P', 'EWZ', 2, 'iShares MSCI Brazil ETF Perpetual Contract', 6, 120, 1000, 1),
+(268, 'BYBIT:FLEXUSDT.P', 'FLEXUSDT.P', 'FLEX', 2, 'Flex Ltd. Perpetual Contract', 6, 120, 1000, 1),
+(269, 'BYBIT:FLNCUSDT.P', 'FLNCUSDT.P', 'FLNC', 2, 'Fluence Energy Perpetual Contract', 6, 120, 1000, 1),
+(270, 'BYBIT:FLYUSDT.P', 'FLYUSDT.P', 'FLY', 2, 'Fly Stock Perpetual Contract', 6, 120, 1000, 1),
+(271, 'BYBIT:FORMSTOCKUSDT.P', 'FORMSTOCKUSDT.P', 'FORM', 2, 'FormFactor Inc. Perpetual Contract', 6, 120, 1000, 1),
+(272, 'BYBIT:FUTUUSDT.P', 'FUTUUSDT.P', 'FUTU', 2, 'Futu Holdings Perpetual Contract', 6, 120, 1000, 1),
+(273, 'BYBIT:FWDIUSDT.P', 'FWDIUSDT.P', 'FWDI', 2, 'FWDI Stock Perpetual Contract', 6, 120, 1000, 1),
+(274, 'BYBIT:GDXUSDT.P', 'GDXUSDT.P', 'GDX', 2, 'VanEck Gold Miners ETF Perpetual Contract', 6, 120, 1000, 1),
+(275, 'BYBIT:GEUSDT.P', 'GEUSDT.P', 'GE', 2, 'GE Aerospace Perpetual Contract', 6, 120, 1000, 1),
+(276, 'BYBIT:GEVUSDT.P', 'GEVUSDT.P', 'GEV', 2, 'GE Vernova Perpetual Contract', 6, 120, 1000, 1),
+(277, 'BYBIT:GILDUSDT.P', 'GILDUSDT.P', 'GILD', 2, 'Gilead Sciences Perpetual Contract', 6, 120, 1000, 1),
+(278, 'BYBIT:GLWUSDT.P', 'GLWUSDT.P', 'GLW', 2, 'Corning Inc. Perpetual Contract', 6, 120, 1000, 1),
+(279, 'BYBIT:GMESTOCKUSDT.P', 'GMESTOCKUSDT.P', 'GME', 2, 'GameStop Corp. Perpetual Contract', 6, 120, 1000, 1),
+(280, 'BYBIT:GOOGLUSDT.P', 'GOOGLUSDT.P', 'GOOGL', 2, 'Alphabet Inc. Perpetual Contract', 6, 120, 1000, 1),
+(281, 'BYBIT:GPROUSDT.P', 'GPROUSDT.P', 'GPRO', 2, 'GoPro Inc. Perpetual Contract', 6, 120, 1000, 1),
+(282, 'BYBIT:GRALUSDT.P', 'GRALUSDT.P', 'GRAL', 2, 'GRAIL Inc. Perpetual Contract', 6, 120, 1000, 1),
+(283, 'BYBIT:GSUSDT.P', 'GSUSDT.P', 'GS', 2, 'Goldman Sachs Perpetual Contract', 6, 120, 1000, 1),
+(284, 'BYBIT:GTLBUSDT.P', 'GTLBUSDT.P', 'GTLB', 2, 'GitLab Inc. Perpetual Contract', 6, 120, 1000, 1),
+(285, 'BYBIT:HDUSDT.P', 'HDUSDT.P', 'HD', 2, 'Home Depot Perpetual Contract', 6, 120, 1000, 1),
+(286, 'BYBIT:HIMSUSDT.P', 'HIMSUSDT.P', 'HIMS', 2, 'Hims & Hers Health Perpetual Contract', 6, 120, 1000, 1),
+(287, 'BYBIT:HOODUSDT.P', 'HOODUSDT.P', 'HOOD', 2, 'Robinhood Markets Perpetual Contract', 6, 120, 1000, 1),
+(288, 'BYBIT:HPEUSDT.P', 'HPEUSDT.P', 'HPE', 2, 'Hewlett Packard Enterprise Perpetual Contract', 6, 120, 1000, 1),
+(289, 'BYBIT:HUTUSDT.P', 'HUTUSDT.P', 'HUT', 2, 'Hut 8 Corp. Perpetual Contract', 6, 120, 1000, 1),
+(290, 'BYBIT:IBITUSDT.P', 'IBITUSDT.P', 'IBIT', 2, 'iShares Bitcoin Trust ETF Perpetual Contract', 6, 120, 1000, 1),
+(291, 'BYBIT:IBMUSDT.P', 'IBMUSDT.P', 'IBM', 2, 'IBM Corp. Perpetual Contract', 6, 120, 1000, 1),
+(292, 'BYBIT:INFQUSDT.P', 'INFQUSDT.P', 'INFQ', 2, 'Infinera Corp Perpetual Contract', 6, 120, 1000, 1),
+(293, 'BYBIT:INTCUSDT.P', 'INTCUSDT.P', 'INTC', 2, 'Intel Corp. Perpetual Contract', 6, 120, 1000, 1),
+(294, 'BYBIT:INTUUSDT.P', 'INTUUSDT.P', 'INTU', 2, 'Intuit Inc. Perpetual Contract', 6, 120, 1000, 1),
+(295, 'BYBIT:INTWUSDT.P', 'INTWUSDT.P', 'INTW', 2, 'INTW ETF Perpetual Contract', 6, 120, 1000, 1),
+(296, 'BYBIT:IONQUSDT.P', 'IONQUSDT.P', 'IONQ', 2, 'IonQ Inc. Perpetual Contract', 6, 120, 1000, 1),
+(297, 'BYBIT:IRENUSDT.P', 'IRENUSDT.P', 'IREN', 2, 'Iris Energy Perpetual Contract', 6, 120, 1000, 1),
+(298, 'BYBIT:ISRGUSDT.P', 'ISRGUSDT.P', 'ISRG', 2, 'Intuitive Surgical Perpetual Contract', 6, 120, 1000, 1),
+(299, 'BYBIT:IWMUSDT.P', 'IWMUSDT.P', 'IWM', 2, 'iShares Russell 2000 ETF Perpetual Contract', 6, 120, 1000, 1),
+(300, 'BYBIT:JDUSDT.P', 'JDUSDT.P', 'JD', 2, 'JD.com Inc. Perpetual Contract', 6, 120, 1000, 1),
+(301, 'BYBIT:JNJUSDT.P', 'JNJUSDT.P', 'JNJ', 2, 'Johnson & Johnson Perpetual Contract', 6, 120, 1000, 1),
+(302, 'BYBIT:JPMUSDT.P', 'JPMUSDT.P', 'JPM', 2, 'JPMorgan Chase Perpetual Contract', 6, 120, 1000, 1),
+(303, 'BYBIT:KLACUSDT.P', 'KLACUSDT.P', 'KLAC', 2, 'KLA Corp. Perpetual Contract', 6, 120, 1000, 1),
+(304, 'BYBIT:KORUUSDT.P', 'KORUUSDT.P', 'KORU', 2, 'Direxion Daily South Korea Bull 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(305, 'BYBIT:KOUSDT.P', 'KOUSDT.P', 'KO', 2, 'Coca-Cola Co. Perpetual Contract', 6, 120, 1000, 1),
+(306, 'BYBIT:KSTRUSDT.P', 'KSTRUSDT.P', 'KSTR', 2, 'KraneShares SSE STAR Market 50 ETF Perpetual Contract', 6, 120, 1000, 1),
+(307, 'BYBIT:LITEUSDT.P', 'LITEUSDT.P', 'LITE', 2, 'Lumentum Holdings Perpetual Contract', 6, 120, 1000, 1),
+(308, 'BYBIT:LLYUSDT.P', 'LLYUSDT.P', 'LLY', 2, 'Eli Lilly and Co. Perpetual Contract', 6, 120, 1000, 1),
+(309, 'BYBIT:LRCXUSDT.P', 'LRCXUSDT.P', 'LRCX', 2, 'Lam Research Perpetual Contract', 6, 120, 1000, 1),
+(310, 'BYBIT:LULUUSDT.P', 'LULUUSDT.P', 'LULU', 2, 'Lululemon Athletica Perpetual Contract', 6, 120, 1000, 1),
+(311, 'BYBIT:LYTEUSDT.P', 'LYTEUSDT.P', 'LYTE', 2, 'Lyte Stock Perpetual Contract', 6, 120, 1000, 1),
+(312, 'BYBIT:MAGSUSDT.P', 'MAGSUSDT.P', 'MAGS', 2, 'Roundhill Magnificent Seven ETF Perpetual Contract', 6, 120, 1000, 1),
+(313, 'BYBIT:MARAUSDT.P', 'MARAUSDT.P', 'MARA', 2, 'MARA Holdings Perpetual Contract', 6, 120, 1000, 1),
+(314, 'BYBIT:MAUSDT.P', 'MAUSDT.P', 'MA', 2, 'Mastercard Inc. Perpetual Contract', 6, 120, 1000, 1),
+(315, 'BYBIT:MCDUSDT.P', 'MCDUSDT.P', 'MCD', 2, 'McDonalds Corp. Perpetual Contract', 6, 120, 1000, 1),
+(316, 'BYBIT:MDBUSDT.P', 'MDBUSDT.P', 'MDB', 2, 'MongoDB Inc. Perpetual Contract', 6, 120, 1000, 1),
+(317, 'BYBIT:MELIUSDT.P', 'MELIUSDT.P', 'MELI', 2, 'MercadoLibre Inc. Perpetual Contract', 6, 120, 1000, 1),
+(318, 'BYBIT:METAUSDT.P', 'METAUSDT.P', 'META', 2, 'Meta Platforms Perpetual Contract', 6, 120, 1000, 1),
+(319, 'BYBIT:MNSTUSDT.P', 'MNSTUSDT.P', 'MNST', 2, 'Monster Beverage Perpetual Contract', 6, 120, 1000, 1),
+(320, 'BYBIT:MOUSDT.P', 'MOUSDT.P', 'MO', 2, 'Altria Group Perpetual Contract', 6, 120, 1000, 1),
+(321, 'BYBIT:MPUSDT.P', 'MPUSDT.P', 'MP', 2, 'MP Materials Perpetual Contract', 6, 120, 1000, 1),
+(322, 'BYBIT:MRKUSDT.P', 'MRKUSDT.P', 'MRK', 2, 'Merck & Co. Perpetual Contract', 6, 120, 1000, 1),
+(323, 'BYBIT:MRNAUSDT.P', 'MRNAUSDT.P', 'MRNA', 2, 'Moderna Inc. Perpetual Contract', 6, 120, 1000, 1),
+(324, 'BYBIT:MRVLUSDT.P', 'MRVLUSDT.P', 'MRVL', 2, 'Marvell Technology Perpetual Contract', 6, 120, 1000, 1),
+(325, 'BYBIT:MSFTUSDT.P', 'MSFTUSDT.P', 'MSFT', 2, 'Microsoft Corp. Perpetual Contract', 6, 120, 1000, 1),
+(326, 'BYBIT:MSFUUSDT.P', 'MSFUUSDT.P', 'MSFU', 2, 'Direxion Daily MSFT Bull 2X ETF Perpetual Contract', 6, 120, 1000, 1),
+(327, 'BYBIT:MSTRUSDT.P', 'MSTRUSDT.P', 'MSTR', 2, 'MicroStrategy Inc. Perpetual Contract', 6, 120, 1000, 1),
+(328, 'BYBIT:MSTUUSDT.P', 'MSTUUSDT.P', 'MSTU', 2, 'T-Rex 2X Long MSTR Daily Target ETF Perpetual Contract', 6, 120, 1000, 1),
+(329, 'BYBIT:MUUSDT.P', 'MUUSDT.P', 'MU', 2, 'Micron Technology Perpetual Contract', 6, 120, 1000, 1),
+(330, 'BYBIT:MUUUSDT.P', 'MUUUSDT.P', 'MUU', 2, 'MUU ETF Perpetual Contract', 6, 120, 1000, 1),
+(331, 'BYBIT:MVLLUSDT.P', 'MVLLUSDT.P', 'MVLL', 2, 'MVLL ETF Perpetual Contract', 6, 120, 1000, 1),
+(332, 'BYBIT:NBISUSDT.P', 'NBISUSDT.P', 'NBIS', 2, 'Nebius Group Perpetual Contract', 6, 120, 1000, 1),
+(333, 'BYBIT:NCLDUSDT.P', 'NCLDUSDT.P', 'NCLD', 2, 'NCLD Stock Perpetual Contract', 6, 120, 1000, 1),
+(334, 'BYBIT:NETUSDT.P', 'NETUSDT.P', 'NET', 2, 'Cloudflare Inc. Perpetual Contract', 6, 120, 1000, 1),
+(335, 'BYBIT:NFLXUSDT.P', 'NFLXUSDT.P', 'NFLX', 2, 'Netflix Inc. Perpetual Contract', 6, 120, 1000, 1),
+(336, 'BYBIT:NKEUSDT.P', 'NKEUSDT.P', 'NKE', 2, 'NIKE Inc. Perpetual Contract', 6, 120, 1000, 1),
+(337, 'BYBIT:NOKIAUSDT.P', 'NOKIAUSDT.P', 'NOK', 2, 'Nokia Corp. Perpetual Contract', 6, 120, 1000, 1),
+(338, 'BYBIT:NOWUSDT.P', 'NOWUSDT.P', 'NOW', 2, 'ServiceNow Inc. Perpetual Contract', 6, 120, 1000, 1),
+(339, 'BYBIT:NUSTOCKUSDT.P', 'NUSTOCKUSDT.P', 'NU', 2, 'Nu Holdings Perpetual Contract', 6, 120, 1000, 1),
+(340, 'BYBIT:NVDAUSDT.P', 'NVDAUSDT.P', 'NVDA', 2, 'NVIDIA Corp. Perpetual Contract', 6, 120, 1000, 1),
+(341, 'BYBIT:NVDLUSDT.P', 'NVDLUSDT.P', 'NVDL', 2, 'GraniteShares 2x Long NVDA ETF Perpetual Contract', 6, 120, 1000, 1),
+(342, 'BYBIT:NVOUSDT.P', 'NVOUSDT.P', 'NVO', 2, 'Novo Nordisk Perpetual Contract', 6, 120, 1000, 1),
+(343, 'BYBIT:OKLOUSDT.P', 'OKLOUSDT.P', 'OKLO', 2, 'Oklo Inc. Perpetual Contract', 6, 120, 1000, 1),
+(344, 'BYBIT:OKTAUSDT.P', 'OKTAUSDT.P', 'OKTA', 2, 'Okta Inc. Perpetual Contract', 6, 120, 1000, 1),
+(345, 'BYBIT:ONDSUSDT.P', 'ONDSUSDT.P', 'ONDS', 2, 'Ondas Holdings Perpetual Contract', 6, 120, 1000, 1),
+(346, 'BYBIT:ONUSDT.P', 'ONUSDT.P', 'ON', 2, 'ON Semiconductor Perpetual Contract', 6, 120, 1000, 1),
+(347, 'BYBIT:ORCLUSDT.P', 'ORCLUSDT.P', 'ORCL', 2, 'Oracle Corp. Perpetual Contract', 6, 120, 1000, 1),
+(348, 'BYBIT:OUSTUSDT.P', 'OUSTUSDT.P', 'OUST', 2, 'Ouster Inc. Perpetual Contract', 6, 120, 1000, 1),
+(349, 'BYBIT:PANWUSDT.P', 'PANWUSDT.P', 'PANW', 2, 'Palo Alto Networks Perpetual Contract', 6, 120, 1000, 1),
+(350, 'BYBIT:PATHUSDT.P', 'PATHUSDT.P', 'PATH', 2, 'UiPath Inc. Perpetual Contract', 6, 120, 1000, 1),
+(351, 'BYBIT:PBRUSDT.P', 'PBRUSDT.P', 'PBR', 2, 'Petroleo Brasileiro Perpetual Contract', 6, 120, 1000, 1),
+(352, 'BYBIT:PDDUSDT.P', 'PDDUSDT.P', 'PDD', 2, 'PDD Holdings Perpetual Contract', 6, 120, 1000, 1),
+(353, 'BYBIT:PENGSTOCKUSDT.P', 'PENGSTOCKUSDT.P', 'PENG', 2, 'Peng Stock Perpetual Contract', 6, 120, 1000, 1),
+(354, 'BYBIT:PEPUSDT.P', 'PEPUSDT.P', 'PEP', 2, 'PepsiCo Inc. Perpetual Contract', 6, 120, 1000, 1),
+(355, 'BYBIT:PLTRUSDT.P', 'PLTRUSDT.P', 'PLTR', 2, 'Palantir Technologies Perpetual Contract', 6, 120, 1000, 1),
+(356, 'BYBIT:POETUSDT.P', 'POETUSDT.P', 'POET', 2, 'POET Technologies Perpetual Contract', 6, 120, 1000, 1),
+(357, 'BYBIT:PURRUSDT.P', 'PURRUSDT.P', 'PURR', 2, 'PURR Stock Perpetual Contract', 6, 120, 1000, 1),
+(358, 'BYBIT:PYPLUSDT.P', 'PYPLUSDT.P', 'PYPL', 2, 'PayPal Holdings Perpetual Contract', 6, 120, 1000, 1),
+(359, 'BYBIT:QCOMUSDT.P', 'QCOMUSDT.P', 'QCOM', 2, 'QUALCOMM Inc. Perpetual Contract', 6, 120, 1000, 1),
+(360, 'BYBIT:QNTXUSDT.P', 'QNTXUSDT.P', 'QNT', 2, 'Quant Network Perpetual Contract', 6, 120, 1000, 1),
+(361, 'BYBIT:QQQUSDT.P', 'QQQUSDT.P', 'QQQ', 2, 'Invesco QQQ Trust ETF Perpetual Contract', 6, 120, 1000, 1),
+(362, 'BYBIT:RAMUSDT.P', 'RAMUSDT.P', 'RAM', 2, 'RAM ETF Perpetual Contract', 6, 120, 1000, 1),
+(363, 'BYBIT:RDDTUSDT.P', 'RDDTUSDT.P', 'RDDT', 2, 'Reddit Inc. Perpetual Contract', 6, 120, 1000, 1),
+(364, 'BYBIT:RDWUSDT.P', 'RDWUSDT.P', 'RDW', 2, 'Redwire Corp. Perpetual Contract', 6, 120, 1000, 1),
+(365, 'BYBIT:REGNUSDT.P', 'REGNUSDT.P', 'REGN', 2, 'Regeneron Pharmaceuticals Perpetual Contract', 6, 120, 1000, 1),
+(366, 'BYBIT:RIOTUSDT.P', 'RIOTUSDT.P', 'RIOT', 2, 'Riot Platforms Perpetual Contract', 6, 120, 1000, 1),
+(367, 'BYBIT:RIVNUSDT.P', 'RIVNUSDT.P', 'RIVN', 2, 'Rivian Automotive Perpetual Contract', 6, 120, 1000, 1),
+(368, 'BYBIT:RKLBUSDT.P', 'RKLBUSDT.P', 'RKLB', 2, 'Rocket Lab USA Perpetual Contract', 6, 120, 1000, 1),
+(369, 'BYBIT:RUMUSDT.P', 'RUMUSDT.P', 'RUM', 2, 'Rumble Inc. Perpetual Contract', 6, 120, 1000, 1),
+(370, 'BYBIT:SDGRUSDT.P', 'SDGRUSDT.P', 'SDGR', 2, 'Schrodinger Inc. Perpetual Contract', 6, 120, 1000, 1),
+(371, 'BYBIT:SECZUSDT.P', 'SECZUSDT.P', 'SECZ', 2, 'SECZ Stock Perpetual Contract', 6, 120, 1000, 1),
+(372, 'BYBIT:SHAZUSDT.P', 'SHAZUSDT.P', 'SHAZ', 2, 'SHAZ Stock Perpetual Contract', 6, 120, 1000, 1),
+(373, 'BYBIT:SHOPUSDT.P', 'SHOPUSDT.P', 'SHOP', 2, 'Shopify Inc. Perpetual Contract', 6, 120, 1000, 1),
+(374, 'BYBIT:SKDDUSDT.P', 'SKDDUSDT.P', 'SKDD', 2, 'SKDD ETF Perpetual Contract', 6, 120, 1000, 1),
+(375, 'BYBIT:SKHYUSDT.P', 'SKHYUSDT.P', 'SKHY', 2, 'SK Hynix Perpetual Contract', 6, 120, 1000, 1),
+(376, 'BYBIT:SKUUUSDT.P', 'SKUUUSDT.P', 'SKUU', 2, 'SKUU ETF Perpetual Contract', 6, 120, 1000, 1),
+(377, 'BYBIT:SMCIUSDT.P', 'SMCIUSDT.P', 'SMCI', 2, 'Super Micro Computer Perpetual Contract', 6, 120, 1000, 1),
+(378, 'BYBIT:SMHUSDT.P', 'SMHUSDT.P', 'SMH', 2, 'VanEck Semiconductor ETF Perpetual Contract', 6, 120, 1000, 1),
+(379, 'BYBIT:SNDKUSDT.P', 'SNDKUSDT.P', 'SNDK', 2, 'SanDisk Corp. Perpetual Contract', 6, 120, 1000, 1),
+(380, 'BYBIT:SNOWUSDT.P', 'SNOWUSDT.P', 'SNOW', 2, 'Snowflake Inc. Perpetual Contract', 6, 120, 1000, 1),
+(381, 'BYBIT:SNPSUSDT.P', 'SNPSUSDT.P', 'SNPS', 2, 'Synopsys Inc. Perpetual Contract', 6, 120, 1000, 1),
+(382, 'BYBIT:SNXXUSDT.P', 'SNXXUSDT.P', 'SNXX', 2, 'SNXX ETF Perpetual Contract', 6, 120, 1000, 1),
+(383, 'BYBIT:SOFIUSDT.P', 'SOFIUSDT.P', 'SOFI', 2, 'SoFi Technologies Perpetual Contract', 6, 120, 1000, 1),
+(384, 'BYBIT:SONYUSDT.P', 'SONYUSDT.P', 'SONY', 2, 'Sony Group Corp. Perpetual Contract', 6, 120, 1000, 1),
+(385, 'BYBIT:SOXLUSDT.P', 'SOXLUSDT.P', 'SOXL', 2, 'Direxion Daily Semiconductor Bull 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(386, 'BYBIT:SOXSUSDT.P', 'SOXSUSDT.P', 'SOXS', 2, 'Direxion Daily Semiconductor Bear 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(387, 'BYBIT:SOXXUSDT.P', 'SOXXUSDT.P', 'SOXX', 2, 'iShares Semiconductor ETF Perpetual Contract', 6, 120, 1000, 1),
+(388, 'BYBIT:SPCHUSDT.P', 'SPCHUSDT.P', 'SPCH', 2, 'SPCH ETF Perpetual Contract', 6, 120, 1000, 1),
+(389, 'BYBIT:SPCXUSDT.P', 'SPCXUSDT.P', 'SPCX', 2, 'SPCX Stock Perpetual Contract', 6, 120, 1000, 1),
+(390, 'BYBIT:SPOTUSDT.P', 'SPOTUSDT.P', 'SPOT', 2, 'Spotify Technology Perpetual Contract', 6, 120, 1000, 1),
+(391, 'BYBIT:SPXLUSDT.P', 'SPXLUSDT.P', 'SPXL', 2, 'Direxion Daily S&P 500 Bull 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(392, 'BYBIT:SPYUSDT.P', 'SPYUSDT.P', 'SPY', 2, 'SPDR S&P 500 ETF Trust Perpetual Contract', 6, 120, 1000, 1),
+(393, 'BYBIT:SQQQUSDT.P', 'SQQQUSDT.P', 'SQQQ', 2, 'ProShares UltraPro Short QQQ ETF Perpetual Contract', 6, 120, 1000, 1),
+(394, 'BYBIT:SSPCUSDT.P', 'SSPCUSDT.P', 'SSPC', 2, 'SSPC ETF Perpetual Contract', 6, 120, 1000, 1),
+(395, 'BYBIT:STXXUSDT.P', 'STXXUSDT.P', 'STX', 2, 'Seagate Technology Perpetual Contract', 6, 120, 1000, 1),
+(396, 'BYBIT:TBTUSDT.P', 'TBTUSDT.P', 'TBT', 2, 'ProShares UltraShort 20+ Year Treasury ETF Perpetual Contract', 6, 120, 1000, 1),
+(397, 'BYBIT:TEAMUSDT.P', 'TEAMUSDT.P', 'TEAM', 2, 'Atlassian Corp. Perpetual Contract', 6, 120, 1000, 1),
+(398, 'BYBIT:TEMUSDT.P', 'TEMUSDT.P', 'TEM', 2, 'Tempus AI Perpetual Contract', 6, 120, 1000, 1),
+(399, 'BYBIT:TERUSDT.P', 'TERUSDT.P', 'TER', 2, 'Teradyne Inc. Perpetual Contract', 6, 120, 1000, 1),
+(400, 'BYBIT:TLTUSDT.P', 'TLTUSDT.P', 'TLT', 2, 'iShares 20+ Year Treasury Bond ETF Perpetual Contract', 6, 120, 1000, 1),
+(401, 'BYBIT:TMFUSDT.P', 'TMFUSDT.P', 'TMF', 2, 'Direxion Daily 20+ Year Treasury Bull 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(402, 'BYBIT:TQQQUSDT.P', 'TQQQUSDT.P', 'TQQQ', 2, 'ProShares UltraPro QQQ ETF Perpetual Contract', 6, 120, 1000, 1),
+(403, 'BYBIT:TSEMUSDT.P', 'TSEMUSDT.P', 'TSEM', 2, 'Tower Semiconductor Perpetual Contract', 6, 120, 1000, 1),
+(404, 'BYBIT:TSLAUSDT.P', 'TSLAUSDT.P', 'TSLA', 2, 'Tesla Inc. Perpetual Contract', 6, 120, 1000, 1),
+(405, 'BYBIT:TSLLUSDT.P', 'TSLLUSDT.P', 'TSLL', 2, 'Direxion Daily TSLA Bull 2X ETF Perpetual Contract', 6, 120, 1000, 1),
+(406, 'BYBIT:TSMUSDT.P', 'TSMUSDT.P', 'TSM', 2, 'Taiwan Semiconductor Perpetual Contract', 6, 120, 1000, 1),
+(407, 'BYBIT:TTWOUSDT.P', 'TTWOUSDT.P', 'TTWO', 2, 'Take-Two Interactive Perpetual Contract', 6, 120, 1000, 1),
+(408, 'BYBIT:TWSTUSDT.P', 'TWSTUSDT.P', 'TWST', 2, 'Twist Bioscience Perpetual Contract', 6, 120, 1000, 1),
+(409, 'BYBIT:TXNUSDT.P', 'TXNUSDT.P', 'TXN', 2, 'Texas Instruments Perpetual Contract', 6, 120, 1000, 1),
+(410, 'BYBIT:TZAUSDT.P', 'TZAUSDT.P', 'TZA', 2, 'Direxion Daily Small Cap Bear 3X ETF Perpetual Contract', 6, 120, 1000, 1),
+(411, 'BYBIT:UBERUSDT.P', 'UBERUSDT.P', 'UBER', 2, 'Uber Technologies Perpetual Contract', 6, 120, 1000, 1),
+(412, 'BYBIT:UMCUSDT.P', 'UMCUSDT.P', 'UMC', 2, 'United Microelectronics Perpetual Contract', 6, 120, 1000, 1),
+(413, 'BYBIT:UNHUSDT.P', 'UNHUSDT.P', 'UNH', 2, 'UnitedHealth Group Perpetual Contract', 6, 120, 1000, 1),
+(414, 'BYBIT:URNMUSDT.P', 'URNMUSDT.P', 'URNM', 2, 'Sprott Uranium Miners ETF Perpetual Contract', 6, 120, 1000, 1),
+(415, 'BYBIT:USARUSDT.P', 'USARUSDT.P', 'USAR', 2, 'USAR Stock Perpetual Contract', 6, 120, 1000, 1),
+(416, 'BYBIT:USDEXUSDT.P', 'USDEXUSDT.P', 'USDEX', 2, 'USDEX Stock Perpetual Contract', 6, 120, 1000, 1),
+(417, 'BYBIT:UVXYUSDT.P', 'UVXYUSDT.P', 'UVXY', 2, 'ProShares Ultra VIX Short-Term Futures ETF Perpetual Contract', 6, 120, 1000, 1),
+(418, 'BYBIT:VISTUSDT.P', 'VISTUSDT.P', 'VIST', 2, 'Vista Energy Perpetual Contract', 6, 120, 1000, 1),
+(419, 'BYBIT:VKTXUSDT.P', 'VKTXUSDT.P', 'VKTX', 2, 'Viking Therapeutics Perpetual Contract', 6, 120, 1000, 1),
+(420, 'BYBIT:VRTUSDT.P', 'VRTUSDT.P', 'VRT', 2, 'Vertiv Holdings Perpetual Contract', 6, 120, 1000, 1),
+(421, 'BYBIT:VRTXSTOCKUSDT.P', 'VRTXSTOCKUSDT.P', 'VRTX', 2, 'Vertex Pharmaceuticals Perpetual Contract', 6, 120, 1000, 1),
+(422, 'BYBIT:VSTUSDT.P', 'VSTUSDT.P', 'VST', 2, 'Vistra Corp. Perpetual Contract', 6, 120, 1000, 1),
+(423, 'BYBIT:VUSDT.P', 'VUSDT.P', 'V', 2, 'Visa Inc. Perpetual Contract', 6, 120, 1000, 1),
+(424, 'BYBIT:WDCUSDT.P', 'WDCUSDT.P', 'WDC', 2, 'Western Digital Perpetual Contract', 6, 120, 1000, 1),
+(425, 'BYBIT:WENSTOCKUSDT.P', 'WENSTOCKUSDT.P', 'WEN', 2, 'Wendys Co. Perpetual Contract', 6, 120, 1000, 1),
+(426, 'BYBIT:WMTUSDT.P', 'WMTUSDT.P', 'WMT', 2, 'Walmart Inc. Perpetual Contract', 6, 120, 1000, 1),
+(427, 'BYBIT:XBIUSDT.P', 'XBIUSDT.P', 'XBI', 2, 'SPDR S&P Biotech ETF Perpetual Contract', 6, 120, 1000, 1),
+(428, 'BYBIT:XLEUSDT.P', 'XLEUSDT.P', 'XLE', 2, 'Energy Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(429, 'BYBIT:XLFUSDT.P', 'XLFUSDT.P', 'XLF', 2, 'Financial Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(430, 'BYBIT:XLKUSDT.P', 'XLKUSDT.P', 'XLK', 2, 'Technology Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(431, 'BYBIT:XLPUSDT.P', 'XLPUSDT.P', 'XLP', 2, 'Consumer Staples Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(432, 'BYBIT:XLUUSDT.P', 'XLUUSDT.P', 'XLU', 2, 'Utilities Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(433, 'BYBIT:XLVUSDT.P', 'XLVUSDT.P', 'XLV', 2, 'Health Care Select Sector SPDR Fund Perpetual Contract', 6, 120, 1000, 1),
+(434, 'BYBIT:XOMUSDT.P', 'XOMUSDT.P', 'XOM', 2, 'Exxon Mobil Perpetual Contract', 6, 120, 1000, 1),
+(435, 'BYBIT:YPFUSDT.P', 'YPFUSDT.P', 'YPF', 2, 'YPF Sociedad Anonima Perpetual Contract', 6, 120, 1000, 1),
+(436, 'BYBIT:ZCSHUSDT.P', 'ZCSHUSDT.P', 'ZCSH', 2, 'ZCSH Stock Perpetual Contract', 6, 120, 1000, 1);
