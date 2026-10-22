@@ -896,10 +896,10 @@
         <value>İşlem Durum Sorgusu</value>
     </data>
     <data name="TradFiPerpetual" xml:space="preserve">
-        <value>Trad Fi Perpetual</value>
+        <value>TradFi Perpetual</value>
     </data>
     <data name="TradFiSpot" xml:space="preserve">
-        <value>Trad Fi Spot</value>
+        <value>TradFi Spot</value>
     </data>
     <data name="TradingAccount" xml:space="preserve">
         <value>İşlem Hesabı</value>

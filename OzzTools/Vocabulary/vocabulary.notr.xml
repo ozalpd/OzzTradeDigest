@@ -1613,6 +1613,10 @@
     <Translation>The new password and confirmation password do not match.</Translation>
   </Vocab>
   <Vocab>
+    <Name>Next</Name>
+    <Translation>Next</Translation>
+  </Vocab>
+  <Vocab>
     <Name>No</Name>
     <Translation>No</Translation>
   </Vocab>
@@ -1923,6 +1927,10 @@
   <Vocab>
     <Name>PreMarket</Name>
     <Translation>Pre Market</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Previous</Name>
+    <Translation>Previous</Translation>
   </Vocab>
   <Vocab>
     <Name>PreviousHalfYear</Name>
@@ -2686,11 +2694,11 @@
   </Vocab>
   <Vocab>
     <Name>TradFiPerpetual</Name>
-    <Translation>Trad Fi Perpetual</Translation>
+    <Translation>TradFi Perpetual</Translation>
   </Vocab>
   <Vocab>
     <Name>TradFiSpot</Name>
-    <Translation>Trad Fi Spot</Translation>
+    <Translation>TradFi Spot</Translation>
   </Vocab>
   <Vocab>
     <Name>TradingAccount</Name>

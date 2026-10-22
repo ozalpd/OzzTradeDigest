@@ -172,6 +172,9 @@
     <data name="ManageData" xml:space="preserve">
         <value>Veriyi Yönet</value>
     </data>
+    <data name="Next" xml:space="preserve">
+        <value>Sonraki</value>
+    </data>
     <data name="OK" xml:space="preserve">
         <value>Tamam</value>
     </data>
@@ -192,6 +195,9 @@
     </data>
     <data name="OpenMaintenanceWindow" xml:space="preserve">
         <value>Bakım Penceresini Aç</value>
+    </data>
+    <data name="Previous" xml:space="preserve">
+        <value>Önceki</value>
     </data>
     <data name="Print" xml:space="preserve">
         <value>Yazdır</value>

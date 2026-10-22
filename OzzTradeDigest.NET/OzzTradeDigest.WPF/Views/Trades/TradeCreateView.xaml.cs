@@ -65,9 +65,8 @@ namespace TD.WPF.Views.Trades
             {
                 _viewModel.TradingAccountId = _preselectedTradingAccount.Id;
             }
-            OnSourceInitialized();
+            await OnSourceInitialized();
         }
-        partial void OnSourceInitialized();
 
         private void DecimalTextBox_Pasting(object sender, DataObjectPastingEventArgs e)
         {
@@ -114,6 +113,22 @@ namespace TD.WPF.Views.Trades
 
             _viewModel.AddRelatedEntities();
             DialogResult = true;
+        }
+
+        private void PreviousButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.Step > minStep)
+            {
+                _viewModel.Step--;
+            }
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.Step < maxStep && _viewModel.ValidateModel())
+            {
+                _viewModel.Step++;
+            }
         }
     }
 }

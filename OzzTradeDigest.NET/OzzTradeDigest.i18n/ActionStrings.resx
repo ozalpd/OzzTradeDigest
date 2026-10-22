@@ -172,6 +172,9 @@
     <data name="ManageData" xml:space="preserve">
         <value>Manage Data</value>
     </data>
+    <data name="Next" xml:space="preserve">
+        <value>Next</value>
+    </data>
     <data name="OK" xml:space="preserve">
         <value>OK</value>
     </data>
@@ -192,6 +195,9 @@
     </data>
     <data name="OpenMaintenanceWindow" xml:space="preserve">
         <value>Open Maintenance Window</value>
+    </data>
+    <data name="Previous" xml:space="preserve">
+        <value>Previous</value>
     </data>
     <data name="Print" xml:space="preserve">
         <value>Print</value>

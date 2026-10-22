@@ -23,7 +23,6 @@
         <Setter Property="Background" Value="{Binding TradeDirection, Converter={StaticResource TradeDirectionForLightText}}"/>
     </Style>
 
-
     <!-- TextBlock Style: for detail pane -->
     <Style x:Key="DetailTextBlockStyle" TargetType="TextBlock">
         <Setter Property="Margin" Value="4,2,2,8"/>
@@ -81,14 +80,5 @@
     <Style x:Key="NetProfitLossCellStyleDark" TargetType="DataGridCell" BasedOn="{StaticResource RightAlignedCellStyle}">
         <Setter Property="Foreground" Value="#FFFFF8F8"/>
         <Setter Property="Background" Value="{Binding NetProfitLoss, Converter={StaticResource NetProfitLossForLightText}}"/>
-    </Style>
-
-    <Style x:Key="ReadOnlyMutliLineTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource ReadOnlyTextBoxStyle}">
-        <Setter Property="Height" Value="Auto"/>
-        <Setter Property="TextWrapping" Value="Wrap"/>
-        <Setter Property="AcceptsReturn" Value="True"/>
-        <Setter Property="VerticalAlignment" Value="Stretch"/>
-        <Setter Property="VerticalContentAlignment" Value="Top"/>
-        <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
     </Style>
 </ResourceDictionary>

@@ -47,12 +47,16 @@ namespace TD.WPF.ViewModels.Trades
 
             if (e.PropertyName == nameof(TradingAccountId))
             {
-                SetSymbols();
+                if (!_accountSetBySymbol)
+                {
+                    _accountSetByUser = true;
+                    SetSymbols();
+                }
             }
 
             if (e.PropertyName == nameof(SymbolId))
             {
-                SetMarketType();
+                SetAccountAndMarketType();
                 ValidateProperty(Trade, nameof(MarketType));
             }
 
@@ -80,7 +84,29 @@ namespace TD.WPF.ViewModels.Trades
                 ValidateProperty(_trade, nameof(ExitTime));
                 ValidateProperty(_trade, nameof(TradeStatus));
             }
+
+            void SetAccountAndMarketType()
+            {
+                var symbol = _allSymbols.FirstOrDefault(s => s.Id == SymbolId);
+                if (symbol != null)
+                {
+                    Trade.MarketType = symbol.MarketType;
+                    RaisePropertyChanged(nameof(MarketType));
+                    if (!_accountSetByUser)
+                    {
+                        _accountSetBySymbol = true;
+                        var account = TradingAccounts?.FirstOrDefault(a => a.ExchangeId == symbol.ExchangeId && a.MarketType == symbol.MarketType);
+                        if (account != null)
+                        {
+                            TradingAccountId = account.Id;
+                        }
+                        _accountSetBySymbol = false;
+                    }
+                }
+            }
         }
+        private bool _accountSetBySymbol = false;
+        private bool _accountSetByUser = false;
 
         public EntryOrderType EntryOrderType
         {
@@ -191,16 +217,6 @@ namespace TD.WPF.ViewModels.Trades
             Trade.TakeProfitOrders.Add(tpOrder);
         }
 
-        public void SetMarketType()
-        {
-            var symbol = _allSymbols.FirstOrDefault(s => s.Id == SymbolId);
-            if (symbol != null)
-            {
-                Trade.MarketType = symbol.MarketType;
-                RaisePropertyChanged(nameof(MarketType));
-            }
-        }
-
         public void SetOrderQuantity(decimal positionValue)
         {
             Trade.SetQuantity(positionValue, planned: true);
@@ -219,25 +235,69 @@ namespace TD.WPF.ViewModels.Trades
         }
         bool _calculatingOrderQuantity = false;
 
-        private void SetSymbols()
+        public int Step
         {
-            TradingAccount? selectedAccount = TradingAccountId > 0 && TradingAccounts != null
-                                                    ? TradingAccounts.FirstOrDefault(a => a.Id == TradingAccountId)
-                                                    : null;
-            if (Symbols == null)
-                return;
+            get => _step;
+            set
+            {
+                if (_step != value)
+                {
+                    _step = value;
+                    RaisePropertyChanged(nameof(Step));
+                }
+            }
+        }
+        int _step = 0;
 
-            _ = SetAllSymbolsAsync();
+        public string SymbolFilter
+        {
+            get => _symbolFilter;
+            set
+            {
+                if (_symbolFilter != value)
+                {
+                    _symbolFilter = value;
+                    RaisePropertyChanged(nameof(SymbolFilter));
+                    SetSymbols();
+                }
+            }
+        }
+        private string _symbolFilter = string.Empty;
+
+        public void SetSymbols()
+        {
             if (_allSymbols == null)
+                _ = SetAllSymbolsAsync();
+
+            if (Symbols == null || _allSymbols == null)
                 return;
 
-            var accountSymbols = selectedAccount != null
-                               ? _allSymbols.Where(s => s.ExchangeId == selectedAccount.ExchangeId
-                                                     && s.MarketType == selectedAccount.MarketType)
-                               : _allSymbols;
+            TradingAccount? selectedAccount = TradingAccountId > 0 && TradingAccounts != null
+                                            ? TradingAccounts.FirstOrDefault(a => a.Id == TradingAccountId)
+                                            : null;
+            var exchangeIds = new List<int>();
+            var marketTypes = new List<MarketType>();
+            if (selectedAccount == null)
+            {
+                exchangeIds = TradingAccounts?.Select(a => a.ExchangeId).Distinct().ToList() ?? new List<int>();
+                marketTypes = TradingAccounts?.Select(a => a.MarketType).Distinct().ToList() ?? new List<MarketType>();
+            }
+            else
+            {
+                exchangeIds.Add(selectedAccount.ExchangeId);
+                marketTypes.Add(selectedAccount.MarketType);
+            }
+
+            var filteredSymbols = _allSymbols.Where(s => exchangeIds.Contains(s.ExchangeId)
+                                                     && marketTypes.Contains(s.MarketType));
+
+            if (!string.IsNullOrEmpty(SymbolFilter))
+            {
+                filteredSymbols = filteredSymbols.Where(s => s.TickerFull.Contains(SymbolFilter, StringComparison.OrdinalIgnoreCase));
+            }
 
             Symbols.Clear();
-            foreach (var item in accountSymbols)
+            foreach (var item in filteredSymbols.OrderBy(s => s.Ticker))
             {
                 Symbols.Add(item);
             }

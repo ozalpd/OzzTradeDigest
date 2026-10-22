@@ -1613,6 +1613,10 @@
     <Translation>Yeni Parola ve Yeni Parola Doğrulaması aynı değil.</Translation>
   </Vocab>
   <Vocab>
+    <Name>Next</Name>
+    <Translation>Sonraki</Translation>
+  </Vocab>
+  <Vocab>
     <Name>No</Name>
     <Translation>Hayır</Translation>
   </Vocab>
@@ -1923,6 +1927,10 @@
   <Vocab>
     <Name>PreMarket</Name>
     <Translation>Seans Öncesi</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Previous</Name>
+    <Translation>Önceki</Translation>
   </Vocab>
   <Vocab>
     <Name>PreviousHalfYear</Name>
@@ -2686,11 +2694,11 @@
   </Vocab>
   <Vocab>
     <Name>TradFiPerpetual</Name>
-    <Translation>Trad Fi Perpetual</Translation>
+    <Translation>TradFi Perpetual</Translation>
   </Vocab>
   <Vocab>
     <Name>TradFiSpot</Name>
-    <Translation>Trad Fi Spot</Translation>
+    <Translation>TradFi Spot</Translation>
   </Vocab>
   <Vocab>
     <Name>TradingAccount</Name>

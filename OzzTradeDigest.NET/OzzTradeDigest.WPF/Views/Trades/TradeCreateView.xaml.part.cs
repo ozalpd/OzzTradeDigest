@@ -6,14 +6,17 @@ namespace TD.WPF.Views.Trades
 {
     public partial class TradeCreateView
     {
-        partial void OnSourceInitialized()
+        async Task OnSourceInitialized()
         {
-            _ = _viewModel.SetAllSymbolsAsync();
+            await _viewModel.SetAllSymbolsAsync();
+            _viewModel.SetSymbols();
+
             PlannedPositionValueTextBox.PreviewTextInput += CalculatedTextBox_TextInput;
             PlannedEntryPriceTextBox.PreviewTextInput += CalculatedTextBox_TextInput;
             _viewModel.PropertyChanged += OnPropertyChanged;
 
             SetPositionValueReadOnly();
+            _viewModel.Step = 1;
         }
 
         private void OnPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -22,7 +25,32 @@ namespace TD.WPF.Views.Trades
             {
                 SetPositionValueReadOnly();
             }
+            else if (e.PropertyName == nameof(_viewModel.Step))
+            {
+                switch (_viewModel.Step)
+                {
+                    case 1:
+                        Step1Grid.Visibility = Visibility.Visible;
+                        Step2Grid.Visibility = Visibility.Collapsed;
+                        OkButton.IsEnabled = false;
+                        break;
+
+                    case 2:
+                        Step1Grid.Visibility = Visibility.Collapsed;
+                        Step2Grid.Visibility = Visibility.Visible;
+                        OkButton.IsEnabled = true;
+                        break;
+
+                    default:
+                        break;
+                }
+
+                PreviousButton.IsEnabled = _viewModel.Step > minStep;
+                NextButton.IsEnabled = _viewModel.Step < maxStep;
+            }
         }
+        int minStep = 1;
+        int maxStep = 2;
 
         private void CalculatedTextBox_TextInput(object sender, TextCompositionEventArgs e)
         {

@@ -2572,7 +2572,7 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trad Fi Perpetual.
+        ///   Looks up a localized string similar to TradFi Perpetual.
         /// </summary>
         public static string TradFiPerpetual {
             get {
@@ -2581,7 +2581,7 @@ namespace TD.i18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trad Fi Spot.
+        ///   Looks up a localized string similar to TradFi Spot.
         /// </summary>
         public static string TradFiSpot {
             get {
