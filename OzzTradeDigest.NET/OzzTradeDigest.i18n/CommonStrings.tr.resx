@@ -73,6 +73,12 @@
     <data name="AppTitle" xml:space="preserve">
         <value>Ozz Trade Diary</value>
     </data>
+    <data name="CalculatedPositionValue" xml:space="preserve">
+        <value>Hesaplanmış Pozisyon Büyüklüğü</value>
+    </data>
+    <data name="CalculatedRiskAmount" xml:space="preserve">
+        <value>Hesaplanmış Risk Tutarı</value>
+    </data>
     <data name="CreateStopLossOrder" xml:space="preserve">
         <value>Zarar Kes Emri Oluştur</value>
     </data>
@@ -93,6 +99,9 @@
     </data>
     <data name="EditTakeProfitOrder" xml:space="preserve">
         <value>Kar Al Emrini Düzenle</value>
+    </data>
+    <data name="EntryPrice" xml:space="preserve">
+        <value>İşlem Fiyatı</value>
     </data>
     <data name="Home" xml:space="preserve">
         <value>Ana Sayfa</value>
@@ -124,6 +133,9 @@
     <data name="PortableNetworkGraphic" xml:space="preserve">
         <value>Taşınabilir Ağ Grafikleri</value>
     </data>
+    <data name="PositionValue" xml:space="preserve">
+        <value>Pozisyon Büyüklüğü</value>
+    </data>
     <data name="Preferences" xml:space="preserve">
         <value>Tercihler</value>
     </data>
@@ -135,6 +147,12 @@
     </data>
     <data name="ReviewNotes" xml:space="preserve">
         <value>Değerlendirme Notu</value>
+    </data>
+    <data name="RiskAmount" xml:space="preserve">
+        <value>Risk Tutarı</value>
+    </data>
+    <data name="RiskRewardRatio" xml:space="preserve">
+        <value>Risk Ödül Oranı</value>
     </data>
     <data name="SetupNotes" xml:space="preserve">
         <value>Setup Notu</value>

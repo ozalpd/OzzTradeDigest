@@ -106,6 +106,24 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calculated Position Value.
+        /// </summary>
+        public static string CalculatedPositionValue {
+            get {
+                return ResourceManager.GetString("CalculatedPositionValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calculated Risk Amount.
+        /// </summary>
+        public static string CalculatedRiskAmount {
+            get {
+                return ResourceManager.GetString("CalculatedRiskAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create Stop Loss Order.
         /// </summary>
         public static string CreateStopLossOrder {
@@ -165,6 +183,15 @@ namespace TD.i18n {
         public static string EditTakeProfitOrder {
             get {
                 return ResourceManager.GetString("EditTakeProfitOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entry Price.
+        /// </summary>
+        public static string EntryPrice {
+            get {
+                return ResourceManager.GetString("EntryPrice", resourceCulture);
             }
         }
         
@@ -259,6 +286,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Position Value.
+        /// </summary>
+        public static string PositionValue {
+            get {
+                return ResourceManager.GetString("PositionValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Preferences.
         /// </summary>
         public static string Preferences {
@@ -291,6 +327,24 @@ namespace TD.i18n {
         public static string ReviewNotes {
             get {
                 return ResourceManager.GetString("ReviewNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Risk Amount.
+        /// </summary>
+        public static string RiskAmount {
+            get {
+                return ResourceManager.GetString("RiskAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Risk Reward Ratio.
+        /// </summary>
+        public static string RiskRewardRatio {
+            get {
+                return ResourceManager.GetString("RiskRewardRatio", resourceCulture);
             }
         }
         

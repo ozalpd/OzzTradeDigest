@@ -381,6 +381,14 @@
     <Translation>Break</Translation>
   </Vocab>
   <Vocab>
+    <Name>CalculatedPositionValue</Name>
+    <Translation>Calculated Position Value</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>CalculatedRiskAmount</Name>
+    <Translation>Calculated Risk Amount</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Cancel</Name>
     <Translation>Cancel</Translation>
   </Vocab>
@@ -1139,6 +1147,10 @@
   <Vocab>
     <Name>EntryOrderType</Name>
     <Translation>Entry Order Type</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>EntryPrice</Name>
+    <Translation>Entry Price</Translation>
   </Vocab>
   <Vocab>
     <Name>EntryTime</Name>
@@ -1925,6 +1937,10 @@
     <Translation>Portable Network Graphic</Translation>
   </Vocab>
   <Vocab>
+    <Name>PositionValue</Name>
+    <Translation>Position Value</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PositionX</Name>
     <Translation>Position X</Translation>
   </Vocab>
@@ -2227,6 +2243,14 @@
   <Vocab>
     <Name>ReviewNotes</Name>
     <Translation>Review Notes</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>RiskAmount</Name>
+    <Translation>Risk Amount</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>RiskRewardRatio</Name>
+    <Translation>Risk Reward Ratio</Translation>
   </Vocab>
   <Vocab>
     <Name>RotationX</Name>

@@ -7,7 +7,7 @@
         xmlns:ctr="clr-namespace:TD.WPF.Controls"
         xmlns:i18n="clr-namespace:TD.i18n;assembly=OzzTradeDigest.i18n"
         Title="{x:Static i18n:LocalizedStrings.CreateTrade}"
-        Height="520" Width="800" MinHeight="520" MinWidth="800"
+        Height="580" Width="800" MinHeight="520" MinWidth="800"
         FocusManager.FocusedElement="{Binding ElementName=SymbolTextBox}"
         WindowStartupLocation="CenterOwner"
         mc:Ignorable="d">
@@ -24,7 +24,7 @@
         <!-- First Step, Select Symbol, Account etc-->
         <Grid x:Name="Step1Grid" Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="112" />
+                <ColumnDefinition Width="128" />
                 <ColumnDefinition Width="6*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -48,7 +48,7 @@
                 <TextBox x:Name="SymbolTextBox"
                          Text="{Binding SymbolFilter, UpdateSourceTrigger=PropertyChanged}"
                          Style="{StaticResource FormTextBoxStyle}" Margin="0"/>
-                <ListBox Grid.Row="1" Grid.Column="1" Height="144"
+                <ListBox Grid.Row="1" Grid.Column="1" Height="192"
                          Style="{StaticResource ValidationListBoxStyle}"
                          ItemsSource="{Binding Symbols}"
                          DisplayMemberPath="TickerFull"
@@ -93,12 +93,13 @@
 
             <TextBlock Grid.Column="3" Grid.Row="5" Margin="4,4,8,0"  FontWeight="Bold"
                        Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.EntryTime}"/>
-            <ctr:DateTimePicker x:Name="EntryTimeDatePicker" Grid.Row="5" Grid.Column="4" DisallowFuture="True"
+            <ctr:DateTimePicker x:Name="EntryTimeDatePicker" Grid.Row="5" Grid.Column="4" Margin="0,0,0,16"
+                                DisallowFuture="True"
                                 SelectedDateTime="{Binding EntryTime, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
 
-            <TextBlock Grid.Column="3" Grid.Row="6" Margin="4,4,8,0" FontWeight="Bold"
+            <TextBlock Grid.Column="3" Grid.Row="6" Margin="4,14,8,0" FontWeight="Bold"
                        Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.ExitTime}"/>
-            <ctr:DateTimePicker x:Name="ExitTimeDatePicker" Grid.Row="6" Grid.Column="4"
+            <ctr:DateTimePicker x:Name="ExitTimeDatePicker" Grid.Row="6" Grid.Column="4" Margin="0,12,0,6"
                                 DisallowFuture="True"
                                 SelectedDateTime="{Binding ExitTime, UpdateSourceTrigger=PropertyChanged, ValidatesOnNotifyDataErrors=True}"/>
         </Grid>
@@ -106,7 +107,7 @@
         <!-- Step 2, Entry/Exit Time, Price, Value etc-->
         <Grid x:Name="Step2Grid" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="128" />
                 <ColumnDefinition Width="6*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -146,7 +147,7 @@
 
 
             <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold"
-                       Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.PlannedEntryPrice}"/>
+                       Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:CommonStrings.EntryPrice}"/>
             <TextBox x:Name="PlannedEntryPriceTextBox" Grid.Row="1" Grid.Column="1"
                      PreviewTextInput="DecimalTextBox_PreviewTextInput"
                      Text="{Binding PlannedEntryPrice, UpdateSourceTrigger=LostFocus, ValidatesOnNotifyDataErrors=True}"
@@ -218,9 +219,10 @@
 
 
             <TextBlock Grid.Column="0" Grid.Row="6" FontWeight="Bold"
-                       Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.PlannedRiskAmount}"/>
+                       Style="{StaticResource RightAlignedTextBlockStyle}"
+                       Text="{x:Static i18n:CommonStrings.RiskAmount}" ToolTip="{x:Static i18n:CommonStrings.CalculatedRiskAmount}"/>
             <TextBox Grid.Row="6" Grid.Column="1"
-                     Text="{Binding PlannedRiskAmount, Mode=OneWay}"
+                     Text="{Binding PlannedRiskAmount, Mode=OneWay}" ToolTip="{x:Static i18n:CommonStrings.CalculatedRiskAmount}"
                      Style="{StaticResource ReadOnlyTextBoxStyle}"/>
 
             <TextBlock Grid.Column="3" Grid.Row="6" FontWeight="Bold"
@@ -229,17 +231,18 @@
                      Text="{Binding PlannedProfit, Mode=OneWay}"
                      Style="{StaticResource ReadOnlyTextBoxStyle}"/>
 
-            <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7" FontWeight="Bold"
-                       Style="{StaticResource RightAlignedTextBlockStyle}" Text="{x:Static i18n:LocalizedStrings.PlannedRiskRewardRatio}"/>
-            <TextBox Grid.Row="7" Grid.Column="4"
-                     Text="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}, Mode=OneWay}"
+            <TextBlock Grid.Column="0" Grid.Row="7" FontWeight="Bold"
+                       Style="{StaticResource RightAlignedTextBlockStyle}"
+                       Text="{x:Static i18n:CommonStrings.RiskRewardRatio}" ToolTip="{x:Static i18n:CommonStrings.RiskRewardRatio}"/>
+            <TextBox Grid.Row="7" Grid.Column="1"
+                     Text="{Binding PlannedRiskRewardRatio, StringFormat=\{0:N2\}, Mode=OneWay}" ToolTip="{x:Static i18n:CommonStrings.RiskRewardRatio}"
                      Style="{StaticResource ReadOnlyTextBoxStyle}"/>
         </Grid>
 
         <!-- Notes & Tags-->
         <Grid x:Name="NotesAndTagsGrid" Grid.Row="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="112" />
+                <ColumnDefinition Width="128" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>

@@ -381,6 +381,14 @@
     <Translation>Ara</Translation>
   </Vocab>
   <Vocab>
+    <Name>CalculatedPositionValue</Name>
+    <Translation>Hesaplanmış Pozisyon Büyüklüğü</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>CalculatedRiskAmount</Name>
+    <Translation>Hesaplanmış Risk Tutarı</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Cancel</Name>
     <Translation>Vazgeç</Translation>
   </Vocab>
@@ -1139,6 +1147,10 @@
   <Vocab>
     <Name>EntryOrderType</Name>
     <Translation>Giriş Emir Tipi</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>EntryPrice</Name>
+    <Translation>İşlem Fiyatı</Translation>
   </Vocab>
   <Vocab>
     <Name>EntryTime</Name>
@@ -1925,6 +1937,10 @@
     <Translation>Taşınabilir Ağ Grafikleri</Translation>
   </Vocab>
   <Vocab>
+    <Name>PositionValue</Name>
+    <Translation>Pozisyon Büyüklüğü</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PositionX</Name>
     <Translation>X Pozisyonu</Translation>
   </Vocab>
@@ -2227,6 +2243,14 @@
   <Vocab>
     <Name>ReviewNotes</Name>
     <Translation>Değerlendirme Notu</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>RiskAmount</Name>
+    <Translation>Risk Tutarı</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>RiskRewardRatio</Name>
+    <Translation>Risk Ödül Oranı</Translation>
   </Vocab>
   <Vocab>
     <Name>RotationX</Name>
