@@ -2537,6 +2537,10 @@
     <Translation>Taker Fee Rate</Translation>
   </Vocab>
   <Vocab>
+    <Name>TargetRiskAmount</Name>
+    <Translation>Target Risk Amount</Translation>
+  </Vocab>
+  <Vocab>
     <Name>TaxNr</Name>
     <Translation>Tax Nr</Translation>
   </Vocab>

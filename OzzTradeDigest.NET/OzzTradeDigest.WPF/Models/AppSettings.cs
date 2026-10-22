@@ -40,6 +40,22 @@ public partial class AppSettings
     }
     string _dbPath = string.Empty;
 
+    /// <summary>
+    /// Gets or sets the default risk amount per trade (e.g., 20.00 USD).
+    /// </summary>
+    public decimal DefaultRiskAmount
+    {
+        get => _defaultRiskAmount ?? 20m;
+        set
+        {
+            if (value < 0)
+                value = 0m; // Guard against negative values
+
+            _defaultRiskAmount = value;
+        }
+    }
+    private decimal? _defaultRiskAmount;
+
     private static string GetDefaultDatabaseFolderPath()
     {
 #if DEBUG

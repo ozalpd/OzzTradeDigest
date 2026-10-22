@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using TD.WPF.Models;
 
 namespace TD.WPF.Views.Trades
 {
@@ -14,6 +15,7 @@ namespace TD.WPF.Views.Trades
             PlannedPositionValueTextBox.PreviewTextInput += CalculatedTextBox_TextInput;
             PlannedEntryPriceTextBox.PreviewTextInput += CalculatedTextBox_TextInput;
             _viewModel.PropertyChanged += OnPropertyChanged;
+            _viewModel.TargetRiskAmount = AppSettings.GetAppSettings().DefaultRiskAmount;
 
             SetPositionValueReadOnly();
             _viewModel.Step = 1;

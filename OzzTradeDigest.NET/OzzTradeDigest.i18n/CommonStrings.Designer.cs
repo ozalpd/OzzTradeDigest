@@ -268,6 +268,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Target Risk Amount.
+        /// </summary>
+        public static string TargetRiskAmount {
+            get {
+                return ResourceManager.GetString("TargetRiskAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total Pages.
         /// </summary>
         public static string TotalPages {

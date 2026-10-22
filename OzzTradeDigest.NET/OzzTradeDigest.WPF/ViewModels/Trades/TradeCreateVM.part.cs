@@ -45,6 +45,11 @@ namespace TD.WPF.ViewModels.Trades
                 RaisePropertyChanged(nameof(PlannedRiskAmount));
             }
 
+            if (e.PropertyName == nameof(PlannedSL) || e.PropertyName == nameof(PlannedEntryPrice))
+            {
+                RecalculateQuantityFromTargetRisk();
+            }
+
             if (e.PropertyName == nameof(TradingAccountId))
             {
                 if (!_accountSetBySymbol)
@@ -92,6 +97,7 @@ namespace TD.WPF.ViewModels.Trades
                 {
                     Trade.MarketType = symbol.MarketType;
                     RaisePropertyChanged(nameof(MarketType));
+                    SelectedTicker = symbol.TickerFull;
                     if (!_accountSetByUser)
                     {
                         _accountSetBySymbol = true;
@@ -102,6 +108,12 @@ namespace TD.WPF.ViewModels.Trades
                         }
                         _accountSetBySymbol = false;
                     }
+                }
+                else
+                {
+                    Trade.MarketType = MarketType.Unspecified;
+                    RaisePropertyChanged(nameof(MarketType));
+                    SelectedTicker = string.Empty;
                 }
             }
         }
@@ -150,6 +162,64 @@ namespace TD.WPF.ViewModels.Trades
         }
         ExitOrderType _takeProfitOrderType;
 
+        public string SelectedTicker
+        {
+            get => _selectedTicker;
+            set
+            {
+                if (_selectedTicker != value)
+                {
+                    _selectedTicker = value;
+                    RaisePropertyChanged(nameof(SelectedTicker));
+                }
+            }
+        }
+        private string _selectedTicker = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the target risk amount used to calculate order quantity and position value.
+        /// </summary>
+        public decimal TargetRiskAmount
+        {
+            get => _targetRiskAmount;
+            set
+            {
+                if (_targetRiskAmount != value && value > 0)
+                {
+                    _targetRiskAmount = value;
+                    RaisePropertyChanged(nameof(TargetRiskAmount));
+                    RecalculateQuantityFromTargetRisk();
+                }
+            }
+        }
+        private decimal _targetRiskAmount;
+
+        private void RecalculateQuantityFromTargetRisk()
+        {
+            if (PlannedSL is null || PlannedEntryPrice is null)
+                return;
+
+            decimal riskPerUnit = 0m;
+            if (TradeDirection == TradeDirection.Long)
+            {
+                riskPerUnit = PlannedEntryPrice.Value - PlannedSL.Value;
+            }
+            //we don't use else because we want to keep riskPerUnit=0 if trade direction is not set
+            if (TradeDirection == TradeDirection.Short)
+            {
+                riskPerUnit = PlannedSL.Value - PlannedEntryPrice.Value;
+            }
+
+            if (riskPerUnit < (PlannedEntryPrice * 0.0001m))
+                return;
+
+            OrderQuantity = TargetRiskAmount / riskPerUnit;
+            RaisePropertyChanged(nameof(OrderQuantity));
+            RaisePropertyChanged(nameof(PlannedPositionValue));
+            RaisePropertyChanged(nameof(PlannedRiskRewardRatio));
+            RaisePropertyChanged(nameof(PlannedProfit));
+            RaisePropertyChanged(nameof(PlannedRiskAmount));
+        }
 
 
         public void AddRelatedEntities()

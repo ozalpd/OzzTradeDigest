@@ -2537,6 +2537,10 @@
     <Translation>Taker Ücret Oranı</Translation>
   </Vocab>
   <Vocab>
+    <Name>TargetRiskAmount</Name>
+    <Translation>Hedeflenen Risk Tutarı</Translation>
+  </Vocab>
+  <Vocab>
     <Name>TaxNr</Name>
     <Translation>Vergi</Translation>
   </Vocab>

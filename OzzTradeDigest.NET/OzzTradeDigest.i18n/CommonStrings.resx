@@ -127,6 +127,9 @@
     <data name="SetupNotes" xml:space="preserve">
         <value>Setup Notes</value>
     </data>
+    <data name="TargetRiskAmount" xml:space="preserve">
+        <value>Target Risk Amount</value>
+    </data>
     <data name="TotalPages" xml:space="preserve">
         <value>Total Pages</value>
     </data>
