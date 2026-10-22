@@ -33,6 +33,14 @@
                 <MenuItem Header="{x:Static i18n:LocalizedStrings.AddTrade}" Command="{Binding TradeHistory.TradeCreateCommand}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" />
                 <MenuItem Header="{x:Static i18n:LocalizedStrings.EditTrade}" Command="{Binding TradeHistory.TradeEditCommand}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" />
                 <MenuItem Header="{x:Static i18n:LocalizedStrings.DeleteTrade}" Command="{Binding TradeHistory.TradeDeleteCommand}" />
+                <Separator />
+                <MenuItem Header="{x:Static i18n:CommonStrings.Preferences}" Command="{Binding UserPreferencesEditCommand}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
+                    <MenuItem.Icon>
+                        <Viewbox Width="16" Height="16">
+                            <Path Fill="#0044D7" Data="{StaticResource gear}"/>
+                        </Viewbox>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="{x:Static i18n:ActionStrings.View}">
                 <MenuItem Header="{x:Static i18n:ActionStrings.Summary}" Command="{Binding ShowSummaryCommand}" />

@@ -106,6 +106,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language setting changes will take full effect after restarting the application..
+        /// </summary>
+        public static string LanguageSettingNeedsRestart {
+            get {
+                return ResourceManager.GetString("LanguageSettingNeedsRestart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to There is no results to display.
         /// </summary>
         public static string NoResults {

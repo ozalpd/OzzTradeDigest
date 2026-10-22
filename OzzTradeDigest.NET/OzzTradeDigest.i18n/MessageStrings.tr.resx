@@ -73,6 +73,9 @@
     <data name="EnterKeywordHere" xml:space="preserve">
         <value>Arama kelimenizi girin</value>
     </data>
+    <data name="LanguageSettingNeedsRestart" xml:space="preserve">
+        <value>Lisan ayar değişikliğinin devreye girmesi için uygulamanın yeniden başlaması gerekiyor.</value>
+    </data>
     <data name="NoResults" xml:space="preserve">
         <value>Hiç sonuç bulunamadı</value>
     </data>

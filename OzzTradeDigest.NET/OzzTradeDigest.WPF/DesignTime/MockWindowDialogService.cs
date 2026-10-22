@@ -3,35 +3,35 @@ using TD.AppInfra.Services;
 using TD.Models;
 using TD.WPF.Services;
 
-namespace TD.WPF.DesignTime
+namespace TD.WPF.DesignTime;
+
+public class MockWindowDialogService : IWindowDialogService
 {
-    public class MockWindowDialogService : IWindowDialogService
-    {
-        public (bool IsConfirmed, Currency? Currency) ShowCurrencyCreateDialog(Window owner) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowCurrencyEditDialog(Window owner, Currency currency) => (false, false);
-        public (bool IsConfirmed, Exchange? Exchange) ShowExchangeCreateDialog(Window owner, ICurrencyLookupService currencyLookupService) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowExchangeEditDialog(Window owner, Exchange exchange) => (false, false);
-        public (bool IsConfirmed, Symbol? Symbol) ShowSymbolCreateDialog(Window owner, ICurrencyLookupService currencyLookupService, IExchangeLookupService exchangeLookupService, Exchange? preselectedExchange) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowSymbolEditDialog(Window owner, Symbol symbol) => (false, false);
-        public (bool IsConfirmed, Trade? Trade) ShowTradeCreateDialog(Window owner, ISymbolLookupService symbolLookupService, ITradingAccountLookupService tradingAccountLookupService, TradingAccount? preselectedTradingAccount) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowTradeEditDialog(Window owner, Trade trade) => (false, false);
-        public void ShowTradeDetailDialog(Window owner, Trade trade) => throw new NotImplementedException();
-        public (bool IsConfirmed, TradingAccount? TradingAccount) ShowTradingAccountCreateDialog(Window owner, IExchangeLookupService exchangeLookupService, Exchange? preselectedExchange) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowTradingAccountEditDialog(Window owner, TradingAccount tradingAccount) => (false, false);
-        public (bool IsConfirmed, EntryOrder? EntryOrder) ShowEntryOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowEntryOrderEditDialog(Window owner, EntryOrder entryOrder) => (false, false);
-        public (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder) => (false, false);
-        public (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder) => (false, false);
-        public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowTradeImageEditDialog(Window owner, TradeImage tradeImage) => (false, false);
-        public void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage) => throw new NotImplementedException();
-        public (bool IsConfirmed, ExitOrder? ExitOrder) ShowExitOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowExitOrderEditDialog(Window owner, ExitOrder exitOrder) => (false, false);
-        public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote) => (false, null);
-        public (bool IsConfirmed, TradeNote? TradeNote) ShowTradeNoteCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
-        public (bool IsConfirmed, bool IsDirty) ShowTradeNoteEditDialog(Window owner, TradeNote tradeNote) => (false, false);
-        public void ShowTradeNoteDetailDialog(Window owner, TradeNote tradeNote) => throw new NotImplementedException();
-    }
+    public (bool IsConfirmed, Currency? Currency) ShowCurrencyCreateDialog(Window owner) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowCurrencyEditDialog(Window owner, Currency currency) => (false, false);
+    public (bool IsConfirmed, Exchange? Exchange) ShowExchangeCreateDialog(Window owner, ICurrencyLookupService currencyLookupService) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowExchangeEditDialog(Window owner, Exchange exchange) => (false, false);
+    public (bool IsConfirmed, Symbol? Symbol) ShowSymbolCreateDialog(Window owner, ICurrencyLookupService currencyLookupService, IExchangeLookupService exchangeLookupService, Exchange? preselectedExchange) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowSymbolEditDialog(Window owner, Symbol symbol) => (false, false);
+    public (bool IsConfirmed, Trade? Trade) ShowTradeCreateDialog(Window owner, ISymbolLookupService symbolLookupService, ITradingAccountLookupService tradingAccountLookupService, TradingAccount? preselectedTradingAccount) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowTradeEditDialog(Window owner, Trade trade) => (false, false);
+    public void ShowTradeDetailDialog(Window owner, Trade trade) => throw new NotImplementedException();
+    public (bool IsConfirmed, TradingAccount? TradingAccount) ShowTradingAccountCreateDialog(Window owner, IExchangeLookupService exchangeLookupService, Exchange? preselectedExchange) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowTradingAccountEditDialog(Window owner, TradingAccount tradingAccount) => (false, false);
+    public (bool IsConfirmed, EntryOrder? EntryOrder) ShowEntryOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowEntryOrderEditDialog(Window owner, EntryOrder entryOrder) => (false, false);
+    public (bool IsConfirmed, ExitOrder? StopLossOrder) ShowStopLossOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowStopLossOrderEditDialog(Window owner, ExitOrder stopLossOrder) => (false, false);
+    public (bool IsConfirmed, ExitOrder? TakeProfitOrder) ShowTakeProfitOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder) => (false, false);
+    public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowTradeImageEditDialog(Window owner, TradeImage tradeImage) => (false, false);
+    public void ShowTradeImageDetailDialog(Window owner, TradeImage tradeImage) => throw new NotImplementedException();
+    public (bool IsConfirmed, ExitOrder? ExitOrder) ShowExitOrderCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowExitOrderEditDialog(Window owner, ExitOrder exitOrder) => (false, false);
+    public (bool IsConfirmed, TradeImage? TradeImage) ShowTradeImageCreateDialog(Window owner, TradeNote? preselectedTradeNote) => (false, null);
+    public (bool IsConfirmed, TradeNote? TradeNote) ShowTradeNoteCreateDialog(Window owner, Trade? preselectedTrade) => (false, null);
+    public (bool IsConfirmed, bool IsDirty) ShowTradeNoteEditDialog(Window owner, TradeNote tradeNote) => (false, false);
+    public void ShowTradeNoteDetailDialog(Window owner, TradeNote tradeNote) => throw new NotImplementedException();
+    public bool ShowUserPreferencesDialog(Window owner) => throw new NotImplementedException();
 }

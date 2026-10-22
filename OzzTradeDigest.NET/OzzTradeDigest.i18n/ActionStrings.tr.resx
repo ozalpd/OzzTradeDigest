@@ -226,6 +226,9 @@
     <data name="SelectFile" xml:space="preserve">
         <value>Dosya Seç</value>
     </data>
+    <data name="SelectFolder" xml:space="preserve">
+        <value>Klasör Seçiniz</value>
+    </data>
     <data name="SelectImageFile" xml:space="preserve">
         <value>Resim Dosyası Seç</value>
     </data>

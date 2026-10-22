@@ -52,9 +52,9 @@ namespace TD.WPF.Commands.Trades
             {
                 string innerExceptionMsg = ex.InnerException != null ? $"\n{ex.InnerException.Message}" : "";
                 MessageBox.Show($"{MessageStrings.SaveOperationFailed}\n{ex.Message}{innerExceptionMsg}",
-                    CommonStrings.AppTitle,
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error);
+                                   CommonStrings.AppTitle,
+                                   MessageBoxButton.OK,
+                                   MessageBoxImage.Error);
             }
         }
     }

@@ -805,6 +805,10 @@
     <Translation>Default Currency</Translation>
   </Vocab>
   <Vocab>
+    <Name>DefaultRisk</Name>
+    <Translation>Default Risk</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Delete</Name>
     <Translation>Delete</Translation>
   </Vocab>
@@ -1385,6 +1389,10 @@
     <Translation>Image Files</Translation>
   </Vocab>
   <Vocab>
+    <Name>ImageFolder</Name>
+    <Translation>Image Folder</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ImageURL</Name>
     <Translation>Image URL</Translation>
   </Vocab>
@@ -1427,6 +1435,14 @@
   <Vocab>
     <Name>IsPublished</Name>
     <Translation>Published</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Language</Name>
+    <Translation>Language</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>LanguageSettingNeedsRestart</Name>
+    <Translation>Language setting changes will take full effect after restarting the application.</Translation>
   </Vocab>
   <Vocab>
     <Name>Lastname</Name>
@@ -1925,6 +1941,10 @@
     <Translation>Positive Decimal</Translation>
   </Vocab>
   <Vocab>
+    <Name>Preferences</Name>
+    <Translation>Preferences</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PreMarket</Name>
     <Translation>Pre Market</Translation>
   </Vocab>
@@ -2247,6 +2267,10 @@
   <Vocab>
     <Name>SelectFile</Name>
     <Translation>Select File</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>SelectFolder</Name>
+    <Translation>Select Folder</Translation>
   </Vocab>
   <Vocab>
     <Name>SelectImageFile</Name>
@@ -2783,6 +2807,10 @@
   <Vocab>
     <Name>UserName</Name>
     <Translation>UserName</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>UserPreferences</Name>
+    <Translation>User Preferences</Translation>
   </Vocab>
   <Vocab>
     <Name>ValueGreaterThan</Name>

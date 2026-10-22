@@ -2,7 +2,9 @@
 using TD.AppInfra.Services;
 using TD.AppInfra.ViewModels;
 using TD.WPF.Commands;
+using TD.WPF.Commands.Settings;
 using TD.WPF.Services;
+using TD.WPF.ViewModels.Settings;
 using TD.WPF.ViewModels.Trades;
 
 namespace TD.WPF.ViewModels
@@ -21,11 +23,14 @@ namespace TD.WPF.ViewModels
 
             TradeHistory = new TradeHistoryVM(dataSources.TradeRepository, dataSources.TradeNoteRepository, _windowDialogService,
                                               symbolLookupService, tradingAccountLookupService);
+
+            UserPreferencesEditCommand = new UserPreferencesEditCommand(new UserPreferencesVM(), _windowDialogService);
             ShowMaintenanceCommand = new ShowMaintenanceCommand(dataSources);
             ShowAboutCommand = new ShowAboutCommand();
             ExitCommand = new ExitCommand();
         }
 
+        public UserPreferencesEditCommand UserPreferencesEditCommand { get; }
 
         public TradeHistoryVM TradeHistory { get; }
         public ShowMaintenanceCommand ShowMaintenanceCommand { get; }

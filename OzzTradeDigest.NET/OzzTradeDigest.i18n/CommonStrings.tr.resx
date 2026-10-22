@@ -79,6 +79,9 @@
     <data name="CreateTakeProfitOrder" xml:space="preserve">
         <value>Kar Al Emri Oluştur</value>
     </data>
+    <data name="DefaultRisk" xml:space="preserve">
+        <value>Varsayılan Risk</value>
+    </data>
     <data name="DeleteStopLossOrder" xml:space="preserve">
         <value>Zarar Kes Emrini Sil</value>
     </data>
@@ -93,6 +96,12 @@
     </data>
     <data name="Home" xml:space="preserve">
         <value>Ana Sayfa</value>
+    </data>
+    <data name="ImageFolder" xml:space="preserve">
+        <value>Resim Klasörü</value>
+    </data>
+    <data name="Language" xml:space="preserve">
+        <value>Lisan</value>
     </data>
     <data name="MaintenanceView" xml:space="preserve">
         <value>Bakım Sayfası</value>
@@ -115,6 +124,9 @@
     <data name="PortableNetworkGraphic" xml:space="preserve">
         <value>Taşınabilir Ağ Grafikleri</value>
     </data>
+    <data name="Preferences" xml:space="preserve">
+        <value>Tercihler</value>
+    </data>
     <data name="Record" xml:space="preserve">
         <value>Kayıt</value>
     </data>
@@ -135,6 +147,9 @@
     </data>
     <data name="TotalRecords" xml:space="preserve">
         <value>Toplam Kayıt</value>
+    </data>
+    <data name="UserPreferences" xml:space="preserve">
+        <value>Kullanıcı Tercihleri</value>
     </data>
     <data name="Version" xml:space="preserve">
         <value>Sürüm:</value>

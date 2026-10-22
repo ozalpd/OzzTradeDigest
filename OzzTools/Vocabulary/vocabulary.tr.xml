@@ -805,6 +805,10 @@
     <Translation>Varsayılan Döviz</Translation>
   </Vocab>
   <Vocab>
+    <Name>DefaultRisk</Name>
+    <Translation>Varsayılan Risk</Translation>
+  </Vocab>
+  <Vocab>
     <Name>Delete</Name>
     <Translation>Sil</Translation>
   </Vocab>
@@ -1385,6 +1389,10 @@
     <Translation>Resim Dosyaları</Translation>
   </Vocab>
   <Vocab>
+    <Name>ImageFolder</Name>
+    <Translation>Resim Klasörü</Translation>
+  </Vocab>
+  <Vocab>
     <Name>ImageURL</Name>
     <Translation>Resim Yolu</Translation>
   </Vocab>
@@ -1427,6 +1435,14 @@
   <Vocab>
     <Name>IsPublished</Name>
     <Translation>Yayında</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>Language</Name>
+    <Translation>Lisan</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>LanguageSettingNeedsRestart</Name>
+    <Translation>Lisan ayar değişikliğinin devreye girmesi için uygulamanın yeniden başlaması gerekiyor.</Translation>
   </Vocab>
   <Vocab>
     <Name>Lastname</Name>
@@ -1925,6 +1941,10 @@
     <Translation>Pozitif Ondalık</Translation>
   </Vocab>
   <Vocab>
+    <Name>Preferences</Name>
+    <Translation>Tercihler</Translation>
+  </Vocab>
+  <Vocab>
     <Name>PreMarket</Name>
     <Translation>Seans Öncesi</Translation>
   </Vocab>
@@ -2247,6 +2267,10 @@
   <Vocab>
     <Name>SelectFile</Name>
     <Translation>Dosya Seç</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>SelectFolder</Name>
+    <Translation>Klasör Seçiniz</Translation>
   </Vocab>
   <Vocab>
     <Name>SelectImageFile</Name>
@@ -2783,6 +2807,10 @@
   <Vocab>
     <Name>UserName</Name>
     <Translation>Kullanıcı Adı</Translation>
+  </Vocab>
+  <Vocab>
+    <Name>UserPreferences</Name>
+    <Translation>Kullanıcı Tercihleri</Translation>
   </Vocab>
   <Vocab>
     <Name>ValueGreaterThan</Name>

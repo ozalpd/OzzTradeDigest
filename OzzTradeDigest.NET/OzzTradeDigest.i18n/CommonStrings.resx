@@ -79,6 +79,9 @@
     <data name="CreateTakeProfitOrder" xml:space="preserve">
         <value>Create Take Profit Order</value>
     </data>
+    <data name="DefaultRisk" xml:space="preserve">
+        <value>Default Risk</value>
+    </data>
     <data name="DeleteStopLossOrder" xml:space="preserve">
         <value>Delete Stop Loss Order</value>
     </data>
@@ -93,6 +96,12 @@
     </data>
     <data name="Home" xml:space="preserve">
         <value>Home</value>
+    </data>
+    <data name="ImageFolder" xml:space="preserve">
+        <value>Image Folder</value>
+    </data>
+    <data name="Language" xml:space="preserve">
+        <value>Language</value>
     </data>
     <data name="MaintenanceView" xml:space="preserve">
         <value>Maintenance View</value>
@@ -115,6 +124,9 @@
     <data name="PortableNetworkGraphic" xml:space="preserve">
         <value>Portable Network Graphic</value>
     </data>
+    <data name="Preferences" xml:space="preserve">
+        <value>Preferences</value>
+    </data>
     <data name="Record" xml:space="preserve">
         <value>Record</value>
     </data>
@@ -135,6 +147,9 @@
     </data>
     <data name="TotalRecords" xml:space="preserve">
         <value>Total Records</value>
+    </data>
+    <data name="UserPreferences" xml:space="preserve">
+        <value>User Preferences</value>
     </data>
     <data name="Version" xml:space="preserve">
         <value>Version:</value>

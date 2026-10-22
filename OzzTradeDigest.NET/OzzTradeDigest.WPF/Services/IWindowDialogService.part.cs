@@ -48,4 +48,11 @@ public partial interface IWindowDialogService
     /// otherwise, <see langword="false"/>. IsDirty is <see langword="true"/> if any changes were made to the takeProfitOrder
     /// during editing; otherwise, <see langword="false"/>.</returns>
     (bool IsConfirmed, bool IsDirty) ShowTakeProfitOrderEditDialog(Window owner, ExitOrder takeProfitOrder);
+
+    /// <summary>
+    /// Displays the User Preferences dialog and returns a Boolean value indicating whether the user confirmed the dialog.
+    /// </summary>
+    /// <param name="owner">The window that will own the dialog. This determines the dialog's parent window for modality and positioning.</param>
+    /// <returns><see langword="true"/> if the user confirmed the dialog; otherwise, <see langword="false"/>.</returns>
+    bool ShowUserPreferencesDialog(Window owner);
 }

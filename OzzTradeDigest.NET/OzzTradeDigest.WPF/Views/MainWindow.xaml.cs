@@ -61,9 +61,11 @@ namespace TD.WPF.Views
                 case "ClearAccount":
                     _viewModel.TradeHistory.QueryVM.ByTradingAccountId = null;
                     break;
+
                 case "ClearDirection":
                     _viewModel.TradeHistory.QueryVM.ByTradeDirection = null;
                     break;
+
                 case "ClearSymbol":
                     _viewModel.TradeHistory.QueryVM.BySymbolId = null;
                     break;

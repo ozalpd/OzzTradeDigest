@@ -73,6 +73,9 @@
     <data name="EnterKeywordHere" xml:space="preserve">
         <value>Enter Keyword Here</value>
     </data>
+    <data name="LanguageSettingNeedsRestart" xml:space="preserve">
+        <value>Language setting changes will take full effect after restarting the application.</value>
+    </data>
     <data name="NoResults" xml:space="preserve">
         <value>There is no results to display</value>
     </data>

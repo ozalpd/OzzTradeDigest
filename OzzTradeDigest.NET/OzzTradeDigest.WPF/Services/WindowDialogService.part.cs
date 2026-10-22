@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using TD.Models;
+using TD.WPF.Views.Settings;
 using TD.WPF.Views.Trades;
 
 namespace TD.WPF.Services;
@@ -53,5 +54,15 @@ public partial class WindowDialogService : IWindowDialogService
 
         var result = dialog.ShowDialog() == true;
         return (result, dialog.IsDirty);
+    }
+
+    /// <inheritdoc />
+    public bool ShowUserPreferencesDialog(Window owner)
+    {
+        var dialog = new UserPreferencesView
+        {
+            Owner = owner
+        };
+        return dialog.ShowDialog() == true;
     }
 }

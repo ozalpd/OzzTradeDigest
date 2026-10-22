@@ -124,6 +124,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default Risk.
+        /// </summary>
+        public static string DefaultRisk {
+            get {
+                return ResourceManager.GetString("DefaultRisk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete Stop Loss Order.
         /// </summary>
         public static string DeleteStopLossOrder {
@@ -165,6 +174,24 @@ namespace TD.i18n {
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Folder.
+        /// </summary>
+        public static string ImageFolder {
+            get {
+                return ResourceManager.GetString("ImageFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
         
@@ -232,6 +259,15 @@ namespace TD.i18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Preferences.
+        /// </summary>
+        public static string Preferences {
+            get {
+                return ResourceManager.GetString("Preferences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Record.
         /// </summary>
         public static string Record {
@@ -291,6 +327,15 @@ namespace TD.i18n {
         public static string TotalRecords {
             get {
                 return ResourceManager.GetString("TotalRecords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Preferences.
+        /// </summary>
+        public static string UserPreferences {
+            get {
+                return ResourceManager.GetString("UserPreferences", resourceCulture);
             }
         }
         

@@ -226,6 +226,9 @@
     <data name="SelectFile" xml:space="preserve">
         <value>Select File</value>
     </data>
+    <data name="SelectFolder" xml:space="preserve">
+        <value>Select Folder</value>
+    </data>
     <data name="SelectImageFile" xml:space="preserve">
         <value>Select Image File</value>
     </data>
