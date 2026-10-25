@@ -1,8 +1,8 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "..\\..\\OzzTradeDigest\\",
-  "LatestSourceWriteAt": "2026-10-19T11:36:03.1827408+03:00",
-  "LastPackedAt": "2026-10-18T20:34:00.6917307+03:00",
+  "LatestSourceWriteAt": "2026-10-25T10:46:55.0087099+03:00",
+  "LastPackedAt": "2026-10-25T10:45:45.5729469+03:00",
   "RepoUrl": "",
   "License": "",
   "IsOpenSource": null,
@@ -31,7 +31,7 @@
   "TrackedFiles": {
     "OzzTradeDigest.slnx": {
       "RelativePath": "OzzTradeDigest.slnx",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-05T21:52:11.4025216+03:00",
       "FileHash": "3FB4DCEEC6B2577F37E57943AD4341CA41153CDA4136C6D030CC480AE5850981",
       "FileSize": 1279,
       "ContextNote": "",
@@ -39,15 +39,15 @@
     },
     "CHANGELOG.md": {
       "RelativePath": "CHANGELOG.md",
-      "LastWriteTime": "2026-10-18T17:58:24.747897+03:00",
-      "FileHash": "3D12C53A463761E38DB1A06C27AEBC014AF6A54556182AAA8D309B407FAD8918",
-      "FileSize": 75409,
+      "LastWriteTime": "2026-10-21T11:25:26.3765058+03:00",
+      "FileHash": "029118A8F40AC8946CD59FB275481C69ECD1F7FDE792BD2232A872CBDD53CAEF",
+      "FileSize": 76007,
       "ContextNote": "",
       "PackingMode": 10
     },
     "README.md": {
       "RelativePath": "README.md",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-14T10:07:16.5955029+03:00",
       "FileHash": "3F6D0C30403BB54781995E74C998260B8063557E6F142EC6122F103B7BB76F4B",
       "FileSize": 18088,
       "ContextNote": "",
@@ -55,7 +55,7 @@
     },
     ".github\\copilot-instructions.md": {
       "RelativePath": ".github\\copilot-instructions.md",
-      "LastWriteTime": "2026-10-18T18:18:01.1926168+03:00",
+      "LastWriteTime": "2026-10-18T19:28:45.109168+03:00",
       "FileHash": "F3122BC02E0317C6679FEB018FF5DA11A0284622BA5BD8EC14D48B8901D7B1A9",
       "FileSize": 31389,
       "ContextNote": "",
@@ -63,7 +63,7 @@
     },
     ".github\\development-roadmap.md": {
       "RelativePath": ".github\\development-roadmap.md",
-      "LastWriteTime": "2026-10-18T08:04:54.2462912+03:00",
+      "LastWriteTime": "2026-10-05T21:46:17.0040876+03:00",
       "FileHash": "86F69A2B1A5851015EC66EB03BEBB99684467CA91F967FAFC34DD62892BC9255",
       "FileSize": 6157,
       "ContextNote": "",
@@ -71,7 +71,7 @@
     },
     ".github\\agents\\trade-expert.agent.md": {
       "RelativePath": ".github\\agents\\trade-expert.agent.md",
-      "LastWriteTime": "2026-10-18T08:04:54.2300607+03:00",
+      "LastWriteTime": "2026-09-30T02:33:52.9570438+03:00",
       "FileHash": "359CC1D04BDC313A5E2919833D85186657D90DB2144B1E5C4538DDF0EA483CE0",
       "FileSize": 3844,
       "ContextNote": "",
@@ -79,7 +79,7 @@
     },
     ".github\\instructions\\dbscripts-generated.instructions.md": {
       "RelativePath": ".github\\instructions\\dbscripts-generated.instructions.md",
-      "LastWriteTime": "2026-10-18T08:04:54.2462912+03:00",
+      "LastWriteTime": "2026-10-05T21:50:55.203883+03:00",
       "FileHash": "5178A737A830BFCB9E4E7B160A596F80CFECA44D1DCFD7E5D3A8210CF0A85C86",
       "FileSize": 948,
       "ContextNote": "",
@@ -87,7 +87,7 @@
     },
     ".github\\instructions\\xaml-conventions.instructions.md": {
       "RelativePath": ".github\\instructions\\xaml-conventions.instructions.md",
-      "LastWriteTime": "2026-10-18T18:16:53.4713579+03:00",
+      "LastWriteTime": "2026-10-18T19:28:45.109168+03:00",
       "FileHash": "0B304B5939E5E3580D24E39FEA7969E48D0D5E1027D72B8B2BED0A4F472891D8",
       "FileSize": 6515,
       "ContextNote": "",
@@ -95,7 +95,7 @@
     },
     ".github\\prompts\\scaffold-entity.prompt.md": {
       "RelativePath": ".github\\prompts\\scaffold-entity.prompt.md",
-      "LastWriteTime": "2026-10-18T08:04:54.2462912+03:00",
+      "LastWriteTime": "2026-08-31T19:56:28.4887019+03:00",
       "FileHash": "2C8FDAC5995B24AD40DBE54BAB3C36CFA48FFD845DB79B24E14E13EAD7835391",
       "FileSize": 2293,
       "ContextNote": "",
@@ -103,7 +103,7 @@
     },
     "OzzTools\\CsModelClassCodeEngine.settings": {
       "RelativePath": "OzzTools\\CsModelClassCodeEngine.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-22T21:29:50.4441553+03:00",
       "FileHash": "79D50EB1C8E8D38ABD3A35C56262733B33D238CB526A9F7363928FAB0E358C23",
       "FileSize": 54983,
       "ContextNote": "Contains settings of OzzCodeGen C# Code Engine",
@@ -111,7 +111,7 @@
     },
     "OzzTools\\CsSqliteRepositoryEngine.settings": {
       "RelativePath": "OzzTools\\CsSqliteRepositoryEngine.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-22T21:29:50.4441553+03:00",
       "FileHash": "E517BFABCC3C3DEC76B34C93E542EE4382ACBFED5530914375CD33BA01BA6C88",
       "FileSize": 62621,
       "ContextNote": "Contains settings of OzzCodeGen C# Repository Engine for Sqlite",
@@ -119,47 +119,47 @@
     },
     "OzzTools\\OzzTradeDigest.ctxgen": {
       "RelativePath": "OzzTools\\OzzTradeDigest.ctxgen",
-      "LastWriteTime": "2026-10-19T11:36:03.1827408+03:00",
-      "FileHash": "B0E22414B5522AB3A213984C60E819AD243791C789E8CAAB9B47F6F29955B49D",
-      "FileSize": 116750,
+      "LastWriteTime": "2026-10-25T10:46:28.5773658+03:00",
+      "FileHash": "4161468FBD77F0D68FFF9522B55373F959DB4102BECA871DAE2AFE6CBFD3C3CF",
+      "FileSize": 118340,
       "ContextNote": "Context Gen file of the solution folder OzzTradeDigest.NET",
       "PackingMode": 10
     },
     "OzzTools\\OzzTradeDigest.OzzGen": {
       "RelativePath": "OzzTools\\OzzTradeDigest.OzzGen",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
-      "FileHash": "0268448F191235F32A178516C803736BB7933A9AD68827768F75BF42E2551D00",
-      "FileSize": 106588,
+      "LastWriteTime": "2026-10-22T21:29:50.4313041+03:00",
+      "FileHash": "5BA55B378D54073B5FF75D65C576275FC2EEBD2A48360BDF137F0B8AE2728CC7",
+      "FileSize": 106812,
       "ContextNote": "Contains OzzCodeGen entitiy settings",
       "PackingMode": 10
     },
     "OzzTools\\OzzTradeDigestDDL.ctxgen": {
       "RelativePath": "OzzTools\\OzzTradeDigestDDL.ctxgen",
-      "LastWriteTime": "2026-10-19T09:26:15.9956936+03:00",
-      "FileHash": "81F2B6A012ED6449945C2000AD51ACE64B3BAECD11A8C675B87AD23A72407750",
-      "FileSize": 5521,
+      "LastWriteTime": "2026-10-25T10:46:55.0087099+03:00",
+      "FileHash": "A6A387617A751C2B174279DC0C2D97D53FF227AC183485CB46C9D580C5E197F9",
+      "FileSize": 5522,
       "ContextNote": "OzzContextGen file for DDL code pack",
       "PackingMode": 10
     },
     "OzzTools\\OzzTradeDigestRepo.ctxgen": {
       "RelativePath": "OzzTools\\OzzTradeDigestRepo.ctxgen",
-      "LastWriteTime": "2026-10-19T09:26:15.9966973+03:00",
-      "FileHash": "0347A0B6F6DEED1675F751BEB02F1A81FA8D2AC5144F0788DAF5213C0C01561F",
-      "FileSize": 137516,
+      "LastWriteTime": "2026-10-25T10:45:45.5744768+03:00",
+      "FileHash": "D253F19BA06BB77E003E7D6097373D7BCBBB05658E4BBBC39FEB9A9C11F9699F",
+      "FileSize": 139271,
       "ContextNote": "OzzContextGen file for structure of this repository",
       "PackingMode": 10
     },
     "OzzTools\\ResourceGen.settings": {
       "RelativePath": "OzzTools\\ResourceGen.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
-      "FileHash": "4901C6722ADB33B61A354D87439F05E7FAB3EF2F68D09F5FB7C5178D3C540012",
-      "FileSize": 83279,
+      "LastWriteTime": "2026-10-22T21:29:50.4441553+03:00",
+      "FileHash": "A42CACE7BEED3A100B5B39EFA99A68F2C906A4F1ACDF7EE3EC63EF1458E0B4F6",
+      "FileSize": 87717,
       "ContextNote": "Contains settings of OzzCodeGen Loclization Resource Code Engine",
       "PackingMode": 10
     },
     "OzzTools\\SqliteScriptsGen.settings": {
       "RelativePath": "OzzTools\\SqliteScriptsGen.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-22T21:29:50.4461623+03:00",
       "FileHash": "9594543211EB3A270CB46968156A7C90218D44A6185B9CDD97F37840DEBA6CC5",
       "FileSize": 64004,
       "ContextNote": "Contains settings of OzzCodeGen DDL Code Generation Engine for Sqlite",
@@ -167,7 +167,7 @@
     },
     "OzzTools\\TSqlScriptsGen.settings": {
       "RelativePath": "OzzTools\\TSqlScriptsGen.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-09-30T05:08:01.6267729+03:00",
       "FileHash": "15A1E07B596C63E0D5E0A10D2A34FD8534024A36A1980593F0ED657D81BBDA10",
       "FileSize": 63276,
       "ContextNote": "Contains settings of OzzCodeGen DDL Code Generation Engine for T-SQL",
@@ -175,7 +175,7 @@
     },
     "OzzTools\\WpfMvVmCodeEngine.settings": {
       "RelativePath": "OzzTools\\WpfMvVmCodeEngine.settings",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-22T21:29:50.4461623+03:00",
       "FileHash": "4D880F56EFE5DD5961FA47C9D51A5DD424C8F20390C19DF95920FDDD17828502",
       "FileSize": 91841,
       "ContextNote": "Contains settings of OzzCodeGen MVVM Code Generation Engine for WPF",
@@ -183,23 +183,23 @@
     },
     "OzzTools\\Vocabulary\\vocabulary.notr.xml": {
       "RelativePath": "OzzTools\\Vocabulary\\vocabulary.notr.xml",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
-      "FileHash": "F20185170EA378CB90D3F49B2428DB6BF5ED8719C7604B33E49702698DA6633D",
-      "FileSize": 71827,
+      "LastWriteTime": "2026-10-22T21:29:51.8691629+03:00",
+      "FileHash": "2A0FAD31DD997DD9D187A41C97703A3A8CF220DF8E08B25CC9DB0D3A8FF96207",
+      "FileSize": 73725,
       "ContextNote": "Contains vocabulry string pairs of OzzCodeGen Loclization Resource Code Engine for notr language",
       "PackingMode": 10
     },
     "OzzTools\\Vocabulary\\vocabulary.tr.xml": {
       "RelativePath": "OzzTools\\Vocabulary\\vocabulary.tr.xml",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
-      "FileHash": "FFDCC846864E124DF125C18A91B2497D5A71B9E11911B71DFF5698560DDBD7D2",
-      "FileSize": 73575,
+      "LastWriteTime": "2026-10-22T21:29:51.8765208+03:00",
+      "FileHash": "D26D2EC5551E0E71A1E4BC8781C78A0BB4398D46997849C926133C797A23EC84",
+      "FileSize": 75536,
       "ContextNote": "Contains vocabulry string pairs of OzzCodeGen Loclization Resource Code Engine for Turkish language",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\OzzTradeDigest.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\OzzTradeDigest.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T20:22:49.0694508+03:00",
       "FileHash": "3F86EFB2AA9FF18895614F3F95581FF24F6E9C35AFD52C5E05EBC837E5309CDD",
       "FileSize": 531,
       "ContextNote": "",
@@ -207,7 +207,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\EnumExtension.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\EnumExtension.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-09-30T05:32:02.3231216+03:00",
       "FileHash": "7FACF9DC722EE0488230C4BB396DED5EEE622721745928753460191AA1C3FFCC",
       "FileSize": 6341,
       "ContextNote": "",
@@ -215,7 +215,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\Numeric.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\Numeric.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3604516+03:00",
       "FileHash": "AB3A14EC4B7B293B01A304BCC5BC3AC9D8DA461B49FC4C717F9CFAEF8246BD43",
       "FileSize": 3467,
       "ContextNote": "",
@@ -223,7 +223,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\TextExtensions.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Extensions\\TextExtensions.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3604516+03:00",
       "FileHash": "101D11D0E795025EDE77948C7680DCD4B1AEEB1345C331DE96F89924B8592100",
       "FileSize": 486,
       "ContextNote": "",
@@ -231,7 +231,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\DateHelper.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\DateHelper.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3604516+03:00",
       "FileHash": "327E887820589CB004F9AFCC4D8EE37A2710E68D128CCB37A21AAD3249DE21DB",
       "FileSize": 5614,
       "ContextNote": "",
@@ -239,7 +239,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\QueryParameters.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\QueryParameters.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-09-30T05:32:02.3297766+03:00",
       "FileHash": "3CB11F20B36BAEEE614415B4150DB3CA0122231A105C76F75AFA6B9135355C08",
       "FileSize": 4587,
       "ContextNote": "",
@@ -247,7 +247,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\TradeQueryParameters.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\TradeQueryParameters.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-10T19:44:25.5626009+03:00",
       "FileHash": "A900B9AD4E5BACB37CBA56B94BB578F3D6CC8754999B72AFBC6CA79F127F2D70",
       "FileSize": 7357,
       "ContextNote": "",
@@ -255,7 +255,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\TradeQueryParameters.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Helpers\\TradeQueryParameters.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3614696+03:00",
       "FileHash": "7442E2DEF11D01D91D0643E06E96340105F8F8451B8AC804D552637C81FFB7F7",
       "FileSize": 329,
       "ContextNote": "",
@@ -263,7 +263,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Currency.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Currency.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3625991+03:00",
       "FileHash": "9BD92E9701D8F97698276B733B5F7C4EE7A26BAA144EAE3739EE98CD097E9549",
       "FileSize": 2996,
       "ContextNote": "",
@@ -271,7 +271,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\EntryOrder.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\EntryOrder.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3625991+03:00",
       "FileHash": "4C22178A3E899F658A38C302AF3091705BAC284124F2FC553279ECE14E4FBE7D",
       "FileSize": 4835,
       "ContextNote": "",
@@ -279,7 +279,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\EntryOrder.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\EntryOrder.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3625991+03:00",
       "FileHash": "42DFEA93E51419857B102A81223667383E474CF4FA0896F28508D84F1860E9DC",
       "FileSize": 2710,
       "ContextNote": "",
@@ -287,7 +287,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Enums.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Enums.cs",
-      "LastWriteTime": "2026-10-19T10:38:57.2098214+03:00",
+      "LastWriteTime": "2026-10-19T19:10:01.4519949+03:00",
       "FileHash": "8240641D77E75F137E8D112FCBF0AB3A5F4803782727385509499DEA05671521",
       "FileSize": 11884,
       "ContextNote": "",
@@ -295,7 +295,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Exchange.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Exchange.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3636358+03:00",
       "FileHash": "17E32FC58CB376420005619A4AB35674FB7BE38ED7C09F69EB8BDA240C1F2FB6",
       "FileSize": 5770,
       "ContextNote": "",
@@ -303,7 +303,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\ExitOrder.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\ExitOrder.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-02T03:10:30.6369797+03:00",
       "FileHash": "550F269592E927F52D65D82F0BE48611B4646C692044EA175D243D7ECB0E508A",
       "FileSize": 5276,
       "ContextNote": "",
@@ -311,7 +311,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\ExitOrder.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\ExitOrder.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-02T19:55:20.6059008+03:00",
       "FileHash": "B5484B91811FF2309ED4FC3F71E287080E14D1723076EF1E9BA013B3C9138C9A",
       "FileSize": 6708,
       "ContextNote": "",
@@ -319,7 +319,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Holiday.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Holiday.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3636358+03:00",
       "FileHash": "CD227D640C8814053DCEDEEE09D35D7AA9524DAB5AAFBEB64057129ACE64FF8A",
       "FileSize": 3533,
       "ContextNote": "",
@@ -327,7 +327,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Session.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Session.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3636358+03:00",
       "FileHash": "47776976BAF94B9C416CE31C13C258A62B65A9027D54D0A08BA796C738D9670C",
       "FileSize": 3815,
       "ContextNote": "",
@@ -335,7 +335,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Symbol.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Symbol.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3646473+03:00",
       "FileHash": "B3B4DF3563642E7C80C550B019891180714F2C35809447FB6EC71B751A373ADE",
       "FileSize": 5878,
       "ContextNote": "",
@@ -343,7 +343,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.calc.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.calc.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3646473+03:00",
       "FileHash": "5AD4D8325D6BCF12F21047A12E079349C2A2A624042D132810034DE1957F8C57",
       "FileSize": 14446,
       "ContextNote": "",
@@ -351,7 +351,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-10T19:44:25.5590905+03:00",
       "FileHash": "6E61732E1D1B0B5EA16205558B056C14278F8887CB70BB10462D8533EA0E0403",
       "FileSize": 10683,
       "ContextNote": "",
@@ -359,7 +359,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\Trade.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3657351+03:00",
       "FileHash": "F2B3B191FB0202355CE0BDE848F08D7522C265F6AA6976BE43490D8965927DF5",
       "FileSize": 19985,
       "ContextNote": "",
@@ -367,7 +367,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradeImage.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradeImage.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-10T19:19:00.7167344+03:00",
       "FileHash": "665E16290B10DF590C8EC5B527ACACEE285CC0B7A0DF4A222E5C260B550C04B5",
       "FileSize": 3290,
       "ContextNote": "",
@@ -375,7 +375,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradeNote.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradeNote.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-10T19:16:05.2027314+03:00",
       "FileHash": "CA3D15392EE7CC62A2D5FB8860C8A5BB0EDF273DA09425EBC25CC26295685638",
       "FileSize": 3408,
       "ContextNote": "",
@@ -383,7 +383,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradingAccount.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Models\\TradingAccount.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3657351+03:00",
       "FileHash": "688CCB5DFD3FCFBD53641B74F723A04EDF5896B5B1FA51F83EAE2D8DEB8B81C3",
       "FileSize": 4089,
       "ContextNote": "",
@@ -391,7 +391,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\GreaterThanAttribute.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\GreaterThanAttribute.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.366782+03:00",
       "FileHash": "DCF9D2172668D0300A6BE51F043A6FA8A2F4DA71C24BEE31D9BF31251567D938",
       "FileSize": 2743,
       "ContextNote": "",
@@ -399,7 +399,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\ModelValidator.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\ModelValidator.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-09-30T05:32:02.3297766+03:00",
       "FileHash": "C99FA88A645C68B9B188ABC2AC75B4F9673E81C295B476EF2D9FFCA9A7E549C0",
       "FileSize": 2930,
       "ContextNote": "",
@@ -407,7 +407,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\NotGreaterThanPropertyAttribute.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\NotGreaterThanPropertyAttribute.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.366782+03:00",
       "FileHash": "06210D7ECD5197948C78A3FCFFBAD0FB4FCE6381458F28C0AB6F174D61E18892",
       "FileSize": 2786,
       "ContextNote": "",
@@ -415,7 +415,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\PriceSideAttribute.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\PriceSideAttribute.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-10-02T20:33:24.5128454+03:00",
       "FileHash": "4F847FAF38C252BC05A41CB8D241E019FE639179B71641A4B2CF5487E1AB756D",
       "FileSize": 5381,
       "ContextNote": "",
@@ -423,7 +423,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\RequiredSelectionAttribute.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest\\Validation\\RequiredSelectionAttribute.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3679642+03:00",
       "FileHash": "7835EA536ABACDA6849B00BF5A06454C7092CAEEC2227A803D5FDD51D88008D0",
       "FileSize": 939,
       "ContextNote": "",
@@ -431,7 +431,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\OzzTradeDigest.AppInfra.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\OzzTradeDigest.AppInfra.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T20:42:07.3559841+03:00",
       "FileHash": "D6A35DCB80D6A7B8021AAD1DEAEB4FF4DD6AC730137F0AE3DEC0E12219B7B1E9",
       "FileSize": 620,
       "ContextNote": "",
@@ -439,7 +439,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Commands\\AbstractCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Commands\\AbstractCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-12T21:29:06.7111105+03:00",
       "FileHash": "8F1242232DC7196BF534820C4B77D44C22DDE73A1F75A7CF7B3FF293E271D937",
       "FileSize": 893,
       "ContextNote": "",
@@ -447,7 +447,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\CurrencyMockLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\CurrencyMockLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2864589+03:00",
       "FileHash": "12846849BC3FB80AA8D059CD5D055B2C9E7F83A62C7E8DB5E8E11AC4EE509279",
       "FileSize": 1862,
       "ContextNote": "",
@@ -455,7 +455,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\ExchangeMockLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\ExchangeMockLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2864589+03:00",
       "FileHash": "82FC9F928A794DFECD16A2D40302E3FF2947E34FB8BFD95AFA0887B7A23BA23A",
       "FileSize": 1855,
       "ContextNote": "",
@@ -463,7 +463,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\MaintenanceMockRepositories.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\MaintenanceMockRepositories.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-17T02:09:30.7671391+03:00",
       "FileHash": "C2122FCE653DDCEB672788369A00B184642A8BB0EC240A92C257B75FBF83CD73",
       "FileSize": 8211,
       "ContextNote": "",
@@ -471,7 +471,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\MockDataSources.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\MockDataSources.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-12T18:12:35.3934792+03:00",
       "FileHash": "BE5BFCA5EC20833C0DBA56421F89D0F566AB584B9F1A8566655B0F433AC72E28",
       "FileSize": 570,
       "ContextNote": "",
@@ -479,7 +479,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\SymbolMockLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\SymbolMockLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.287461+03:00",
       "FileHash": "5063C1DE8BDB1C3E76A95ADAB619FB44968724700F53B295FE2D541292BCFB5A",
       "FileSize": 1817,
       "ContextNote": "",
@@ -487,7 +487,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\TradeMockRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\TradeMockRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2623882+03:00",
+      "LastWriteTime": "2026-10-12T17:41:15.8903383+03:00",
       "FileHash": "F2B6D575E0A85D327B244CC7C27E98ACA4EF6B6C42C7E0D12E8168C3CC65358A",
       "FileSize": 6298,
       "ContextNote": "",
@@ -495,7 +495,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\TradingAccountMockLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\DesignTime\\TradingAccountMockLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2886564+03:00",
       "FileHash": "EDA174533F922CE44AC43B076E6E282580260CBD119831FE0EB853DB8F8D966B",
       "FileSize": 1969,
       "ContextNote": "",
@@ -503,7 +503,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Models\\AppDataSources.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Models\\AppDataSources.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-12T18:10:15.8643702+03:00",
       "FileHash": "26B698E14F04B9EAC2B8D6195BEF6630C2027DEEC13CEC59FC1B1765CE667DB1",
       "FileSize": 2191,
       "ContextNote": "",
@@ -511,7 +511,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\CurrencyLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\CurrencyLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2886564+03:00",
       "FileHash": "F0BF5B76112446B81E39F1B3B509F7B2BF40A81269030CE97237C9AC24A77679",
       "FileSize": 1475,
       "ContextNote": "",
@@ -519,7 +519,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ExchangeLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ExchangeLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2886564+03:00",
       "FileHash": "526871FD3724E56E4ABF215C36300ABA6D61364807B3C981398DC445F13C3D8F",
       "FileSize": 1472,
       "ContextNote": "",
@@ -527,7 +527,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ICurrencyLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ICurrencyLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2901314+03:00",
       "FileHash": "A48FB87D64CDC74731B356388CD58F7861C63A6D23A9549D3027B17A8F71A9C5",
       "FileSize": 1044,
       "ContextNote": "",
@@ -535,7 +535,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\IExchangeLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\IExchangeLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2901314+03:00",
       "FileHash": "95FA63B0C6AD811C325D827FF14D76FEEDCEB1B46BB35135FFA8DFBE46D32F09",
       "FileSize": 1043,
       "ContextNote": "",
@@ -543,7 +543,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ISymbolLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ISymbolLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2901314+03:00",
       "FileHash": "E5F19CCF4188FB25C9F5717FC3F3A4EA9F694629392825AB5C5B2311B239F558",
       "FileSize": 1031,
       "ContextNote": "",
@@ -551,7 +551,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ITradingAccountLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\ITradingAccountLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2901314+03:00",
       "FileHash": "BB9A1FF9172940E35F9D90A7E1554D5104158A1638A35F3D0294BE136D1E06E3",
       "FileSize": 1079,
       "ContextNote": "",
@@ -559,7 +559,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\SymbolLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\SymbolLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2911995+03:00",
       "FileHash": "8C31B7986B27C2E42B40C447DF8494831FD5C11FDF6A9088AC476AF0188E05A5",
       "FileSize": 1434,
       "ContextNote": "",
@@ -567,7 +567,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\TradingAccountLookupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\Services\\TradingAccountLookupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2911995+03:00",
       "FileHash": "88FAC7ECC76846209EDE59D92411CF97B4E85082EE23C3BEC2238896D936B78E",
       "FileSize": 1586,
       "ContextNote": "",
@@ -575,7 +575,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractCollectionVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractCollectionVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9617772+03:00",
       "FileHash": "22D09D05AC773FAAAF5224C5E572C815BE23C7A7BEA4DF193480B67EB4606DC8",
       "FileSize": 2562,
       "ContextNote": "",
@@ -583,7 +583,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractCreateEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractCreateEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9607772+03:00",
       "FileHash": "D3A1CE5A1823A6177467E70C261F85A6095A5D916CF92DB5AC8D1C8A738F915F",
       "FileSize": 1113,
       "ContextNote": "",
@@ -591,7 +591,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractDataErrorInfoVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractDataErrorInfoVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9607772+03:00",
       "FileHash": "309B5700CAFF5577A389E65548C143ACC1E0C771C79BD935A859FBB4C03F2C17",
       "FileSize": 3873,
       "ContextNote": "",
@@ -599,7 +599,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractViewModel.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\AbstractViewModel.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9597771+03:00",
       "FileHash": "C8D35A391600628C14314A8D082782250FB6B668C881AE344E764ED659FDEAEF",
       "FileSize": 899,
       "ContextNote": "",
@@ -607,7 +607,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\ISymbolCreationContext.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\ISymbolCreationContext.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2921962+03:00",
       "FileHash": "885563E0E97C8A214FECF106DD791AB3E30B35A9D15BBB116FC25CAD232355AF",
       "FileSize": 426,
       "ContextNote": "",
@@ -615,7 +615,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\QueryParametersVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\QueryParametersVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2921962+03:00",
       "FileHash": "10A8B4D9DD58E19BEEAB791B46C880F05153C6D536B4AC3047D9EF4D7E09A053",
       "FileSize": 3101,
       "ContextNote": "",
@@ -623,7 +623,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\Trades\\TradeQueryParametersVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\Trades\\TradeQueryParametersVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2932925+03:00",
       "FileHash": "CE9B37C7E5782277A9D8A90849BCD087B3967A2506585DA4309E9B1031AC0E79",
       "FileSize": 10236,
       "ContextNote": "",
@@ -631,7 +631,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\Trades\\TradeQueryParametersVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.AppInfra\\ViewModels\\Trades\\TradeQueryParametersVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2932925+03:00",
       "FileHash": "F1E8D77C3DF90ACFBF5EB1FE6C63D2826E9E08CA0810299EBB3A21D1259FAE70",
       "FileSize": 2112,
       "ContextNote": "",
@@ -639,7 +639,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\OzzTradeDigest.i18n.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\OzzTradeDigest.i18n.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3594441+03:00",
       "FileHash": "CE847F82842625FA22A74B9D84199EDDD30AB65C267F4B4D4CA114C2B26EB4B3",
       "FileSize": 2454,
       "ContextNote": "",
@@ -647,55 +647,55 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.Designer.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
-      "FileHash": "E40EE9B04ABF7E539565FAABCAD3FB6C5AE036E2D71497AE13F44A3C36B32410",
-      "FileSize": 22882,
+      "LastWriteTime": "2026-10-22T21:10:11.0080134+03:00",
+      "FileHash": "5FFA92816383739A5534EB33C0C6F8B361C4D2F4EBF85CCEB2594C736D3129A0",
+      "FileSize": 23744,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
-      "FileHash": "CDB35FC6E902E15C0AE00FB7B5D63838736EF7893D5007E8514C6B067422B9B5",
-      "FileSize": 9592,
+      "LastWriteTime": "2026-10-22T21:18:01.3295539+03:00",
+      "FileHash": "E613912A03F4784317948EC39E895653DFB296EA68887AF3B737C64706AE9143",
+      "FileSize": 9878,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ActionStrings.tr.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "C72FC49918C067B1A7820C137EC65AB9F6DC70D29FF44083FE6A6E181C995AC9",
-      "FileSize": 9785,
+      "LastWriteTime": "2026-10-22T21:18:01.3315585+03:00",
+      "FileHash": "CB8AD8380CEF6A61529E7F0350137EA435DEA0A8EC6B8F2B3882CCD2FA797892",
+      "FileSize": 10076,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.Designer.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "1846D4E7F1C21169B1B2C6D1D79B82F1E0380C7820160B888CD0260FB3A961B5",
-      "FileSize": 10998,
+      "LastWriteTime": "2026-10-22T21:18:18.9820301+03:00",
+      "FileHash": "B372F2EE81120FFE994F5FFD229AAEFF2D0DB24F0D72A8A3F9BCBB172A2EC74E",
+      "FileSize": 14657,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "1B842B8862AA10117F0D3648DFB339BC7FE3202F832FA1CE2750299DFC506154",
-      "FileSize": 5714,
+      "LastWriteTime": "2026-10-22T21:18:01.3315585+03:00",
+      "FileHash": "2F221E6C9475E780DB47F85AF99024E40692FD23E02DD52D0D37280A8A44157C",
+      "FileSize": 7002,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\CommonStrings.tr.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "B36F4AA6DED8FE9AC451F8A9485119D0F0EE37E8652372D09C65C6B4CB83B471",
-      "FileSize": 5743,
+      "LastWriteTime": "2026-10-22T21:18:01.3315585+03:00",
+      "FileHash": "2EF3FBF047A4D6254E306D941835DC4395BAB88924EB018424BD84535A81B0D2",
+      "FileSize": 7075,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.Designer.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3571481+03:00",
       "FileHash": "6A9982209CEF11170532459E7B668E3BD1129828AD765E67FEE734FA310C89BB",
       "FileSize": 11797,
       "ContextNote": "",
@@ -703,7 +703,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-10-22T21:18:01.3315585+03:00",
       "FileHash": "15A7C3BDD1E0C136545E3C979B44EFBC1E69C61A50D1008827B74AC9FC0DD52E",
       "FileSize": 6598,
       "ContextNote": "This file contains localizable resources.",
@@ -711,7 +711,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\ErrorStrings.tr.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
+      "LastWriteTime": "2026-10-22T21:18:01.3315585+03:00",
       "FileHash": "95FFFBD1D9B4A6DE31F77916BFD6D1C54D14CB7CA1C117F0839D3D2517052D4E",
       "FileSize": 6740,
       "ContextNote": "This file contains localizable resources.",
@@ -719,55 +719,55 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.Designer.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "31D34869354785C198CC6F5550DACDAEA4B43306B890C27D43F61E1F540EED0F",
-      "FileSize": 90658,
+      "LastWriteTime": "2026-10-22T09:10:17.1837803+03:00",
+      "FileHash": "DCBE5E1F0F5FB12C0B96541831B6CE2902FE383AB90E50FFB0F9200765683A81",
+      "FileSize": 91261,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "B0A46A527E9DAC279C78F0B55687782FAD10E2A0374F9BFC007A36A95C5E2FC4",
-      "FileSize": 33282,
+      "LastWriteTime": "2026-10-22T21:18:01.3360533+03:00",
+      "FileHash": "4087CACCF85AF0BFA44A596706499F53BC795AEF0CC43ECE5483A9B4126C09D3",
+      "FileSize": 33492,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\LocalizedStrings.tr.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "03ACC06390399EA595417EEA4F4472CF3988F89CD9040FD07C320FD019790FC9",
-      "FileSize": 33971,
+      "LastWriteTime": "2026-10-22T21:18:01.3360533+03:00",
+      "FileHash": "458155D2E68360172E29A6A9BB1544AB66ACFD2EA636519BC048E33E094749E5",
+      "FileSize": 34181,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.Designer.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.Designer.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "E4BC2B49CC41974BEDB668E6D1305DE1D4F8FECE4CFEA54F5E7CB3EB05C1D243",
-      "FileSize": 11799,
+      "LastWriteTime": "2026-10-22T19:59:17.4965662+03:00",
+      "FileHash": "A0D626906A35BF37F290B42B57F312A4A3BC2C1C3EF5633B313034588022026E",
+      "FileSize": 12196,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "A8630CC9F4AEB574859EF4BAF7A38107B38E4EA5A98D4C8E3BD53AD8D454A2A9",
-      "FileSize": 6567,
+      "LastWriteTime": "2026-10-22T21:18:01.3335629+03:00",
+      "FileHash": "C97FC884B22949DBE46957E54EB9B17921016C5CD466391E736CFB877AE6D5AD",
+      "FileSize": 6753,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.tr.resx": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.i18n\\MessageStrings.tr.resx",
-      "LastWriteTime": "2026-10-18T08:04:54.4284078+03:00",
-      "FileHash": "D428851BA2EB9FB4A1DEC6EEE6B1B37E647B018CB250F861F86E754FA9E30E3B",
-      "FileSize": 6835,
+      "LastWriteTime": "2026-10-22T21:18:01.3335629+03:00",
+      "FileHash": "20C5F008E74AC474037CDDE70E5ECC2338F93E32C23C1D2AF79FB28F47A4C1DB",
+      "FileSize": 7035,
       "ContextNote": "This file contains localizable resources.",
       "PackingMode": 10
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\OzzTradeDigest.SQLite.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\OzzTradeDigest.SQLite.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-17T18:27:58.1848861+03:00",
       "FileHash": "36762B23F0AA531D792DED9CFAF27C88018A44B039605E770BEA352BADCA6790",
       "FileSize": 944,
       "ContextNote": "",
@@ -775,7 +775,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\AbstractDatabaseRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\AbstractDatabaseRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-10-12T16:11:03.0620634+03:00",
       "FileHash": "F5535AC5A9FBC44D047D0969B3C436E8AD91600728590C15257FEDE083A30A56",
       "FileSize": 6138,
       "ContextNote": "",
@@ -783,7 +783,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\CurrencyRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\CurrencyRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2932925+03:00",
       "FileHash": "49EB9008AB490A758904635464F9C2E12F2F29835589C56DEB54CCC8F7818DDE",
       "FileSize": 11705,
       "ContextNote": "",
@@ -791,7 +791,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\EntryOrderRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\EntryOrderRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
       "FileHash": "4443C97FA7B368FBEF9CC0EEAF2A2CD315AC73D6E92AF8D9A4E197095E0DC848",
       "FileSize": 16812,
       "ContextNote": "",
@@ -799,7 +799,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExchangeRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExchangeRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
       "FileHash": "3201167CA17DCE209771EC34043F3C3E380C701BC2A759074E080B029A702C7C",
       "FileSize": 19930,
       "ContextNote": "",
@@ -807,7 +807,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExchangeRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExchangeRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
       "FileHash": "6ADA7E70938B771DD5D2BD089CC71521C7A3F1A86A6105EE22AEF389F62132B2",
       "FileSize": 949,
       "ContextNote": "",
@@ -815,7 +815,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExitOrderRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\ExitOrderRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-01T05:28:36.5329538+03:00",
       "FileHash": "1EF2E5E4AC627BF5E340888716CC8DEB3A84094189A282657AAE72AB74D1505B",
       "FileSize": 17250,
       "ContextNote": "",
@@ -823,7 +823,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\HolidayRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\HolidayRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3002402+03:00",
       "FileHash": "99220EEA651BADD0841796AFB472D50EFACBEE3CF18733D624831313C388401D",
       "FileSize": 10942,
       "ContextNote": "",
@@ -831,7 +831,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\MetadataRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\MetadataRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-12T16:11:03.0693413+03:00",
       "FileHash": "11464DA42317E23CF4337CAF15F08FBAC4608E53DFF9D5AB0813B3BCA08E3584",
       "FileSize": 7464,
       "ContextNote": "",
@@ -839,7 +839,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SessionRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SessionRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3018705+03:00",
       "FileHash": "5972D140A0EE58768EFA25324AEABB2F35511274E4C7EB7C2F38D4D7EB898943",
       "FileSize": 10505,
       "ContextNote": "",
@@ -847,7 +847,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SymbolRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SymbolRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3018705+03:00",
       "FileHash": "1E3D3DB909A002A151AC1CFAA55224E0149DC02A96182E7884F26DFF19363EB7",
       "FileSize": 21817,
       "ContextNote": "",
@@ -855,7 +855,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SymbolRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\SymbolRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.302897+03:00",
       "FileHash": "F06B30E6DA8A3B136C82D9C4A248D905636D10FB7BFAF34EFF0455B3AC574C14",
       "FileSize": 576,
       "ContextNote": "",
@@ -863,7 +863,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeImageRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeImageRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-12T16:11:03.0713505+03:00",
       "FileHash": "AAEA6A6A4AA43C4514C1DB3A2C7ADEF6DE0258EA5EA0B6BE4E0569ABEEED446C",
       "FileSize": 11683,
       "ContextNote": "",
@@ -871,7 +871,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeNoteRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeNoteRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-12T16:08:48.0616789+03:00",
       "FileHash": "46EE86737269B143D0D346920034578BEB7F7824E80038B7D2C69FB16DA171AD",
       "FileSize": 10921,
       "ContextNote": "",
@@ -879,7 +879,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeNoteRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeNoteRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:37:28.0422774+03:00",
+      "LastWriteTime": "2026-10-17T02:08:09.7290365+03:00",
       "FileHash": "C06A32535504FAC1BAAD179234D6939C773F0C7A8A7CEA6A8F094C84D06CE9AE",
       "FileSize": 1558,
       "ContextNote": "",
@@ -887,7 +887,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-12T16:08:50.6314023+03:00",
       "FileHash": "EB0039030AB02B2A47D53673511F09F7B6B682D1449CC2022701958E8E6EDDAB",
       "FileSize": 52990,
       "ContextNote": "",
@@ -895,7 +895,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradeRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-17T21:51:01.5590014+03:00",
       "FileHash": "5F030F401B7E8C413BE915B6A546DDDE938027E158FE71F85FFFAFABEF55498F",
       "FileSize": 12811,
       "ContextNote": "",
@@ -903,7 +903,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradingAccountRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\TradingAccountRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3038937+03:00",
       "FileHash": "E1467328A7618156305514B8CEB0F2BD5B51998EF6189FD5F3A63FF64764BB38",
       "FileSize": 17283,
       "ContextNote": "",
@@ -911,7 +911,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Currencies-Data.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Currencies-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
       "FileHash": "153798541CF033942B9EE0900A4050A580C126F3C611D9651CC14505FB4BE4A3",
       "FileSize": 2770,
       "ContextNote": "",
@@ -919,7 +919,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Currency.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Currency.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
       "FileHash": "FCB265A0230A21AFB8B6159FBD73EBE4AC894A9ECD6E99816752CF8D6F3BCDFE",
       "FileSize": 463,
       "ContextNote": "",
@@ -927,7 +927,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\EntryOrder.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\EntryOrder.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2780732+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2943665+03:00",
       "FileHash": "2F24D5942CAD7D0A0825C402E117ABA9AA233520526F893156DE3A8D23BFB420",
       "FileSize": 539,
       "ContextNote": "",
@@ -935,7 +935,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Exchange.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Exchange.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
       "FileHash": "670B4CA9770DFC6A9B6D575F68FD2CFFBAEEE309848E0969D9EF969C445FC70C",
       "FileSize": 770,
       "ContextNote": "",
@@ -943,7 +943,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Exchanges-Data.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Exchanges-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
       "FileHash": "A4866DB06DA77F7A14E4041F23693C75135C35DF416EB72A1B802D56F6911214",
       "FileSize": 1946,
       "ContextNote": "",
@@ -951,7 +951,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\ExitOrder.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\ExitOrder.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-01T05:28:21.6392277+03:00",
       "FileHash": "EA71133A13628C72E3FB5224C71E49D1D2F4A18C25A9B4D5B58F5D439EF6D24D",
       "FileSize": 569,
       "ContextNote": "",
@@ -959,7 +959,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Holiday.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Holiday.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
       "FileHash": "9D0CDB3535449758B0F0BBEA70C74F6C73945E3171BEBAB41EDA0815D35B4E08",
       "FileSize": 295,
       "ContextNote": "",
@@ -967,7 +967,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Holidays-Data.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Holidays-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2954176+03:00",
       "FileHash": "5D34C6A9991ED2718FFD2C43FE232006F4994E48D9845B37099AE694BE90B8BC",
       "FileSize": 19392,
       "ContextNote": "",
@@ -975,7 +975,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Session.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Session.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
       "FileHash": "19E535E3837F13E6BB6391B0B0ABF283A10921A6C68BA917388200E7AC0BB833",
       "FileSize": 214,
       "ContextNote": "",
@@ -983,7 +983,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Sessions-Data.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Sessions-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
       "FileHash": "E02E1B3389EB1581527BA00B71B8613982ED9445FEAD8E7BC1AADEEB354B559E",
       "FileSize": 1969,
       "ContextNote": "",
@@ -991,7 +991,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Symbol.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Symbol.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2964449+03:00",
       "FileHash": "198A7702E2FDC1D1B6CA2081E955A396949D75E6C531EBFA5D5D9FD70F38D5D1",
       "FileSize": 810,
       "ContextNote": "",
@@ -999,15 +999,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Symbols-Data.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Symbols-Data.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
-      "FileHash": "64A04F768EB67A7E127D9EEDC96BD5B21A0E344DB88668AD84B15FCA160E35EE",
-      "FileSize": 34553,
+      "LastWriteTime": "2026-10-21T05:21:29.5803721+03:00",
+      "FileHash": "3CFA0E9BB78F3A2A2323B2DD2BB2DEC3B2156A07415D840C6DEEA9DB71C96882",
+      "FileSize": 41378,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Trade.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\Trade.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:17:42.0919821+03:00",
       "FileHash": "7B365FBFA0D42C012F392E4423A523709FD64384F79DD8147E7FEF5BFA5645FF",
       "FileSize": 1979,
       "ContextNote": "",
@@ -1015,7 +1015,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradeImage.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradeImage.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:14:29.7201443+03:00",
       "FileHash": "8555EC2CCBE7EBFDB07BDF1FDA5A0B5F0E7385F8133B196354C807D9C1D371F1",
       "FileSize": 455,
       "ContextNote": "",
@@ -1023,7 +1023,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradeNote.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradeNote.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-10T19:47:43.4350659+03:00",
       "FileHash": "01354C15F03205830D19D7CADB077F10F0B60A01209C1ABFFE206DD95BD6628F",
       "FileSize": 295,
       "ContextNote": "",
@@ -1031,7 +1031,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradingAccount.sql": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts\\TradingAccount.sql",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.2988932+03:00",
       "FileHash": "A97FEFA37833E38653CA26AE6B4B5F621CC3B0675B54E89526453123811CE210",
       "FileSize": 664,
       "ContextNote": "",
@@ -1039,7 +1039,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\Extensions\\SqliteExtensions.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\Extensions\\SqliteExtensions.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.2940161+03:00",
+      "LastWriteTime": "2026-10-12T16:11:03.0620634+03:00",
       "FileHash": "FE05F03DEB12296F3916D839DC6C070ED1A954005D01A9F7B3EEC6A3691A08D5",
       "FileSize": 19732,
       "ContextNote": "",
@@ -1047,7 +1047,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\OzzTradeDigest.WPF.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\OzzTradeDigest.WPF.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.3519782+03:00",
+      "LastWriteTime": "2026-10-22T19:45:23.6450157+03:00",
       "FileHash": "3092F913E168A16E3E72A2CF44E9B668D7DE9500C8A900253ACDB05767F1D679",
       "FileSize": 1429,
       "ContextNote": "",
@@ -1055,7 +1055,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\App.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\App.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3038937+03:00",
       "FileHash": "5C7BBAE60028F0650DD9FD9CE3619DF6EBEA41EBEE6CD8B83108E32D255395BE",
       "FileSize": 905,
       "ContextNote": "",
@@ -1063,7 +1063,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\App.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\App.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-10-12T18:10:50.3984798+03:00",
       "FileHash": "649FF2B61241444D1C7272F75932E3012B2D2E18F00ECFEEED179F5CDF8A64E7",
       "FileSize": 3490,
       "ContextNote": "",
@@ -1071,7 +1071,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\AssemblyInfo.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\AssemblyInfo.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3052014+03:00",
       "FileHash": "1D31ED3C7E4AAF76FABB82E330208385CB70685E9B7C577764493A4D169BCA61",
       "FileSize": 644,
       "ContextNote": "",
@@ -1079,7 +1079,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Behaviors\\AsyncImageLoader.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Behaviors\\AsyncImageLoader.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3062432+03:00",
       "FileHash": "18C585D017E1E312036FF53F30F4A78EB7202615270612FDA9373C2ACD1571FA",
       "FileSize": 6794,
       "ContextNote": "",
@@ -1087,7 +1087,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Behaviors\\BubbleScroll.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Behaviors\\BubbleScroll.cs",
-      "LastWriteTime": "2026-10-18T08:59:14.4785579+03:00",
+      "LastWriteTime": "2026-10-18T16:47:54.9061435+03:00",
       "FileHash": "7D1E64DE0B8EE42833575FC66DFA9FEBEDA7B240D372EC6974DE0DB7A5A07BE2",
       "FileSize": 2205,
       "ContextNote": "",
@@ -1095,7 +1095,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ExitCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ExitCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3076381+03:00",
       "FileHash": "5695391FD1C9DCDE37BB52B3E38CE07ECFFAE7C00F7898F0904E87D6651E8E9D",
       "FileSize": 244,
       "ContextNote": "",
@@ -1103,7 +1103,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\OpenFileCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\OpenFileCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3100503+03:00",
       "FileHash": "707C2B5154B93E228B5B8A046E938E56A1F6AD3FA20883B66ABD7A2B0BA0C4BD",
       "FileSize": 711,
       "ContextNote": "",
@@ -1111,7 +1111,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ShowAboutCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ShowAboutCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3103825+03:00",
       "FileHash": "E92B4DBCE4379837ACD1E5032B33E82C764AE8956929F5A3FA44186EE799B2C9",
       "FileSize": 384,
       "ContextNote": "",
@@ -1119,7 +1119,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ShowMaintenanceCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\ShowMaintenanceCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3103825+03:00",
       "FileHash": "A16E459D72ED20E5A24C2D6F1E25709512BA4D673F2B5687CA499A5213F236E1",
       "FileSize": 1045,
       "ContextNote": "",
@@ -1127,7 +1127,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3062432+03:00",
       "FileHash": "F821E08D5728FC5C8E8AABD11E17FDD0F645B7BF8FCBDB605CA84BE17F3480CD",
       "FileSize": 2389,
       "ContextNote": "",
@@ -1135,7 +1135,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3062432+03:00",
       "FileHash": "BCD0970E2762E827733E95784F95FD61D5408D90D78DE3AA9ECBEFDE8D5952E8",
       "FileSize": 2177,
       "ContextNote": "",
@@ -1143,7 +1143,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Exchanges\\ExchangeEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3076381+03:00",
       "FileHash": "DEF33402BB3CA0ABD61AE0EFD79355E3E9A7C094DB1F0E99A065DF1EC732C808",
       "FileSize": 2494,
       "ContextNote": "",
@@ -1151,7 +1151,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3076381+03:00",
       "FileHash": "9B094BD9A687B760A942FC6DC6484D7D763BFC7EECDC2A4905E6178CBEE9623D",
       "FileSize": 2122,
       "ContextNote": "",
@@ -1159,7 +1159,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3076381+03:00",
       "FileHash": "7E712FAD750C132C39E2045AB045FE3DEC1F463847A134C875181FB9E5636954",
       "FileSize": 2181,
       "ContextNote": "",
@@ -1167,7 +1167,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\CurrencyEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3076381+03:00",
       "FileHash": "A9DCF45441C9D7E9441E6D4AF20ECCB29DBC503A38138D5EE0C139C64D34F965",
       "FileSize": 2499,
       "ContextNote": "",
@@ -1175,7 +1175,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "D5CB2A201B46CA43BACF92FACA5B59E442565B98E19AFD6B0A3E3382EBDAF36D",
       "FileSize": 3118,
       "ContextNote": "",
@@ -1183,7 +1183,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "CCD2352172B7847A23A53B4191CF3A66829D3075AC94C98BB91A4C47CA54AA97",
       "FileSize": 2162,
       "ContextNote": "",
@@ -1191,7 +1191,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\SymbolEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "2385659FEE14A2C553A8FFA4365DCD18170D943A4195EA7935B8650AA967905C",
       "FileSize": 2485,
       "ContextNote": "",
@@ -1199,7 +1199,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "1D10636918B3656420640818F500B1C8A20C26267BF6B249B66A27D713D33B34",
       "FileSize": 3015,
       "ContextNote": "",
@@ -1207,7 +1207,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "3269CFB4457C243832B437FE562DA8A69AB97DF7B6B27183E0A0F6A09B6929BE",
       "FileSize": 2287,
       "ContextNote": "",
@@ -1215,15 +1215,23 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Maintenance\\TradingAccountEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3088337+03:00",
       "FileHash": "CC71D66602754FDE3AB940AD2EC9CC21757DAB5B47828308726847E75ECFB1AA",
       "FileSize": 2586,
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Settings\\UserPreferencesEditCommand.cs": {
+      "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Settings\\UserPreferencesEditCommand.cs",
+      "LastWriteTime": "2026-10-22T19:43:30.8085188+03:00",
+      "FileHash": "47356425CB7DE8D95C7C6AD05709AC8FBDFE657FF545A57FD08C86FDF9DD048E",
+      "FileSize": 1252,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3100881+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3103825+03:00",
       "FileHash": "C59ED5DC4D102AFF5F6224E658C3EF926C090AFFCAB4E475561605A945190E58",
       "FileSize": 2287,
       "ContextNote": "",
@@ -1231,7 +1239,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3259996+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3113934+03:00",
       "FileHash": "E8B8BBB6C395C2C5179B5FC273924773A1A683B9A21F9C3512C5473516445912",
       "FileSize": 1412,
       "ContextNote": "",
@@ -1239,15 +1247,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\EntryOrderEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3259996+03:00",
-      "FileHash": "F71544EB15F837D8FD3FC1750D091ED2EAB12771187BBBDF97C86728EE62E0FA",
-      "FileSize": 2243,
+      "LastWriteTime": "2026-10-22T19:50:13.1259792+03:00",
+      "FileHash": "C968DF4F0836D6CE50AD167E8838002CAB54ACC935FD879C9B9B12DF2FF90EB9",
+      "FileSize": 2288,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3113934+03:00",
       "FileHash": "70AA59FB844DB34239CB4D39CAC24958C3C54D2861149BAFB1120B178A16B3BB",
       "FileSize": 2326,
       "ContextNote": "",
@@ -1255,7 +1263,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3113934+03:00",
       "FileHash": "4140DA85AB5E2B357F28ACFBF306C06C6AF4F8868EB06F2DDC19BB6B12532B40",
       "FileSize": 1430,
       "ContextNote": "",
@@ -1263,7 +1271,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\StopLossOrderEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3124954+03:00",
       "FileHash": "EF576932918E751D543454E46F2BB741E5A3F4C4354D6D3670171502411F90A6",
       "FileSize": 2291,
       "ContextNote": "",
@@ -1271,7 +1279,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3124954+03:00",
       "FileHash": "C6DF5B9E9E248ADD22D72A239717C33FCBCD45B223ACD3CF18F9CE30B8A77A9C",
       "FileSize": 2352,
       "ContextNote": "",
@@ -1279,7 +1287,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3124954+03:00",
       "FileHash": "8B15C0FECCEDC8BBC00EB823D7752B77696072F3F0EE7632803B5C793002BC37",
       "FileSize": 1450,
       "ContextNote": "",
@@ -1287,7 +1295,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TakeProfitOrderEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3124954+03:00",
       "FileHash": "268BA468CBA4598ECF102583400A7854C8E12C4E51BFBAC1F86D6DF375E289F0",
       "FileSize": 2323,
       "ContextNote": "",
@@ -1295,7 +1303,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3135621+03:00",
       "FileHash": "B058796516D4719B0FD82F71AB8BFB946895BEE9C8147DB13DEED94FD1F22BD1",
       "FileSize": 3142,
       "ContextNote": "",
@@ -1303,7 +1311,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3135621+03:00",
       "FileHash": "442CBCC5113DD180005D812FB96FE246DAC9B984CA167564C57ACBC1B75125D5",
       "FileSize": 2119,
       "ContextNote": "",
@@ -1311,7 +1319,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeDetailCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeDetailCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3135621+03:00",
       "FileHash": "CDCF6D7D0E8FFC0CD188B5F659D843FDDE0F72CA41C3C0CEE75440E39B8AACA0",
       "FileSize": 1475,
       "ContextNote": "",
@@ -1319,7 +1327,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3135621+03:00",
       "FileHash": "46674BE9B821DD06D2F934C80523349AA9E9BA8D1E942F653E9388E77ECCAD4A",
       "FileSize": 2445,
       "ContextNote": "",
@@ -1327,7 +1335,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-12T20:49:06.6407288+03:00",
       "FileHash": "891E0C9B7071EE41B4E14C6F89F6239C5251C4247C0422167A78CB41556FE7FF",
       "FileSize": 2096,
       "ContextNote": "",
@@ -1335,7 +1343,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-17T03:17:51.2925374+03:00",
       "FileHash": "8E29610BF3228DFDAAE9A4AAAB1DA1AFD689E1F51F93BCD58775764F3AADDC56",
       "FileSize": 1202,
       "ContextNote": "",
@@ -1343,7 +1351,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageDetailCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeImageDetailCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3147282+03:00",
       "FileHash": "2F789F3BD7B4060E35EF86815ED4C16B7F9FCF47860580DFA1C69F4EFC253A09",
       "FileSize": 1117,
       "ContextNote": "",
@@ -1351,7 +1359,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteCreateCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteCreateCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-12T20:45:02.7991412+03:00",
       "FileHash": "4E6F3D196CEB11C78F3A10C8AB29744330BD1BE38881803BE526921C95B4C8BF",
       "FileSize": 2069,
       "ContextNote": "",
@@ -1359,7 +1367,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteDeleteCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteDeleteCommand.cs",
-      "LastWriteTime": "2026-10-18T08:45:08.5735927+03:00",
+      "LastWriteTime": "2026-10-18T16:47:54.9061435+03:00",
       "FileHash": "5FF551FD072A9A841EC3C83FB2EFE035A10DF9C649A588F3743010391F7DB6C0",
       "FileSize": 1346,
       "ContextNote": "",
@@ -1367,7 +1375,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteDetailCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteDetailCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-12T21:28:42.6077335+03:00",
       "FileHash": "084CC0CDBB60F49B2144F677C8162AB61704C1A1B9BE1F0BBCC4F886F56FCB47",
       "FileSize": 1513,
       "ContextNote": "",
@@ -1375,7 +1383,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteEditCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradeNoteEditCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-12T20:58:51.7234401+03:00",
       "FileHash": "33FEE08F1079730808385994ABDAC6AA104DE6716A85DA671A66513477931BDF",
       "FileSize": 1877,
       "ContextNote": "",
@@ -1383,7 +1391,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesLoadCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesLoadCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3157757+03:00",
       "FileHash": "309F066FC327B92544D10739B5A4D795D1349421E61CB63483C9587A4613933B",
       "FileSize": 1159,
       "ContextNote": "",
@@ -1391,7 +1399,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesNextPageCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesNextPageCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3157757+03:00",
       "FileHash": "EE40FB12A4044C7436D780365C2C3F97500235BBCD6C38EE9BC71343B3454E09",
       "FileSize": 1104,
       "ContextNote": "",
@@ -1399,7 +1407,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesPrevPageCommand.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Commands\\Trades\\TradesPrevPageCommand.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3157757+03:00",
       "FileHash": "E79A9209A8DFE3809696C044B57D16261097D8EA161F996BA18DC36349AC664C",
       "FileSize": 1104,
       "ContextNote": "",
@@ -1407,7 +1415,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Controls\\DateTimePicker.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Controls\\DateTimePicker.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T21:30:40.7931141+03:00",
       "FileHash": "6A3AC45FA61EB9D865039B7954805D0DEDD7586D226162A06E1E2427EF272F06",
       "FileSize": 9210,
       "ContextNote": "",
@@ -1415,7 +1423,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Controls\\DateTimePicker.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Controls\\DateTimePicker.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3169577+03:00",
       "FileHash": "1B472D262D9CF7C10504A0E4F541AC5E69ACD090D147930BCB0A1A4250178263",
       "FileSize": 6879,
       "ContextNote": "",
@@ -1423,7 +1431,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\BoolToColor.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\BoolToColor.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3169577+03:00",
       "FileHash": "CA31EF2B5209EFEB992ED404591AD9AF34855F20E3386F8BA17A88F17567B78B",
       "FileSize": 1701,
       "ContextNote": "",
@@ -1431,7 +1439,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\BoolToVisibility.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\BoolToVisibility.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3285073+03:00",
+      "LastWriteTime": "2026-10-14T12:57:59.796179+03:00",
       "FileHash": "50C47E7793A6FB5FA164FFFAE47184886670E96F778762A0D521759AFEF6DE52",
       "FileSize": 1237,
       "ContextNote": "",
@@ -1439,7 +1447,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\EnumDescriptionConverter.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\EnumDescriptionConverter.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3428111+03:00",
+      "LastWriteTime": "2026-10-14T09:57:20.668302+03:00",
       "FileHash": "F690EDC1101A161FE8170D28AC4B2AC8BEF082D4C702DF48728342FA294B2FEB",
       "FileSize": 2973,
       "ContextNote": "",
@@ -1447,7 +1455,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\ImageUrlToSource.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\ImageUrlToSource.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3428111+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3169577+03:00",
       "FileHash": "8C2D61D39BEAFF6E5EAFC40CD64BC627B847E20E5DF336AED107E35042A09A09",
       "FileSize": 1722,
       "ContextNote": "",
@@ -1455,7 +1463,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\ProfitLossToColor.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\ProfitLossToColor.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.343867+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3169577+03:00",
       "FileHash": "22BEFCD820FE2C6F2C714C15DED3B4849F621133EEA5009EF0F2FABD6891F689",
       "FileSize": 2062,
       "ContextNote": "",
@@ -1463,7 +1471,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\TradeDirectionToColor.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\TradeDirectionToColor.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.343867+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3180808+03:00",
       "FileHash": "7D5CF6258DAEA156252DE02C6350213654902CDF630E98FF411AC655DC2860DF",
       "FileSize": 1523,
       "ContextNote": "",
@@ -1471,7 +1479,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\TradeStatusToColor.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Converters\\TradeStatusToColor.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3449685+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3180808+03:00",
       "FileHash": "AB784A41C38DFBC04CA74A02DD3ACB4F9C59835071E39EF3DF158FBCBDA2D675",
       "FileSize": 1720,
       "ContextNote": "",
@@ -1479,7 +1487,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\DesignTime\\MockTradeHistoryVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\DesignTime\\MockTradeHistoryVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3449685+03:00",
+      "LastWriteTime": "2026-10-14T00:43:52.2500613+03:00",
       "FileHash": "DCBA0B10DDB300F32F3952F15830E41B9C96816865F80A54043FBBC09E965423",
       "FileSize": 7140,
       "ContextNote": "",
@@ -1487,15 +1495,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\DesignTime\\MockWindowDialogService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\DesignTime\\MockWindowDialogService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3459651+03:00",
-      "FileHash": "14BA5E1BFE4D04AB8B258128D0528EF004FB2BA1EEFD6D3DA0FB3F72B24162CE",
-      "FileSize": 3947,
+      "LastWriteTime": "2026-10-22T18:46:29.4149723+03:00",
+      "FileHash": "82ADADFC58B3028858351DACDAE542FE4B54C08C000CFC0B4E4FB9781BF4A679",
+      "FileSize": 3925,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3469658+03:00",
+      "LastWriteTime": "2026-09-26T08:46:17.9867293+03:00",
       "FileHash": "4035D3F2D2260CF29BCEAD65DF3BAFCCEECB953D6172BE2D4356C3FBCD562D9C",
       "FileSize": 3489,
       "ContextNote": "",
@@ -1503,7 +1511,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Dialogs\\AboutDialog.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3469658+03:00",
+      "LastWriteTime": "2026-09-26T08:38:17.818449+03:00",
       "FileHash": "A061535CA8F3F2B17C49F1C27BB2ABC23FDD7F6C8D81EA914F1C88C449B3FB95",
       "FileSize": 2882,
       "ContextNote": "",
@@ -1511,7 +1519,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Extensions\\WindowExtensions.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Extensions\\WindowExtensions.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3479676+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3198234+03:00",
       "FileHash": "294937CDACA5CEB4344808E48CF0485F207A340CCF6A9984376B2A9AA5209F77",
       "FileSize": 2107,
       "ContextNote": "",
@@ -1519,23 +1527,23 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Helpers\\FileHelper.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Helpers\\FileHelper.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.348979+03:00",
-      "FileHash": "FC621C102713A690B7D536A52D907B05630C3448A566177EDE2823AD98E76803",
-      "FileSize": 348,
+      "LastWriteTime": "2026-10-16T23:21:06.3232051+03:00",
+      "FileHash": "7D75CF3F795304B9139E8FFCFE9E839F4E8232A017E832ECE5AAD97BADDD0B34",
+      "FileSize": 336,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppSettings.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppSettings.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.348979+03:00",
-      "FileHash": "90E2A854037383CED4C1B95E78C0EB7B6D0574E5027DC992228043075E4DAC85",
-      "FileSize": 4416,
+      "LastWriteTime": "2026-10-22T12:04:46.3064914+03:00",
+      "FileHash": "193F8F2C30050E59D97F71A13546B0623E3B47B05812F59EFAAFC3B888F588F1",
+      "FileSize": 4837,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppSettings.wpf.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppSettings.wpf.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3499764+03:00",
+      "LastWriteTime": "2026-08-31T21:54:50.2639138+03:00",
       "FileHash": "9F2FBA8FE3F8B1B666C801E1A9D7308A6E173E49068BD64D55D0F7CD149FFCA0",
       "FileSize": 5258,
       "ContextNote": "",
@@ -1543,7 +1551,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppVersion.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\AppVersion.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3499764+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3208393+03:00",
       "FileHash": "F91AAF46AF6EBCE11ECFC253B01793EE502C23561764AD79C188BF9BE6B156F6",
       "FileSize": 1469,
       "ContextNote": "",
@@ -1551,7 +1559,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\BackupFileInfo.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\BackupFileInfo.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3509764+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3208393+03:00",
       "FileHash": "8E37326E5214B646E59917888807E791A4DC237E9B428169242184F02C6EA247",
       "FileSize": 740,
       "ContextNote": "",
@@ -1559,7 +1567,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\WindowPosition.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Models\\WindowPosition.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3509764+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3208393+03:00",
       "FileHash": "862A6C6F65D26B53001BC3658A20ED45B1E715DE1046BE1842E2C6B95DFB44D1",
       "FileSize": 7798,
       "ContextNote": "",
@@ -1567,7 +1575,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\BootstrapIcons.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\BootstrapIcons.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.359988+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3271054+03:00",
       "FileHash": "DD0149CF1B553F79870422290B5352A65A84001D21C6742D65E81EFBB04DDCAD",
       "FileSize": 1904956,
       "ContextNote": "",
@@ -1575,7 +1583,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Converters.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Converters.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
+      "LastWriteTime": "2026-10-14T12:57:06.6368024+03:00",
       "FileHash": "AD4B26656A0065E6024EE0B50C95D5D78281E5B2E395CB8BDFB742F8B820BA86",
       "FileSize": 1435,
       "ContextNote": "",
@@ -1583,23 +1591,23 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Styles.gen.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Styles.gen.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
-      "FileHash": "EDE26E10D2D00D91D27163A15E18A307D2A7DE996C48A30D2A90950C14A24A11",
-      "FileSize": 8061,
+      "LastWriteTime": "2026-10-22T10:08:23.965777+03:00",
+      "FileHash": "7ABD3F50AA62E5689D66ECF61048C8806601F4C84B97B4E748903DB83180CAA1",
+      "FileSize": 10586,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Styles.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Resources\\Styles.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
-      "FileHash": "71814C55D3E23167AC2BD0278BB52DA04ACD9C76A4E1A279232F7BCB43D59795",
-      "FileSize": 4934,
+      "LastWriteTime": "2026-10-22T09:58:09.6002868+03:00",
+      "FileHash": "EBE92036F7829848441C8EA88C0102A8935668559786B5900F43F82DC672836C",
+      "FileSize": 4431,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\AutoBackupHelper.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\AutoBackupHelper.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3281023+03:00",
       "FileHash": "0545F849E51950F21FBB7FA37D9018233F187F7B8C79B98EF23D67A6A3020623",
       "FileSize": 1226,
       "ContextNote": "",
@@ -1607,7 +1615,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\DatabaseBackupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\DatabaseBackupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.329099+03:00",
       "FileHash": "02B26BE9261DD0C4164725F6BF6B3ABCB0A9B2A4C62C029E84BF7766C29C3E2D",
       "FileSize": 8007,
       "ContextNote": "",
@@ -1615,7 +1623,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IBackupService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IBackupService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.329099+03:00",
       "FileHash": "CA841C2D27FA687CB99318C54F2B458E9639E6A6602E41C53C4DA945948569EB",
       "FileSize": 1591,
       "ContextNote": "",
@@ -1623,7 +1631,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IWindowDialogService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IWindowDialogService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9647772+03:00",
       "FileHash": "CD0EB0E88CD7158954B28585D6CAE38EDEF8505329AB109A026DC6815532EA0B",
       "FileSize": 18963,
       "ContextNote": "",
@@ -1631,15 +1639,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IWindowDialogService.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\IWindowDialogService.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3606584+03:00",
-      "FileHash": "F41BA27BB506B8B23CA6D515A83DB3A5A987533BA30CBA168084097284855111",
-      "FileSize": 3823,
+      "LastWriteTime": "2026-10-22T18:45:02.1471655+03:00",
+      "FileHash": "438E8C96AF00E01142F19C6F5BD316443FE4C5A9FE77C9F6FCCEBD024B602EA3",
+      "FileSize": 4307,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\WindowDialogService.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\WindowDialogService.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9647772+03:00",
       "FileHash": "E4D3592D9AAA84ED0B2F8B79B08C0AFE11EE6664A4B4915642B85F17560B48C0",
       "FileSize": 9073,
       "ContextNote": "",
@@ -1647,15 +1655,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\WindowDialogService.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Services\\WindowDialogService.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
-      "FileHash": "D255A609FB02C47BC75B1CAD72DB7DA9EB0428351CB866D55E60F6CB0250C915",
-      "FileSize": 1713,
+      "LastWriteTime": "2026-10-22T18:45:12.9572652+03:00",
+      "FileHash": "9075E5038254D2AAE7ED280E2807CAF77B8A3F12E97B4E37A5BD6EE50725EBDB",
+      "FileSize": 1981,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\AbstractDiaryVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\AbstractDiaryVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3313407+03:00",
       "FileHash": "DF11D1B388025BDF487D997AF3682A41ECB6295A6565DD2211B778729E1F0621",
       "FileSize": 7638,
       "ContextNote": "",
@@ -1663,7 +1671,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\IOpenFileContext.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\IOpenFileContext.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-10-16T22:52:40.0658086+03:00",
       "FileHash": "368911D6E040471FDB6AB5D87F1815087CB31E1A4DBE9860792BBA76E0DF0104",
       "FileSize": 179,
       "ContextNote": "",
@@ -1671,15 +1679,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\MainWindowVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\MainWindowVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
-      "FileHash": "2B3700EA8BABAF34510A6DC120BB91166EE4D5B1F3AA9A72EEF6FFA557F80998",
-      "FileSize": 1500,
+      "LastWriteTime": "2026-10-22T19:47:59.8523393+03:00",
+      "FileHash": "9318A8F64B1546824379FF40B9BB8E70A92DF4D1768C5A6B17C87973D7DCEA68",
+      "FileSize": 1770,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Exchanges\\ExchangeCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Exchanges\\ExchangeCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3313407+03:00",
       "FileHash": "AF1001DD7C6E9CD7ACE19C206CD42F70F1E691905CA49CEFCBC0B2F838145B64",
       "FileSize": 5650,
       "ContextNote": "",
@@ -1687,7 +1695,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Exchanges\\ExchangeEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Exchanges\\ExchangeEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3323369+03:00",
       "FileHash": "78E209E2A0E9DD0C838A6C643E01F4D09A3AEE8AE5497FCC7B6345E508004A42",
       "FileSize": 4115,
       "ContextNote": "",
@@ -1695,7 +1703,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\CurrencyCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\CurrencyCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3333339+03:00",
       "FileHash": "E1D37DB6DC839AA08652F226C992B025B54C2A8E410D75AF5B0A05CEB0B1BFBD",
       "FileSize": 3073,
       "ContextNote": "",
@@ -1703,7 +1711,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\CurrencyEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\CurrencyEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3333339+03:00",
       "FileHash": "B7FAA9FD8C93ABA5B7A8CC013FC4CAB9807B8C858C4070202EB5BC60E95205C5",
       "FileSize": 2613,
       "ContextNote": "",
@@ -1711,7 +1719,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\MaintenanceWindowVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\MaintenanceWindowVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3344931+03:00",
       "FileHash": "C9015995D3EE285949554A00DB227EB50F538482E51407D078FD15A9F38CDDC9",
       "FileSize": 8712,
       "ContextNote": "",
@@ -1719,7 +1727,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3344931+03:00",
       "FileHash": "C77C2E6111A6CF5059D3423A0699ED53CA2FC820E9F8DEE2FC8F72822535BEB2",
       "FileSize": 7975,
       "ContextNote": "",
@@ -1727,7 +1735,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3344931+03:00",
       "FileHash": "661BE75502E094BC0C37141A6D3C4675BE16A4AD0AA7442242B77AE8549C7637",
       "FileSize": 4314,
       "ContextNote": "",
@@ -1735,7 +1743,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\SymbolEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3359796+03:00",
       "FileHash": "9B72C725BEAD3E3855E25030D96A5511EECBEF65CA746D711300FF41F1FE735B",
       "FileSize": 4413,
       "ContextNote": "",
@@ -1743,7 +1751,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3359796+03:00",
       "FileHash": "8E2ADE111D14E4A2217CCFBD1CC02B357AD497701A3D371EB280381114A8F105",
       "FileSize": 6049,
       "ContextNote": "",
@@ -1751,23 +1759,31 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
-      "FileHash": "F32D0C551F28E2961F2B0A64BD8BBD5DF89B6B1565C37C49B41197CFD43CCDCA",
-      "FileSize": 1318,
+      "LastWriteTime": "2026-10-25T09:36:49.5867826+03:00",
+      "FileHash": "38C5DBB3DDA31CD0A95FF42A3685FC3F8CB360B64826C1B6991739A07F0E7E1B",
+      "FileSize": 1644,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Maintenance\\TradingAccountEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3359796+03:00",
       "FileHash": "40ADFCD347C899CAB9363478740E64B7A1733262ACAB8DFF23C9FE558FD0E68D",
       "FileSize": 4571,
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Settings\\UserPreferencesVM.cs": {
+      "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Settings\\UserPreferencesVM.cs",
+      "LastWriteTime": "2026-10-22T18:42:26.8699452+03:00",
+      "FileHash": "0DEA2E89E95688A66CEDAC8007E718B85DC630BEC2DE081DC709B9D261ABA182",
+      "FileSize": 2971,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3658467+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3370199+03:00",
       "FileHash": "18051A742CADAA035B27136E62F51A71074F94A02F920767A40C33435B5992E1",
       "FileSize": 4620,
       "ContextNote": "",
@@ -1775,7 +1791,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3370199+03:00",
       "FileHash": "C7AAA33C1C019417923893CC97E44B1D960B27470BB4D004EB6B0C608E636C6F",
       "FileSize": 605,
       "ContextNote": "",
@@ -1783,7 +1799,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3370199+03:00",
       "FileHash": "28F4829F43D8D7436068815D400CEE95CD10D554C6CADF86943F291981B03FF2",
       "FileSize": 5310,
       "ContextNote": "",
@@ -1791,7 +1807,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderEditVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\EntryOrderEditVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3382727+03:00",
       "FileHash": "5EDE10E2F046ADB477CB374CD546581E9F5F8BF880E631969AB6AA8FEAF97B12",
       "FileSize": 720,
       "ContextNote": "",
@@ -1799,7 +1815,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\ExitOrderCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\ExitOrderCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9627775+03:00",
       "FileHash": "27AE7560278090FB38DF025FEBBA6C4FD33322BFB38FB83CAF714FE429F66C43",
       "FileSize": 5080,
       "ContextNote": "",
@@ -1807,7 +1823,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\ExitOrderEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\ExitOrderEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9637776+03:00",
       "FileHash": "83970ACD274F586E6E42B17C28C18D5469CADFC3B7E6D285133F408DC931723E",
       "FileSize": 6483,
       "ContextNote": "",
@@ -1815,7 +1831,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-01T04:59:00.0102754+03:00",
       "FileHash": "A7AA9B3B7AA4458AE8225BE8E9D29747ED7B2FD61F9FAA73DD87E82CD8F8372F",
       "FileSize": 3863,
       "ContextNote": "",
@@ -1823,7 +1839,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3382727+03:00",
       "FileHash": "6667C53DBE7C9FC865A75CE2A02609717DDBD249BB1CA7D564A062679D488809",
       "FileSize": 891,
       "ContextNote": "",
@@ -1831,7 +1847,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-01T04:55:53.5051453+03:00",
       "FileHash": "3BAACB4FD8C19B6BE6D6282E0AFD54E7B5546D5A5C8D86620F2ADD612CB7F065",
       "FileSize": 5192,
       "ContextNote": "",
@@ -1839,7 +1855,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderEditVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\StopLossOrderEditVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3392874+03:00",
       "FileHash": "877329DBAE97F93C664D19784130A2F55A3F3DBBF8524D86874BB59AC61E58C8",
       "FileSize": 1150,
       "ContextNote": "",
@@ -1847,7 +1863,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-09-30T04:45:38.4782254+03:00",
       "FileHash": "52F67386A90DB5212B2076FDBE0C3EC3A192E8C175412432A9B5A0D70AFB66FB",
       "FileSize": 4529,
       "ContextNote": "",
@@ -1855,7 +1871,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3392874+03:00",
       "FileHash": "F664E8CE516A06B17B59E9056E1E0A45A0242D8F685762603721558E62CB23DB",
       "FileSize": 907,
       "ContextNote": "",
@@ -1863,7 +1879,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-09-30T04:45:38.4393774+03:00",
       "FileHash": "735203C394F87D7FC18D3B89C5D46CAEB23E228879F6818E022947AA45FE2AF4",
       "FileSize": 6423,
       "ContextNote": "",
@@ -1871,7 +1887,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderEditVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TakeProfitOrderEditVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3392874+03:00",
       "FileHash": "89CC752E6E7D6F765DA6E4B57A5929900EA4B477F09624777815617C60CE2004",
       "FileSize": 1164,
       "ContextNote": "",
@@ -1879,7 +1895,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-12T15:45:09.3154622+03:00",
       "FileHash": "42D5686D3611A4E6B09517570A4A0C47EBB015D0EDD7E4B56933608F6581B41F",
       "FileSize": 9745,
       "ContextNote": "",
@@ -1887,15 +1903,15 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
-      "FileHash": "D7EB3EBA931C74EC7ADC668AC2B43758E188AB4FB8C1E42AC175606853FDEF47",
-      "FileSize": 9037,
+      "LastWriteTime": "2026-10-22T14:03:56.1877522+03:00",
+      "FileHash": "944DC4E16807A8CA87EC97DE22ECACDF09ADF03ACBC8318D9B721D758E7300EF",
+      "FileSize": 13856,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-12T14:00:04.8273292+03:00",
       "FileHash": "C6F57D68EBEE147AE3A91E8E07F47037997135A48361305A5BDDDAAFAEBC5EDA",
       "FileSize": 6385,
       "ContextNote": "",
@@ -1903,7 +1919,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeEditVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeEditVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.340356+03:00",
       "FileHash": "98F8CDB726C5252B998D0F1B3D579A1EE07163A75256B53200AFC00C988F2593",
       "FileSize": 1836,
       "ContextNote": "",
@@ -1911,7 +1927,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-17T02:56:08.1645466+03:00",
       "FileHash": "6ACAC3DEA19F5924C029A637FBDD1219D7A8554E03BB49694992A1A4952F39A4",
       "FileSize": 11331,
       "ContextNote": "",
@@ -1919,7 +1935,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.entry.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.entry.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3415654+03:00",
       "FileHash": "F97094CEBEC96FCFFD3D7C5C0718685A5F4EAE5A37FB3376B11EA8C58F6FD731",
       "FileSize": 4577,
       "ContextNote": "",
@@ -1927,7 +1943,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.img.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.img.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-17T23:19:57.4778853+03:00",
       "FileHash": "612D64160C1B01994EF6890560E9C0FB069D6A8AFCADC79238C9ED0225C72FCF",
       "FileSize": 4285,
       "ContextNote": "",
@@ -1935,7 +1951,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.note.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.note.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-17T23:41:55.3345872+03:00",
       "FileHash": "B22044816F47E59865F47206522DA0D4003E6C97DE74D136112B7D0CCF3954AD",
       "FileSize": 4561,
       "ContextNote": "",
@@ -1943,7 +1959,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.sl.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.sl.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-01T04:56:56.7558227+03:00",
       "FileHash": "3C6610E6107E4012C15C61DF6846F2199EF7F2776B97D08F78BD7590D165364C",
       "FileSize": 4652,
       "ContextNote": "",
@@ -1951,7 +1967,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.tp.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeHistoryVM.tp.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-09-30T04:45:38.5272145+03:00",
       "FileHash": "EFECD37D44CE8D4AAD2CD4EAC2A6D830C8B05B1CEFC1263E81AD12D10BF2383D",
       "FileSize": 4741,
       "ContextNote": "",
@@ -1959,7 +1975,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-17T02:24:16.2822381+03:00",
       "FileHash": "CE9D0E23ACC4AA0D7CCBBC74CC573DCA03496BA1FFD95316C00DF02007935DCA",
       "FileSize": 2659,
       "ContextNote": "",
@@ -1967,7 +1983,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-17T02:42:02.1627537+03:00",
       "FileHash": "41E6D2E4D3B3D8D781AF553615E788822695B70635BA680D182F6EB8F5505137",
       "FileSize": 1147,
       "ContextNote": "",
@@ -1975,7 +1991,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeImageEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-12T14:00:46.3274071+03:00",
       "FileHash": "34E4E39CD9B8625AC48E387BB70EC2414F813A88A37EE7FDD7794BF648E0911B",
       "FileSize": 1872,
       "ContextNote": "",
@@ -1983,7 +1999,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeListVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeListVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-12T19:16:58.7934543+03:00",
       "FileHash": "D89E6C37E9B814C7BF8972F08CC3B96DF0AFDA718436C255883A6B6605FA1A0E",
       "FileSize": 5651,
       "ContextNote": "",
@@ -1991,7 +2007,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeListVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeListVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3427612+03:00",
       "FileHash": "5007A109308C6AAC42473303CC07555555A0E109D247CE5C66F0D5300979976D",
       "FileSize": 537,
       "ContextNote": "",
@@ -1999,7 +2015,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteCreateVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteCreateVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3760751+03:00",
+      "LastWriteTime": "2026-10-12T21:28:35.6902513+03:00",
       "FileHash": "428CA5149E0892BAD42ADB1FEE5C0488C35B179F55E29D974804FF13A20082B4",
       "FileSize": 3715,
       "ContextNote": "",
@@ -2007,7 +2023,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteCreateVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteCreateVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-10-16T23:25:05.4558434+03:00",
       "FileHash": "C8D28A2097866EF2D871615ED833E46F7349D32C9F3CEE8207D9EFE5879FEED4",
       "FileSize": 3390,
       "ContextNote": "",
@@ -2015,7 +2031,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteEditVM.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteEditVM.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-10-12T21:28:35.6902513+03:00",
       "FileHash": "748DABF2497655C05F05E41BD9019284D0313D53D1F91D83ACE156EC4859150B",
       "FileSize": 3365,
       "ContextNote": "",
@@ -2023,7 +2039,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteEditVM.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\ViewModels\\Trades\\TradeNoteEditVM.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-10-14T13:19:06.5289562+03:00",
       "FileHash": "A505C74B2D4CB5187FFD91556CB9696968DA4183EF86C6248DA45412824C7623",
       "FileSize": 620,
       "ContextNote": "",
@@ -2031,7 +2047,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\AbstractEditView.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\AbstractEditView.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3437763+03:00",
       "FileHash": "5A29F6890B7704D5D49F668225E78E242ABBBA8BC1A21DD9D349460612C967EF",
       "FileSize": 1250,
       "ContextNote": "",
@@ -2039,23 +2055,23 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\MainWindow.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\MainWindow.xaml",
-      "LastWriteTime": "2026-10-19T09:26:15.9986977+03:00",
-      "FileHash": "EC4032972509921997D0BF89FC9352296F3AD8F137093343AF8EF3F56FC7FFF3",
-      "FileSize": 112901,
+      "LastWriteTime": "2026-10-22T21:04:41.2679076+03:00",
+      "FileHash": "DBADA7413F8391C3AE83F23C6A91E7E511CB9E29C2BB2E154A41DA556FB82C04",
+      "FileSize": 113145,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\MainWindow.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\MainWindow.xaml.cs",
-      "LastWriteTime": "2026-10-18T18:12:24.7807445+03:00",
-      "FileHash": "79E24E44278E334CC3E1D3DE75C58BE67B1754AFF55127B181B73FD383547C30",
-      "FileSize": 5191,
+      "LastWriteTime": "2026-10-22T19:55:24.8300311+03:00",
+      "FileHash": "67BE2DA7F3025EB57EFBEBD8A59DEC91B11B5F401BC4714899B4E9C8A4DE46D9",
+      "FileSize": 5636,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:31:25.3969494+03:00",
       "FileHash": "380CA528764F8848E9F49E23716B6DF0B887AFE1DB081301D0858D5875D39CA1",
       "FileSize": 5435,
       "ContextNote": "",
@@ -2063,7 +2079,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3437763+03:00",
       "FileHash": "A199042E6DBD1CD2B4FC76871C7D7BE11A1E7F225572ADEBE8E56A87BE5E5D0A",
       "FileSize": 2346,
       "ContextNote": "",
@@ -2071,7 +2087,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:32:08.3938341+03:00",
       "FileHash": "0CBAFCE0B2B3DE801700349B1CA72B20F94168E224F34DEA4289A621076FB531",
       "FileSize": 5286,
       "ContextNote": "",
@@ -2079,7 +2095,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Exchanges\\ExchangeEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3449518+03:00",
       "FileHash": "79C761058E85D45CBA7C3ADF33625F3BA2537A00E220BB61AAF80742B3EC03EB",
       "FileSize": 2023,
       "ContextNote": "",
@@ -2087,7 +2103,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:32:34.9229927+03:00",
       "FileHash": "9435467B60C7F5CC48C46B9791C82FCB73D822A12818AB73D224417C5CD4DF8C",
       "FileSize": 3377,
       "ContextNote": "",
@@ -2095,7 +2111,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3460676+03:00",
       "FileHash": "C368415E30DE916DD476196EB14A2DCD668B31A638FDEF40881F72E16CFA6AF6",
       "FileSize": 1315,
       "ContextNote": "",
@@ -2103,7 +2119,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:33:05.4627065+03:00",
       "FileHash": "DDAA3AA0E61EF0C45EC6709F17B342AD858870E2817EC5FB789563BF95B0E3DA",
       "FileSize": 3511,
       "ContextNote": "",
@@ -2111,7 +2127,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\CurrencyEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3460676+03:00",
       "FileHash": "6F220C419692F1CDE3C16BEBA272BF805F79185C466B3C7A687488CE28C2F088",
       "FileSize": 2027,
       "ContextNote": "",
@@ -2119,7 +2135,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:26:12.2737083+03:00",
       "FileHash": "BF56FE3725BB550A333E8A281093CCDE0A2B487461946E0947C7868CD27367AA",
       "FileSize": 40480,
       "ContextNote": "",
@@ -2127,7 +2143,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\MaintenanceWindow.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3474199+03:00",
       "FileHash": "47115CBB72CE0854D252FC0EE708F085909E7D5632963AA9C20DBE710416F892",
       "FileSize": 4646,
       "ContextNote": "",
@@ -2135,7 +2151,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:25:57.1100349+03:00",
       "FileHash": "F98B6294FB4C40FC1DA7897B7C85A531FC68D0E4D780EE46C37F01EFFB9AE6D3",
       "FileSize": 6399,
       "ContextNote": "",
@@ -2143,7 +2159,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3477631+03:00",
       "FileHash": "E608273C12949E0D9AF15A8184CB4F6E5FDDE36974B5CF5F24ADDAD434D4C2D0",
       "FileSize": 3087,
       "ContextNote": "",
@@ -2151,7 +2167,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:25:51.43508+03:00",
       "FileHash": "063F56BA7E3DB6B613CC44BDE585B3C67C31DFC71B6B83880B1E4FC7461BB973",
       "FileSize": 5709,
       "ContextNote": "",
@@ -2159,7 +2175,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\SymbolEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3477631+03:00",
       "FileHash": "5AE91A22E679B520852A63D73A3EB541FC2D550DDBD0C27369C83F0247AFF71B",
       "FileSize": 1985,
       "ContextNote": "",
@@ -2167,7 +2183,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:25:46.1267453+03:00",
       "FileHash": "AC9CC6F6751210F161DDDF60E3DDDF0B6FF7AFF881FDE2A6D04F93955F83AF17",
       "FileSize": 5837,
       "ContextNote": "",
@@ -2175,7 +2191,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3489196+03:00",
       "FileHash": "0AE3AFA86A8A6294B5350E59D37968B85D3EE0002B8ADCECB1D6B0194E914FC5",
       "FileSize": 4156,
       "ContextNote": "",
@@ -2183,7 +2199,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T21:25:39.9813438+03:00",
       "FileHash": "0E8E5780BDE79F6E56623144949A0E269A89570F8097D37A5849D2E005F85EAD",
       "FileSize": 5580,
       "ContextNote": "",
@@ -2191,15 +2207,31 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Maintenance\\TradingAccountEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.3918489+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3489196+03:00",
       "FileHash": "74B3AE6DD149D1FF07E886D8F6B657F1B2EB064EA8C8F352630CA8EA2FBCC3D4",
       "FileSize": 3584,
       "ContextNote": "",
       "PackingMode": 20
     },
+    "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Settings\\UserPreferencesView.xaml": {
+      "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Settings\\UserPreferencesView.xaml",
+      "LastWriteTime": "2026-10-22T21:09:32.6917795+03:00",
+      "FileHash": "1EA3FC3F17AE58DD5DF587E2A5CE614BEAC2A5736024F3701EFAAA27994BF350",
+      "FileSize": 3989,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
+    "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Settings\\UserPreferencesView.xaml.cs": {
+      "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Settings\\UserPreferencesView.xaml.cs",
+      "LastWriteTime": "2026-10-22T19:22:06.9723748+03:00",
+      "FileHash": "1A37E941E6A134DA582F874073CCCB8C7D9042AB0D470B8A5366E6CCC82EBB44",
+      "FileSize": 1545,
+      "ContextNote": "",
+      "PackingMode": 20
+    },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T21:25:33.4976869+03:00",
       "FileHash": "03D1A1B4CC262906D9CEC88EFDEEBF0AB2849E2D7CDFC40AA5F8F6B7A42EA289",
       "FileSize": 4707,
       "ContextNote": "",
@@ -2207,7 +2239,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3499807+03:00",
       "FileHash": "4E0D8D14AA332F93BB9FDA16CBB319FD32C570D8D3765BFEF5C6A3CB6964FBF2",
       "FileSize": 3610,
       "ContextNote": "",
@@ -2215,7 +2247,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T21:25:27.7275095+03:00",
       "FileHash": "4F057624536D00B773AFB63DB1FACE966E3D86F71B2E354AB5E5956A81DED68A",
       "FileSize": 9527,
       "ContextNote": "",
@@ -2223,7 +2255,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\EntryOrderEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3499807+03:00",
       "FileHash": "ED1B75CC977BA1864F9DB952E1BF6724ABE7C9EAB890699FD7AD1E791FF8CBB2",
       "FileSize": 3835,
       "ContextNote": "",
@@ -2231,7 +2263,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.965777+03:00",
       "FileHash": "F17B57ABFC44A4ABA51125CABAB980CA9EAE3837DDAA62B948CBC13B92B9E369",
       "FileSize": 5873,
       "ContextNote": "",
@@ -2239,7 +2271,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.965777+03:00",
       "FileHash": "D9B8FB3F9EACC3CE881DC2398E21B2FF643A2172BAB47C23D86D89FB2C37B9AF",
       "FileSize": 3540,
       "ContextNote": "",
@@ -2247,7 +2279,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9669803+03:00",
       "FileHash": "C97D88238C54A117E30F2EED0366ED10B81B27D2CEF2D3D431BAEA085CD889A4",
       "FileSize": 7729,
       "ContextNote": "",
@@ -2255,7 +2287,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\ExitOrderEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-22T10:08:23.9669803+03:00",
       "FileHash": "8127C83991FE1DFC1AD6F18067C1A08DCC9B33C7E4EBD5CB7DE0A8FC52D30299",
       "FileSize": 3469,
       "ContextNote": "",
@@ -2263,7 +2295,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T05:22:12.4878862+03:00",
       "FileHash": "CB8BAA12D36B6203D939EDF359AFCD8E3AF459385645EE683B22EB47CF885DB1",
       "FileSize": 5130,
       "ContextNote": "",
@@ -2271,7 +2303,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-01T04:56:18.8120549+03:00",
       "FileHash": "16FAC78C855CB25C0128384B6D7F3B58155D3BA3ED381E97CFEA8324097744F1",
       "FileSize": 3651,
       "ContextNote": "",
@@ -2279,7 +2311,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T05:24:57.6536305+03:00",
       "FileHash": "1DE00BD98C5069566C32C8610F2DA7EE3AA1D870D1915AB6E9B19CBCBD80F679",
       "FileSize": 9507,
       "ContextNote": "",
@@ -2287,7 +2319,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\StopLossOrderEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-01T04:54:29.8649682+03:00",
       "FileHash": "BAFBBD7A18A0170240E577F2064F22EB835CC812D3E0E742E11548DB07D19254",
       "FileSize": 3886,
       "ContextNote": "",
@@ -2295,7 +2327,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T05:22:42.4207138+03:00",
       "FileHash": "604C200B8DC5C1B830D1F98E9166BCE3D94518FE930631458D75492777F115AB",
       "FileSize": 5138,
       "ContextNote": "",
@@ -2303,7 +2335,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T04:45:38.4476851+03:00",
       "FileHash": "B8FC2BBEE32077D97BD60A8697705347522F2D769436FDE8E2FB6C8D1D13EA4E",
       "FileSize": 3679,
       "ContextNote": "",
@@ -2311,7 +2343,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T05:25:26.3057014+03:00",
       "FileHash": "2268161A4296B3D9EC589AADFFEB51D5F1A7A82C32B7A660BB2E1C4E11BA962D",
       "FileSize": 9511,
       "ContextNote": "",
@@ -2319,7 +2351,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TakeProfitOrderEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-09-30T04:45:38.5060668+03:00",
       "FileHash": "A3E000AE2385565916875C53708581AB72DC4A50BA1979966871850FB6026DC6",
       "FileSize": 3922,
       "ContextNote": "",
@@ -2327,31 +2359,31 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
-      "FileHash": "5F5A50107515CA80E1FAC7B9A3B3AF37B40045938C53B44BF0DC760B90DDD872",
-      "FileSize": 12826,
+      "LastWriteTime": "2026-10-22T21:20:54.2000498+03:00",
+      "FileHash": "5298526EDC3D9D341FEF6E504246F23CEF54B5ADA7C5AE2532F5E675B3D2DEBD",
+      "FileSize": 17628,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
-      "FileHash": "1244CC5E5B927BC1734EC960EB7CD2C7A2A45D2D20CE54F718F5CA70CEA8638C",
-      "FileSize": 4609,
+      "LastWriteTime": "2026-10-22T09:25:55.918474+03:00",
+      "FileHash": "AA221E75F68256408290B1F021BCF668F83DEDC1BDC70ADF70B9FED309C3C6B1",
+      "FileSize": 5018,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeCreateView.xaml.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
-      "FileHash": "956BA439ECD2D93CB2951E1210AF213B63BBA1DBB26F05B73CC452090E43374C",
-      "FileSize": 2270,
+      "LastWriteTime": "2026-10-22T13:59:30.8370477+03:00",
+      "FileHash": "EAB64EB52A8CF2E0C4F9798100D0AFD102D1BF77A45BB0C7CAD3CF63D6B72A6F",
+      "FileSize": 3393,
       "ContextNote": "",
       "PackingMode": 20
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-12T14:06:18.4884906+03:00",
       "FileHash": "0888AA7A22BAA5DC1D7520999A93599B8595FB7B0FEAA9795C633DB1C819832D",
       "FileSize": 27914,
       "ContextNote": "",
@@ -2359,7 +2391,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeDetailView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3529776+03:00",
       "FileHash": "EC8069C2E8D87DD374CC02DB762A868C080A2DFB247EF1D24362CFB6B39FDE2F",
       "FileSize": 1669,
       "ContextNote": "",
@@ -2367,7 +2399,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-12T14:06:43.780098+03:00",
       "FileHash": "89D4E6B057DAB17ECA227AFA7375530C5BC2FA1336E4B4AF5616F103265B555B",
       "FileSize": 13591,
       "ContextNote": "",
@@ -2375,7 +2407,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3529776+03:00",
       "FileHash": "7CBC739A87FBC5CEB8B28568C34FB2E8DC0B0F44485E8D7DBB249103CB9091F5",
       "FileSize": 3622,
       "ContextNote": "",
@@ -2383,7 +2415,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-17T02:43:22.1872244+03:00",
       "FileHash": "389425E237AC98063792A817694CC07B377715EA1E5D2B6861B4B286000C24D2",
       "FileSize": 5039,
       "ContextNote": "",
@@ -2391,7 +2423,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-10-17T01:58:30.5345859+03:00",
       "FileHash": "0FB0454990F2F7478E39EF0B4D64AF357B6FB284CD2396B0FAAC40C3D857CF66",
       "FileSize": 2689,
       "ContextNote": "",
@@ -2399,7 +2431,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T21:24:12.1229488+03:00",
       "FileHash": "F4321FB6B03DA3F7F0FDD8EB94E7B2F3612316E67EB428F692CF820C3CFB8C55",
       "FileSize": 2683,
       "ContextNote": "",
@@ -2407,7 +2439,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeImageDetailView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4076155+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3543571+03:00",
       "FileHash": "31AA0D7846A4BB96544E5311CCBE4240921FA840EAC40533B2C923BD493F3029",
       "FileSize": 2018,
       "ContextNote": "",
@@ -2415,7 +2447,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteCreateView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteCreateView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-16T22:47:43.0834485+03:00",
       "FileHash": "B4D87D012C871222367E99E5D014CD7073BED089A8AFB4D2191C4D5E1900F300",
       "FileSize": 6167,
       "ContextNote": "",
@@ -2423,7 +2455,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteCreateView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteCreateView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-16T23:28:01.5370781+03:00",
       "FileHash": "A53D49369FA189765CE53C80765C6D7BF39A9C3F671BB96ADEF2EE751E8B0D19",
       "FileSize": 2498,
       "ContextNote": "",
@@ -2431,7 +2463,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteDetailView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteDetailView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-14T11:54:43.3973554+03:00",
       "FileHash": "F91F49AEEC4CC615540DC48C211D4BEC5C427967EBE4D8F96EACF450B91D744C",
       "FileSize": 3506,
       "ContextNote": "",
@@ -2439,7 +2471,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteDetailView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteDetailView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-14T11:54:43.3973554+03:00",
       "FileHash": "120CB1709F7B1E07379E6BD0812C69B66C9BFF100B863BA427410BC9710C42C8",
       "FileSize": 1467,
       "ContextNote": "",
@@ -2447,7 +2479,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteEditView.xaml": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteEditView.xaml",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-14T12:46:17.0830406+03:00",
       "FileHash": "26682DE3BCFF3D5CDFFB7866A68B7B2D2B242740A3466B92CA729A58419E3082",
       "FileSize": 3988,
       "ContextNote": "",
@@ -2455,7 +2487,7 @@
     },
     "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteEditView.xaml.cs": {
       "RelativePath": "OzzTradeDigest.NET\\OzzTradeDigest.WPF\\Views\\Trades\\TradeNoteEditView.xaml.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.423557+03:00",
+      "LastWriteTime": "2026-10-14T12:36:10.7040208+03:00",
       "FileHash": "C5EC9173345F2FC8D8A59A7818EEDFA79873BFCD7223FA93F4F7A6A56C29C20B",
       "FileSize": 1769,
       "ContextNote": "",
@@ -2463,7 +2495,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\TD.RepositoryContracts.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\TD.RepositoryContracts.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T20:39:02.6765057+03:00",
       "FileHash": "2B3418C4496776B77249A922E3B242E28DFC9DAAFE16E42F23B26CD9DE95288E",
       "FileSize": 541,
       "ContextNote": "",
@@ -2471,7 +2503,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ICurrencyRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ICurrencyRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4393814+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3679642+03:00",
       "FileHash": "112871F59C25CD86EF2B7BE5C6D6C345237F972CAEDF5C4FFCEB1DD5B3A0FB56",
       "FileSize": 915,
       "ContextNote": "",
@@ -2479,7 +2511,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\IEntryOrderRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\IEntryOrderRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3679642+03:00",
       "FileHash": "0D69A206954131BC65755C8FAA19A0E6D3E53CA9613836CB2503FAC2A0D01132",
       "FileSize": 1042,
       "ContextNote": "",
@@ -2487,7 +2519,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExchangeRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExchangeRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3687555+03:00",
       "FileHash": "B11C31FEC514B91A1DD14D340B5BA7CD5FB9D9AF29E872F54FDC9F68115EAEC5",
       "FileSize": 1169,
       "ContextNote": "",
@@ -2495,7 +2527,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExchangeRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExchangeRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3687555+03:00",
       "FileHash": "889A686D8A442B5C846800F90665E9816F0CD26DDFD8809DAC132A3945CB28CD",
       "FileSize": 187,
       "ContextNote": "",
@@ -2503,7 +2535,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExitOrderRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\IExitOrderRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-01T05:28:36.5329538+03:00",
       "FileHash": "24A9098A553D1824C072B3293B710C56264434B89A94D67977D496C16406F882",
       "FileSize": 1034,
       "ContextNote": "",
@@ -2511,7 +2543,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\IHolidayRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\IHolidayRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3697838+03:00",
       "FileHash": "40541EB6B6AC087D5193460A4707E771CFBCBE4CF40791C74B3457B1DB45B606",
       "FileSize": 946,
       "ContextNote": "",
@@ -2519,7 +2551,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISessionRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISessionRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3697838+03:00",
       "FileHash": "7038673C7E2AF997B70ABDE4D56547A1BC9064F5895501FE0266F30380D8FE32",
       "FileSize": 946,
       "ContextNote": "",
@@ -2527,7 +2559,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISymbolRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISymbolRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3697838+03:00",
       "FileHash": "E6E17A73539CB6A0DD75831DB962CF2B95071B47147EDCF4F7A1E6CCC20836BA",
       "FileSize": 1331,
       "ContextNote": "",
@@ -2535,7 +2567,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISymbolRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ISymbolRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3707982+03:00",
       "FileHash": "4C999DA3A79FD506D8DBB1891FE5C0C0E06F053E7F468E654166C189296C025A",
       "FileSize": 168,
       "ContextNote": "",
@@ -2543,7 +2575,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeImageRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeImageRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-12T16:11:03.0713505+03:00",
       "FileHash": "8520BD2E3217EF99812A68DB506DC1D07E0B95280A05F2FC27EB85F5C3BEB02C",
       "FileSize": 1099,
       "ContextNote": "",
@@ -2551,7 +2583,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeNoteRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeNoteRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-12T16:08:48.0616789+03:00",
       "FileHash": "97DC53AA008862BB744285D8A147BD739A976CB6C33ACE3FD0E71C8DB6A0998D",
       "FileSize": 950,
       "ContextNote": "",
@@ -2559,7 +2591,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeNoteRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeNoteRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-17T02:08:44.0943742+03:00",
       "FileHash": "A2D0F0A97E35C29885CD5EAD442F70B673826D150BB4428F1F9AE0D44F0D9B63",
       "FileSize": 185,
       "ContextNote": "",
@@ -2567,7 +2599,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-12T16:08:50.633408+03:00",
       "FileHash": "21A3376DB50165CAD71D4C3CCF330853C42F69AF96E9C39E6512EF254C62FF96",
       "FileSize": 1330,
       "ContextNote": "",
@@ -2575,7 +2607,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeRepository.part.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradeRepository.part.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-12T16:33:21.3525912+03:00",
       "FileHash": "D4017F312B2C2CE68B3DD9A940A6EC2F269987FC2AFE397F46387675DBC90C3E",
       "FileSize": 545,
       "ContextNote": "",
@@ -2583,7 +2615,7 @@
     },
     "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradingAccountRepository.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.RepositoryContracts\\ITradingAccountRepository.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3718115+03:00",
       "FileHash": "60D23AB624206D47338A72ED5EDC300F58486F08B7A8940F5E71C4E839FFACD6",
       "FileSize": 1109,
       "ContextNote": "",
@@ -2591,7 +2623,7 @@
     },
     "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\TD.Tools.SeedDemoData.csproj": {
       "RelativePath": "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\TD.Tools.SeedDemoData.csproj",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T21:09:09.2159496+03:00",
       "FileHash": "BF335DF5D99FB391574CCCA94E82273360D0C2FA0BE2847F5BDF37AC16C2F3DD",
       "FileSize": 1068,
       "ContextNote": "",
@@ -2599,7 +2631,7 @@
     },
     "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Program.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Program.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-10-14T09:27:51.0889039+03:00",
       "FileHash": "542DA0CD89481A79B8F9A78FFEADB5DCDC5983D737AB2FA7386E1CADB2FB688D",
       "FileSize": 22328,
       "ContextNote": "",
@@ -2607,7 +2639,7 @@
     },
     "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Text.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Text.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3728079+03:00",
       "FileHash": "F5F10703EA36CD548108D882FCFD3897AAE4F95D09CC3D478B7803884EC657FA",
       "FileSize": 5738,
       "ContextNote": "",
@@ -2615,7 +2647,7 @@
     },
     "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Text.lipsum.cs": {
       "RelativePath": "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Text.lipsum.cs",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3738635+03:00",
       "FileHash": "B664275BF82D370B5CE7C5B842680629BE5F3A212B106E562D1013BCC9CFE812",
       "FileSize": 21443,
       "ContextNote": "",
@@ -2623,7 +2655,7 @@
     },
     "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Properties\\launchSettings.json": {
       "RelativePath": "OzzTradeDigest.NET\\TD.Tools.SeedDemoData\\Properties\\launchSettings.json",
-      "LastWriteTime": "2026-10-18T08:04:54.4551405+03:00",
+      "LastWriteTime": "2026-08-31T19:43:24.3728079+03:00",
       "FileHash": "29CF69F8B717A242523F94E0FAE0D79FE19D5A8640BE8E77645DFC8B4D750D1B",
       "FileSize": 146,
       "ContextNote": "",
@@ -2631,7 +2663,7 @@
     },
     "Scripts\\Reset-and-SeedDemoData.bat": {
       "RelativePath": "Scripts\\Reset-and-SeedDemoData.bat",
-      "LastWriteTime": "2026-10-18T08:04:54.4709722+03:00",
+      "LastWriteTime": "2026-08-31T21:11:28.6466164+03:00",
       "FileHash": "247FC5C03D5B02D0A4D527A4DF756F57147F308A745AC22FEADD8D4DF9013EF9",
       "FileSize": 122,
       "ContextNote": "",
@@ -2639,7 +2671,7 @@
     },
     "Scripts\\SeedDemoData-180days.bat": {
       "RelativePath": "Scripts\\SeedDemoData-180days.bat",
-      "LastWriteTime": "2026-10-18T08:04:54.4709722+03:00",
+      "LastWriteTime": "2026-08-31T21:10:51.8410995+03:00",
       "FileHash": "8B3299C6A05E5C27B78B4D6480A053A739A995259D0A69E09CFFB36B81C26C76",
       "FileSize": 116,
       "ContextNote": "",
@@ -2647,7 +2679,7 @@
     },
     "Scripts\\SeedDemoData.bat": {
       "RelativePath": "Scripts\\SeedDemoData.bat",
-      "LastWriteTime": "2026-10-18T08:04:54.4709722+03:00",
+      "LastWriteTime": "2026-08-31T21:11:06.7241074+03:00",
       "FileHash": "BACFF90A9655812794D04C97BB1D1ABD1C4B48B640123CAFDFC82C6639587B2A",
       "FileSize": 114,
       "ContextNote": "",

@@ -1,8 +1,8 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "C:\\Users\\ozalp\\Source\\Repos\\OzzTradeDigest\\OzzTradeDigest.NET\\OzzTradeDigest.SQLite\\DbScripts",
-  "LatestSourceWriteAt": "2026-10-10T19:47:43.4350659+03:00",
-  "LastPackedAt": "2026-10-18T20:33:01.5193988+03:00",
+  "LatestSourceWriteAt": "2026-10-21T05:21:29.5803721+03:00",
+  "LastPackedAt": "2026-10-25T10:46:55.0090098+03:00",
   "RepoUrl": "",
   "License": "",
   "IsOpenSource": null,
@@ -118,9 +118,9 @@
     },
     "Symbols-Data.sql": {
       "RelativePath": "Symbols-Data.sql",
-      "LastWriteTime": "2026-08-31T19:43:24.297834+03:00",
-      "FileHash": "64A04F768EB67A7E127D9EEDC96BD5B21A0E344DB88668AD84B15FCA160E35EE",
-      "FileSize": 34553,
+      "LastWriteTime": "2026-10-21T05:21:29.5803721+03:00",
+      "FileHash": "3CFA0E9BB78F3A2A2323B2DD2BB2DEC3B2156A07415D840C6DEEA9DB71C96882",
+      "FileSize": 41378,
       "ContextNote": "",
       "PackingMode": 20
     },

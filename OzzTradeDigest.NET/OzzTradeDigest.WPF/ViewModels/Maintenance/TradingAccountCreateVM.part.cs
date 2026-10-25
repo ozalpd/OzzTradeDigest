@@ -1,4 +1,7 @@
-﻿namespace TD.WPF.ViewModels.Maintenance
+﻿using TD.Extensions;
+using TD.Models;
+
+namespace TD.WPF.ViewModels.Maintenance
 {
     public partial class TradingAccountCreateVM
     {
@@ -10,6 +13,10 @@
         private void OnPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if (e.PropertyName == nameof(ExchangeId) && ExchangeId > 0 && !titleSetManually)
+            {
+                AutoSetTitle();
+            }
+            else if (e.PropertyName == nameof(MarketType) && !settingTitle)
             {
                 AutoSetTitle();
             }
@@ -33,7 +40,9 @@
             if (exchange != null)
             {
                 settingTitle = true;
-                Title = $"{exchange.ExchangeCode} Account";
+                Title = MarketType > MarketType.Unspecified
+                      ? $"{exchange.ExchangeCode} {MarketType.GetDisplayValue()}"
+                      : $"{exchange.ExchangeCode} Account";
                 settingTitle = false;
             }
         }
