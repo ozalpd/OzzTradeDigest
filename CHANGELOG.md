@@ -24,6 +24,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 - Fixed MainWindow trades `DataGrid` columns rendering too narrow when the `Trades` collection is empty and not recovering after the first record is added: removed the `ScrollViewer` wrapping the grid (it measured the `DataGrid` with infinite width, collapsing the star-sized `Tags` column and preventing column-width redistribution); the grid now uses its own built-in scrolling and the obsolete `MinWidth` was dropped.
+- Fixed `RealizedProfitLoss` calculation on `Trade` (`Trade.calc.cs`) when partial exits are executed: the property now correctly sums realized profits/losses from all filled `TakeProfitOrders` and `StopLossOrders` based on each order's actual exited quantity, instead of multiplying the exit price difference against the trade's total initial entry quantity.
+- Fixed `PlannedProfit` binding in `MainWindow.xaml` and `TradeDetailView.xaml`: updated bindings from `PlannedProfitLoss` to `PlannedProfit` and added a `PlannedProfitLoss` alias property on `Trade` so planned profit displays correctly in the trade detail pane and grid.
 
 ## [0.2.3] - 2026-06-07
 

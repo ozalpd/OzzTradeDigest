@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using TD.i18n;
 using TD.Validation;
 
@@ -65,7 +66,15 @@ public partial class Trade
     [Display(ResourceType = typeof(LocalizedStrings), Name = "NetProfitLoss")]
     public decimal? NetProfitLoss
     {
-        get { return RealizedProfitLoss - (FundingFeeTotal ?? 0) - (TotalFeesCorrected ?? TotalFeesCalculated ?? 0); }
+        get
+        {
+            if (RealizedProfitLoss.HasValue)
+                _netProfitLoss = RealizedProfitLoss.Value - (FundingFeeTotal ?? 0) - (TotalFeesCorrected ?? TotalFeesCalculated ?? 0);
+            else
+                _netProfitLoss = null;
+
+            return _netProfitLoss;
+        }
         set { _netProfitLoss = value; }
     }
     decimal? _netProfitLoss;
@@ -125,6 +134,12 @@ public partial class Trade
         set { _plannedProfit = value; }
     }
     decimal? _plannedProfit;
+
+    /// <summary>
+    /// Gets the planned profit or loss for the trade. Alias for <see cref="PlannedProfit"/> to support bindings and legacy references.
+    /// </summary>
+    [Display(ResourceType = typeof(LocalizedStrings), Name = "PlannedProfit")]
+    public decimal? PlannedProfitLoss => PlannedProfit;
 
     /// <summary>
     /// Gets or sets the planned risk amount for the trade, calculated based on the planned entry price, 
@@ -193,17 +208,58 @@ public partial class Trade
     {
         get
         {
-            if (ExecutedEntryPrice.HasValue && FilledQuantity.HasValue && (ExecutedTP.HasValue || ExecutedSL.HasValue))
+            // 1. If individual exit orders (TP / SL) are loaded and any are filled, sum their realized P/L
+            var entryPrice = ExecutedEntryPrice ?? PlannedEntryPrice;
+            if (entryPrice.HasValue)
             {
-                // Prefer ExecutedTP as the exit price; fall back to ExecutedSL.
-                decimal exitPrice = ExecutedTP ?? ExecutedSL!.Value;
+                decimal orderRealizedTotal = 0;
+                bool hasFilledExitOrder = false;
 
-                // Long profits when price rises, Short profits when price falls.
-                // directionMultiplier normalises both into: positive = profit, negative = loss.
-                decimal directionMultiplier = TradeDirection == TradeDirection.Long ? 1m : -1m;
-                return Math.Round((exitPrice - ExecutedEntryPrice.Value) * directionMultiplier * FilledQuantity.Value, 4);
+                if (TakeProfitOrders != null)
+                {
+                    foreach (var tp in TakeProfitOrders.Where(o => !o.IsCancelled && o.FilledQuantity > 0 && o.FilledPrice.HasValue))
+                    {
+                        decimal diff = TradeDirection == TradeDirection.Long
+                            ? tp.FilledPrice!.Value - entryPrice.Value
+                            : entryPrice.Value - tp.FilledPrice!.Value;
+                        orderRealizedTotal += diff * tp.FilledQuantity!.Value;
+                        hasFilledExitOrder = true;
+                    }
+                }
+
+                if (StopLossOrders != null)
+                {
+                    foreach (var sl in StopLossOrders.Where(o => !o.IsCancelled && o.FilledQuantity > 0 && o.FilledPrice.HasValue))
+                    {
+                        decimal diff = TradeDirection == TradeDirection.Long
+                            ? sl.FilledPrice!.Value - entryPrice.Value
+                            : entryPrice.Value - sl.FilledPrice!.Value;
+                        orderRealizedTotal += diff * sl.FilledQuantity!.Value;
+                        hasFilledExitOrder = true;
+                    }
+                }
+
+                if (hasFilledExitOrder)
+                {
+                    return Math.Round(orderRealizedTotal, 4);
+                }
             }
-            return null;
+
+            // 2. Fallback for trades without individual exit order objects
+            if (ExecutedEntryPrice.HasValue && (ExecutedTP.HasValue || ExecutedSL.HasValue))
+            {
+                decimal exitPrice = ExecutedTP ?? ExecutedSL!.Value;
+                decimal directionMultiplier = TradeDirection == TradeDirection.Long ? 1m : -1m;
+
+                decimal exitedQty = (FilledQuantity ?? 0) - (RemainingOpenQuantity ?? 0);
+                if (exitedQty <= 0 && IsFullyClosed && FilledQuantity.HasValue)
+                    exitedQty = FilledQuantity.Value;
+
+                if (exitedQty > 0)
+                    return Math.Round((exitPrice - ExecutedEntryPrice.Value) * directionMultiplier * exitedQty, 4);
+            }
+
+            return _realizedProfitLoss;
         }
         //This is a calculated property, so we don't want to set it directly. However, we need to have a setter to satisfy the requirements of the data binding in the UI and database.
         //The setter will simply store the value in a private field, but it won't be used in any calculations.
