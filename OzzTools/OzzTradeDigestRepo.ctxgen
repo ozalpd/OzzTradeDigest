@@ -1,7 +1,7 @@
 ﻿{
   "ProfileName": "Default Profile",
   "TargetSourcePath": "..\\..\\OzzTradeDigest\\",
-  "LatestSourceWriteAt": "2026-10-25T10:46:55.0087099+03:00",
+  "LatestSourceWriteAt": "2026-10-27T21:14:57.7907858+03:00",
   "LastPackedAt": "2026-10-25T10:45:45.5729469+03:00",
   "RepoUrl": "",
   "License": "",
@@ -45,6 +45,14 @@
       "ContextNote": "",
       "PackingMode": 10
     },
+    "GEMINI.md": {
+      "RelativePath": "GEMINI.md",
+      "LastWriteTime": "2026-10-27T21:14:57.7907858+03:00",
+      "FileHash": "940DA99704BC9F605507E942D1690007CCE30E719DE57715281CD9C2ECA112B7",
+      "FileSize": 2162,
+      "ContextNote": "Instruction document for Gemini Antigravity",
+      "PackingMode": 10
+    },
     "README.md": {
       "RelativePath": "README.md",
       "LastWriteTime": "2026-10-14T10:07:16.5955029+03:00",
@@ -58,7 +66,7 @@
       "LastWriteTime": "2026-10-18T19:28:45.109168+03:00",
       "FileHash": "F3122BC02E0317C6679FEB018FF5DA11A0284622BA5BD8EC14D48B8901D7B1A9",
       "FileSize": 31389,
-      "ContextNote": "",
+      "ContextNote": "Instruction document for GitHub CoPilot",
       "PackingMode": 10
     },
     ".github\\development-roadmap.md": {
@@ -143,9 +151,9 @@
     },
     "OzzTools\\OzzTradeDigestRepo.ctxgen": {
       "RelativePath": "OzzTools\\OzzTradeDigestRepo.ctxgen",
-      "LastWriteTime": "2026-10-25T10:45:45.5744768+03:00",
-      "FileHash": "D253F19BA06BB77E003E7D6097373D7BCBBB05658E4BBBC39FEB9A9C11F9699F",
-      "FileSize": 139271,
+      "LastWriteTime": "2026-10-25T16:30:07.2054659+03:00",
+      "FileHash": "70651873169DF9B19FE218E3EB16CE4B5AD84575BFE04C33084ED09CDF474DD7",
+      "FileSize": 139307,
       "ContextNote": "OzzContextGen file for structure of this repository",
       "PackingMode": 10
     },

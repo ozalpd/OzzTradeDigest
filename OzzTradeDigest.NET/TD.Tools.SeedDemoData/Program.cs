@@ -69,14 +69,20 @@ static async Task SeedDemoDataAsync(string databasePath, int daysAgoStart, bool 
         Console.WriteLine($"{daysAgo} days ago trades seeded for both exchanges.");
     }
 
-    static async Task<bool> seedTrades(TradingAccount tradingAccount, ITradeRepository tradeRepository, TradeNoteRepository tradeNoteRepository, TradeImageRepository tradeImageRepository, Exchange? exchange, int daysAgo, bool noImages, string suffix = "")
+    static async Task<bool> seedTrades(TradingAccount tradingAccount, ITradeRepository tradeRepository, TradeNoteRepository tradeNoteRepository,
+        TradeImageRepository tradeImageRepository, Exchange? exchange, int daysAgo, bool noImages, string suffix = "")
     {
         if (exchange == null)
             return false;
 
-        var symbolSet = string.IsNullOrEmpty(suffix)
-                      ? exchange.Symbols
-                      : exchange.Symbols.Where(s => s.TickerFull.EndsWith(suffix)).ToList();
+        var symbolSet = exchange.Symbols
+                                .Where(s => s.MarketType == tradingAccount.MarketType)
+                                .ToList();
+        if (!string.IsNullOrEmpty(suffix))
+        {
+            symbolSet = symbolSet.Where(s => s.TickerFull.EndsWith(suffix)).ToList();
+        }
+
         if (symbolSet == null || symbolSet.Count == 0)
             return false;
 
