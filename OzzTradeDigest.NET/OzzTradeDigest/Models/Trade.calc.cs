@@ -306,11 +306,14 @@ public partial class Trade
         get
         {
             decimal totalFees = 0;
+            bool hasAnyOrder = false;
+
             if (EntryOrders != null)
             {
                 foreach (var order in EntryOrders)
                 {
                     totalFees += order.FeesCalculated ?? 0;
+                    hasAnyOrder = true;
                 }
             }
             if (TakeProfitOrders != null)
@@ -318,6 +321,7 @@ public partial class Trade
                 foreach (var order in TakeProfitOrders)
                 {
                     totalFees += order.FeesCalculated ?? 0;
+                    hasAnyOrder = true;
                 }
             }
             if (StopLossOrders != null)
@@ -325,9 +329,13 @@ public partial class Trade
                 foreach (var order in StopLossOrders)
                 {
                     totalFees += order.FeesCalculated ?? 0;
+                    hasAnyOrder = true;
                 }
             }
-            return totalFees;
+            if (hasAnyOrder)
+                return Math.Round(totalFees, 4);
+
+            return _totalFeesCalculated;
         }
         set { _totalFeesCalculated = value; }
     }

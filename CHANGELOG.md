@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Consolidated exit order entities (`StopLossOrder` and `TakeProfitOrder`) into a unified `ExitOrder` entity and `ExitOrders` table.
 - Added `ExitOrderMode` enum (`TakeProfit`, `StopLoss`, `ManualExit`, `TimedExit`, `Algorithm`, `MarginCall`) with localized display attributes.
 - MainWindow trades `DataGrid` now automatically hides the `TradingAccount` column when the grid is narrower than 1072 px and shows it again at 1072 px or wider.
+- Implemented `CalculateFees()` on `EntryOrder` (`EntryOrder.part.cs`) and `ExitOrder` (`ExitOrder.part.cs`): automatically computes order fees based on `FilledValue` and the linked `TradingAccount`'s `MakerFeeRate` or `TakerFeeRate` based on order execution type (Maker for Limit/StopLimit; Taker for Market/Stop/TrailingStop).
 
 ### Changed
 - Updated `PriceSideAttribute` to dynamically evaluate required price side relative to entry price based on `ExitOrder.ExitOrderMode` (Above for `TakeProfit`, Below for `StopLoss` for Long positions; inverted for Short positions; skipped for manual/system exits).

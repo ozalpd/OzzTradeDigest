@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using TD.i18n;
 
 namespace TD.Models
@@ -45,9 +45,24 @@ namespace TD.Models
 
         private decimal? CalculateFees()
         {
+            if (IsCancelled || FilledValue is not > 0)
+                return null;
+
             var account = Trade?.TradingAccount;
-            // Implement the logic to calculate fees based on trade details
-            return null; // Placeholder
+            if (account == null)
+                return null;
+
+            decimal? rate = OrderType switch
+            {
+                ExitOrderType.Limit or ExitOrderType.StopLimit => account.MakerFeeRate ?? account.TakerFeeRate,
+                ExitOrderType.Market or ExitOrderType.Stop or ExitOrderType.TrailingStop => account.TakerFeeRate ?? account.MakerFeeRate,
+                _ => account.TakerFeeRate ?? account.MakerFeeRate
+            };
+
+            if (rate.HasValue)
+                return Math.Round(FilledValue.Value * rate.Value, 4);
+
+            return null;
         }
 
 
