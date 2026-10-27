@@ -180,7 +180,7 @@ static async Task<TradingAccount> EnsureDemoAccountAsync(ITradingAccountReposito
         DisplayOrder = 9990,
         MarketType = marketType,
         MakerFeeRate = 0.0002m,
-        TakerFeeRate = 0.0005m,
+        TakerFeeRate = 0.00055m,
         IsActive = true
     };
 
